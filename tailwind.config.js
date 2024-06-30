@@ -11,11 +11,11 @@ export default {
         PrimaryColor: ["#0c59db"],
         SecondaryColor: ["#022359"],
         HeadingColor: ["#041424"],
-        TextColor: ["#686868"],
-        TextColor2: ["#bababa"],
+        TextColor: ["#b6b9c0"],
+        TextColor2: ["#686868"],
         BodyBg: ["#f3f7fd"],
         BorderColor: ["#ffffff21"],
-        BorderColor2: ["#dee4da"],
+        BorderColor2: ["#dce1e5"],
         BorderColor3: ["#83A8FF"],
         BorderColor4: ["#ffffff1a"],
       },
@@ -50,6 +50,10 @@ export default {
         Dance: {
           "0%,100%": { transform: "translateX(0px)" },
           "50%": { transform: "translateX(35px)" },
+        },
+        dance4: {
+          "0%,100%": { transform: "translateX(0px)" },
+          "50%": { transform: "translateX(570px)" },
         },
         rotateme: {
           "0%": { transform: "rotate(0deg)" },
@@ -95,6 +99,7 @@ export default {
         zoomInOut: "zoomInOut 2s alternate infinite",
         dance2: "dance2 3s alternate infinite",
         dance3: "dance3 2s alternate infinite",
+        dance4: "dance4 10s alternate infinite",
         dance7: "dance7 4s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",
         headerSlideDown:
