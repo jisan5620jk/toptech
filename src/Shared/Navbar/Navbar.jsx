@@ -4,7 +4,6 @@ import {
   FaBars,
   FaFacebookF,
   FaLinkedinIn,
-  FaPhone,
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
@@ -15,6 +14,7 @@ import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
+import { GrAlarm } from "react-icons/gr";
 
 const Navbar = () => {
   //sticky
@@ -46,19 +46,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full transition-all duration-300 bg-transparent absolute z-[99999]`}
+      className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
       {/* top Navbar */}
       <header className="bg-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:-left-[5%] before:w-[55%] before:h-full before:skew-x-[26deg] before:bg-PrimaryColor-0 before:-z-10 overflow-hidden md:block">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-Nunito text-[15px] text-white sm:flex hidden items-center gap-1">
+            <p className="font-Nunito text-white sm:flex hidden items-center gap-1">
               <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
               New market Sandigo - California
             </p>
             <Link
               to={"/"}
-              className="font-Nunito text-[15px] text-white md:flex items-center gap-2 hidden"
+              className="font-Nunito text-white md:flex items-center gap-2 hidden"
             >
               <HiOutlineMailOpen size={"16"} className="text-white" />
               example@hotmail.com
@@ -66,12 +66,10 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-16">
             <div className="lg:flex items-center gap-2 hidden">
-              <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
-                <FaPhone />
+              <span className="flex items-center gap-3 text-white">
+                <GrAlarm />
               </span>
-              <p
-                className="font-Nunito font-medium text-sm text-white"
-              >
+              <p className="font-Nunito font-medium text-white">
                 9.10 am - 5.30 pm
               </p>
             </div>
@@ -114,7 +112,7 @@ const Navbar = () => {
       </header>
       {/* top Navbar */}
       <header
-        className="header-section bg-transparent border-t border-b border-BorderColor4-0"
+        className="header-section bg-white"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
@@ -151,9 +149,9 @@ const Navbar = () => {
               >
                 {/* modal open and close */}
                 {isOpen ? (
-                  <IoMdClose className="w-6 h-6 text-white" />
+                  <IoMdClose className="w-6 h-6 text-HeadingColor-0" />
                 ) : (
-                  <FaBars className="w-5 h-5 text-white" />
+                  <FaBars className="w-5 h-5 text-HeadingColor-0" />
                 )}
               </button>
             </div>
@@ -162,7 +160,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
               >
                 <NavLink
@@ -172,7 +170,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
@@ -228,7 +226,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
                   <span>About</span>
@@ -239,7 +237,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -265,14 +263,13 @@ const Navbar = () => {
                     </ul>
                   </div>
                 </NavLink>
-
                 <NavLink
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -368,7 +365,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -407,7 +404,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
+                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
@@ -415,7 +412,7 @@ const Navbar = () => {
               </ul>
               <div className="hidden lg:flex items-center">
                 <button>
-                  <IoSearch className="text-2xl ml-2 mr-10 text-PrimaryColor-0" />
+                  <IoSearch className="text-2xl ml-2 mr-10 text-HeadingColor-0" />
                 </button>
                 <Link to={"/appointment"} className="header-btn">
                   Get A Quote
