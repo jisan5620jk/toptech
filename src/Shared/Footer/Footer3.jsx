@@ -2,9 +2,15 @@ import { Link } from "react-router-dom";
 import footerLogo from "/images/logo.png";
 import footerShape3 from "/images/footer-shape.png";
 import footerLine from "/images/footer-line.png";
-import footerImg from "/images/blog-thumb2.jpg"
-import footerImg2 from "/images/blog-thumb3.jpg"
-import { FaChevronRight, FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
+import footerImg from "/images/blog-thumb2.jpg";
+import footerImg2 from "/images/blog-thumb3.jpg";
+import {
+  FaChevronRight,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const Footer3 = () => {
   return (
@@ -25,7 +31,7 @@ const Footer3 = () => {
             <Link to={"/"}>
               <img src={footerLogo} draggable={false} />
             </Link>
-            <p className="font-AlbertSans text-white opacity-60 mt-10 mb-9">
+            <p className="font-Nunito text-white opacity-60 mt-10 mb-9">
               Sometimes goods can arrive early when creative designneed place to
               stored for desig space your needs.
             </p>
@@ -53,13 +59,13 @@ const Footer3 = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-[30px]">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-[30px]">
               Company
             </h4>
-            <p className="font-AlbertSans text-white opacity-60 mb-6">
+            <p className="font-Nunito text-white opacity-60 mb-6">
               4175 Anderson Road, Carlsbad Springs, Ontario
             </p>
-            <h6 className="font-AlbertSans flex items-center">
+            <h6 className="font-Nunito flex items-center">
               <span className="text-white opacity-60">Phone</span>
               <span className="px-5 text-white opacity-60">:</span>
               <Link
@@ -69,7 +75,7 @@ const Footer3 = () => {
                 613-822-9644
               </Link>
             </h6>
-            <h6 className="font-AlbertSans flex items-center my-4">
+            <h6 className="font-Nunito flex items-center my-4">
               <span className="text-white opacity-60">E-Mail</span>
               <span className="px-5 text-white opacity-60">:</span>
               <Link
@@ -79,21 +85,21 @@ const Footer3 = () => {
                 info@example.com
               </Link>
             </h6>
-            <h6 className="font-AlbertSans flex items-center">
+            <h6 className="font-Nunito flex items-center">
               <span className="text-white opacity-60">
                 Mon - Sat: 09.00 to 06.30
               </span>
             </h6>
           </div>
           <div>
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-[30px]">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-[30px]">
               Useful Links
             </h4>
             <div className="grid grid-cols-2 justify-start text-left">
               <ul>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       About Us
                     </button>
@@ -101,7 +107,7 @@ const Footer3 = () => {
                 </li>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Projects
                     </button>
@@ -109,7 +115,7 @@ const Footer3 = () => {
                 </li>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Energy
                     </button>
@@ -117,7 +123,7 @@ const Footer3 = () => {
                 </li>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Controllers
                     </button>
@@ -127,7 +133,7 @@ const Footer3 = () => {
               <ul>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Services
                     </button>
@@ -135,7 +141,7 @@ const Footer3 = () => {
                 </li>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Ressources
                     </button>
@@ -143,7 +149,7 @@ const Footer3 = () => {
                 </li>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Plants
                     </button>
@@ -151,7 +157,7 @@ const Footer3 = () => {
                 </li>
                 <li>
                   <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
+                    <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100">
                       <FaChevronRight className="text-xs opacity-60 " />
                       Solar Plants
                     </button>
@@ -161,7 +167,7 @@ const Footer3 = () => {
             </div>
           </div>
           <div>
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-8">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-8">
               Recent News
             </h4>
             <Link to={"/"} className="flex items-center gap-[18px] group">
@@ -169,10 +175,10 @@ const Footer3 = () => {
                 <img src={footerImg} className="w-[80px] h-[80px] rounded" />
               </div>
               <div className="flex-1">
-                <h6 className="font-AlbertSans text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
+                <h6 className="font-Nunito text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
                   How to add battery backup...
                 </h6>
-                <p className="font-AlbertSans text-sm text-PrimaryColor-0 mt-1">
+                <p className="font-Nunito text-sm text-PrimaryColor-0 mt-1">
                   Date: Nov 16, 2024
                 </p>
               </div>
@@ -182,10 +188,10 @@ const Footer3 = () => {
                 <img src={footerImg2} className="w-[80px] h-[80px] rounded" />
               </div>
               <div className="flex-1">
-                <h6 className="font-AlbertSans text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
+                <h6 className="font-Nunito text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
                   How to clean forest properly...
                 </h6>
-                <p className="font-AlbertSans text-sm text-PrimaryColor-0 mt-1">
+                <p className="font-Nunito text-sm text-PrimaryColor-0 mt-1">
                   Date: Nov 16, 2024
                 </p>
               </div>
@@ -195,28 +201,28 @@ const Footer3 = () => {
       </div>
       <div className="text-left py-6 bg-[#78b9003b] mt-24">
         <div className="Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between">
-          <p className="font-AlbertSans text-white opacity-60">
+          <p className="font-Nunito text-white opacity-60">
             Echofy © 2024 All rights reserved.
           </p>
           <div>
             <ul className="flex gap-7">
               <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                  <button className="font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100">
                     Privacy & Terms
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                  <button className="font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100">
                     FAQ
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                  <button className="font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100">
                     Contact Us
                   </button>
                 </Link>

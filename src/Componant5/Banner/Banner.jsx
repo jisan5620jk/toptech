@@ -34,16 +34,16 @@ const Banner = () => {
             <div className="Container">
               <div className="flex items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
-                  <h5 className="font-AlbertSans text-PrimaryColor-0 text-[22px] font-medium bg-[#030804] inline-block px-[22px] py-1 border border-BorderColor4-0 rounded-md mb-1">
+                  <h5 className="font-Nunito text-PrimaryColor-0 text-[22px] font-medium bg-[#030804] inline-block px-[22px] py-1 border border-BorderColor4-0 rounded-md mb-1">
                     Project Our Animal
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px]">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px]">
                     Small Effort Make
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-5">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-5">
                     Big Change
                   </h1>
-                  <p className="font-AlbertSans text-lg text-TextColor2-0 mt-3 mb-11">
+                  <p className="font-Nunito text-lg text-TextColor2-0 mt-3 mb-11">
                     Animals World accreditation standards. Members are proactive
                     in <br className="hidden md:block" /> both undertaking and
                     applying animal
@@ -61,7 +61,7 @@ const Banner = () => {
                       <li>
                         <Link
                           to={"/"}
-                          className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center"
+                          className="flex gap-2 font-Nunito text-TextColor2-0 text-[17px] items-center"
                         >
                           <IoIosSend
                             size={"22"}
@@ -71,7 +71,7 @@ const Banner = () => {
                         </Link>
                       </li>
                       <li>
-                        <p className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center pl-8 border-l border-BorderColor-0">
+                        <p className="flex gap-2 font-Nunito text-TextColor2-0 text-[17px] items-center pl-8 border-l border-BorderColor-0">
                           <FaLocationDot
                             size={"18"}
                             className="text-PrimaryColor-0"
@@ -85,7 +85,7 @@ const Banner = () => {
               </div>
               <div className="relative -bottom-[9.1rem] bg-[url('/images/video-bg.png')] bg-no-repeat bg-cover bg-center rounded-md 2xl:inline-block hidden">
                 <div className="flex items-center justify-center gap-[80px] py-[85px] px-[130px]">
-                  <h4 className="text-lg font-AlbertSans font-medium text-white">
+                  <h4 className="text-lg font-Nunito font-medium text-white">
                     Live Cam
                   </h4>
                   <button className="h-[50px] w-[50px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
@@ -111,16 +111,16 @@ const Banner = () => {
             <div className="Container">
               <div className="flex items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
-                  <h5 className="font-AlbertSans text-PrimaryColor-0 text-[22px] font-medium bg-[#030804] inline-block px-[22px] py-1 border border-BorderColor4-0 rounded-md mb-1">
+                  <h5 className="font-Nunito text-PrimaryColor-0 text-[22px] font-medium bg-[#030804] inline-block px-[22px] py-1 border border-BorderColor4-0 rounded-md mb-1">
                     Project Our Animal
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px]">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px]">
                     Small Effort Make
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-5">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-5">
                     Big Change
                   </h1>
-                  <p className="font-AlbertSans text-lg text-TextColor2-0 mt-3 mb-11">
+                  <p className="font-Nunito text-lg text-TextColor2-0 mt-3 mb-11">
                     Animals World accreditation standards. Members are proactive
                     in <br className="hidden md:block" /> both undertaking and
                     applying animal
@@ -138,7 +138,7 @@ const Banner = () => {
                       <li>
                         <Link
                           to={"/"}
-                          className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center"
+                          className="flex gap-2 font-Nunito text-TextColor2-0 text-[17px] items-center"
                         >
                           <IoIosSend
                             size={"22"}
@@ -148,7 +148,7 @@ const Banner = () => {
                         </Link>
                       </li>
                       <li>
-                        <p className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center pl-8 border-l border-BorderColor-0">
+                        <p className="flex gap-2 font-Nunito text-TextColor2-0 text-[17px] items-center pl-8 border-l border-BorderColor-0">
                           <FaLocationDot
                             size={"18"}
                             className="text-PrimaryColor-0"
@@ -162,7 +162,7 @@ const Banner = () => {
               </div>
               <div className="relative -bottom-[9.1rem] bg-[url('/images/video-bg.png')] bg-no-repeat bg-cover bg-center rounded-md 2xl:inline-block hidden">
                 <div className="flex items-center justify-center gap-[80px] py-[85px] px-[130px]">
-                  <h4 className="text-lg font-AlbertSans font-medium text-white">
+                  <h4 className="text-lg font-Nunito font-medium text-white">
                     Live Cam
                   </h4>
                   <button className="h-[50px] w-[50px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">

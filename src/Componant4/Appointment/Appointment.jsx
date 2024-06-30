@@ -15,7 +15,7 @@ const Appointment = () => {
           ></iframe>
         </div>
         <div className="mr-4 xl:mr-[45px] 2xl:mr-[19.5rem]">
-          <h2 className="font-AlbertSans font-bold text-3xl md:text-[40px] mb-11">
+          <h2 className="font-Nunito font-bold text-3xl md:text-[40px] mb-11">
             Request A Quote
           </h2>
           <form action="#" method="post" className="flex flex-col gap-7">

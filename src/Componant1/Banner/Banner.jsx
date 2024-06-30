@@ -35,16 +35,16 @@ const Banner = () => {
             <div className="Container">
               <div className="pt-36">
                 <div className="relative banner-content">
-                  <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
+                  <h5 className="font-Nunito text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-5 md:-mt-7 lg:-mt-5">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-5 md:-mt-7 lg:-mt-5">
                     Environment
                   </h1>
-                  <p className="font-AlbertSans text-lg text-white mb-10">
+                  <p className="font-Nunito text-lg text-white mb-10">
                     Professionally optimize interdependent intellectual
                     interoperable <br className="hidden md:block" /> connect
                     best practices. Progressively
@@ -57,7 +57,7 @@ const Banner = () => {
                         <img src={buttonShape} draggable="false" />
                       </button>
                     </Link>
-                    <div className="text-lg font-AlbertSans font-medium text-white flex items-center gap-4">
+                    <div className="text-lg font-Nunito font-medium text-white flex items-center gap-4">
                       <button className="h-[58px] w-[58px] rounded-full bg-[#355250] flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#355250] before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
                         <LiaPlayCircleSolid
                           size={"34"}
@@ -75,7 +75,7 @@ const Banner = () => {
                     />
                   </div>
                   <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
-                    <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
+                    <h5 className="font-Nunito text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>
                     <ul className="flex gap-7 items-center">
@@ -116,16 +116,16 @@ const Banner = () => {
             <div className="Container">
               <div className="pt-36">
                 <div className="relative banner-content">
-                  <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
+                  <h5 className="font-Nunito text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-5 md:-mt-7 lg:-mt-5">
+                  <h1 className="font-Nunito font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-5 md:-mt-7 lg:-mt-5">
                     Environment
                   </h1>
-                  <p className="font-AlbertSans text-lg text-white mb-10">
+                  <p className="font-Nunito text-lg text-white mb-10">
                     Professionally optimize interdependent intellectual
                     interoperable <br className="hidden md:block" /> connect
                     best practices. Progressively
@@ -138,7 +138,7 @@ const Banner = () => {
                         <img src={buttonShape} draggable="false" />
                       </button>
                     </Link>
-                    <div className="text-lg font-AlbertSans font-medium text-white flex items-center gap-4">
+                    <div className="text-lg font-Nunito font-medium text-white flex items-center gap-4">
                       <button className="h-[58px] w-[58px] rounded-full bg-[#355250] flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#355250] before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
                         <LiaPlayCircleSolid
                           size={"34"}
@@ -156,7 +156,7 @@ const Banner = () => {
                     />
                   </div>
                   <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
-                    <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
+                    <h5 className="font-Nunito text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>
                     <ul className="flex gap-7 items-center">

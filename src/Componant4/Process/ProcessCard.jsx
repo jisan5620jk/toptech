@@ -14,14 +14,14 @@ const ProcessCard = ({
           src={processIcon}
           className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
         />
-        <h6 className="h-[26px] w-[26px] rounded-full bg-PrimaryColor-0 text-sm flex justify-center items-center text-HeadingColor-0 font-AlbertSans absolute top-1/2 -translate-y-1/2 -right-[13px]">
+        <h6 className="h-[26px] w-[26px] rounded-full bg-PrimaryColor-0 text-sm flex justify-center items-center text-HeadingColor-0 font-Nunito absolute top-1/2 -translate-y-1/2 -right-[13px]">
           {boxNumber}
         </h6>
       </div>
-      <h5 className="font-AlbertSans font-semibold inline-block text-HeadingColor-0 text-2xl relative z-10 before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-7 before:h-[2px] before:transition-all before:duration-500 before:bg-SecondaryColor-0 group-hover:before:w-full group-hover:left-0 mt-9 pb-3 mb-7">
+      <h5 className="font-Nunito font-semibold inline-block text-HeadingColor-0 text-2xl relative z-10 before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-7 before:h-[2px] before:transition-all before:duration-500 before:bg-SecondaryColor-0 group-hover:before:w-full group-hover:left-0 mt-9 pb-3 mb-7">
         {processTitle}
       </h5>
-      <p className="font-AlbertSans text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
+      <p className="font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
         {processDesc}
       </p>
     </div>

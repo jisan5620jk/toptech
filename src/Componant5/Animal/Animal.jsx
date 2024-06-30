@@ -6,7 +6,6 @@ import animalIcon4 from "/images/animal-icon-4.png";
 import animalIcon5 from "/images/animal-icon-5.png";
 import animalIcon6 from "/images/animal-icon-6.png";
 
-
 const Animal = () => {
   return (
     <section className="relative pt-[160px] pb-[120px] bg-[#f5f5f5] bg-cover bg-no-repeat bg-center">
@@ -16,7 +15,7 @@ const Animal = () => {
             <div className="w-[80px] h-[80px] bg-white flex justify-center items-center rounded-full m-auto">
               <img src={animalIcon} />
             </div>
-            <h4 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-3">
+            <h4 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 mt-3">
               Giraffes
             </h4>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500 group-hover:scale-100">
@@ -31,7 +30,7 @@ const Animal = () => {
             <div className="w-[80px] h-[80px] bg-white flex justify-center items-center rounded-full m-auto">
               <img src={animalIcon2} />
             </div>
-            <h4 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-3">
+            <h4 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 mt-3">
               Tiger
             </h4>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500 group-hover:scale-100">
@@ -46,7 +45,7 @@ const Animal = () => {
             <div className="w-[80px] h-[80px] bg-white flex justify-center items-center rounded-full m-auto">
               <img src={animalIcon3} />
             </div>
-            <h4 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-3">
+            <h4 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 mt-3">
               Lion
             </h4>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500 group-hover:scale-100">
@@ -61,7 +60,7 @@ const Animal = () => {
             <div className="w-[80px] h-[80px] bg-white flex justify-center items-center rounded-full m-auto">
               <img src={animalIcon4} />
             </div>
-            <h4 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-3">
+            <h4 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 mt-3">
               Elephent
             </h4>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500 group-hover:scale-100">
@@ -76,7 +75,7 @@ const Animal = () => {
             <div className="w-[80px] h-[80px] bg-white flex justify-center items-center rounded-full m-auto">
               <img src={animalIcon5} />
             </div>
-            <h4 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-3">
+            <h4 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 mt-3">
               Zebra
             </h4>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500 group-hover:scale-100">
@@ -91,7 +90,7 @@ const Animal = () => {
             <div className="w-[80px] h-[80px] bg-white flex justify-center items-center rounded-full m-auto">
               <img src={animalIcon6} />
             </div>
-            <h4 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-3">
+            <h4 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 mt-3">
               Monkey
             </h4>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500 group-hover:scale-100">

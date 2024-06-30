@@ -27,11 +27,11 @@ const About = () => {
             />
           </div>
           <div className="relative">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               ABOUT ECHOFY
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
               Environmental Sustainable <br />
               Forever Green Future
             </h1>
@@ -40,10 +40,10 @@ const About = () => {
                 <img src={aboutIcon} draggable="false" />
               </div>
               <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0 -mt-2">
+                <h5 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 -mt-2">
                   Economic Benifits
                 </h5>
-                <p className="font-AlbertSans text-TextColor-0 pt-3">
+                <p className="font-Nunito text-TextColor-0 pt-3">
                   Alternative innovation after ethical to network environmental
                   whiteboard transparent growth natural done.
                 </p>
@@ -54,10 +54,10 @@ const About = () => {
                 <img src={aboutIcon2} draggable="false" />
               </div>
               <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0 -mt-2">
+                <h5 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 -mt-2">
                   Safe Environment
                 </h5>
-                <p className="font-AlbertSans text-TextColor-0 pt-3">
+                <p className="font-Nunito text-TextColor-0 pt-3">
                   Alternative innovation after ethical to network environmental
                   whiteboard transparent growth natural done.
                 </p>

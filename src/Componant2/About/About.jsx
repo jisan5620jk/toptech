@@ -12,7 +12,7 @@ import FsLightbox from "fslightbox-react";
 import { CiPlay1 } from "react-icons/ci";
 
 const About = () => {
-    const [toggler, setToggler] = useState(false);
+  const [toggler, setToggler] = useState(false);
 
   return (
     <section className="py-[120px] bg-[url('/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
@@ -26,7 +26,7 @@ const About = () => {
         draggable="false"
         className="absolute top-32 right-20 animate-zoomInOut hidden 2xl:block"
       />
-      
+
       <FsLightbox
         toggler={toggler}
         sources={[
@@ -43,24 +43,24 @@ const About = () => {
               className="absolute bottom-0 right-0 hidden sm:block"
             />
             <div className="absolute top-20 right-[60px] lg:right-[30px] xl:-right-[30px] 2xl:right-[60px] hidden sm:block">
-        <button
-          className="h-[88px] w-[88px] rounded-full border-4 border-white text-2xl text-white bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping after:absolute after:-top-[20px] after:-left-[20px] after:w-[120px] after:h-[120px] after:bg-transparent after:border-2 after:border-dashed after:border-PrimaryColor-0 after:opacity-50 after:-z-10 after:rounded-full after:animate-rotational"
-          onClick={() => setToggler(!toggler)}
-        >
-          <CiPlay1 />
-        </button>
-      </div>
+              <button
+                className="h-[88px] w-[88px] rounded-full border-4 border-white text-2xl text-white bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping after:absolute after:-top-[20px] after:-left-[20px] after:w-[120px] after:h-[120px] after:bg-transparent after:border-2 after:border-dashed after:border-PrimaryColor-0 after:opacity-50 after:-z-10 after:rounded-full after:animate-rotational"
+                onClick={() => setToggler(!toggler)}
+              >
+                <CiPlay1 />
+              </button>
+            </div>
           </div>
           <div>
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               ABOUT ECHOFY
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
               Protecting Environment <br />
               For Green Future
             </h1>
-            <p className="font-AlbertSans text-TextColor-0 font-light">
+            <p className="font-Nunito text-TextColor-0 font-light">
               {`Assertively reinvent front-end deliverables via to sustainable
               products. Credibly an expanded array of vortals for open-source
               internal or "organic" sources main negotiate professional supply
@@ -72,10 +72,10 @@ const About = () => {
                   <img src={aboutIcon} draggable="false" />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 -mt-2">
+                  <h5 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 -mt-2">
                     Dust Recycling
                   </h5>
-                  <p className="font-AlbertSans text-TextColor-0 text-[17px] pt-2">
+                  <p className="font-Nunito text-TextColor-0 text-[17px] pt-2">
                     Alternative innovation the environmental
                   </p>
                 </div>
@@ -85,10 +85,10 @@ const About = () => {
                   <img src={aboutIcon2} draggable="false" />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 -mt-2">
+                  <h5 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 -mt-2">
                     Safe Environment
                   </h5>
-                  <p className="font-AlbertSans text-TextColor-0 text-[17px] pt-2">
+                  <p className="font-Nunito text-TextColor-0 text-[17px] pt-2">
                     Alternative innovation the environmental
                   </p>
                 </div>

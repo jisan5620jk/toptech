@@ -63,17 +63,17 @@ const Service = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 gap-1 mb-9">
           <div>
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />
               ECHOFY SERVICES
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
               Pioneering Sustainable
               <br /> Energy Services.
             </h1>
           </div>
           <div>
-            <p className="font-AlbertSans text-TextColor-0 font-light">
+            <p className="font-Nunito text-TextColor-0 font-light">
               Sometimes goods can arrive early when they being brought into the
               solution other times items need a place to be stored for short
               goods can arrive desig headquarters have enough space your needs.

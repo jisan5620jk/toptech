@@ -25,15 +25,15 @@ const ServiceCard = ({
         </div>
       </div>
       <div>
-        <h5 className="font-AlbertSans font-bold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-7 pb-3">
+        <h5 className="font-Nunito font-bold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-7 pb-3">
           {serviceTitle}
         </h5>
-        <p className="font-AlbertSans text-TextColor-0 mb-8">{serviceDesc}</p>
+        <p className="font-Nunito text-TextColor-0 mb-8">{serviceDesc}</p>
         <Link
           to={serviceUrl}
           className="absolute -bottom-[25px] left-1/2 -translate-x-1/2"
         >
-          <button className="font-AlbertSans rounded-full font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 w-[50px] group-hover:w-[176px] h-[50px] gap-2 overflow-hidden">
+          <button className="font-Nunito rounded-full font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 w-[50px] group-hover:w-[176px] h-[50px] gap-2 overflow-hidden">
             <span className="opacity-0 transition-all duration-500 group-hover:opacity-100 -ml-[90px] group-hover:ml-0">
               {serviceBtn}
             </span>

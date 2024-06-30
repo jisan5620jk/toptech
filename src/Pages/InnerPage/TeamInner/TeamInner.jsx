@@ -95,11 +95,11 @@ const TeamInner = () => {
         />
         <div className="Container">
           <div className="text-center">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
               <img src={subTitleShape} draggable="false" />
               OUR TEAM
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
               Meet Our Dedicated Members
             </h1>
           </div>

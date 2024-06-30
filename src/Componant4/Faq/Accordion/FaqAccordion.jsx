@@ -23,8 +23,7 @@ const PricingAccordion = ({ children, title, id, active = false }) => {
         >
           <span
             className={`text-HeadingColor-0 transition !leading-5 duration-400 group-hover:text-PrimaryColor-0 text-base sm:text-lg md:text-xl lg:text-base xl:text-xl flex items-center gap-4 border-b border-transparent w-full pb-[26px] hover:border-b-BorderColor2-0  ${
-              accordionOpen &&
-              "!text-PrimaryColor-0 border-b-BorderColor2-0 "
+              accordionOpen && "!text-PrimaryColor-0 border-b-BorderColor2-0 "
             }`}
           >
             <span>{title}</span>
@@ -42,14 +41,14 @@ const PricingAccordion = ({ children, title, id, active = false }) => {
         id={`accordion-text-${id}`}
         role="region"
         aria-labelledby={`accordion-title-${id}`}
-        className={`grid font-AlbertSans font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
+        className={`grid font-Nunito font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
         <div className="overflow-hidden">
-          <p className="pb-6 pt-6 text-sm sm:text-base font-AlbertSans">
+          <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">
             {children}
           </p>
         </div>

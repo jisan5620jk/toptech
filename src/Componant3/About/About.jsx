@@ -12,15 +12,15 @@ const About = () => {
             <img src={aboutThumb} draggable="false" />
           </div>
           <div>
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />
               GET TO KNOW US
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
               Innovative Renewable
               <br /> Energy Solutions.
             </h1>
-            <p className="font-AlbertSans text-TextColor-0 font-light">
+            <p className="font-Nunito text-TextColor-0 font-light">
               Sometimes goods can arrive early when they being brought into the
               solution other times items need a place to be stored for short
               goods can arrive desig headquarters have enough space your needs.
@@ -30,13 +30,13 @@ const About = () => {
                 <img src={aboutItem} draggable="false" />
               </div>
               <ul>
-                <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
+                <li className="font-Nunito font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
                   Solar energy also has some limitations
                 </li>
-                <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0 my-5 lg:my-2 2xl:my-5">
+                <li className="font-Nunito font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0 my-5 lg:my-2 2xl:my-5">
                   Reliability and performance
                 </li>
-                <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
+                <li className="font-Nunito font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
                   Every day fresh and quality products
                 </li>
               </ul>

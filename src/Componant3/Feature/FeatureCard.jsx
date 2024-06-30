@@ -1,6 +1,11 @@
 /* eslint-disable react/prop-types */
 
-const FeatureCard = ({featureShape, featureIcon, featureTitle, featureDesc }) => {
+const FeatureCard = ({
+  featureShape,
+  featureIcon,
+  featureTitle,
+  featureDesc,
+}) => {
   return (
     <div className="group flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center sm:items-center gap-5 overflow-hidden bg-[#f7f7f7] px-[30px] lg:px-6 xl:px-[30px] py-8 rounded relative z-10 before:absolute before:bottom-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:w-full">
       <img
@@ -15,10 +20,10 @@ const FeatureCard = ({featureShape, featureIcon, featureTitle, featureDesc }) =>
         />
       </div>
       <div className="flex-1">
-        <h5 className="font-AlbertSans font-semibold text-xl md:text-lg lg:text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+        <h5 className="font-Nunito font-semibold text-xl md:text-lg lg:text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {featureTitle}
         </h5>
-        <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white mt-[6px]">
+        <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white mt-[6px]">
           {featureDesc}
         </p>
       </div>

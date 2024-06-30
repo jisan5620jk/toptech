@@ -21,16 +21,14 @@ const ServiceCard = ({
           <img src={serviceIcon} draggable="false" />
         </div>
         <Link to={"/"}>
-          <button className="font-AlbertSans font-semibold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white relative before:absolute before:bottom-0 before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
+          <button className="font-Nunito font-semibold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white relative before:absolute before:bottom-0 before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
             {serviceTitle}
           </button>
         </Link>
-        <p className="font-AlbertSans text-TextColor-0 pt-6 pb-6">
-          {serviceDesc}
-        </p>
+        <p className="font-Nunito text-TextColor-0 pt-6 pb-6">{serviceDesc}</p>
         <div className="flex justify-between items-center border-t border-BorderColor2-0 py-4">
           <Link to={serviceUrl}>
-            <button className="font-AlbertSans text-HeadingColor-0 font-medium border-b border-BorderColor2-0 transition-all duration-500 group-hover:border-BorderColor-0 group-hover:text-white">
+            <button className="font-Nunito text-HeadingColor-0 font-medium border-b border-BorderColor2-0 transition-all duration-500 group-hover:border-BorderColor-0 group-hover:text-white">
               {serviceButton2}
             </button>
           </Link>

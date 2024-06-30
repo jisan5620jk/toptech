@@ -79,11 +79,11 @@ const Gallary = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center">
           <div>
-            <h5 className="font-AlbertSans font-semibold text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-semibold text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               ZOO PHOTO GALLERY!
             </h5>
-            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[46px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-[14px] mb-3">
+            <h1 className="font-Nunito font-bold text-xl leading-7 sm:text-[36px] sm:leading-[46px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-[14px] mb-3">
               Discover the Animal Kingdom <br />
               Here at Our Zoo
             </h1>
@@ -121,8 +121,8 @@ const Gallary = () => {
         <div className="Container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0 md:items-center">
             <div className="border-r border-BorderColor-0">
-              <h4 className="font-AlbertSans font-medium xl:text-lg 2xl:text-xl text-white">{`Don't Procrastinate in the Workplace`}</h4>
-              <h2 className="font-AlbertSans font-semibold lg:text-[22px] 2xl:text-[26px] text-white mt-3">
+              <h4 className="font-Nunito font-medium xl:text-lg 2xl:text-xl text-white">{`Don't Procrastinate in the Workplace`}</h4>
+              <h2 className="font-Nunito font-semibold lg:text-[22px] 2xl:text-[26px] text-white mt-3">
                 Organize Your Workspace Now
               </h2>
             </div>
@@ -131,9 +131,11 @@ const Gallary = () => {
                 <CiMobile3 size={"60"} />
               </div>
               <div className="text-left">
-                <p className="font-AlbertSans text-white mb-1">Call Any Time</p>
+                <p className="font-Nunito text-white mb-1">Call Any Time</p>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans font-semibold text-xl text-white">+31 65 792 63 11</button>
+                  <button className="font-Nunito font-semibold text-xl text-white">
+                    +31 65 792 63 11
+                  </button>
                 </Link>
               </div>
             </div>

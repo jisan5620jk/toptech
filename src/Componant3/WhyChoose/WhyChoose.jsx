@@ -16,15 +16,15 @@ const WhyChoose = () => {
             />
           </div>
           <div>
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />
               WHY CHOOSE US
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-2 mb-6">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-2 mb-6">
               Building a Foundation
               <br /> Energy Solutions.
             </h1>
-            <p className="font-AlbertSans text-TextColor-0 font-light">
+            <p className="font-Nunito text-TextColor-0 font-light">
               Sometimes goods can arrive early when they being brought into the
               solution other times items need a place to be stored for short
               goods can arrive desig headquarters have enough space your needs.
@@ -34,10 +34,10 @@ const WhyChoose = () => {
                 <img src={boxImg} draggable="false" />
               </div>
               <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-xl text-white">
+                <h5 className="font-Nunito font-semibold text-xl text-white">
                   Solar Panel Solutions
                 </h5>
-                <p className="font-AlbertSans text-TextColor-0 mt-3">
+                <p className="font-Nunito text-TextColor-0 mt-3">
                   Sometimes goods can arrive being brought into the solution so
                   <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                   headquarters have enough space your needs.target e-business
@@ -49,10 +49,10 @@ const WhyChoose = () => {
                 <img src={boxImg2} draggable="false" />
               </div>
               <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-xl text-white">
+                <h5 className="font-Nunito font-semibold text-xl text-white">
                   Solar Panel Solutions
                 </h5>
-                <p className="font-AlbertSans text-TextColor-0 mt-3">
+                <p className="font-Nunito text-TextColor-0 mt-3">
                   Sometimes goods can arrive being brought into the solution so
                   <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                   headquarters have enough space your needs.target e-business

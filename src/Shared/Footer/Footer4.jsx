@@ -43,10 +43,10 @@ const Footer4 = () => {
               <FaPhoneAlt size={"16"} />
             </div>
             <div>
-              <p className="font-AlbertSans text-TextColor2-0 pb-1">
+              <p className="font-Nunito text-TextColor2-0 pb-1">
                 Call Any Time
               </p>
-              <button className="font-AlbertSans font-semibold text-lg lg:text-sm xl:text-lg text-white transition-all duration-500 hover:text-PrimaryColor-0">
+              <button className="font-Nunito font-semibold text-lg lg:text-sm xl:text-lg text-white transition-all duration-500 hover:text-PrimaryColor-0">
                 +1 (800) 123 456 789
               </button>
             </div>
@@ -56,10 +56,10 @@ const Footer4 = () => {
               <HiOutlineMail size={"24"} />
             </div>
             <div>
-              <p className="font-AlbertSans text-TextColor2-0 pb-1">
+              <p className="font-Nunito text-TextColor2-0 pb-1">
                 Email Us Here
               </p>
-              <button className="font-AlbertSans font-semibold text-lg lg:text-sm xl:text-lg text-white transition-all duration-500 hover:text-PrimaryColor-0">
+              <button className="font-Nunito font-semibold text-lg lg:text-sm xl:text-lg text-white transition-all duration-500 hover:text-PrimaryColor-0">
                 support@echfy.com
               </button>
             </div>
@@ -69,10 +69,10 @@ const Footer4 = () => {
               <MdLocationOn size={"24"} />
             </div>
             <div>
-              <p className="font-AlbertSans text-TextColor2-0 pb-1">
+              <p className="font-Nunito text-TextColor2-0 pb-1">
                 Office Address
               </p>
-              <button className="font-AlbertSans font-semibold text-lg lg:text-sm xl:text-lg text-white transition-all duration-500 hover:text-PrimaryColor-0">
+              <button className="font-Nunito font-semibold text-lg lg:text-sm xl:text-lg text-white transition-all duration-500 hover:text-PrimaryColor-0">
                 197 kalifornia, USA
               </button>
             </div>
@@ -80,10 +80,10 @@ const Footer4 = () => {
         </div>
         <div className="grid grid-cols-12 gap-5 lg:gap-0 mt-24">
           <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:mr-10 2xl:mr-16">
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold pb-5">
+            <h4 className="font-Nunito text-2xl text-white font-semibold pb-5">
               About Company
             </h4>
-            <p className="font-AlbertSans text-white opacity-70 mt-10 mb-9">
+            <p className="font-Nunito text-white opacity-70 mt-10 mb-9">
               Sometimes goods can arrive early when creative designed place to
               stored for design space you make to very easy and quickly.
             </p>
@@ -111,41 +111,41 @@ const Footer4 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-2">
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-[38px]">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-[38px]">
               Explore
             </h4>
             <ul>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     About Us
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Safari Booking
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Tour Packages
                   </button>
                 </Link>
               </li>{" "}
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     National Park Map
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Contact Us
                   </button>
                 </Link>
@@ -153,41 +153,41 @@ const Footer4 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-[38px]">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-[38px]">
               Useful Links
             </h4>
             <ul>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Crocodile Exhibit
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Fact And Figures
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Herbivores Safari
                   </button>
                 </Link>
               </li>{" "}
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     National Zoo Map
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
                     Summer Festival
                   </button>
                 </Link>
@@ -195,38 +195,62 @@ const Footer4 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-11">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-11">
               Recent Post
             </h4>
             <ul className="grid grid-cols-3 gap-2">
               <li>
                 <Link to={"/"}>
-                  <img src={post1} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post1}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post2} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post2}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post3} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post3}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post4} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post4}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post5} draggable={false} className="w-full h-full rounded" />
+                  <img
+                    src={post5}
+                    draggable={false}
+                    className="w-full h-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post6} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post6}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
             </ul>
@@ -235,7 +259,7 @@ const Footer4 = () => {
       </div>
       <div className="text-left py-6 bg-[#031f20] mt-24">
         <div className="Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between">
-          <p className="font-AlbertSans text-TextColor2-0">
+          <p className="font-Nunito text-TextColor2-0">
             © Copyright 2024 By{" "}
             <Link to={"/"} className="text-PrimaryColor-0 !opacity-100">
               Dream It
@@ -246,14 +270,14 @@ const Footer4 = () => {
             <ul className="flex gap-7">
               <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                  <button className="font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100">
                     Privacy & Policy
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                  <button className="font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100">
                     Supports
                   </button>
                 </Link>

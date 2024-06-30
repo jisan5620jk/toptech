@@ -12,11 +12,11 @@ const Contact = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-2 items-center">
           <div>
-            <h5 className="font-AlbertSans font-semibold text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-semibold text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               ANIMAL WILDEST ZOO
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-[14px] mb-11">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-[14px] mb-11">
               Animals Our Zoo Rudderfish <br />
               Finned Pike–Razorfish
             </h1>

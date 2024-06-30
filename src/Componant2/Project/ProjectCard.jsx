@@ -27,10 +27,10 @@ const ProjectCard = ({
               className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
            duration-500 group-hover:opacity-100"
             />
-            <h6 className="font-AlbertSans font-medium text-TextColor-0 pt-[30px]">
+            <h6 className="font-Nunito font-medium text-TextColor-0 pt-[30px]">
               {projectSubTitle}
             </h6>
-            <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px]pt-1 pb-6">
+            <h5 className="font-Nunito font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px]pt-1 pb-6">
               {projectTitle}
             </h5>
           </div>

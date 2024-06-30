@@ -27,10 +27,10 @@ const TeamCard = ({
           src={teamShape}
           className="absolute bottom-1/4 left-1/4 animate-dance2 -z-10"
         />
-        <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+        <h5 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {teamTitle}
         </h5>
-        <p className="text-TextColor-0 font-AlbertSans font-light transition-all duration-500 border-b border-BorderColor-0 pb-8 pt-1 group-hover:text-white">
+        <p className="text-TextColor-0 font-Nunito font-light transition-all duration-500 border-b border-BorderColor-0 pb-8 pt-1 group-hover:text-white">
           {teamDesignation}
         </p>
         <ul className="flex gap-3 items-center justify-center py-4">

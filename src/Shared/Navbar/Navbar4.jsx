@@ -53,13 +53,13 @@ const Navbar4 = () => {
       <header className="overflow-hidden md:block bg-PrimaryColor-0">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
+            <p className="font-Nunito text-[15px] text-white sm:flex hidden items-center gap-1">
               <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
-              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
+              className="font-Nunito text-[15px] text-white md:flex items-center gap-2 hidden"
             >
               <HiOutlineMailOpen size={"16"} className="text-white" />
               example@gmail.com
@@ -70,7 +70,7 @@ const Navbar4 = () => {
               </span>
               <Link
                 to={"/"}
-                className="font-AlbertSans font-medium text-sm text-white"
+                className="font-Nunito font-medium text-sm text-white"
               >
                 +123 (4567) 890
               </Link>
@@ -162,7 +162,7 @@ const Navbar4 = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-white transition-all duration-500
                 `}
               >
                 <NavLink

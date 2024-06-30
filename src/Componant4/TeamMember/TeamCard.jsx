@@ -38,10 +38,10 @@ const TeamCard = ({
         </ul>
       </div>
       <div className="bg-[#f5f8ed] text-center pt-[22px] pb-[26px] relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-1 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0">
-        <h5 className="font-AlbertSans font-bold text-[22px] text-HeadingColor-0">
+        <h5 className="font-Nunito font-bold text-[22px] text-HeadingColor-0">
           {teamTitle}
         </h5>
-        <p className="font-AlbertSans text-TextColor-0">{teamDesc}</p>
+        <p className="font-Nunito text-TextColor-0">{teamDesc}</p>
       </div>
     </div>
   );

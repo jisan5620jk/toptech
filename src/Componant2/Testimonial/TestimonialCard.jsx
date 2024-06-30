@@ -31,13 +31,13 @@ const TestimonialCard = ({
               {testiRatingIcon}
             </li>
           </ul>
-          <p className="font-AlbertSans text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white">
+          <p className="font-Nunito text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white">
             {testiDesc}
           </p>
-          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-7 mb-[6px]">
+          <h5 className="font-Nunito font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-7 mb-[6px]">
             {testiName}
           </h5>
-          <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white pb-12">
+          <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-12">
             {testiDesignation}
           </p>
         </div>

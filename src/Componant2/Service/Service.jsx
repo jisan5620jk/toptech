@@ -107,11 +107,11 @@ const Service = () => {
       />
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
+          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
             <img src={subTitleShape} draggable="false" />
             OUR SERVICES
           </h5>
-          <h1 className="font-AlbertSans font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-5 mb-3 pb-9">
+          <h1 className="font-Nunito font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-5 mb-3 pb-9">
             Echofy Provide Environment <br />
             Best Leading Services
           </h1>

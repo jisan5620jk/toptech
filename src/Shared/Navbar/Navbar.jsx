@@ -49,19 +49,19 @@ const Navbar = () => {
       className={`w-full transition-all duration-300 bg-transparent absolute z-[99999]`}
     >
       {/* top Navbar */}
-      <header className="bg-transparent overflow-hidden md:block">
+      <header className="bg-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:-left-[5%] before:w-[55%] before:h-full before:skew-x-[26deg] before:bg-PrimaryColor-0 before:-z-10 overflow-hidden md:block">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
-              <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
-              102/B New Market, Sandigo-USA
+            <p className="font-Nunito text-[15px] text-white sm:flex hidden items-center gap-1">
+              <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
+              New market Sandigo - California
             </p>
             <Link
               to={"/"}
-              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
+              className="font-Nunito text-[15px] text-white md:flex items-center gap-2 hidden"
             >
-              <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
-              example@gmail.com
+              <HiOutlineMailOpen size={"16"} className="text-white" />
+              example@hotmail.com
             </Link>
           </div>
           <div className="flex items-center gap-16">
@@ -69,12 +69,11 @@ const Navbar = () => {
               <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
                 <FaPhone />
               </span>
-              <Link
-                to={"/"}
-                className="font-AlbertSans font-medium text-sm text-white"
+              <p
+                className="font-Nunito font-medium text-sm text-white"
               >
-                +123 (4567) 890
-              </Link>
+                9.10 am - 5.30 pm
+              </p>
             </div>
             <ul className="flex gap-3 items-center">
               <li>
@@ -163,7 +162,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-white transition-all duration-500
                 `}
               >
                 <NavLink

@@ -16,10 +16,10 @@ const TeamCard = ({
         <img src={teamThumb} className="lg:w-full xl:w-[inherit] m-auto" />
       </div>
       <div className="bg-[#f5f8ed] text-center pt-[26px] pb-10 rounded-b-md relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[5px] before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0">
-        <h5 className="font-AlbertSans font-semibold text-[26px] text-HeadingColor-0 pb-2">
+        <h5 className="font-Nunito font-semibold text-[26px] text-HeadingColor-0 pb-2">
           {teamTitle}
         </h5>
-        <p className="font-AlbertSans text-PrimaryColor-0 font-medium">
+        <p className="font-Nunito text-PrimaryColor-0 font-medium">
           {teamDesc}
         </p>
         <ul className="flex gap-3 justify-center mt-7">

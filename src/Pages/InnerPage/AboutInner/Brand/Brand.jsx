@@ -39,7 +39,7 @@ const Brand = () => {
           draggable="false"
           className="absolute -z-10 -top-[50px] -right-[60px] animate-dance2"
         />
-        <h4 className="text-center text-lg sm:text-2xl text-white font-AlbertSans font-semibold inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-12 before:h-[1px] before:w-10 before:bg-white after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-12 after:h-[1px] after:w-10 after:bg-white mb-14">
+        <h4 className="text-center text-lg sm:text-2xl text-white font-Nunito font-semibold inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-12 before:h-[1px] before:w-10 before:bg-white after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-12 after:h-[1px] after:w-10 after:bg-white mb-14">
           All over the world 100,000+ Customers
         </h4>
         <Swiper {...settings}>

@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        AlbertSans: ["Albert Sans", "sans-serif"],
+        Rajdhani: ["Rajdhani", "sans-serif"],
+        Nunito: ["Nunito", "sans-serif"],
       },
       colors: {
-        PrimaryColor: ["#79b900"],
-        SecondaryColor: ["#001819"],
-        HeadingColor: ["#001819"],
-        TextColor: ["#868681"],
+        PrimaryColor: ["#0c59db"],
+        SecondaryColor: ["#022359"],
+        HeadingColor: ["#041424"],
+        TextColor: ["#686868"],
         TextColor2: ["#bababa"],
-        BodyBg: ["#f3f4f8"],
+        BodyBg: ["#f3f7fd"],
         BorderColor: ["#243f38"],
         BorderColor2: ["#dee4da"],
         BorderColor3: ["#83A8FF"],

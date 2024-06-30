@@ -17,10 +17,10 @@ const CounterCard = ({
           start={-11}
           end={counterNumber}
           suffix={counterSuffex}
-          className="font-AlbertSans text-[46px] text-white font-bold"
+          className="font-Nunito text-[46px] text-white font-bold"
         />
       </div>
-      <p className="font-AlbertSans text-white text-xl">{counterDesc}</p>
+      <p className="font-Nunito text-white text-xl">{counterDesc}</p>
     </div>
   );
 };

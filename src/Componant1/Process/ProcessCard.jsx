@@ -10,10 +10,10 @@ const ProcessCard = ({ processIcon, processTitle, boxShape, processDesc }) => {
           className="absolute top-1/2 -translate-y-1/2 -right-[165px] 2xl:-right-[195px] hidden xl:block"
         />
       </div>
-      <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">
+      <h5 className="font-Nunito font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">
         {processTitle}
       </h5>
-      <p className="font-AlbertSans text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
+      <p className="font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
         {processDesc}
       </p>
     </div>

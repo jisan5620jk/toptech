@@ -58,10 +58,10 @@ const TeamMember = () => {
     <section className="bg-[url('/images/team-bg.png')] bg-center bg-cover bg-no-repeat py-28">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
+          <h5 className="font-Nunito font-medium text-PrimaryColor-0">
             OUR TEAM
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
+          <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
             Meet Our Expert Members
           </h1>
         </div>

@@ -15,10 +15,10 @@ const TestimonialCard = ({
             <img src={testiImg} draggable="false" />
           </div>
           <div className="flex-1">
-            <h5 className="font-AlbertSans font-semibold text-white text-[22px] mb-[6px]">
+            <h5 className="font-Nunito font-semibold text-white text-[22px] mb-[6px]">
               {testiName}
             </h5>
-            <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white">
+            <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white">
               <span className="text-[10px] text-PrimaryColor-0">
                 {testIcon}
               </span>
@@ -33,7 +33,7 @@ const TestimonialCard = ({
           <li className="text-white">{testiRatingIcon}</li>
           <li className="text-white">{testiRatingIcon}</li>
         </ul>
-        <p className="font-AlbertSans italic text-TextColor-0 transition-all duration-500 group-hover:text-white">
+        <p className="font-Nunito italic text-TextColor-0 transition-all duration-500 group-hover:text-white">
           {testiDesc}
         </p>
       </div>

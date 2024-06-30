@@ -18,11 +18,11 @@ const Appointment = () => {
             ></iframe>
           </div>
           <div className="mr-4">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               GET IN TOUCH
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-10">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-10">
               Write Us Something
             </h1>
             <form action="#" method="post" className="flex flex-col gap-7">
@@ -66,7 +66,7 @@ const Appointment = () => {
                 placeholder="Write A Message..."
                 className="border border-BorderColor2-0 rounded py-2 px-6 outline-none resize-none h-[140px] w-full"
               ></textarea>
-              <div className="flex gap-2 text-TextColor-0 font-AlbertSans">
+              <div className="flex gap-2 text-TextColor-0 font-Nunito">
                 <input type="checkbox" name="terms" id="terms" />
                 <p>I agree with the Terms & Conditions</p>
               </div>

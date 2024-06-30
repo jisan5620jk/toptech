@@ -108,11 +108,11 @@ const DonationInner = () => {
       <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10">
         <div className="Container">
           <div className="text-center">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
               <img src={subTitleShape} draggable="false" />
               DONATIONS
             </h5>
-            <h1 className="font-AlbertSans font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            <h1 className="font-Nunito font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
               For Savings Environments <br />
               Donation Money
             </h1>

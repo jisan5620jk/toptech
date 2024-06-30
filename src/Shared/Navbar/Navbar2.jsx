@@ -52,13 +52,13 @@ const Navbar2 = () => {
       <div className="bg-SecondaryColor-0">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
+            <p className="font-Nunito text-[15px] text-white sm:flex hidden items-center gap-1">
               <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
-              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
+              className="font-Nunito text-[15px] text-white md:flex items-center gap-2 hidden"
             >
               <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
               example@gmail.com
@@ -71,7 +71,7 @@ const Navbar2 = () => {
               </span>
               <Link
                 to={"/"}
-                className="font-AlbertSans font-medium text-sm text-white"
+                className="font-Nunito font-medium text-sm text-white"
               >
                 +123 (4567) 890
               </Link>
@@ -159,7 +159,7 @@ const Navbar2 = () => {
                   <ul
                     className={`${
                       isOpen ? "block" : "hidden"
-                    } text-right lg:w-fit ease-in-out flex-1 lg:flex flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
+                    } text-right lg:w-fit ease-in-out flex-1 lg:flex flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-white transition-all duration-500
                 `}
                   >
                     <NavLink
@@ -169,7 +169,7 @@ const Navbar2 = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
+                          : ""} text-white text-left font-Nunito font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
                     >
                       <span className="flex items-center">
                         Home
@@ -225,7 +225,7 @@ const Navbar2 = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-Nunito font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"/about"}
                     >
                       <span>about</span>
@@ -236,7 +236,7 @@ const Navbar2 = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""}text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""}text-white text-left font-Nunito font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -271,7 +271,7 @@ const Navbar2 = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-Nunito font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -376,7 +376,7 @@ const Navbar2 = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-Nunito font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -415,7 +415,7 @@ const Navbar2 = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300`}
+                          : ""} text-white text-left font-Nunito font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300`}
                       to={"/contact"}
                     >
                       Contact

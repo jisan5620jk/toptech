@@ -11,9 +11,7 @@ const CounterCard = ({
   return (
     <div className="text-center relative z-10 pl-[80px]">
       <div>
-        <h1
-          className="counter-stroke font-AlbertSans text-transparent text-[150px] absolute top-1/2 -translate-y-1/2 left-0 opacity-20 -z-10"
-        >
+        <h1 className="counter-stroke font-Nunito text-transparent text-[150px] absolute top-1/2 -translate-y-1/2 left-0 opacity-20 -z-10">
           {counterIcon}
         </h1>
       </div>
@@ -23,14 +21,14 @@ const CounterCard = ({
             start={-11}
             end={counterNumber}
             suffix={counterSuffex}
-            className="font-AlbertSans text-[70px] text-white font-bold"
+            className="font-Nunito text-[70px] text-white font-bold"
           />
         </div>
         <div className="!block text-left">
-          <p className="font-AlbertSans text-white font-medium uppercase">
+          <p className="font-Nunito text-white font-medium uppercase">
             {counterDesc}
           </p>
-          <p className="font-AlbertSans text-white font-semibold text-[22px]">
+          <p className="font-Nunito text-white font-semibold text-[22px]">
             {counterDesc2}
           </p>
         </div>

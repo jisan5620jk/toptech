@@ -37,11 +37,11 @@ const Faq = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 items-center">
           <div className="w-full mx-auto">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />
               FAQ
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-[50px]">
+            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-[50px]">
               Freequently Asked <br />
               Questions
             </h1>
@@ -62,7 +62,7 @@ const Faq = () => {
           <div className="relative">
             <div className="absolute left-1/2 -translate-x-1/2">
               <button
-                className="h-[96px] w-[96px] rounded-full text-lg font-AlbertSans font-medium text-white uppercase bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping"
+                className="h-[96px] w-[96px] rounded-full text-lg font-Nunito font-medium text-white uppercase bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping"
                 onClick={() => setToggler(!toggler)}
               >
                 Play
