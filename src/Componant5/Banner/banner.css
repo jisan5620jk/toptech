@@ -1,0 +1,117 @@
+.banner5 .swiper {
+  overflow: visible !important;
+}
+
+.banner-content > *:nth-child(n + 1):nth-child(-n + 5) {
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  opacity: 0;
+}
+.banner-content > *:nth-child(1) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.banner-content > *:nth-child(2) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.banner-content > *:nth-child(3) {
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+
+.banner-content > *:nth-child(4) {
+  -webkit-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+
+.banner-content > *:nth-child(5) {
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}
+
+.banner-content > *:nth-child(6) {
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}
+
+.banner-contact {
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  opacity: 0;
+}
+
+/* Active Slide Animation */
+.swiper-slide-active .banner-content > *:nth-child(n + 1):nth-child(-n + 5) {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.swiper-slide-active .banner-content > .banner-contact {
+  opacity: 1;
+  top: 50%;
+}
+
+/* Pagination */
+
+.banner5 .swiper-pagination {
+  bottom: -40px !important;
+  top: inherit !important;
+  left: 50% !important;
+  padding: 54px;
+  width: 268px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-direction: row !important;
+  justify-content: center;
+  border-radius: 5px;
+  background: #00181a;
+}
+
+.banner5 span.swiper-pagination-bullet {
+  background: #86ad42 !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+  opacity: 1 !important;
+}
+
+.banner5 span.swiper-pagination-bullet::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: -9px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #86ad42;
+  transition: 0.5s;
+  transform: scale(0);
+  opacity: 1 !important;
+}
+
+.banner5 span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transform: scale(1);
+}
+
+.banner5 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 6px !important;
+  width: 6px !important;
+  background: #86ad42 !important;
+}
