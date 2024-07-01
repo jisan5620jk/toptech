@@ -1,8 +1,7 @@
-import teamThumb from "/images/team-thumb.png";
-import teamThumb2 from "/images/team-thumb2.png";
-import teamThumb3 from "/images/team-thumb3.png";
-import subTitleShape from "/images/sub-title-shape.png";
-import skillMainShape from "/images/skill-main-shape.png";
+import teamThumb from "/images/team-1.png";
+import teamThumb2 from "/images/team-2.png";
+import teamThumb3 from "/images/team-4.png";
+import teamThumb4 from "/images/team-3.png";
 import TeamCard from "./TeamCard";
 import {
   FaFacebookF,
@@ -10,6 +9,9 @@ import {
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
 const teamData = [
   {
@@ -21,6 +23,7 @@ const teamData = [
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
     teamDesc: "CEO & Founder",
+    teamShareIcon: <IoShareSocialOutline />,
   },
   {
     id: 2,
@@ -31,38 +34,56 @@ const teamData = [
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
     teamDesc: "Co Founder",
+    teamShareIcon: <IoShareSocialOutline />,
   },
   {
     id: 3,
+    teamThumb: teamThumb4,
+    teamTitle: "Jone D. Alexon",
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: "IT Expert",
+    teamShareIcon: <IoShareSocialOutline />,
+  },
+  {
+    id: 4,
     teamThumb: teamThumb3,
     teamTitle: "June D. Vargas",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
-    teamDesc: "Environmental",
+    teamDesc: "Hr. Maneger",
+    teamShareIcon: <IoShareSocialOutline />,
   },
 ];
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[244px] pb-28 relative -mt-[130px]">
-      <img
-        src={skillMainShape}
-        draggable="false"
-        className="absolute -z-10 top-10 left-10 animate-dance2 hidden xl:block"
-      />
+    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-            <img src={subTitleShape} draggable="false" />
-            OUR TEAM
-          </h5>
-          <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-            Meet Our Dedicated Members
-          </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+              Dedicated Team
+            </h5>
+            <h1 className="font-Rahdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-5">
+              Meet Our Dedicated Member <br />
+              For Any Enquery
+            </h1>
+          </div>
+          <div className="flex lg:justify-end">
+            <Link to={"/about"}>
+              <button className="primary-btn">
+                {`All Member`}
+                <GoArrowRight size={"22"} />
+              </button>
+            </Link>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[52px]">
           {teamData.map(
             ({
               id,
@@ -73,6 +94,7 @@ const TeamMember = () => {
               socialIcon3,
               socialIcon4,
               teamDesc,
+              teamShareIcon,
             }) => {
               return (
                 <div key={id}>
@@ -84,6 +106,7 @@ const TeamMember = () => {
                     socialIcon3={socialIcon3}
                     socialIcon4={socialIcon4}
                     teamDesc={teamDesc}
+                    teamShareIcon={teamShareIcon}
                   />
                 </div>
               );

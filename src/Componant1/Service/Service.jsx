@@ -1,132 +1,124 @@
 /* eslint-disable no-unused-vars */
-import serviceImg from "/images/service-thumb.png";
-import serviceImg2 from "/images/service-thumb2.png";
-import serviceImg3 from "/images/service-thumb3.png";
-import serviceIcon from "/images/service-icon1.png";
-import serviceIcon2 from "/images/service-icon2.png";
-import serviceIcon3 from "/images/service-icon3.png";
-import serviceShape from "/images/service-shape.png";
-import subTitleShape from "/images/sub-title-shape.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ServiceNavigation from "./ServiceNavigation";
+import serviceIcon from "/images/service-1.png";
+import serviceIcon2 from "/images/service-2.png";
+import serviceIcon3 from "/images/service-3.png";
+import serviceIcon4 from "/images/service-4.png";
+import serviceIcon5 from "/images/service-5.png";
+import serviceIcon6 from "/images/service-6.png";
 import ServiceCard from "./ServiceCard";
-import { GoArrowUpRight } from "react-icons/go";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 const ServiceData = [
   {
     id: 1,
-    serviceImg: serviceImg,
     serviceIcon: serviceIcon,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceTitle: "Tree Plantation",
+    serviceNumber: "01",
+    serviceTitle: "Graphic Design",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
+    serviceUrl: "/service_details",
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 2,
-    serviceImg: serviceImg2,
     serviceIcon: serviceIcon2,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceTitle: "Dust Recycling",
+    serviceNumber: "02",
+    serviceTitle: "Cloud Solutions",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
+    serviceUrl: "/service_details",
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 3,
-    serviceImg: serviceImg3,
     serviceIcon: serviceIcon3,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceTitle: "Cleaning Ocean",
+    serviceNumber: "03",
+    serviceTitle: "WP Development",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
+    serviceUrl: "/service_details",
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 4,
-    serviceImg: serviceImg,
-    serviceIcon: serviceIcon,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceTitle: "Tree Plantation",
+    serviceIcon: serviceIcon4,
+    serviceNumber: "04",
+    serviceTitle: "Digital Marketing",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
+    serviceUrl: "/service_details",
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
+  },
+  {
+    id: 5,
+    serviceIcon: serviceIcon5,
+    serviceNumber: "05",
+    serviceTitle: "3D Vector Illustration",
+    serviceDesc:
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
+    serviceUrl: "/service_details",
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
+  },
+  {
+    id: 6,
+    serviceIcon: serviceIcon6,
+    serviceNumber: "06",
+    serviceTitle: "Hosting Services",
+    serviceDesc:
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
+    serviceUrl: "/service_details",
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
 ];
 
 const Service = () => {
-  const settings = {
-    loop: true,
-    spaceBetween: 30,
-    speed: 1000,
-    autoplay: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
-  };
   return (
-    <section className="relative pt-28 pb-[120px] bg-[url('/images/service-bg.jpg')] bg-cover bg-no-repeat bg-center">
+    <section className="relative pt-28 pb-[120px] bg-[url('/images/service-bg.png')] bg-cover bg-no-repeat bg-center">
       <div className="Container">
-        <div className="md:-mb-[11.2rem]">
-          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
-            <img src={subTitleShape} draggable="false" />
-            OUR SERVICES
+        <div className="text-center">
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            IT Support For Business
           </h5>
-          <h1 className="font-Nunito font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3 border-b border-BorderColor2-0 pb-9">
-            Echofy Provide Environment <br />
-            Best Leading Services
+          <h1 className="font-Rahdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-5">
+            Ensuring Your Success Trusted <br />
+            IT Services Source
           </h1>
         </div>
-        <div className="mt-[40px]">
-          <Swiper {...settings}>
-            {ServiceData.map(
-              ({
-                id,
-                serviceImg,
-                serviceIcon,
-                serviceUrl,
-                serviceButton,
-                serviceTitle,
-                serviceDesc,
-                serviceShape,
-              }) => {
-                return (
-                  <>
-                    <SwiperSlide key={id}>
-                      <div className="pt-[120px] sm:pt-[180px]">
-                        <ServiceCard
-                          serviceImg={serviceImg}
-                          serviceIcon={serviceIcon}
-                          serviceUrl={serviceUrl}
-                          serviceButton={serviceButton}
-                          serviceTitle={serviceTitle}
-                          serviceDesc={serviceDesc}
-                          serviceShape={serviceShape}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  </>
-                );
-              }
-            )}
-            <ServiceNavigation />
-          </Swiper>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[54px]">
+          {ServiceData.map(
+            ({
+              id,
+              serviceIcon,
+              serviceNumber,
+              serviceTitle,
+              serviceDesc,
+              serviceUrl,
+              serviceButton,
+              serviceBtnIcon,
+            }) => {
+              return (
+                <>
+                  <div key={id}>
+                    <ServiceCard
+                      serviceIcon={serviceIcon}
+                      serviceNumber={serviceNumber}
+                      serviceTitle={serviceTitle}
+                      serviceDesc={serviceDesc}
+                      serviceUrl={serviceUrl}
+                      serviceButton={serviceButton}
+                      serviceBtnIcon={serviceBtnIcon}
+                    />
+                  </div>
+                </>
+              );
+            }
+          )}
         </div>
       </div>
     </section>

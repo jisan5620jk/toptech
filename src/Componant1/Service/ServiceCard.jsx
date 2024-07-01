@@ -2,42 +2,46 @@
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({
-  serviceImg,
   serviceIcon,
-  serviceUrl,
-  serviceButton,
+  serviceNumber,
   serviceTitle,
   serviceDesc,
-  serviceShape,
+  serviceUrl,
+  serviceButton,
+  serviceBtnIcon,
 }) => {
   return (
-    <div className="p-6 rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:h-full hover:before:top-0">
-      <div className="overflow-hidden relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:before:opacity-0">
-        <img src={serviceImg} draggable="false" className="w-full" />
+    <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
+      <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-SecondaryColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
+        <img
+          src={serviceIcon}
+          draggable="false"
+          className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
+        />
       </div>
-      <div className="flex justify-between items-center mt-8 mb-6">
-        <div>
-          <img src={serviceIcon} draggable="false" />
-        </div>
-        <Link to={serviceUrl}>
-          <button className="w-[50px] h-[50px] rounded-full bg-white text-PrimaryColor-0 text-2xl flex justify-center items-center transition-all duration-500 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 group-hover:text-white group-hover:before:scale-100">
-            {serviceButton}
-          </button>
-        </Link>
+      <div className="absolute top-8 right-0">
+        <h5 className="font-Rajdhani font-semibold text-[26px] w-[70px] h-[50px] pr-5 flex items-center rounded-l-full justify-end text-PrimaryColor-0 bg-[#e6eefb] transition-all duration-500 group-hover:text-white group-hover:bg-SecondaryColor-0">
+          {serviceNumber}
+        </h5>
       </div>
       <Link to={serviceUrl}>
-        <button className="font-Nunito font-semibold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white relative before:absolute before:bottom-0 before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
+        <button className="font-Rajdhani font-bold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
           {serviceTitle}
         </button>
       </Link>
-      <p className="font-Nunito text-TextColor-0 pt-6 pb-[10px">
+      <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
         {serviceDesc}
       </p>
-      <img
-        src={serviceShape}
-        draggable="false"
-        className="absolute -z-10 rotate-90 -bottom-28 -right-28 transition-all duration-500 group-hover:-bottom-[14px] group-hover:-right-2"
-      />
+      <Link to={serviceUrl}>
+        <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
+          <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
+            {serviceButton}
+          </span>
+          <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
+            {serviceBtnIcon}
+          </span>
+        </button>
+      </Link>
     </div>
   );
 };
