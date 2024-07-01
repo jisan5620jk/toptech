@@ -1,43 +1,35 @@
 import CounterCard from "./CounterCard";
-import counterIcon from "/images/counter-icon.png";
-import counterIcon2 from "/images/counter-icon2.png";
-import counterIcon3 from "/images/counter-icon3.png";
-import counterIcon4 from "/images/counter-icon4.png";
 
 const counterData = [
   {
     id: 1,
-    counterIcon: counterIcon,
-    counterNumber: 100,
-    counterDesc: "Team Member",
+    counterNumber: 10,
+    counterDesc: "HAPPY CUSTOMERS",
     counterSuffex: "+",
   },
   {
     id: 2,
-    counterIcon: counterIcon2,
-    counterNumber: 960,
-    counterDesc: "Complete works",
+    counterNumber: 20,
+    counterDesc: "WORKS COMPLETED",
     counterSuffex: "+",
   },
   {
     id: 3,
-    counterIcon: counterIcon3,
-    counterNumber: 38,
-    counterDesc: "Awards Winnig",
+    counterNumber: 99,
+    counterDesc: "EXPERT MEMBERS",
     counterSuffex: "",
   },
   {
     id: 4,
-    counterIcon: counterIcon4,
-    counterNumber: 4,
-    counterDesc: "Avg. Ratings",
-    counterSuffex: ".7",
+    counterNumber: 100,
+    counterDesc: "SATISFACTION RATES",
+    counterSuffex: "%",
   },
 ];
 
 const Counter = () => {
   return (
-    <section className="py-28 bg-[url('/images/counter-bg.png')] bg-no-repeat bg-cover bg-center">
+    <section className="pt-[86px] pb-28 bg-[url('/images/counter-bg.jpg')] bg-no-repeat bg-cover bg-center">
       <div className="Container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-4 items-center justify-center">
           {counterData.map(

@@ -2,25 +2,21 @@
 import CountUp from "react-countup";
 
 const CounterCard = ({
-  counterIcon,
   counterNumber,
   counterDesc,
   counterSuffex,
 }) => {
   return (
     <div className="text-center">
-      <div>
-        <img src={counterIcon} draggable="false" className="m-auto" />
-      </div>
-      <div className="mt-3 -mb-1">
+      <div className="mt-3">
         <CountUp
           start={-11}
           end={counterNumber}
           suffix={counterSuffex}
-          className="font-Nunito text-[46px] text-white font-bold"
+          className="font-Rajdhani text-[56px] text-white font-bold"
         />
       </div>
-      <p className="font-Nunito text-white text-xl">{counterDesc}</p>
+      <p className="font-Nunito text-[15px] text-TextColor-0 uppercase">{counterDesc}</p>
     </div>
   );
 };

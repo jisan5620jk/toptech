@@ -1,50 +1,26 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testiImg,
   testiRatingIcon,
   testiName,
   testiDesignation,
   testiDesc,
-  testiShape,
 }) => {
   return (
-    <div className="px-5 sm:px-10 lg:px-4 xl:px-10 pt-12 bg-white relative group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 xl:gap-8">
-        <div>
-          <img src={testiImg} />
-        </div>
-        <div className="flex-1">
-          <ul className="flex gap-[6px] items-center pb-6">
-            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
-              {testiRatingIcon}
-            </li>
-            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
-              {testiRatingIcon}
-            </li>
-            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
-              {testiRatingIcon}
-            </li>
-            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
-              {testiRatingIcon}
-            </li>
-            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
-              {testiRatingIcon}
-            </li>
-          </ul>
-          <p className="font-Nunito text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white">
-            {testiDesc}
-          </p>
-          <h5 className="font-Nunito font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-7 mb-[6px]">
-            {testiName}
-          </h5>
-          <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-12">
-            {testiDesignation}
-          </p>
-        </div>
-      </div>
-      <div className="absolute bottom-10 lg:bottom-12 xl:bottom-16 right-10 transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]">
-        <img src={testiShape} />
-      </div>
+    <div className="relative text-center">
+      <p className="font-Nunito text-xl leading-9 text-HeadingColor-0 w-[75%] m-auto">
+        {testiDesc}
+      </p>
+      <ul className="flex gap-[6px] items-center justify-center mb-7 mt-6">
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+      </ul>
+      <h5 className="font-Rajdhani font-semibold inline-block text-HeadingColor-0 text-2xl pt-7 mb-1 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-top-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
+        {testiName}
+      </h5>
+      <p className="font-Nunito text-TextColor2-0">{testiDesignation}</p>
     </div>
   );
 };
