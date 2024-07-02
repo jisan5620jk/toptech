@@ -156,21 +156,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   background: url(../public/images/testi-1.png) no-repeat center/cover !important;
 }
 
-
 .testimonial span.swiper-pagination-bullet:nth-of-type(2) {
-    background: url(../public/images/testi-2.png) no-repeat center/cover !important;
+  background: url(../public/images/testi-2.png) no-repeat center/cover !important;
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(3) {
-    background: url(../public/images/testi-3.png) no-repeat center/cover !important;
+  background: url(../public/images/testi-3.png) no-repeat center/cover !important;
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(4) {
-    background: url(../public/images/testi-4.png) no-repeat center/cover !important;
+  background: url(../public/images/testi-4.png) no-repeat center/cover !important;
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(5) {
-    background: url(../public/images/testi-5.png) no-repeat center/cover !important;
+  background: url(../public/images/testi-5.png) no-repeat center/cover !important;
 }
 
 .testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -180,10 +179,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border: 5px solid #fff !important;
 }
 
-.testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+.testimonial
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(0);
 }
-
 
 .service .swiper-pagination,
 .project .swiper-pagination {
@@ -196,19 +195,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"] {
-  background: #79b900;
-  border-radius: 6px 6px 0 0;
+.faq-button[aria-expanded="true"] ,
+  .faq-button:hover {
+  background: #0c59db;
+  border-radius: 5px;
+  padding: 1px 20px 1px 30px;
+  border-color: transparent;
 }
 
-.faq-button:hover img,
-.faq-button[aria-expanded="true"] img {
-  filter: brightness(0) invert(1);
-}
-
-.faq2-button[aria-expanded="true"] {
-  border-color: transparent !important;
-}
 
 /* Benefits */
 
