@@ -195,14 +195,52 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"] ,
-  .faq-button:hover {
+.faq-button[aria-expanded="true"],
+.faq-button:hover {
   background: #0c59db;
   border-radius: 5px;
   padding: 1px 20px 1px 30px;
   border-color: transparent;
 }
 
+.pricing-box.active::before,
+.pricing-box:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.pricing-box.active .pricing-quality,
+.pricing-box:hover .pricing-quality {
+  background: #fff;
+  color: #0c59db;
+}
+
+.pricing-box.active .pricing-icon,
+.pricing-box:hover .pricing-icon {
+  color: #0c59db !important;
+}
+
+.pricing-box.active .pricing-icon::before,
+.pricing-box:hover .pricing-icon::before {
+  transform: scale(1);
+}
+
+.pricing-box.active .pricing-limit,
+.pricing-box.active .pricing-price,
+.pricing-box.active .pricing-title,
+.pricing-box.active .pricing-desc,
+.pricing-box:hover .pricing-limit,
+.pricing-box:hover .pricing-price,
+.pricing-box:hover .pricing-title,
+.pricing-box:hover .pricing-desc {
+  color: #fff;
+}
+
+.pricing-box.active .pricing-btn,
+.pricing-box:hover .pricing-btn {
+  color: white;
+  border-color: white;
+}
 
 /* Benefits */
 
@@ -211,8 +249,24 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   font-weight: 400;
 }
 
-/* Counter */
+/* Stroke */
 
-.counter-stroke {
-  -webkit-text-stroke: 1px #000000;
+.portfolio-icon {
+  -webkit-text-stroke: 1px #dadddf;
+}
+
+/* Portfolio */
+
+.portfolio .portfolio-box:hover .portfolio-icon ,
+.portfolio .swiper-slide.swiper-slide-active .portfolio-icon {
+  -webkit-text-stroke: 1px #0c59db;
+}
+
+.portfolio .swiper-slide.swiper-slide-active .portfolio-title {
+  color: #0c59db;
+}
+
+.portfolio .swiper-slide.swiper-slide-active .portfolio-btn {
+  top: -50px;
+  opacity: 1;
 }

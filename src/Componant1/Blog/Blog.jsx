@@ -1,78 +1,65 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/images/blog-thumb1.jpg";
-import blogThumb2 from "/images/blog-thumb2.jpg";
-import blogThumb3 from "/images/blog-thumb3.jpg";
-import subTitleShape from "/images/sub-title-shape.png";
-import buttonShape from "/images/button-shape-1.png";
+import {
+  FaRegCalendarCheck,
+} from "react-icons/fa6";
+import blogThumb from "/images/blog1.png";
+import blogThumb2 from "/images/blog2.png";
+import blogThumb3 from "/images/blog3.png";
 import BlogCard from "./BlogCard";
-import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
+import { PiUserCircleFill } from "react-icons/pi";
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    thumbContent: "Environment",
+    blogDateIcon: <FaRegCalendarCheck />,
     blogDate: "24 Mar, 2024",
+    blogTagIcon: <PiUserCircleFill />,
+    blogTag: "Admin",
     blogUrl: "/blog_details",
-    blogTitle: "Top 10 Recycling tips for Environment",
-    blogDesc:
-      "Competently cultivate worldwide to e-tailers professionally engineer high",
-    blogProfileIcon: "J",
-    blogProfileTitle: "John D. Alexon",
-    btnIcon: <FaArrowRightLong />,
+    blogTitle: "Most Popular Chrome Extensionfor Business Promot",
+    blogBtn: "Read More",
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    thumbContent: "Environment",
+    blogDateIcon: <FaRegCalendarCheck />,
     blogDate: "24 Mar, 2024",
+    blogTagIcon: <PiUserCircleFill />,
+    blogTag: "Admin",
     blogUrl: "/blog_details",
-    blogTitle: "How Every Individual Can Make a Difference",
-    blogDesc:
-      "Competently cultivate worldwide to e-tailers professionally engineer high",
-    blogProfileIcon: "A",
-    blogProfileTitle: "Anjelina Watson",
-    btnIcon: <FaArrowRightLong />,
+    blogTitle: "How to Secure your facebook Business Account",
+    blogBtn: "Read More",
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    thumbContent: "Environment",
+    blogDateIcon: <FaRegCalendarCheck />,
     blogDate: "24 Mar, 2024",
+    blogTagIcon: <PiUserCircleFill />,
+    blogTag: "Admin",
     blogUrl: "/blog_details",
-    blogTitle: "Innovations in Renewable Energy Technology",
-    blogDesc:
-      "Competently cultivate worldwide to e-tailers professionally engineer high",
-    blogProfileIcon: "D",
-    blogProfileTitle: "David Watson",
-    btnIcon: <FaArrowRightLong />,
+    blogTitle: "Better Context Menus With Safe Triangles",
+    blogBtn: "Read More",
+    blogBtnIcon: <GoArrowRight />,
   },
 ];
 
 const Blog = () => {
   return (
-    <section className="py-28">
+    <section className="py-28 bg-BodyBg-0">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <img src={subTitleShape} draggable="false" />
-              LATEST BLOG
-            </h5>
-            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-              Building a Greener Future <br />
-              Together Forever
-            </h1>
-          </div>
-          <div className="flex lg:justify-end">
-            <Link to={"/blog_grid"}>
-              <button className="primary-btn">
-                Veiw All Blog
-                <img src={buttonShape} draggable="false" />
-              </button>
-            </Link>
-          </div>
+        <div className="text-center">
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            IT Support For Business
+          </h5>
+          <h1 className="font-Rahdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+            Ensuring Your Success Trusted <br />
+            IT Services Source
+          </h1>
         </div>
         <div className="mt-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
@@ -80,27 +67,27 @@ const Blog = () => {
               ({
                 id,
                 blogThumb,
-                thumbContent,
+                blogDateIcon,
                 blogDate,
+                blogTagIcon,
+                blogTag,
                 blogUrl,
                 blogTitle,
-                blogDesc,
-                blogProfileIcon,
-                blogProfileTitle,
-                btnIcon,
+                blogBtn,
+                blogBtnIcon,
               }) => {
                 return (
                   <div key={id}>
                     <BlogCard
                       blogThumb={blogThumb}
-                      thumbContent={thumbContent}
+                      blogDateIcon={blogDateIcon}
                       blogDate={blogDate}
+                      blogTagIcon={blogTagIcon}
+                      blogTag={blogTag}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogDesc={blogDesc}
-                      blogProfileIcon={blogProfileIcon}
-                      blogProfileTitle={blogProfileTitle}
-                      btnIcon={btnIcon}
+                      blogBtn={blogBtn}
+                      blogBtnIcon={blogBtnIcon}
                     />
                   </div>
                 );

@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import {
   FaAnglesRight,
-  FaArrowRightLong,
   FaRegCalendarCheck,
 } from "react-icons/fa6";
 import blogThumb from "/images/blog5-thumb1.png";
