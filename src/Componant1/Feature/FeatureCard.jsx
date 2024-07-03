@@ -25,7 +25,7 @@ const FeatureCard = ({
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 transition-all duration-500 opacity-0 group-hover:opacity-100"
         />
       </div>
-      <h4 className="font-Rajdhani font-bold text-2xl sm:text-[26px] lg:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-11 mb-2">
+      <h4 className="font-Rajdhani font-bold text-2xl sm:text-[26px] lg:text-2xl xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-11 mb-2">
         {featureTitle}
       </h4>
       <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">

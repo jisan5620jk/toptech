@@ -18,17 +18,19 @@ const Banner = () => {
               With IT Expertise
             </h1>
             <p className="font-Nunito sm:text-lg text-TextColor-0 mb-[46px] mt-1">
-              Professionally optimize interdependent intellectual interoperable <br className="hidden 2xl:block" /> connect best practices. Progressively fabricate done
+              Professionally optimize interdependent intellectual interoperable{" "}
+              <br className="hidden 2xl:block" /> connect best practices.
+              Progressively fabricate done
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Link to={"/contact"}>
-                <button className="primary-btn">
+                <button className="primary-btn2">
                   {`Let's Talk`}
                   <BiRightTopArrowCircle size={"20"} />
                 </button>
               </Link>
               <Link to={"/about"}>
-                <button className="primary-btn">{`Read More`}</button>
+                <button className="primary-btn2 !border-[#262664] hover:!border-PrimaryColor-0 !bg-[#262664] before:!bg-PrimaryColor-0">{`Read More`}</button>
               </Link>
             </div>
           </div>
