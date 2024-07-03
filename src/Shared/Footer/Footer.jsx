@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
-          <div className="col-span-12 lg:col-span-4">
+          <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <Link to={"/"}>
               <img src={footerLogo} draggable={false} />
             </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-2">
+          <div className="col-span-12 md:col-span-6 lg:col-span-2">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[33px]">
               Company
             </h4>
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-span-12 lg:col-span-3">
+          <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[33px]">
               Our Services
             </h4>
@@ -129,7 +129,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-span-12 lg:col-span-3">
+          <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[30px]">
               Newsletter
             </h4>
@@ -157,7 +157,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-y-7 md:justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
+        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
             <p className="font-Nunito text-white">
               © 2024 Toptech. Designed By Dream IT Solution

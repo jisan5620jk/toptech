@@ -318,6 +318,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border-start-end-radius: 0;
 }
 
+.portfolio .swiper-slide.swiper-slide-active .portfolio-img::before {
+  height: 100%;
+  opacity: .2;
+}
+
 .portfolio .portfolio-box:hover .portfolio-icon,
 .portfolio .swiper-slide.swiper-slide-active .portfolio-icon {
   -webkit-text-stroke: 1px #0c59db;

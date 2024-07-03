@@ -13,7 +13,7 @@ const ProcessCard = ({
         <img
           src={boxShape}
           draggable="false"
-          className="absolute top-1/2 -translate-y-1/2 -right-[165px] 2xl:-right-[180px] hidden xl:block"
+          className="absolute top-1/2 -translate-y-1/2 -right-[150px] 2xl:-right-[180px] hidden xl:block"
         />
         <h6 className="w-[48px] h-[48px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-[22px] flex justify-center items-center absolute top-0 left-0">
           {boxNumber1}

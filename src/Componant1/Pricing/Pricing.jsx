@@ -64,12 +64,12 @@ const Pricing = () => {
      bg-center"
     >
       <div className="Container">
-        <div className="grid grid-cols-1 gap-10 lg:gap-24 2xl:gap-[150px] lg:grid-cols-2 items-center">
+        <div className="grid grid-cols-1 gap-10 lg:gap-16 xl:gap-24 2xl:gap-[140px] lg:grid-cols-2 items-center">
           <div className="w-full mx-auto">
             <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
               Pricing Plans
             </h5>
-            <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[32px] xl:leading-[42px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-12">
+            <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-white mt-[18px] mb-12">
               Our Best Affordable Pricing Plan <br />
               Choose Your Plans
             </h1>

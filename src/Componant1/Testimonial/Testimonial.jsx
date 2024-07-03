@@ -81,7 +81,7 @@ const Testimonial = () => {
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             Testimonial
           </h5>
-          <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
+          <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
             Customer’s Awesome Feedback <br />
             About Our Services
           </h1>
@@ -99,7 +99,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pt-[80px] sm:pt-[150px]">
+                      <div className="pt-[80px] md:pt-[150px]">
                         <TestimonialCard
                           testiRatingIcon={testiRatingIcon}
                           testiName={testiName}

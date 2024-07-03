@@ -20,7 +20,7 @@ const BlogCard = ({
           className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
         />
       </div>
-      <div className="rounded-md relative z-20 flex justify-center bg-white transition-all duration-500 sm:px-8 lg:px-5 2xl:px-8 pt-7">
+      <div className="rounded-md relative z-20 flex justify-center bg-white transition-all duration-500 sm:px-3 lg:px-3 2xl:px-3 pt-7">
         <div>
           <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
             <p className="font-Nunito text-TextColor2-0 flex gap-2 items-center leading-[15px]">
@@ -33,7 +33,7 @@ const BlogCard = ({
             </p>
           </div>
           <Link to={blogUrl}>
-            <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-lg lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
+            <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
               {blogTitle}
             </button>
           </Link>
