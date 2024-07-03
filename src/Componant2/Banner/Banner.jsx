@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
+        <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-[100px]">
           <div className="relative">
             <h5 className="font-Rajdhani text-white text-[19px] font-medium flex items-center gap-2 mb-4">
               IT SOLUTION AGENCY IN USA
