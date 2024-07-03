@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import bannerImg from "/images/hero-thumb.png";
+import bannerShape from "/images/hero-shape.png";
 import { BiRightTopArrowCircle } from "react-icons/bi";
 
 const Banner = () => {
@@ -12,12 +13,14 @@ const Banner = () => {
               IT SOLUTION AGENCY IN USA
             </h5>
             <h1 className="font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[69px] 2xl:leading-[79px]">
-              BUSINESS INNOVATION<br />
+              BUSINESS INNOVATION
+              <br />
               WITH IT EXPERT
             </h1>
             <p className="font-Nunito sm:text-lg text-TextColor-0 mb-[46px] mt-1">
               Professionally optimize interdependent intellectual interoperable
-              connect <br className="hidden 2xl:block"/> best practices. Progressively fabricate done
+              connect <br className="hidden 2xl:block" /> best practices.
+              Progressively fabricate done
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Link to={"/contact"}>
@@ -27,17 +30,16 @@ const Banner = () => {
                 </button>
               </Link>
               <Link to={"/about"}>
-                <button className="primary-btn">
-                  {`Read More`}
-                </button>
+                <button className="primary-btn">{`Read More`}</button>
               </Link>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end -mb-[132px] lg:-mb-12">
+          <div className="flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative">
+            <img src={bannerImg} draggable="false" className="w-[inherit]" />
             <img
-              src={bannerImg}
-              draggable="false"
-              className="w-[inherit]"
+              src={bannerShape}
+              draggable={false}
+              className="absolute top-40 left-0 md:left-20 lg:left-0 xl:left-10 2xl:left-[7rem] animate-rotational hidden sm:block"
             />
           </div>
         </div>
