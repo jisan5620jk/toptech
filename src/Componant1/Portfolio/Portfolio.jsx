@@ -1,8 +1,5 @@
 /* eslint-disable no-unused-vars */
 import {
-  FaArrowRight,
-  FaArrowRightLong,
-  FaLocationDot,
   FaPlus,
 } from "react-icons/fa6";
 import portfolioThumb from "/images/portfolio-1.png";
@@ -25,14 +22,14 @@ const PortfolioData = [
     portfolioBtn: <FaPlus />,
   },  {
     id: 2,
-    portfolioThumb: portfolioThumb,
+    portfolioThumb: portfolioThumb2,
     portfolioIcon: "02",
     portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },  {
     id: 3,
-    portfolioThumb: portfolioThumb,
+    portfolioThumb: portfolioThumb3,
     portfolioIcon: "03",
     portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
@@ -88,7 +85,8 @@ const Portfolio = () => {
             IT Services Source
           </h1>
         </div>
-        <div className="mt-[60px]">
+        </div>
+        <div className="mt-[60px] 2xl:mx-[100px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {PortfolioData.map(
@@ -118,7 +116,6 @@ const Portfolio = () => {
             </div>
           </Swiper>
         </div>
-      </div>
     </section>
   );
 };

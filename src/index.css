@@ -257,10 +257,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Portfolio */
 
+.portfolio .swiper-slide.swiper-slide-active .portfolio-content {
+  border-start-end-radius: 0;
+}
+
 .portfolio .portfolio-box:hover .portfolio-icon ,
 .portfolio .swiper-slide.swiper-slide-active .portfolio-icon {
   -webkit-text-stroke: 1px #0c59db;
 }
+
 
 .portfolio .swiper-slide.swiper-slide-active .portfolio-title {
   color: #0c59db;
