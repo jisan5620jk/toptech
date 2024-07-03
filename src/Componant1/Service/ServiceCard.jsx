@@ -25,7 +25,7 @@ const ServiceCard = ({
         </h5>
       </div>
       <Link to={serviceUrl}>
-        <button className="font-Rajdhani font-bold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
+        <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
           {serviceTitle}
         </button>
       </Link>

@@ -4,7 +4,7 @@ import { BiRightTopArrowCircle } from "react-icons/bi";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[650px] sm:h-[680px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[680px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
           <div className="relative">
@@ -15,7 +15,7 @@ const Banner = () => {
               BUSINESS INNOVATION<br />
               WITH IT EXPERT
             </h1>
-            <p className="font-Nunito text-lg text-TextColor-0 mb-[46px] mt-1">
+            <p className="font-Nunito sm:text-lg text-TextColor-0 mb-[46px] mt-1">
               Professionally optimize interdependent intellectual interoperable
               connect <br className="hidden 2xl:block"/> best practices. Progressively fabricate done
             </p>
@@ -33,7 +33,7 @@ const Banner = () => {
               </Link>
             </div>
           </div>
-          <div className="flex justify-end -mb-12">
+          <div className="flex justify-end -mb-[132px] lg:-mb-12">
             <img
               src={bannerImg}
               draggable="false"

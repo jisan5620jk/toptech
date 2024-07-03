@@ -74,13 +74,13 @@ const Portfolio = () => {
     },
   };
   return (
-    <section className="bg-[url('/images/portfolio-bg.jpg')] bg-center bg-cover bg-no-repeat py-28 portfolio relative">
+    <section className="portfolio relative z-10 py-28 bg-SecondaryColor-0 before:absolute before:top-0 before:left-0 before:h-[70%] before:w-full before:bg-[url('/images/portfolio-bg.jpg')] before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             IT Support For Business
           </h5>
-          <h1 className="font-Rahdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+          <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
             Ensuring Your Success Trusted <br />
             IT Services Source
           </h1>
@@ -100,7 +100,7 @@ const Portfolio = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-[80px]">
+                      <div className="pb-[90px]">
                         <PortfolioCard
                           portfolioThumb={portfolioThumb}
                           portfolioIcon={portfolioIcon}

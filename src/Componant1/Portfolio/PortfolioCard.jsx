@@ -12,11 +12,11 @@ const PortfolioCard = ({
     <div>
       <div className="portfolio-box relative z-10 overflow-hidden group">
         <div className="rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
-          <img src={portfolioThumb} draggable={false} />
+          <img src={portfolioThumb} draggable={false} className="w-full"/>
         </div>
-        <div className="portfolio-content relative z-10 -mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
+        <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
           <div className="flex items-center gap-6">
-            <h1 className="portfolio-icon font-Rajdhani font-bold text-[76px] text-transparent transition-all duration-500 my-1">
+            <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] text-transparent transition-all duration-500 my-1">
               {portfolioIcon}
             </h1>
             <Link to={portfolioUrl}>

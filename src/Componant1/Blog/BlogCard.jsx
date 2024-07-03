@@ -20,9 +20,9 @@ const BlogCard = ({
           className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
         />
       </div>
-      <div className="rounded-md relative z-20 flex justify-center bg-white transition-all duration-500 px-5 sm:px-8 lg:px-5 2xl:px-8 pt-7">
+      <div className="rounded-md relative z-20 flex justify-center bg-white transition-all duration-500 sm:px-8 lg:px-5 2xl:px-8 pt-7">
         <div>
-          <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6  mb-2">
+          <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
             <p className="font-Nunito text-TextColor2-0 flex gap-2 items-center leading-[15px]">
               <span className="text-PrimaryColor-0">{blogDateIcon}</span>
               {blogDate}

@@ -38,19 +38,18 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className="pb-10 relative bg-SecondaryColor-0 z-10 pt-28">
-      <div className="processShape"></div>
+    <section className="pb-10 relative bg-SecondaryColor-0 z-10 ">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             Working Process
           </h5>
-          <h1 className="font-Rahdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
+          <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
             We Follow the Easy Working Steps
           </h1>
         </div>
         <div className="pb-16 mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
             {processData.map(
               ({
                 id,

@@ -40,8 +40,10 @@ body {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
 }
 
-.header-section4.is-sticky {
-  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
+@media (min-width: 320px) and (max-width: 991px) {
+  .is-sticky {
+    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
+  }
 }
 
 /* Progress Bar */
@@ -105,7 +107,7 @@ body {
 span.swiper-pagination-bullet {
   background: transparent !important;
   opacity: 0.7 !important;
-  border: 2px solid #86ad42;
+  border: 2px solid #0c59db;
   border-radius: 50%;
   height: 14px !important;
   width: 14px !important;
@@ -120,7 +122,7 @@ span.swiper-pagination-bullet::before {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 2px solid #86ad42;
+  border: 2px solid #0c59db;
   transition: 0.5s;
   transform: scale(0);
 }
@@ -133,8 +135,45 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   opacity: 1 !important;
   height: 10px !important;
   width: 10px !important;
-  background: #86ad42 !important;
+  background: #0c59db !important;
 }
+
+.portfolio .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-direction: row !important;
+}
+
+.portfolio .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #35435d !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+}
+
+.portfolio .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0c59db !important;
+}
+
+.portfolio span.swiper-pagination-bullet::before {
+  scale: 0;
+}
+
+/* Testimonial */
 
 .testimonial .swiper-pagination {
   top: 5px !important;
@@ -182,6 +221,24 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .testimonial
   span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(0);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .testimonial .swiper-pagination {
+    gap: 5px !important;
+  }
+
+  .testimonial span.swiper-pagination-bullet {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 45px !important;
+    height: 45px !important;
+    transform: scale(1.1) !important;
+    border: 2px solid #fff !important;
+  }
 }
 
 .service .swiper-pagination,
@@ -261,11 +318,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border-start-end-radius: 0;
 }
 
-.portfolio .portfolio-box:hover .portfolio-icon ,
+.portfolio .portfolio-box:hover .portfolio-icon,
 .portfolio .swiper-slide.swiper-slide-active .portfolio-icon {
   -webkit-text-stroke: 1px #0c59db;
 }
-
 
 .portfolio .swiper-slide.swiper-slide-active .portfolio-title {
   color: #0c59db;
