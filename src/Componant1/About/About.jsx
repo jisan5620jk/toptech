@@ -100,7 +100,7 @@ const About = () => {
             <img
               src={aboutShape2}
               draggable="false"
-              className="absolute -bottom-0 left-1/2 animate-dance3 hidden sm:block"
+              className="absolute -bottom-0 left-1/2 animate-swing hidden sm:block"
             />
           </div>
         </div>

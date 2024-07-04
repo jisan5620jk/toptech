@@ -2,18 +2,18 @@ import aboutThumb from "/images/about-thumb2.png";
 import aboutAward from "/images/about-award-icon.png";
 import aboutShape from "/images/about-shape1.png";
 import aboutShape2 from "/images/about-shape-2.png";
-import phoneIcon from "/images/about-call-icon.png"
+import phoneIcon from "/images/about-call-icon.png";
 import { Link } from "react-router-dom";
-import { GoArrowRight } from "react-icons/go";
 import { RiCheckFill } from "react-icons/ri";
 import { IoMdPlay } from "react-icons/io";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
+import { BiRightTopArrowCircle } from "react-icons/bi";
 
 const About = () => {
-    const [toggler, setToggler] = useState(false);
+  const [toggler, setToggler] = useState(false);
   return (
-    <section className="py-[120px] bg-white bg-no-repeat bg-center bg-cover relative">
+    <section className="pt-3 pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
           <div className="relative z-10">
@@ -101,15 +101,15 @@ const About = () => {
               </div>
             </div>
             <Link to={"/about"} className="mt-7 inline-block">
-              <button className="primary-btn">
-                {`Discover More`}
-                <GoArrowRight size={"22"} />
+              <button className="primary-btn3">
+                {`More About`}
+                <BiRightTopArrowCircle size={"20"} />
               </button>
             </Link>
             <img
               src={aboutShape2}
               draggable="false"
-              className="absolute -bottom-0 left-1/2 animate-dance3 hidden sm:block"
+              className="absolute -bottom-0 left-1/2 animate-swing hidden sm:block"
             />
           </div>
         </div>
