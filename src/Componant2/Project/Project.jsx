@@ -1,58 +1,48 @@
 /* eslint-disable no-unused-vars */
-import projectThumb from "/images/project-thumb.jpg";
-import projectThumb2 from "/images/project-thumb2.jpg";
-import projectThumb3 from "/images/project-thumb3.jpg";
-import projectThumb4 from "/images/project-thumb4.jpg";
-import projectShape from "/images/project-shape.png";
-import projectContentShape from "/images/project-content-shape.png";
+import {
+  FaPlus,
+} from "react-icons/fa6";
+import projectThumb from "/images/portfolio2-1.png";
+import projectThumb2 from "/images/portfolio2-2.png";
+import projectThumb3 from "/images/portfolio2-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import subTitleShape from "/images/sub-title-shape.png";
 import "swiper/css";
-import ProjectCard from "./ProjectCard";
-import { GoArrowUpRight } from "react-icons/go";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import ProjectCard from "./ProjectCard";
 
 const ProjectData = [
   {
     id: 1,
     projectThumb: projectThumb,
-    projectSubTitle: "Climate",
-    projectTitle: "Cleaning Forest",
-    buttonUrl: "/project_details",
-    projectButton: <GoArrowUpRight />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectSubTilte: "Design",
+    projectTitle: "Mobile UI/UX Design",
+    projectUrl: "/project_details",
+    projectBtn: <FaPlus />,
   },
   {
     id: 2,
     projectThumb: projectThumb2,
-    projectSubTitle: "Environment",
-    projectTitle: "Tree Plantation",
-    buttonUrl: "/project_details",
-    projectButton: <GoArrowUpRight />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectSubTilte: "Technology",
+    projectTitle: "Cyber Security & Protect",
+    projectUrl: "/project_details",
+    projectBtn: <FaPlus />,
   },
   {
     id: 3,
     projectThumb: projectThumb3,
-    projectSubTitle: "Recycling",
-    projectTitle: "Plastic Recycling",
-    buttonUrl: "/project_details",
-    projectButton: <GoArrowUpRight />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectSubTilte: "IT Solution",
+    projectTitle: "Website Development",
+    projectUrl: "/project_details",
+    projectBtn: <FaPlus />,
   },
   {
-    id: 4,
-    projectThumb: projectThumb4,
-    projectSubTitle: "Climate",
-    projectTitle: "Cleaning Forest",
-    buttonUrl: "/project_details",
-    projectButton: <GoArrowUpRight />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    id: 2,
+    projectThumb: projectThumb2,
+    projectSubTilte: "Technology",
+    projectTitle: "Cyber Security & Protect",
+    projectUrl: "/project_details",
+    projectBtn: <FaPlus />,
   },
 ];
 
@@ -86,44 +76,39 @@ const Project = () => {
     },
   };
   return (
-    <section className="project bg-[url('/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
-      <div className="text-center">
-        <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-          <img src={subTitleShape} draggable="false" />
-          OUR PROJECTS
-        </h5>
-        <h1 className="font-Nunito font-bold text-xl leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-          Finished the Latest Leading <br />
-          Environmental Works
-        </h1>
+    <section className="project relative z-10 py-28 bg-white before:absolute before:top-0 before:left-0 before:h-[72%] before:w-full before:bg-SecondaryColor-0 before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]">
+      <div className="Container">
+        <div className="text-center">
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            IT Support For Business
+          </h5>
+          <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-3">
+            Ensuring Your Success Trusted <br />
+            IT Services Source
+          </h1>
+        </div>
       </div>
-      <div className="mt-[46px]">
+      <div className="mt-[60px] 2xl:mx-[100px]">
         <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
           <div>
             {ProjectData.map(
               ({
                 id,
                 projectThumb,
-                projectShape,
-                projectContentShape,
-                projectSubTitle,
+                projectSubTilte,
                 projectTitle,
-                buttonUrl,
-                projectButton,
-                buttonIcon,
+                projectUrl,
+                projectBtn,
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div className="pb-[100px]">
+                    <div className="pb-[140px]">
                       <ProjectCard
                         projectThumb={projectThumb}
-                        projectContentShape={projectContentShape}
-                        projectShape={projectShape}
-                        projectSubTitle={projectSubTitle}
+                        projectSubTilte={projectSubTilte}
+                        projectUrl={projectUrl}
                         projectTitle={projectTitle}
-                        buttonUrl={buttonUrl}
-                        projectButton={projectButton}
-                        buttonIcon={buttonIcon}
+                        projectBtn={projectBtn}
                       />
                     </div>
                   </SwiperSlide>

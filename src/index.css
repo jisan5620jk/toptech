@@ -248,14 +248,43 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   }
 }
 
-.service .swiper-pagination,
 .project .swiper-pagination {
-  bottom: 6px !important;
+  bottom: 0 !important;
   top: inherit !important;
   left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
   flex-direction: row !important;
-  justify-content: center;
 }
+
+.project .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #cddff7 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+}
+
+.project .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0c59db !important;
+}
+
+.project
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transform: scale(0);
+}
+
+
 
 /* Pricing */
 
@@ -374,5 +403,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .portfolio .swiper-slide.swiper-slide-active .portfolio-btn {
   top: -50px;
+  opacity: 1;
+}
+
+/* Project */
+
+
+.project .swiper-slide.swiper-slide-active .project-btn {
+  right: -25px;
   opacity: 1;
 }

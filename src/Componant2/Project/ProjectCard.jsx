@@ -3,41 +3,33 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   projectThumb,
-  projectSubTitle,
-  projectShape,
-  projectContentShape,
+  projectSubTilte,
   projectTitle,
-  buttonUrl,
-  projectButton,
+  projectUrl,
+  projectBtn,
 }) => {
   return (
-    <div className="relative z-10 group rounded-md overflow-hidden">
-      <div className="overflow-hidden relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:before:opacity-0">
-        <img src={projectThumb} draggable="false" className="w-full" />
-        <img
-          src={projectShape}
-          draggable="false"
-          className="absolute -top-80 -right-80 animate-rotate transition-all duration-500 group-hover:-top-[180px] group-hover:-right-[190px]"
-        />
-        <div className="project-content flex justify-between items-center absolute -bottom-full transition-all duration-500 left-0 2xl:left-7 2xl:w-8/12 -mt-[42px] bg-[#f5f8ed] rounded-t-md overflow-hidden px-4 md:px-8 z-10 border-b-[5px] border-PrimaryColor-0">
-          <div>
-            <img
-              src={projectContentShape}
-              draggable="false"
-              className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
-           duration-500 group-hover:opacity-100"
-            />
-            <h6 className="font-Nunito font-medium text-TextColor-0 pt-[30px]">
-              {projectSubTitle}
-            </h6>
-            <h5 className="font-Nunito font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px]pt-1 pb-6">
-              {projectTitle}
-            </h5>
-          </div>
-          <div>
-            <Link to={buttonUrl}>
-              <button className="w-[46px] h-[46px] rounded-full bg-PrimaryColor-0 text-white text-2xl flex justify-center items-center">
-                {projectButton}
+    <div>
+      <div className="project-box relative z-10 group">
+        <div className="rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
+          <img src={projectThumb} draggable={false} className="w-full" />
+        </div>
+        <div className="rounded-md shadow-shade absolute z-10 left-1/2 -translate-x-1/2 -bottom-[50px] bg-white xl:w-9/12 border-PrimaryColor-0">
+          <div className="relative px-9 py-6 ">
+            <h1 className="font-Rajdhani font-medium text-lg text-PrimaryColor-0 my-1">
+              {projectSubTilte}
+            </h1>
+            <Link to={projectUrl}>
+              <button className="font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] text-HeadingColor-0 text-left">
+                {projectTitle}
+              </button>
+            </Link>
+            <Link
+              to={projectUrl}
+              className="project-btn transition-all duration-500 absolute right-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:-right-[25px] group-hover:opacity-100"
+            >
+              <button className="w-[50px] h-[50px] rounded-full flex items-center justify-center text-white bg-PrimaryColor-0">
+                {projectBtn}
               </button>
             </Link>
           </div>
