@@ -156,7 +156,7 @@ const Navbar2 = () => {
               </button>
             </div>
             {/* All navLink are hear with active */}
-            <div className="flex gap-6 items-center">
+            <div className="flex gap-14 items-center">
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
@@ -170,7 +170,7 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
@@ -226,7 +226,7 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
                   <span>About</span>
@@ -237,7 +237,7 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -269,7 +269,7 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -365,7 +365,7 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -404,16 +404,13 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
+                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
                 </NavLink>
               </ul>
               <div className="hidden lg:flex items-center">
-                <button>
-                  <IoSearch className="text-2xl ml-2 mr-10 text-white" />
-                </button>
                 <Link to={"/appointment"} className="header-btn">
                   Get A Quote
                 </Link>

@@ -6,9 +6,11 @@ import {
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
-import { GoArrowRight } from "react-icons/go";
 import { LuArrowRightCircle } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
+import { RiPhoneFill } from "react-icons/ri";
+import { MdOutlineMail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Footer2 = () => {
   return (
@@ -26,14 +28,28 @@ const Footer2 = () => {
               of the art infrastructures <br className="hidden xl:block" />{" "}
               digital agency in north
             </p>
-            <div>
-              <Link to={"/about"}>
-                <button className="primary-btn">
-                  {`Discover More`}
-                  <GoArrowRight size={"22"} />
+            <ul className="flex gap-3">
+              <li>
+                <button className="w-9 h-9 rounded-full bg-[#333280] flex items-center text-sm justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaFacebookF />
                 </button>
-              </Link>
-            </div>
+              </li>
+              <li>
+                <button className="w-9 h-9 rounded-full bg-[#333280] flex items-center text-sm justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaXTwitter />
+                </button>
+              </li>
+              <li>
+                <button className="w-9 h-9 rounded-full bg-[#333280] flex items-center text-sm justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaLinkedinIn />
+                </button>
+              </li>
+              <li>
+                <button className="w-9 h-9 rounded-full bg-[#333280] flex items-center text-sm justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaPinterestP />
+                </button>
+              </li>
+            </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-2">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[33px]">
@@ -84,48 +100,22 @@ const Footer2 = () => {
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[33px]">
-              Our Services
+              Contacts
             </h4>
-            <ul>
-              <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
-                    IT Solutions
-                  </button>
-                </Link>
+            <ul className="mr-9 2xl:mr-[90px]">
+              <li className="flex gap-2 items-center font-Nunito text-white border-b border-BorderColor-0 border-dashed pb-5">
+                <RiPhoneFill size={"18"} className="text-PrimaryColor-0" />
+                +980 123 (4567) 890
               </li>
-              <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
-                    Cyber Security
-                  </button>
-                </Link>
+              <li className="flex gap-2 items-center font-Nunito text-white border-b border-BorderColor-0 border-dashed pb-5 mt-5">
+                <MdOutlineMail size={"18"} className="text-PrimaryColor-0" />
+                example@gmail.com
               </li>
-              <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
-                    Digital Marketing
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
-                    <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
-                    Brand Identity
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
-                    <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
-                    SEO Marketing
-                  </button>
-                </Link>
+              <li className="flex gap-2 items-start font-Nunito text-white mt-6">
+                <IoLocationSharp size={"18"} className="text-PrimaryColor-0" />
+                <span className="flex-1 -mt-1">
+                  102/B New market 2nd floor Sandigo - California
+                </span>
               </li>
             </ul>
           </div>
@@ -157,36 +147,11 @@ const Footer2 = () => {
             </form>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
+        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-center md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
             <p className="font-Nunito text-white">
-              © 2024 Toptech. Designed By Dream IT Solution
-              <span className="text-PrimaryColor-0"> Dream IT</span>
+              © 2024 All Right Reserved. Design & Developed By Dream IT
             </p>
-          </div>
-          <div>
-            <ul className="flex gap-3">
-              <li>
-                <button className="w-9 h-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaFacebookF />
-                </button>
-              </li>
-              <li>
-                <button className="w-9 h-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaXTwitter />
-                </button>
-              </li>
-              <li>
-                <button className="w-9 h-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaLinkedinIn />
-                </button>
-              </li>
-              <li>
-                <button className="w-9 h-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaPinterestP />
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
