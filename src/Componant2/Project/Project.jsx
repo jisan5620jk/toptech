@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {
-  FaPlus,
-} from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 import projectThumb from "/images/portfolio2-1.png";
 import projectThumb2 from "/images/portfolio2-2.png";
 import projectThumb3 from "/images/portfolio2-3.png";
@@ -82,7 +80,7 @@ const Project = () => {
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             IT Support For Business
           </h5>
-          <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-3">
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-3">
             Ensuring Your Success Trusted <br />
             IT Services Source
           </h1>

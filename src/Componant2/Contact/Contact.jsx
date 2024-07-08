@@ -16,7 +16,7 @@ const Contact = () => {
             <h5 className="font-Rajdhani font-medium text-white text-[22px] mt-8 mb-4">
               Call Us Anytime
             </h5>
-            <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white">
+            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white">
               +980 123 (4567) 890
             </h1>
             <p className="font-Nunito text-TextColor-0 text-lg mt-6 mb-2">

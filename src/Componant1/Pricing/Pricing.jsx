@@ -69,7 +69,7 @@ const Pricing = () => {
             <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
               Pricing Plans
             </h5>
-            <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-white mt-[18px] mb-12">
+            <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-white mt-[18px] mb-12">
               Our Best Affordable Pricing Plan <br />
               Choose Your Plans
             </h1>

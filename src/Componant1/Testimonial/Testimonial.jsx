@@ -23,21 +23,24 @@ const testiData = [
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-  },  {
+  },
+  {
     id: 3,
     testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
                 magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-  },  {
+  },
+  {
     id: 4,
     testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
                 magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-  },  {
+  },
+  {
     id: 5,
     testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
                 magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
@@ -81,7 +84,7 @@ const Testimonial = () => {
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             Testimonial
           </h5>
-          <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
+          <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
             Customer’s Awesome Feedback <br />
             About Our Services
           </h1>

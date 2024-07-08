@@ -6,7 +6,7 @@ const Newsletter = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
-            <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-4">
+            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-4">
               Get Latest Update from Toptech <br />
               Stay Connect with Us
             </h1>

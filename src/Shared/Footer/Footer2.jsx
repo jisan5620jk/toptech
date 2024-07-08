@@ -12,7 +12,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer2 = () => {
   return (
-    <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
+    <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative pt-[278px] -mt-[158px] overflow-hidden">
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">

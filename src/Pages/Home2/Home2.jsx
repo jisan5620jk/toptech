@@ -1,4 +1,5 @@
 import About from "../../Componant2/About/About";
+import Appionment from "../../Componant2/Appionment/Appionment";
 import Banner from "../../Componant2/Banner/Banner";
 import Blog from "../../Componant2/Blog/Blog";
 import Contact from "../../Componant2/Contact/Contact";
@@ -24,6 +25,7 @@ const Home2 = () => {
       <Testimonial />
       <Newsletter />
       <Blog />
+      <Appionment />
     </>
   );
 };

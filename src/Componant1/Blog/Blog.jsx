@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {
-  FaRegCalendarCheck,
-} from "react-icons/fa6";
+import { FaRegCalendarCheck } from "react-icons/fa6";
 import blogThumb from "/images/blog1.png";
 import blogThumb2 from "/images/blog2.png";
 import blogThumb3 from "/images/blog3.png";
@@ -56,7 +54,7 @@ const Blog = () => {
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             IT Support For Business
           </h5>
-          <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
             Ensuring Your Success Trusted <br />
             IT Services Source
           </h1>

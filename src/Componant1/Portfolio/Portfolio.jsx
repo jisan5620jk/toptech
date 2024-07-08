@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {
-  FaPlus,
-} from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 import portfolioThumb from "/images/portfolio-1.png";
 import portfolioThumb2 from "/images/portfolio-2.png";
 import portfolioThumb3 from "/images/portfolio-3.png";
@@ -20,21 +18,24 @@ const PortfolioData = [
     portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
-  },  {
+  },
+  {
     id: 2,
     portfolioThumb: portfolioThumb2,
     portfolioIcon: "02",
     portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
-  },  {
+  },
+  {
     id: 3,
     portfolioThumb: portfolioThumb3,
     portfolioIcon: "03",
     portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
-  },  {
+  },
+  {
     id: 4,
     portfolioThumb: portfolioThumb,
     portfolioIcon: "04",
@@ -80,42 +81,42 @@ const Portfolio = () => {
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             IT Support For Business
           </h5>
-          <h1 className="font-Rahdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
             Ensuring Your Success Trusted <br />
             IT Services Source
           </h1>
         </div>
-        </div>
-        <div className="mt-[60px] 2xl:mx-[100px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            <div>
-              {PortfolioData.map(
-                ({
-                  id,
-                  portfolioThumb,
-                  portfolioIcon,
-                  portfolioTitle,
-                  portfolioUrl,
-                  portfolioBtn,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pb-[90px]">
-                        <PortfolioCard
-                          portfolioThumb={portfolioThumb}
-                          portfolioIcon={portfolioIcon}
-                          portfolioUrl={portfolioUrl}
-                          portfolioTitle={portfolioTitle}
-                          portfolioBtn={portfolioBtn}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-            </div>
-          </Swiper>
-        </div>
+      </div>
+      <div className="mt-[60px] 2xl:mx-[100px]">
+        <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+          <div>
+            {PortfolioData.map(
+              ({
+                id,
+                portfolioThumb,
+                portfolioIcon,
+                portfolioTitle,
+                portfolioUrl,
+                portfolioBtn,
+              }) => {
+                return (
+                  <SwiperSlide key={id}>
+                    <div className="pb-[90px]">
+                      <PortfolioCard
+                        portfolioThumb={portfolioThumb}
+                        portfolioIcon={portfolioIcon}
+                        portfolioUrl={portfolioUrl}
+                        portfolioTitle={portfolioTitle}
+                        portfolioBtn={portfolioBtn}
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              }
+            )}
+          </div>
+        </Swiper>
+      </div>
     </section>
   );
 };

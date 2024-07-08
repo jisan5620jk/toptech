@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import ProgressBar from "react-animated-progress-bar";
 import { BiRightTopArrowCircle } from "react-icons/bi";
 import { IoDiamondOutline } from "react-icons/io5";
-import chooseShape from "/images/about-shape2.png"
+import chooseShape from "/images/about-shape2.png";
 
 const WhyChoose = () => {
   useEffect(() => {
@@ -44,7 +44,7 @@ const WhyChoose = () => {
             <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
               Why Choose Us?
             </h5>
-            <h1 className="font-Rahdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
+            <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
               Building your Path to Success <br />
               with a Reliable IT Service
             </h1>
