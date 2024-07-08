@@ -44,7 +44,7 @@ const WhyChoose = () => {
             <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
               Why Choose Us?
             </h5>
-            <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
+            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
               Building your Path to Success <br />
               with a Reliable IT Service
             </h1>
@@ -117,7 +117,7 @@ const WhyChoose = () => {
               className="absolute -bottom-0 left-1/2 animate-swing hidden sm:block"
             />
           </div>
-          <div className="grid gap-7 grid-cols-2 items-center">
+          <div className="grid gap-7 grid-cols-1 sm:grid-cols-2 items-center">
             <div className="choose-box group text-center bg-white rounded-md px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:rounded-md before:transition-all before:duration-500">
               <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
                 <IoDiamondOutline size={"70px"} />

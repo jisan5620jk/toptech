@@ -6,9 +6,9 @@ import contactShape from "/images/contact-shape.png";
 
 const Contact = () => {
   return (
-    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[732px] flex items-center relative">
+    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] lg:h-[732px] flex items-center relative">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0">
           <div className="pt-[130px]">
             <div className="w-[82px] h-[82px] rounded-full bg-[#1e1e8c] text-white flex items-center justify-center relative before:absolute before:-left-[9px] before:-top-[9px] before:w-[100px] before:h-[100px] before:rounded-full before:border-2 before:border-PrimaryColor-0 before:border-dashed before:animate-rotational">
               <FaPhoneAlt size={"26"} />
@@ -36,7 +36,7 @@ const Contact = () => {
             <img
               src={contactShape}
               draggable={false}
-              className="absolute lg:top-32 2xl:top-48 left-0 2xl:-left-28 animate-swing"
+              className="absolute lg:top-32 2xl:top-48 left-0 2xl:-left-28 animate-swing hidden sm:block"
             />
           </div>
         </div>

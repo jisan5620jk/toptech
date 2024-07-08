@@ -14,8 +14,8 @@ const ProjectCard = ({
         <div className="rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
           <img src={projectThumb} draggable={false} className="w-full" />
         </div>
-        <div className="rounded-md shadow-shade absolute z-10 left-1/2 -translate-x-1/2 -bottom-[50px] bg-white xl:w-9/12 border-PrimaryColor-0">
-          <div className="relative px-9 py-6 ">
+        <div className="rounded-md shadow-shade absolute z-10 w-10/12 left-1/2 -translate-x-1/2 -bottom-[50px] bg-white xl:w-9/12 border-PrimaryColor-0">
+          <div className="relative px-9 py-6">
             <h1 className="font-Rajdhani font-medium text-lg text-PrimaryColor-0 my-1">
               {projectSubTilte}
             </h1>

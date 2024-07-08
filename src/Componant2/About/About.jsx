@@ -22,8 +22,8 @@ const About = () => {
               draggable="false"
               className="2xl:-ml-[38px] 2xl:max-w-[inherit]"
             />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-              <button className="h-[100px] w-[100px] border-2 border-white rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:-ml-[20px]">
+              <button className="h-14 w-14 sm:h-[100px] sm:w-[100px] border-2 border-white rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
                 <IoMdPlay
                   size={"30"}
                   className="text-white"
@@ -37,7 +37,7 @@ const About = () => {
                 ]}
               />
             </div>
-            <div className="absolute top-0 right-0 flex gap-5 items-center animate-dance3">
+            <div className="absolute top-0 right-0 sm:flex gap-5 items-center animate-dance3 hidden">
               <div>
                 <img src={aboutAward} draggable={false} />
               </div>

@@ -149,9 +149,9 @@ const Navbar2 = () => {
               >
                 {/* modal open and close */}
                 {isOpen ? (
-                  <IoMdClose className="w-6 h-6 text-HeadingColor-0" />
+                  <IoMdClose className="w-6 h-6 text-white" />
                 ) : (
-                  <FaBars className="w-5 h-5 text-HeadingColor-0" />
+                  <FaBars className="w-5 h-5 text-white" />
                 )}
               </button>
             </div>

@@ -8,7 +8,7 @@ const Appionment = () => {
   return (
     <section className="bg-BodyBg-0">
       <div className="Container">
-        <div className="bg-white p-11 rounded-lg grid grid-cols-3 gap-10 2xl:gap-[92px] items-center relative z-10">
+        <div className="bg-white p-11 rounded-lg grid grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-[92px] items-center relative z-10">
           <div className="col-span-2">
             <h1 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 pb-9">
               Write to Us Anytime
