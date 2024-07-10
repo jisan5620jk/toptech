@@ -1,52 +1,87 @@
-import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import aboutThumb from "/images/about-thumb.png";
-import aboutItem from "/images/about-item.png";
+import aboutThumb from "/images/about3-thumb.png";
 import { Link } from "react-router-dom";
+import aboutShape from "/images/about-shape.jpg";
+import aboutIcon from "/images/about3-icon1.png";
+import aboutIcon2 from "/images/about3-icon2.png";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import aboutAuthor from "/images/about-author.jpg";
 
 const About = () => {
   return (
-    <section className="py-28 bg-white bg-cover bg-center bg-no-repeat">
+    <section className="pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative">
+      <img
+        src={aboutShape}
+        draggable={false}
+        className="absolute top-0 right-0"
+      />
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 2xl:gap-28 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center">
           <div className="relative z-10">
             <img src={aboutThumb} draggable="false" />
           </div>
-          <div>
-            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <FaStarOfLife />
-              GET TO KNOW US
+          <div className="relative">
+            <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+              WHO WE ARE
             </h5>
-            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
-              Innovative Renewable
-              <br /> Energy Solutions.
+            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
+              Get Exclusive It Solutions & <br />
+              Services With <span className="text-PrimaryColor-0">TopTech</span>
             </h1>
-            <p className="font-Nunito text-TextColor-0 font-light">
-              Sometimes goods can arrive early when they being brought into the
-              solution other times items need a place to be stored for short
-              goods can arrive desig headquarters have enough space your needs.
+            <p className="font-Nunito text-TextColor2-0 pb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which is best for IT solution
+              service and consulting for your business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-8 sm:items-center mt-12 mb-[60px]">
-              <div>
-                <img src={aboutItem} draggable="false" />
+            <div className="flex items-center gap-5">
+              <div className="w-[74px] h-[74px] rounded bg-[#d4e1f7] flex items-center justify-center">
+                <img src={aboutIcon} />
               </div>
-              <ul>
-                <li className="font-Nunito font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
-                  Solar energy also has some limitations
-                </li>
-                <li className="font-Nunito font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0 my-5 lg:my-2 2xl:my-5">
-                  Reliability and performance
-                </li>
-                <li className="font-Nunito font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
-                  Every day fresh and quality products
-                </li>
-              </ul>
+              <div className="flex-1">
+                <h6 className="font-Rajdhani font-bold text-[22px] text-HeadingColor-0">
+                  Certified Company
+                </h6>
+                <p className="font-Nunito text-TextColor2-0">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin lorem
+                  awesome.
+                </p>
+              </div>
             </div>
-            <Link to={"/about"}>
-              <button className="primary-btn2">
-                About Echofy
-                <FaArrowRightLong size={"20"} />
-              </button>
-            </Link>
+            <div className="flex items-center gap-5 mt-9">
+              <div className="w-[74px] h-[74px] rounded bg-[#d4e1f7] flex items-center justify-center">
+                <img src={aboutIcon2} />
+              </div>
+              <div className="flex-1">
+                <h6 className="font-Rajdhani font-bold text-[22px] text-HeadingColor-0">
+                  Internet Networking
+                </h6>
+                <p className="font-Nunito text-TextColor2-0">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin lorem
+                  awesome.
+                </p>
+              </div>
+            </div>
+            <div className="mt-10 flex gap-6 items-center">
+              <Link to={"/about"} className="inline-block">
+                <button className="primary-btn">
+                  {`More About`}
+                  <BsArrowRightCircleFill size={"20"} />
+                </button>
+              </Link>
+              <div className="flex items-center gap-5">
+                <div className="inline-block rounded-full overflow-hidden">
+                  <img src={aboutAuthor} />
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-Rajdhani font-semibold text-xl text-HeadingColor-0">
+                    Kevin Martin
+                  </h6>
+                  <p className="font-Nunito text-TextColor2-0">CEO & Founder</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
