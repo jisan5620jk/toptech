@@ -6,7 +6,7 @@ import contactShape from "/images/contact-shape.png";
 
 const Contact = () => {
   return (
-    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] lg:h-[732px] flex items-center relative">
+    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1250px] lg:h-[732px] flex items-center relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0">
           <div className="pt-[130px]">
@@ -21,7 +21,7 @@ const Contact = () => {
             </h1>
             <p className="font-Nunito text-TextColor-0 text-lg mt-6 mb-2">
               Professionally optimize interdependent intellectual interoperable{" "}
-              <br className="hidden sm:block" />
+              <br className="hidden sm:block lg:hidden xl:block" />
               best practices. Progressively fabricate
             </p>
             <Link to={"/about"} className="mt-7 inline-block">
@@ -36,7 +36,7 @@ const Contact = () => {
             <img
               src={contactShape}
               draggable={false}
-              className="absolute lg:top-32 2xl:top-48 left-0 2xl:-left-28 animate-swing hidden sm:block"
+              className="absolute lg:top-32 2xl:top-48 left-0 lg:-left-20 2xl:-left-28 animate-swing hidden md:block"
             />
           </div>
         </div>

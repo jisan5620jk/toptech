@@ -118,7 +118,7 @@ const WhyChoose = () => {
             />
           </div>
           <div className="grid gap-7 grid-cols-1 sm:grid-cols-2 items-center">
-            <div className="choose-box group text-center bg-white rounded-md px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:rounded-md before:transition-all before:duration-500">
+            <div className="choose-box group text-center bg-white rounded-md px-[30px] lg:px-4 xl:px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:rounded-md before:transition-all before:duration-500">
               <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
                 <IoDiamondOutline size={"70px"} />
               </div>
@@ -165,7 +165,7 @@ const WhyChoose = () => {
                 </button>
               </Link>
             </div>
-            <div className="choose-box active group text-center bg-white rounded-md px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:rounded-md before:transition-all before:duration-500">
+            <div className="choose-box active group text-center bg-white rounded-md px-[30px] lg:px-4 xl:px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:rounded-md before:transition-all before:duration-500">
               <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
                 <IoDiamondOutline size={"70px"} />
               </div>

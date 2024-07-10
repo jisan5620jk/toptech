@@ -8,13 +8,13 @@ const Appionment = () => {
   return (
     <section className="bg-BodyBg-0">
       <div className="Container">
-        <div className="bg-white p-11 rounded-lg grid grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-[92px] items-center relative z-10">
+        <div className="bg-white p-6 sm:p-11 lg:p-5 xl:p-11 rounded-lg grid grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-[92px] items-center relative z-10">
           <div className="col-span-2">
-            <h1 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 pb-9">
+            <h1 className="font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 pb-9">
               Write to Us Anytime
             </h1>
             <form action="#" method="post" className="flex flex-col gap-y-7">
-              <div className="grid grid-cols-2 gap-7">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
                 <div className="relative inline-block">
                   <input
                     type="text"
@@ -44,7 +44,7 @@ const Appionment = () => {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-7">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
                 <div className="relative inline-block">
                   <input
                     type="text"
@@ -92,11 +92,11 @@ const Appionment = () => {
               </div>
             </form>
           </div>
-          <div className="bg-[url(/images/contact-info-box-bg.png)] bg-no-repeat bg-center bg-cover rounded-lg pl-8 2xl:pl-[50px] pt-16 pb-[100px]">
+          <div className="col-span-2 lg:col-span-1 bg-[url(/images/contact-info-box-bg.png)] bg-no-repeat bg-center bg-cover rounded-lg pl-8 lg:pl-4 xl:p-7 2xl:pl-[50px] pt-16 pb-[100px]">
             <h3 className="font-Rajdhani font-semibold text-white text-[30px] leading-[36px] mb-12">
               Don’t Forget to <br /> Contact Us
             </h3>
-            <div className="flex gap-5 items-center">
+            <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
               <div className="w-[52px] h-[52px] rounded-full border-2 border-white bg-transparent flex justify-center items-center text-white">
                 <MdCall size={"20"} />
               </div>
@@ -107,7 +107,7 @@ const Appionment = () => {
                 </h5>
               </div>
             </div>
-            <div className="flex gap-5 items-center my-[50px]">
+            <div className="flex flex-col sm:flex-row gap-5 sm:items-center my-[50px]">
               <div className="w-[52px] h-[52px] rounded-full border-2 border-white bg-transparent flex justify-center items-center text-white">
                 <MdEmail size={"20"} />
               </div>
@@ -120,7 +120,7 @@ const Appionment = () => {
                 </h5>
               </div>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
               <div className="w-[52px] h-[52px] rounded-full border-2 border-white bg-transparent flex justify-center items-center text-white">
                 <GrAlarm size={"20"} />
               </div>
