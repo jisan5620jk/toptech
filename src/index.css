@@ -287,6 +287,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .faq-button[aria-expanded="true"],
 .faq-button:hover {
+  border-radius: 5px;
+  background: #0c59db;
+  border-color: transparent;
+  padding: 0 20px 0 30px;
+}
+
+.faq-button2[aria-expanded="true"],
+.faq-button2:hover {
   border-radius: 5px 5px 0 0;
   border-color: #83a8ff;
 }
