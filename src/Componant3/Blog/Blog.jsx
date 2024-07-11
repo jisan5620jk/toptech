@@ -1,64 +1,62 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import blogThumb from "/images/blog-1.png";
-import blogThumb2 from "/images/blog-2.png";
-import blogThumb3 from "/images/blog-3.png";
+import { FaRegCalendarCheck } from "react-icons/fa6";
+import blogThumb from "/images/blog1.png";
+import blogThumb2 from "/images/blog2.png";
+import blogThumb3 from "/images/blog3.png";
 import BlogCard from "./BlogCard";
+import { GoArrowRight } from "react-icons/go";
+import { PiUserCircleFill } from "react-icons/pi";
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    thumbContent: "home 2024 march",
-    blogDate: "Mar 15, 2024",
-    blogRelated: "RENEWABOLE / SCIENCE",
+    blogDateIcon: <FaRegCalendarCheck />,
+    blogDate: "24 Mar, 2024",
+    blogTagIcon: <PiUserCircleFill />,
+    blogTag: "Admin",
     blogUrl: "/blog_details",
-    blogTitle: "Solar-Powered Transportation",
-    blogDesc:
-      "Need place to stored for short goods can arive desig have space your needs brand.",
-    blogBtn: "Explore More",
-    blogBtnIcon: <FaArrowRightLong />,
+    blogTitle: "Most Popular Chrome Extensionfor Business Promot",
+    blogBtn: "Read More",
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    thumbContent: "home 2024 march",
-    blogDate: "Mar 15, 2024",
-    blogRelated: "RENEWABOLE / SCIENCE",
+    blogDateIcon: <FaRegCalendarCheck />,
+    blogDate: "24 Mar, 2024",
+    blogTagIcon: <PiUserCircleFill />,
+    blogTag: "Admin",
     blogUrl: "/blog_details",
-    blogTitle: "Pioneering the Future of Power",
-    blogDesc:
-      "Need place to stored for short goods can arive desig have space your needs brand.",
-    blogBtn: "Explore More",
-    blogBtnIcon: <FaArrowRightLong />,
+    blogTitle: "How to Secure your facebook Business Account",
+    blogBtn: "Read More",
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    thumbContent: "home 2024 march",
-    blogDate: "Mar 15, 2024",
-    blogRelated: "RENEWABOLE / SCIENCE",
+    blogDateIcon: <FaRegCalendarCheck />,
+    blogDate: "24 Mar, 2024",
+    blogTagIcon: <PiUserCircleFill />,
+    blogTag: "Admin",
     blogUrl: "/blog_details",
-    blogTitle: "Solar-Powered Innovations",
-    blogDesc:
-      "Need place to stored for short goods can arive desig have space your needs brand.",
-    blogBtn: "Explore More",
-    blogBtnIcon: <FaArrowRightLong />,
+    blogTitle: "Better Context Menus With Safe Triangles",
+    blogBtn: "Read More",
+    blogBtnIcon: <GoArrowRight />,
   },
 ];
 
 const Blog = () => {
   return (
-    <section className="py-28 bg-[#f3f4f8]">
+    <section className="py-28 bg-BodyBg-0">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
-            <FaStarOfLife />
-            LATEST BLOG
-            <FaStarOfLife />
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            IT Support For Business
           </h5>
-          <h1 className="font-Nunito font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-            Read The Latest News
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+            Ensuring Your Success Trusted <br />
+            IT Services Source
           </h1>
         </div>
         <div className="mt-[60px]">
@@ -67,12 +65,12 @@ const Blog = () => {
               ({
                 id,
                 blogThumb,
-                thumbContent,
+                blogDateIcon,
                 blogDate,
-                blogRelated,
+                blogTagIcon,
+                blogTag,
                 blogUrl,
                 blogTitle,
-                blogDesc,
                 blogBtn,
                 blogBtnIcon,
               }) => {
@@ -80,12 +78,12 @@ const Blog = () => {
                   <div key={id}>
                     <BlogCard
                       blogThumb={blogThumb}
-                      thumbContent={thumbContent}
+                      blogDateIcon={blogDateIcon}
                       blogDate={blogDate}
-                      blogRelated={blogRelated}
+                      blogTagIcon={blogTagIcon}
+                      blogTag={blogTag}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogDesc={blogDesc}
                       blogBtn={blogBtn}
                       blogBtnIcon={blogBtnIcon}
                     />

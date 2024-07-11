@@ -46,8 +46,8 @@ body {
 @media (min-width: 320px) and (max-width: 991px) {
   .is-sticky {
     @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
-  }  
-  
+  }
+
   .navbar2.is-sticky {
     @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-[#041424] backdrop-blur-md animate-headerSlideDown;
   }
@@ -279,22 +279,19 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   background: #0c59db !important;
 }
 
-.project
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+.project span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(0);
 }
 
-
-
-/* Pricing */
+/* Faq */
 
 .faq-button[aria-expanded="true"],
 .faq-button:hover {
-  background: #0c59db;
-  border-radius: 5px;
-  padding: 1px 20px 1px 30px;
-  border-color: transparent;
+  border-radius: 5px 5px 0 0;
+  border-color: #83a8ff;
 }
+
+/* Pricing */
 
 .pricing-box.active::before,
 .pricing-box:hover::before {
@@ -337,14 +334,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Pricing */
 
-
-
 .choose-box.active::before,
 .choose-box:hover::before {
   left: 0;
   width: 100%;
 }
-
 
 .choose-box.active .choose-icon,
 .choose-box:hover .choose-icon {
@@ -357,7 +351,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .choose-box.active .choose-list,
 .choose-box:hover .choose-price,
 .choose-box:hover .choose-title,
-.choose-box:hover .choose-desc ,
+.choose-box:hover .choose-desc,
 .choose-box:hover .choose-list {
   color: #fff;
 }
@@ -389,7 +383,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .portfolio .swiper-slide.swiper-slide-active .portfolio-img::before {
   height: 100%;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .portfolio .portfolio-box:hover .portfolio-icon,
@@ -406,8 +400,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   opacity: 1;
 }
 
-/* Project */
+.portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-content {
+bottom: 20px;
+}
 
+.portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-thumb::before {
+left: 0;
+width: 100%;
+opacity: .6;
+}
+
+/* Project */
 
 .project .swiper-slide.swiper-slide-active .project-btn {
   right: -25px;

@@ -16,9 +16,9 @@ const ProjectCard = ({
         </div>
         <div className="rounded-md shadow-shade absolute z-10 w-10/12 left-1/2 -translate-x-1/2 -bottom-[50px] bg-white xl:w-9/12 border-PrimaryColor-0">
           <div className="relative px-9 py-6">
-            <h1 className="font-Rajdhani font-medium text-lg text-PrimaryColor-0 my-1">
+            <h6 className="font-Rajdhani font-medium text-lg text-PrimaryColor-0 my-1">
               {projectSubTilte}
-            </h1>
+            </h6>
             <Link to={projectUrl}>
               <button className="font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] text-HeadingColor-0 text-left">
                 {projectTitle}

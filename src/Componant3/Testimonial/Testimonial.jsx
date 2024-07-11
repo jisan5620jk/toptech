@@ -1,63 +1,52 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/images/testi-author-1.png";
-import testiImg2 from "/images/testi-author-2.png";
-import testiImg3 from "/images/testi-author-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
-import { FaCircle, FaStarOfLife } from "react-icons/fa6";
-import { IoStar } from "react-icons/io5";
+import TestimonialNavigation from "./TestimonialNavigation";
 
 const testiData = [
   {
     id: 1,
-    testiImg: testiImg,
-    testiRatingIcon: <IoStar />,
-    testiName: "David Miller",
-    testIcon: <FaCircle />,
+    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
+                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiDesc: `Sometimes goods can arrive early when clients
-                being brought into the solution creative design
-                need place to stored for short goods can arrive
-                desig have space your needs.`,
   },
   {
     id: 2,
-    testiImg: testiImg2,
-    testiRatingIcon: <IoStar />,
-    testiName: "Jhon D. Alexon",
-    testIcon: <FaCircle />,
-    testiDesignation: "UI/UX Designer",
-    testiDesc: `Sometimes goods can arrive early when clients
-                being brought into the solution creative design
-                need place to stored for short goods can arrive
-                desig have space your needs.`,
+    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
+                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Anjelina Watson",
+    testiDesignation: "Web Developer",
   },
   {
     id: 3,
-    testiImg: testiImg3,
-    testIcon: <FaCircle />,
-    testiRatingIcon: <IoStar />,
-    testiName: "Al-Amin Islam",
+    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
+                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiDesc: `Sometimes goods can arrive early when clients
-                being brought into the solution creative design
-                need place to stored for short goods can arrive
-                desig have space your needs.`,
   },
   {
     id: 4,
-    testiImg: testiImg,
-    testIcon: <FaCircle />,
-    testiRatingIcon: <IoStar />,
-    testiName: "David Miller",
+    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
+                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiDesc: `Sometimes goods can arrive early when clients
-                being brought into the solution creative design
-                need place to stored for short goods can arrive
-                desig have space your needs.`,
+  },
+  {
+    id: 5,
+    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
+                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Anjelina Watson",
+    testiDesignation: "Web Developer",
   },
 ];
 
@@ -65,20 +54,20 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
+    speed: 1500,
     autoplay: true,
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 1,
       },
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 1,
       },
     },
   };
@@ -89,16 +78,15 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 bg-white relative z-10 overflow-hidden testimonial">
+    <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
-            <FaStarOfLife />
-            TESTIMONIALS
-            <FaStarOfLife />
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            Testimonial
           </h5>
-          <h1 className="font-Nunito font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-            What Our Clinets Says
+          <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
+            Customer’s Awesome Feedback <br />
+            About Our Services
           </h1>
         </div>
         <div className="mt-[46px]">
@@ -107,7 +95,6 @@ const Testimonial = () => {
               {testiData.map(
                 ({
                   id,
-                  testiImg,
                   testiRatingIcon,
                   testiName,
                   testiDesignation,
@@ -115,9 +102,8 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-12 md:pb-[80px] pt-3">
+                      <div className="pt-[80px] md:pt-[150px]">
                         <TestimonialCard
-                          testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
@@ -129,6 +115,7 @@ const Testimonial = () => {
                 }
               )}
             </div>
+            <TestimonialNavigation />
           </Swiper>
         </div>
       </div>

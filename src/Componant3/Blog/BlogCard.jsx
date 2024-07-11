@@ -3,48 +3,47 @@ import { Link } from "react-router-dom";
 
 const BlogCard = ({
   blogThumb,
-  thumbContent,
-  blogRelated,
+  blogDateIcon,
+  blogDate,
+  blogTagIcon,
+  blogTag,
   blogUrl,
   blogTitle,
-  blogDesc,
   blogBtn,
   blogBtnIcon,
 }) => {
   return (
-    <div className="group bg-white rounded-md mb-6 lg:mb-0">
-      <div className="relative overflow-hidden rounded-t-md z-10 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 after:transition-all after:duration-500 after:bg-gradient-to-t after:from-PrimaryColor-0 after:to-transparent group-hover:after:h-5/6">
+    <div className="group p-5 transition-all duration-500 bg-white rounded-md">
+      <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
         <img
           src={blogThumb}
           className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
         />
-        <div className="transition-all duration-500 absolute top-0 -left-full group-hover:left-0">
-          <h6 className="font-Nunito uppercase text-[15px] text-center inline-block overflow-hidden rounded-ee-[30px] px-7 py-[10px] text-white group-hover:text-white bg-PrimaryColor-0">
-            {thumbContent}
-          </h6>
-        </div>
       </div>
-      <div className="px-5 sm:px-7 pb-12 pt-7 relative">
-        <p className="font-Nunito font-light text-PrimaryColor-0 relative">
-          {blogRelated}
-        </p>
-        <Link to={blogUrl}>
-          <button className="font-Nunito text-left font-bold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-[6px] mb-3">
-            {blogTitle}
-          </button>
-        </Link>
-        <p className="font-Nunito text-TextColor-0">{blogDesc}</p>
-        <Link
-          to={blogUrl}
-          className="absolute -bottom-[25px] left-1/2 -translate-x-1/2"
-        >
-          <button className="font-Nunito rounded-full font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 w-[50px] group-hover:w-[176px] h-[50px] gap-2 overflow-hidden">
-            <span className="opacity-0 capitalize transition-all duration-500 group-hover:opacity-100 -ml-[100px] group-hover:ml-0">
+      <div className="rounded-md relative z-20 flex justify-center bg-white transition-all duration-500 sm:px-3 lg:px-3 2xl:px-3 pt-7">
+        <div>
+          <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
+            <p className="font-Nunito text-TextColor2-0 flex gap-2 items-center leading-[15px]">
+              <span className="text-PrimaryColor-0">{blogDateIcon}</span>
+              {blogDate}
+            </p>
+            <p className="font-Nunito text-TextColor2-0 flex gap-2 items-center leading-[15px]">
+              <span className="text-PrimaryColor-0 text-xl">{blogTagIcon}</span>
+              {blogTag}
+            </p>
+          </div>
+          <Link to={blogUrl}>
+            <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
+              {blogTitle}
+            </button>
+          </Link>
+          <Link to={blogUrl} className="inline-block">
+            <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
               {blogBtn}
-            </span>
-            <span>{blogBtnIcon}</span>
-          </button>
-        </Link>
+              {blogBtnIcon}
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

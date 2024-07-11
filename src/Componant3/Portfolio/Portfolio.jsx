@@ -1,44 +1,61 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRight, FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
-import portfolioThumb from "/images/portfolio-img5.png";
-import portfolioThumb2 from "/images/portfolio-img7.png";
-import portfolioThumb3 from "/images/portfolio-img6.png";
+import { FaPlus } from "react-icons/fa6";
+import portfolioThumb from "/images/portfolio4-1.jpg";
+import portfolioThumb2 from "/images/portfolio4-2.jpg";
+import portfolioThumb3 from "/images/portfolio4-3.jpg";
+import portfolioThumb4 from "/images/portfolio4-4.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import PortfolioCard from "./PortfolioCard";
 
-const PortfolioData = [
+const portfolioData = [
   {
     id: 1,
     portfolioThumb: portfolioThumb,
-    portfolioSubTitle: "RENEWABLE POWER",
-    portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/project_details",
-    portfolioIcon: <FaArrowRight />,
+    portfolioSubTilte: "Design",
+    portfolioTitle: "Mobile UI/UX Design",
+    portfolioUrl: "/portfolio_details",
+    portfolioBtn: <FaPlus />,
   },
   {
     id: 2,
     portfolioThumb: portfolioThumb2,
-    portfolioSubTitle: "RENEWABLE POWER",
-    portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/project_details",
-    portfolioIcon: <FaArrowRight />,
+    portfolioSubTilte: "Technology",
+    portfolioTitle: "Cyber Security & Protect",
+    portfolioUrl: "/portfolio_details",
+    portfolioBtn: <FaPlus />,
   },
   {
     id: 3,
     portfolioThumb: portfolioThumb3,
-    portfolioSubTitle: "RENEWABLE POWER",
-    portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/project_details",
-    portfolioIcon: <FaArrowRight />,
+    portfolioSubTilte: "IT Solution",
+    portfolioTitle: "Website Development",
+    portfolioUrl: "/portfolio_details",
+    portfolioBtn: <FaPlus />,
   },
   {
     id: 4,
+    portfolioThumb: portfolioThumb4,
+    portfolioSubTilte: "Technology",
+    portfolioTitle: "Cyber Security & Protect",
+    portfolioUrl: "/portfolio_details",
+    portfolioBtn: <FaPlus />,
+  },
+  {
+    id: 5,
+    portfolioThumb: portfolioThumb2,
+    portfolioSubTilte: "IT Solution",
+    portfolioTitle: "Website Development",
+    portfolioUrl: "/portfolio_details",
+    portfolioBtn: <FaPlus />,
+  },
+  {
+    id: 6,
     portfolioThumb: portfolioThumb,
-    portfolioSubTitle: "RENEWABLE POWER",
-    portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/project_details",
-    portfolioIcon: <FaArrowRight />,
+    portfolioSubTilte: "Design",
+    portfolioTitle: "Mobile UI/UX Design",
+    portfolioUrl: "/portfolio_details",
+    portfolioBtn: <FaPlus />,
   },
 ];
 
@@ -61,51 +78,43 @@ const Portfolio = () => {
         slidesPerView: 3,
       },
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 5,
       },
     },
   };
   return (
-    <section className="py-28 portfolio2 relative">
+    <section className="portfolio2 relative z-10 py-28 bg-white">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Nunito inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2 after:absolute after:top-1/2 after:right-0 after:w-6 after:h-3 after:bg-[url(/images/cleaning-shapes2.png)] after:bg-no-repeat after:bg-[inherit] after:-translate-y-1/2">
-            echofy PORTFOLIO
+        <div>
+          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+            PORTFOLIO
           </h5>
-          <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
-            Latest echofy<span className="text-PrimaryColor-0"> Portfolio</span>
-            <br />
-            From Work Gallary
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
+            Our Completed <span className="text-PrimaryColor-0">Projects</span>
           </h1>
-          <p className="font-Nunito text-TextColor-0 font-light mb-14">
-            Services we partners you as soon as possible your home or office
-            Just
-            <br className="hidden md:block" /> Feel Free contact us based web
-            develop Expert.
-          </p>
         </div>
       </div>
-      <div className="mt-[60px]">
+      <div className="mt-[60px] 2xl:mx-[60px]">
         <Swiper {...settings}>
           <div>
-            {PortfolioData.map(
+            {portfolioData.map(
               ({
                 id,
                 portfolioThumb,
-                portfolioSubTitle,
-                portfolioUrl,
+                portfolioSubTilte,
                 portfolioTitle,
-                portfolioIcon,
+                portfolioUrl,
+                portfolioBtn,
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div className="pb-10">
+                    <div>
                       <PortfolioCard
                         portfolioThumb={portfolioThumb}
-                        portfolioSubTitle={portfolioSubTitle}
+                        portfolioSubTilte={portfolioSubTilte}
                         portfolioUrl={portfolioUrl}
                         portfolioTitle={portfolioTitle}
-                        portfolioIcon={portfolioIcon}
+                        portfolioBtn={portfolioBtn}
                       />
                     </div>
                   </SwiperSlide>

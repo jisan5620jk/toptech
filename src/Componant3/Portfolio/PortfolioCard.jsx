@@ -3,30 +3,35 @@ import { Link } from "react-router-dom";
 
 const PortfolioCard = ({
   portfolioThumb,
-  portfolioSubTitle,
+  portfolioSubTilte,
   portfolioTitle,
   portfolioUrl,
-  portfolioIcon,
+  portfolioBtn,
 }) => {
   return (
     <div>
-      <div className="relative z-10">
-        <img src={portfolioThumb} />
-        <div className="portfolio-content2 bg-SecondaryColor-0 rounded-s-md rounded-e-md border-b-4 border-SecondaryColor-0 hover:border-PrimaryColor-0 absolute -bottom-full transition-all duration-500 left-1/2 -translate-x-1/2 flex justify-between items-center w-10/12 pt-6 px-4 lg:px-6 2xl:px-[30px] pb-6">
-          <div>
-            <p className="text-white font-Nunito">{portfolioSubTitle}</p>
+      <div className="portfolio-box relative z-10 group overflow-hidden">
+        <div className="portfolio-box-thumb rounded-md relative overflow-hidden before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-60">
+          <img src={portfolioThumb} draggable={false} className="w-full" />
+        </div>
+        <div className="portfolio-box-content rounded-md overflow-hidden absolute z-10 w-11/12 left-1/2 -translate-x-1/2 -bottom-full bg-white border-PrimaryColor-0 transition-all duration-500 group-hover:bottom-5">
+          <Link
+            to={portfolioUrl}
+            className="portfolio-btn transition-all duration-500 flex justify-center py-3"
+          >
+            <button className="flex items-center justify-center text-2xl text-PrimaryColor-0">
+              {portfolioBtn}
+            </button>
+          </Link>
+          <div className="bg-PrimaryColor-0 px-5 py-6">
             <Link to={portfolioUrl}>
-              <button className="font-Nunito font-semibold text-xl sm:text-2xl lg:text-[19px] xl:text-2xl text-white mt-2 text-left">
+              <button className="font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[26px] text-white text-left">
                 {portfolioTitle}
               </button>
             </Link>
-          </div>
-          <div>
-            <Link to={portfolioUrl}>
-              <button className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-white bg-PrimaryColor-0 relative -right-11">
-                {portfolioIcon}
-              </button>
-            </Link>
+            <p className="font-Nunito text-white mt-1">
+              {portfolioSubTilte}
+            </p>
           </div>
         </div>
       </div>

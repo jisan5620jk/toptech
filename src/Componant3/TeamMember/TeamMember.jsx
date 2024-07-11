@@ -1,7 +1,7 @@
-import teamThumb from "/images/team2-1.png";
-import teamThumb2 from "/images/team2-2.png";
-import teamThumb3 from "/images/team2-3.png";
-import teamThumb4 from "/images/team2-4.png";
+import teamThumb from "/images/team1.jpg";
+import teamThumb2 from "/images/team2.jpg";
+import teamThumb3 from "/images/team3.jpg";
+import teamThumb4 from "/images/team4.jpg";
 import TeamCard from "./TeamCard";
 import {
   FaLinkedinIn,
@@ -10,12 +10,12 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-const teamData = [
+const TeamData = [
   {
     id: 1,
     teamThumb: teamThumb,
     teamTitle: "Anjelina Watson",
-    teamDesc: "Solar Engineer",
+    teamDesc: "Web Developer",
     socialIcon: <FaXTwitter />,
     socialIcon2: <FaLinkedinIn />,
     socialIcon3: <FaPinterestP />,
@@ -24,7 +24,7 @@ const teamData = [
     id: 2,
     teamThumb: teamThumb2,
     teamTitle: "Jhon D. Alexon",
-    teamDesc: "Solar Engineer",
+    teamDesc: "IT Specialist",
     socialIcon: <FaXTwitter />,
     socialIcon2: <FaLinkedinIn />,
     socialIcon3: <FaPinterestP />,
@@ -33,7 +33,7 @@ const teamData = [
     id: 3,
     teamThumb: teamThumb3,
     teamTitle: "Al-Amin Islam",
-    teamDesc: "Solar Engineer",
+    teamDesc: "Graphic Designer",
     socialIcon: <FaXTwitter />,
     socialIcon2: <FaLinkedinIn />,
     socialIcon3: <FaPinterestP />,
@@ -42,7 +42,7 @@ const teamData = [
     id: 4,
     teamThumb: teamThumb4,
     teamTitle: "Ricerd Powel",
-    teamDesc: "Solar Engineer",
+    teamDesc: "Marketing",
     socialIcon: <FaXTwitter />,
     socialIcon2: <FaLinkedinIn />,
     socialIcon3: <FaPinterestP />,
@@ -63,7 +63,7 @@ const TeamMember = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
-          {teamData.map(
+          {TeamData.map(
             ({
               id,
               teamThumb,

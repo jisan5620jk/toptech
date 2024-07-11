@@ -48,9 +48,9 @@ const Appionment = () => {
                 <div className="relative inline-block">
                   <input
                     type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Enter Name*"
+                    name="number"
+                    id="number"
+                    placeholder="Enter Number*"
                     required
                     className="font-Nunito text-TextColor2-0 font-light bg-transparent border-2 border-BorderColor2-0 rounded py-2 px-6 h-[60px] w-full focus:outline-PrimaryColor-0"
                   />

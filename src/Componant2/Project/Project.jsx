@@ -35,7 +35,7 @@ const ProjectData = [
     projectBtn: <FaPlus />,
   },
   {
-    id: 2,
+    id: 4,
     projectThumb: projectThumb2,
     projectSubTilte: "Technology",
     projectTitle: "Cyber Security & Protect",
