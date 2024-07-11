@@ -6,7 +6,6 @@ import TeamCard from "./TeamCard";
 import {
   FaLinkedinIn,
   FaPinterestP,
-  FaStarOfLife,
   FaXTwitter,
 } from "react-icons/fa6";
 
@@ -51,18 +50,17 @@ const TeamData = [
 
 const TeamMember = () => {
   return (
-    <section className="py-28">
+    <section className="pb-28">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-            <FaStarOfLife />
-            PROFESSIONALS TEAM <FaStarOfLife />
+          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+            TEAM MEMBER
           </h5>
-          <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
-            Our Creative Members
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-SecondaryColor-0 mt-3 mb-4">
+            Meet With Our <span className="text-PrimaryColor-0">Engineer</span>
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-20 mt-12">
           {TeamData.map(
             ({
               id,

@@ -81,12 +81,12 @@ const Testimonial = () => {
     <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-            Testimonial
+          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+            SERVICE WE PROVIDE
           </h5>
-          <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-SecondaryColor-0 mt-3 mb-4">
             Customer’s Awesome Feedback <br />
-            About Our Services
+            About Our <span className="text-PrimaryColor-0">Services</span>
           </h1>
         </div>
         <div className="mt-[46px]">

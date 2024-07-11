@@ -55,7 +55,7 @@ const Process = () => {
             <span className="text-PrimaryColor-0">Technology</span>
           </h1>
         </div>
-          <div className="mt-[94px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-10">
+          <div className="mt-[94px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-16">
             {processData.map(
               ({
                 id,

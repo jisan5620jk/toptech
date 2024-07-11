@@ -49,14 +49,6 @@ const portfolioData = [
     portfolioUrl: "/portfolio_details",
     portfolioBtn: <FaPlus />,
   },
-  {
-    id: 6,
-    portfolioThumb: portfolioThumb,
-    portfolioSubTilte: "Design",
-    portfolioTitle: "Mobile UI/UX Design",
-    portfolioUrl: "/portfolio_details",
-    portfolioBtn: <FaPlus />,
-  },
 ];
 
 const Portfolio = () => {
@@ -78,7 +70,7 @@ const Portfolio = () => {
         slidesPerView: 3,
       },
       1400: {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
     },
   };

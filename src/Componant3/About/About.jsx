@@ -23,7 +23,7 @@ const About = () => {
             <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
               WHO WE ARE
             </h5>
-            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
+            <h1 className="font-Rajdhani font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
               Get Exclusive It Solutions & <br />
               Services With <span className="text-PrimaryColor-0">TopTech</span>
             </h1>
@@ -63,7 +63,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-10 flex gap-6 items-center">
+            <div className="mt-10 flex flex-col sm:flex-row gap-6 sm:items-center">
               <Link to={"/about"} className="inline-block">
                 <button className="primary-btn">
                   {`More About`}

@@ -79,7 +79,7 @@ const Service = () => {
           <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
             SERVICE WE PROVIDE
           </h5>
-          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-white mt-3 mb-4">
+          <h1 className="font-Rajdhani font-bold text-lg leading-6 sm:text-[32px] sm:leading-[42px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-white mt-3 mb-4">
             All Professional We’re Offering Best & <br />
             IT Solutions & <span className="text-PrimaryColor-0">Services</span>
           </h1>

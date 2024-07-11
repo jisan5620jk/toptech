@@ -35,10 +35,10 @@ const Faq = () => {
 
   return (
     <div className="Container">
-      <section className="relative overflow-hidden bg-[#e6eefb] rounded-xl p-10">
+      <section className="relative overflow-hidden bg-[#e6eefb] rounded-xl p-2 sm:p-5 md:p-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
-          <div className="bg-[#083c92] rounded-xl px-[50px] pt-16 pb-[76px]">
-            <h1 className="font-Rajdhani font-bold text-[38px] text-white mb-5">
+          <div className="bg-[#083c92] rounded-xl px-3 sm:px-[50px] pt-7 sm:pt-16 pb-8 sm:pb-[76px]">
+            <h1 className="font-Rajdhani font-bold text-2xl sm:text-3xl md:text-[38px] lg:text-3xl xl:text-[38px] text-white mb-5">
               Get Free Estimate
             </h1>
             <form action="#" method="post" className="flex flex-col gap-y-5">
