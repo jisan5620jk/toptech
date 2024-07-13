@@ -2,41 +2,31 @@
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({
-  serviceThumb,
   serviceIcon,
   serviceTitle,
   serviceUrl,
   serviceDesc,
-  serviceBtn,
   serviceBtnIcon,
 }) => {
   return (
-    <div className="shadow-shade rounded-md bg-white text-center p-6 group relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:rounded-md hover:before:w-full hover:before:left-0 pr-7 mb-6 lg:mb-0 sm:mr-8 md:mr-0">
-      <div className="relative">
-        <img src={serviceThumb} draggable="false" className="w-full" />
-        <div className="absolute right-0 bottom-0">
-          <div className="w-[85px] h-[85px] rounded-t-md rounded-l-md bg-white relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-[2px] before:-z-10 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full">
-            <img
-              src={serviceIcon}
-              draggable="false"
-              className="brightness-100 invert-0 group-hover:brightness-0 group-hover:invert-[1] transition-all duration-500 "
-            />
-          </div>
+    <div className="rounded-md bg-white pl-[80px]  group relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:rounded-md hover:before:w-full hover:before:left-0 mb-6 lg:mb-0">
+      <div className="absolute -left-[43px] top-1/2 -translate-y-1/2">
+        <div className="size-[86px] rounded-full bg-PrimaryColor-0 relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-[12px] before:left-[12px] before:size-[62px] before:border before:border-dashed before:border-white before:rounded-full before:animate-rotational">
+          <img src={serviceIcon} draggable="false" />
         </div>
       </div>
-      <div>
-        <h5 className="font-Nunito font-bold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-7 pb-3">
+      <div className="overflow-hidden relative">
+        <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-9 pb-3">
           {serviceTitle}
         </h5>
-        <p className="font-Nunito text-TextColor-0 mb-8">{serviceDesc}</p>
+        <p className="font-Nunito text-TextColor2-0 mb-8 transition-all duration-500 group-hover:text-TextColor-0">
+          {serviceDesc}
+        </p>
         <Link
           to={serviceUrl}
-          className="absolute -bottom-[25px] left-1/2 -translate-x-1/2"
+          className="absolute -bottom-14 -right-14 transition-all duration-500 group-hover:bottom-0 group-hover:right-0"
         >
-          <button className="font-Nunito rounded-full font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 w-[50px] group-hover:w-[176px] h-[50px] gap-2 overflow-hidden">
-            <span className="opacity-0 transition-all duration-500 group-hover:opacity-100 -ml-[90px] group-hover:ml-0">
-              {serviceBtn}
-            </span>
+          <button className="font-Nunito rounded-ss-md font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 size-10 gap-2 overflow-hidden">
             <span>{serviceBtnIcon}</span>
           </button>
         </Link>

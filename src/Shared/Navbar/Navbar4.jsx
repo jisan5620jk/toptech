@@ -10,7 +10,6 @@ import { BiChevronDown } from "react-icons/bi";
 import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
 
 const Navbar2 = () => {
   //sticky
@@ -45,7 +44,7 @@ const Navbar2 = () => {
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
       <header
-        className="header-section navbar2 bg-transparent w-full z-10"
+        className="header-section bg-transparent w-full z-10"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >

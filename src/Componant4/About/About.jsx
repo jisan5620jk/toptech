@@ -1,95 +1,67 @@
-import { FaStarOfLife } from "react-icons/fa6";
-import aboutThumb from "/images/about4-thumb.png";
-import ProgressBar from "react-animated-progress-bar";
+import aboutThumb from "/images/about1.png";
+import { Link } from "react-router-dom";
+import CountUp from "react-countup";
+import { PiStarFourFill } from "react-icons/pi";
 
 const About = () => {
   return (
-    <section className="py-28 bg-white bg-cover bg-center bg-no-repeat">
+    <section className="py-[120px] bg-no-repeat bg-center bg-cover relative">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 2xl:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
+          <div className="relative">
+            <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <PiStarFourFill size={"14"} />
+              ABOUT COMPANY
+            </h5>
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
+              Expert Consulting for Diverse
+              <br /> Financial Services.
+            </h1>
+            <p className="font-Nunito text-TextColor2-0 text-lg pb-6">
+              Professionally optimize interdependent intellectual interoperable
+              visuali design infoediaries main issue state icreative planing
+              main best practices.
+            </p>
+            <div className="grid grid-cols-2 items-center mb-11">
+              <ul className="space-y-3">
+                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
+                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
+                  Defining IT Solutions
+                </li>
+                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
+                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
+                  Evaluating Sources
+                </li>
+              </ul>
+              <ul className="space-y-3">
+                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
+                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
+                  Audience Analysis
+                </li>
+                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
+                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
+                  Testing the Solution
+                </li>
+              </ul>
+            </div>
+            <Link to={"/about"}>
+              <button className="primary-btn4">{`Get Started Now`}</button>
+            </Link>
+          </div>
           <div className="relative z-10">
             <img src={aboutThumb} draggable="false" />
-          </div>
-          <div>
-            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <FaStarOfLife />
-              COMPANY BENEFITS
-            </h5>
-            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
-              Solar Energy is a Free
-              <br />
-              Raw Material.
-            </h1>
-            <p className="font-Nunito text-TextColor-0 font-light">
-              Sometimes goods can arrive early when they being brought into the
-              solution other times items need a place to be stored for short
-              goods can arrive desig headquarters have enough space your needs.
-            </p>
-            <div className="mt-9">
-              <h5 className="font-Nunito text-xl font-medium text-HeadingColor-0 pb-3">
-                Wind Turbines
-              </h5>
-              <ProgressBar
-                rect
-                width="100%"
-                height="8px"
-                fontColor="#d9d9d7"
-                fontSize="16px"
-                percentage="80"
-                defColor={{
-                  excellent: "#001817",
-                  good: "blue",
-                  fair: "green",
-                  poor: "red",
-                }}
-                rectBorderRadius="0px"
-                trackPathColor="#ransparent"
-                trackBorderColor="#d5d6d2"
-              />
-            </div>
-            <div className="mt-4">
-              <h5 className="font-Nunito text-xl font-medium text-HeadingColor-0 pb-3">
-                Hybrid Energy
-              </h5>
-              <ProgressBar
-                rect
-                width="100%"
-                height="8px"
-                fontColor="#fff"
-                fontSize="16px"
-                percentage="95"
-                defColor={{
-                  excellent: "#efad4d",
-                  good: "blue",
-                  fair: "green",
-                  poor: "red",
-                }}
-                rectBorderRadius="0px"
-                trackPathColor="#ransparent"
-                trackBorderColor="#d5d6d2"
-              />
-            </div>
-            <div className="mt-4">
-              <h5 className="font-Nunito text-xl font-medium text-HeadingColor-0 pb-3">
-                Solar Energy
-              </h5>
-              <ProgressBar
-                rect
-                width="100%"
-                height="8px"
-                fontColor="#fff"
-                fontSize="16px"
-                percentage="70"
-                defColor={{
-                  excellent: "#79b900",
-                  good: "blue",
-                  fair: "green",
-                  poor: "red",
-                }}
-                rectBorderRadius="0px"
-                trackPathColor="#ransparent"
-                trackBorderColor="#d5d6d2"
-              />
+            <div className="absolute bottom-11 right-0">
+              <div className="bg-PrimaryColor-0 rounded-ee-lg pb-6 pt-5 pl-[30px] pr-10 flex justify-between overflow-hidden h-[100px] w-[300px] xl:w-[260px] 2xl:w-[300px] items-center text-center relative z-10 before:absolute before:top-0 before:left-0 before:w-[118px] before:-z-10 before:h-full before:bg-SecondaryColor-0">
+                <CountUp
+                  start={-15}
+                  end={22}
+                  suffix=""
+                  className="text-3xl sm:text-[56px] font-Rajdhani font-bold text-white"
+                />
+                <h6 className="font-Rajdhani text-left text-sm leading-4 sm:text-xl sm:leading-6 font-semibold text-white">
+                  Years Of <br /> Experiences
+                </h6>
+              </div>
             </div>
           </div>
         </div>
