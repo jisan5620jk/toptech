@@ -1,43 +1,78 @@
 import { Link } from "react-router-dom";
-import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import heroImg from "/images/hero4-image.png";
-import bannerShape from "/images/hero4-shape.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "./banner.css";
+import "swiper/css/pagination";
+import { FaArrowRightLong } from "react-icons/fa6";
+import BannerNavigation from "./BannerNavigation";
 
 const Banner = () => {
+  const settings = {
+    loop: true,
+    speed: 2000,
+    effect: "fade",
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    duration: 3000,
+  };
   return (
-    <section className="bg-[url('/images/hero4-bg.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[600px] md:h-[650px] lg:h-[700px] xl:h-[802px] flex items-center relative">
-      <img
-        src={bannerShape}
-        className="absolute lg:top-10 2xl:top-20 lg:left-10 2xl:left-[5%] animate-rotational lg:block hidden"
-      />
-      <div className="Container">
-        <div className="relative">
-          <h5 className="font-Nunito text-PrimaryColor-0 font-medium mb-3 flex items-center gap-2">
-            <FaStarOfLife /> SOLUTIONS FOR ENVIROMENTAL PROTECTION
-          </h5>
-          <h1 className="font-Nunito font-extrabold text-HeadingColor-0 text-[30px] leading-[38px] sm:text-[56px] sm:leading-[56px] md:text-[66px] md:leading-[80px] xl:text-[74px] xl:leading-[82px] 2xl:text-[85px] 2xl:leading-[92px]">
-            Renewable Solar
-            <br />
-            <span className="flex items-center gap-3 md:gap-16">
-              Solutions <img src={heroImg} className="w-4/12 md:w-[inherit]" />
-            </span>
-          </h1>
-          <p className="font-Nunito text-TextColor-0 mt-4">
-            Sometimes goods can arrive early when they being brought into the
-            solution other times <br className="hidden md:block" /> need a place
-            for can a headquarters have enough space your needs.
-          </p>
-          <div className="mt-11 inline-block">
-            <Link to={"/about"}>
-              <button className="primary-btn2">
-                {`Find Out More`}
-                <FaArrowRightLong />
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="relative">
+      <Swiper {...settings}>
+        <SwiperSlide>
+          <section className="bg-[url('/images/banner-slider.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[800px] lg:h-[960px] xl:h-[952px] flex items-center">
+            <div className="Container">
+              <div className="relative banner-content text-center pt-[47px]">
+                <h5 className="font-AlbertSans text-white font-medium mb-8">
+                  SOLUTIONS FOR ENVIROMENTAL PROTECTION
+                </h5>
+                <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[76px] xl:leading-[90px]">
+                  YOUR JOURNEY TO SOLAR
+                </h1>
+                <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[76px] xl:leading-[90px] -mt-0 sm:-mt-3 md:mt-2 lg:mt-2">
+                  EMPOWERMENT
+                </h1>
+                <div className="flex justify-center m-auto mt-9">
+                  <Link to={"/about"}>
+                    <button className="primary-btn2">
+                      {`Find Out More`}
+                      <FaArrowRightLong />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="bg-[url('/images/slider-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[800px] lg:h-[960px] xl:h-[952px] flex items-center">
+            <div className="Container">
+              <div className="relative banner-content text-center pt-[47px]">
+                <h5 className="font-AlbertSans text-white font-medium mb-8">
+                  SOLUTIONS FOR ENVIROMENTAL PROTECTION
+                </h5>
+                <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[76px] xl:leading-[90px]">
+                  YOUR JOURNEY TO SOLAR
+                </h1>
+                <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[76px] xl:leading-[90px] -mt-0 sm:-mt-3 md:mt-2 lg:mt-2">
+                  EMPOWERMENT
+                </h1>
+                <div className="flex justify-center m-auto mt-9">
+                  <Link to={"/about"}>
+                    <button className="primary-btn2">
+                      {`Find Out More`}
+                      <FaArrowRightLong />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        </SwiperSlide>
+        <BannerNavigation />
+      </Swiper>
+    </div>
   );
 };
 

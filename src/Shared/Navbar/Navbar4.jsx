@@ -1,23 +1,18 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import {
-  FaArrowRightLong,
   FaBars,
-  FaFacebookF,
   FaLinkedinIn,
-  FaPhone,
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
-import Logo from "/images/black-logo.png";
+import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { CiLocationOn } from "react-icons/ci";
 
-const Navbar4 = () => {
+const Navbar2 = () => {
   //sticky
 
   useEffect(() => {
@@ -30,7 +25,7 @@ const Navbar4 = () => {
   /* Method that will fix header after a specific scrollable */
 
   const isSticky = (e) => {
-    const header = document.querySelector(".header-section4");
+    const header = document.querySelector(".header-section");
     const scrollTop = window.scrollY;
     scrollTop >= 250
       ? header.classList.add("is-sticky")
@@ -49,72 +44,8 @@ const Navbar4 = () => {
     <nav
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
-      {/* top Navbar */}
-      <header className="overflow-hidden md:block bg-PrimaryColor-0">
-        <div className="Container flex items-center justify-between h-[50px]">
-          <div className="flex items-center gap-10">
-            <p className="font-Nunito text-[15px] text-white sm:flex hidden items-center gap-1">
-              <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
-              102/B New Market, Sandigo-USA
-            </p>
-            <Link
-              to={"/"}
-              className="font-Nunito text-[15px] text-white md:flex items-center gap-2 hidden"
-            >
-              <HiOutlineMailOpen size={"16"} className="text-white" />
-              example@gmail.com
-            </Link>
-            <div className="lg:flex items-center gap-2 hidden">
-              <span className="flex items-center gap-2 text-sm text-white">
-                <FaPhone />
-              </span>
-              <Link
-                to={"/"}
-                className="font-Nunito font-medium text-sm text-white"
-              >
-                +123 (4567) 890
-              </Link>
-            </div>
-          </div>
-          <ul className="flex gap-3 items-center">
-            <li>
-              <Link
-                to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
-              >
-                <FaFacebookF />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
-              >
-                <FaXTwitter />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
-              >
-                <FaLinkedinIn />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
-              >
-                <FaPinterestP />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </header>
-      {/* top Navbar */}
       <header
-        className="header-section4 bg-white border-b border-BorderColor2-0"
+        className="header-section navbar2 bg-transparent w-full z-10"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
@@ -122,7 +53,7 @@ const Navbar4 = () => {
           {/* main Navbar */}
           <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px] ">
             {/* website Logo */}
-            <div className="w-48 lg:w-52">
+            <div className=" w-48 lg:w-52">
               <Link to="/">
                 <img
                   draggable="false"
@@ -133,7 +64,7 @@ const Navbar4 = () => {
               </Link>
             </div>
             {/* small screen size */}
-            <div className="px-3 w-full lg:hidden flex justify-between bg-khaki h-[70px] items-center p-3">
+            <div className="w-full lg:hidden flex justify-between h-[70px] items-center p-3">
               <div className="w-28">
                 <Link to="/">
                   <img
@@ -158,11 +89,11 @@ const Navbar4 = () => {
               </button>
             </div>
             {/* All navLink are hear with active */}
-            <div className="flex gap-6 items-center">
+            <div className="flex gap-16 items-center">
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
               >
                 <NavLink
@@ -172,7 +103,7 @@ const Navbar4 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
@@ -184,28 +115,28 @@ const Navbar4 = () => {
                     data-aos-duration="1000"
                   >
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
+                      <div className="px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/" className="py-2 block">
                             Home One
                           </Link>
                         </li>
                       </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
+                      <div className="px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/home2" className="py-2 block">
                             Home Two
                           </Link>
                         </li>
                       </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
+                      <div className="px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/home3" className="py-2 block">
                             Home Three
                           </Link>
                         </li>
                       </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
+                      <div className="px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/home4" className="py-2 block">
                             Home Four
@@ -228,7 +159,7 @@ const Navbar4 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
                   <span>About</span>
@@ -239,7 +170,7 @@ const Navbar4 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -247,7 +178,7 @@ const Navbar4 = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
@@ -271,7 +202,7 @@ const Navbar4 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -279,7 +210,7 @@ const Navbar4 = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/about" className="py-2 block">
@@ -367,7 +298,7 @@ const Navbar4 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -375,7 +306,7 @@ const Navbar4 = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blog_grid" className="py-2 block">
@@ -406,19 +337,36 @@ const Navbar4 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
+                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
                 </NavLink>
               </ul>
-              <div className="hidden lg:flex items-center">
-                <Link to={"/"}>
-                  <IoSearch className="text-2xl ml-2 mr-10 text-PrimaryColor-0" />
+              <div className="hidden lg:flex gap-[80px] items-center">
+                <Link to={"/appointment"} className="header-btn">
+                  Get A Quote
                 </Link>
-                <Link to={"/appointment"} className="primary-btn2">
-                  Get Solution <FaArrowRightLong />
-                </Link>
+                <div className="flex gap-2 items-center">
+                  <h5 className="font-Nunito text-HeadingColor-0 text-lg font-medium">Share : </h5>
+                  <ul className="flex items-center gap-4">
+                    <li>
+                      <button className="text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0">
+                        <FaLinkedinIn size={"14"} />
+                      </button>
+                    </li>
+                    <li>
+                      <button className="text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0">
+                        <FaXTwitter size={"14"} />
+                      </button>
+                    </li>
+                    <li>
+                      <button className="text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0">
+                        <FaPinterestP size={"14"} />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -428,4 +376,4 @@ const Navbar4 = () => {
   );
 };
 
-export default Navbar4;
+export default Navbar2;
