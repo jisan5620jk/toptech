@@ -2,34 +2,28 @@
 import CountUp from "react-countup";
 
 const CounterCard = ({
-  counterIcon,
   counterNumber,
+  counterTitle,
   counterDesc,
-  counterDesc2,
   counterSuffex,
 }) => {
   return (
-    <div className="text-center relative z-10 pl-[80px]">
-      <div>
-        <h1 className="counter-stroke font-Nunito text-transparent text-[150px] absolute top-1/2 -translate-y-1/2 left-0 opacity-20 -z-10">
-          {counterIcon}
-        </h1>
-      </div>
-      <div className="flex gap-5 items-center">
-        <div>
+    <div className="text-center relative z-10">
+      <div className="flex gap-7 items-center">
+        <div className="relative before:absolute before:-bottom-5 before:left-0 before:w-full before:h-[1px] before:bg-PrimaryColor-0 ">
           <CountUp
-            start={-11}
+            start={-15}
             end={counterNumber}
             suffix={counterSuffex}
-            className="font-Nunito text-[70px] text-white font-bold"
+            className="font-Rajdhani text-[70px] leading-10 text-white font-bold"
           />
         </div>
         <div className="!block text-left">
-          <p className="font-Nunito text-white font-medium uppercase">
-            {counterDesc}
+          <p className="font-Rajdhani text-[22px] text-white font-semibold uppercase">
+            {counterTitle}
           </p>
-          <p className="font-Nunito text-white font-semibold text-[22px]">
-            {counterDesc2}
+          <p className="font-Nunito text-TextColor-0 pt-2">
+            {counterDesc}
           </p>
         </div>
       </div>

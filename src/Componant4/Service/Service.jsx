@@ -1,111 +1,94 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRightLong } from "react-icons/fa6";
-import serviceIcon from "/images/service1.png";
-import serviceIcon2 from "/images/service2.png";
-import serviceIcon3 from "/images/service3.png";
-import serviceIcon4 from "/images/service4.png";
-import serviceIcon5 from "/images/service5.png";
-import serviceIcon6 from "/images/service6.png";
+import serviceIcon from "/images/service7.png";
+import serviceIcon2 from "/images/service8.png";
+import serviceIcon3 from "/images/service9.png";
+import serviceIcon4 from "/images/service10.png";
 import ServiceCard from "./ServiceCard";
 import { PiStarFourFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
-const serviceData = [
+const ServiceData = [
   {
     id: 1,
     serviceIcon: serviceIcon,
-    serviceTitle: `Strategic marketing`,
+    serviceTitle: "Business Planning",
     serviceDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
-    serviceUrl: "/service_details",
-    serviceBtnIcon: <FaArrowRightLong />,
+      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
+    serviceUrl: "/servie_details",
+    serviceBtn: "Read More",
   },
   {
     id: 2,
     serviceIcon: serviceIcon2,
-    serviceTitle: `Investment Planning`,
+    serviceTitle: "Problem-Solving",
     serviceDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
-    serviceUrl: "/service_details",
-    serviceBtnIcon: <FaArrowRightLong />,
+      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
+    serviceUrl: "/servie_details",
+    serviceBtn: "Read More",
   },
   {
     id: 3,
     serviceIcon: serviceIcon3,
-    serviceTitle: `Insights & analytics`,
+    serviceTitle: "Project Reporting",
     serviceDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
-    serviceUrl: "/service_details",
-    serviceBtnIcon: <FaArrowRightLong />,
+      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
+    serviceUrl: "/servie_details",
+    serviceBtn: "Read More",
   },
   {
     id: 4,
     serviceIcon: serviceIcon4,
-    serviceTitle: `Business consulting`,
+    serviceTitle: "Professional Team",
     serviceDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
-    serviceUrl: "/service_details",
-    serviceBtnIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 5,
-    serviceIcon: serviceIcon4,
-    serviceTitle: `Finance & Restructuring`,
-    serviceDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
-    serviceUrl: "/service_details",
-    serviceBtnIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 6,
-    serviceIcon: serviceIcon4,
-    serviceTitle: `Audit and Evaluation`,
-    serviceDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
-    serviceUrl: "/service_details",
-    serviceBtnIcon: <FaArrowRightLong />,
+      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
+    serviceUrl: "/servie_details",
+    serviceBtn: "Read More",
   },
 ];
 
 const Service = () => {
   return (
-    <section className="pt-28 pb-[120px] relative bg-BodyBg-0">
+    <section className="pt-28 pb-[120px] bg-SecondaryColor-0 relative z-10">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 gap-1 mb-6">
+        <div className="grid gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
               <PiStarFourFill size={"14"} />
-              SERVICE FEATURES
+              OUT TOPTECH SERVICES
             </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[55px] text-HeadingColor-0 mt-4 mb-6">
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-4 mb-4">
               Let’s Discover Our Service
               <br /> Features Charter.
             </h1>
           </div>
+          <div className="flex justify-end">
+            <Link to={"/about"}>
+              <button className="primary-btn4">{`Make An Appointment`}</button>
+            </Link>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:items-center lg:grid-cols-3 gap-x-[72px] gap-y-7">
-          {serviceData.map(
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[34px]">
+          {ServiceData.map(
             ({
               id,
-              serviceThumb,
               serviceIcon,
               serviceTitle,
               serviceDesc,
               serviceUrl,
               serviceBtn,
-              serviceBtnIcon,
             }) => {
               return (
-                <div key={id}>
-                  <ServiceCard
-                    serviceThumb={serviceThumb}
-                    serviceIcon={serviceIcon}
-                    serviceTitle={serviceTitle}
-                    serviceDesc={serviceDesc}
-                    serviceUrl={serviceUrl}
-                    serviceBtn={serviceBtn}
-                    serviceBtnIcon={serviceBtnIcon}
-                  />
-                </div>
+                <>
+                  <div key={id}>
+                    <ServiceCard
+                      serviceIcon={serviceIcon}
+                      serviceTitle={serviceTitle}
+                      serviceDesc={serviceDesc}
+                      serviceUrl={serviceUrl}
+                      serviceBtn={serviceBtn}
+                    />
+                  </div>
+                </>
               );
             }
           )}

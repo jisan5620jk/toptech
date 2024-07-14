@@ -1,82 +1,59 @@
-/* eslint-disable no-unused-vars */
-import processIcon from "/images/work-icon.png";
-import processIcon2 from "/images/work-icon2.png";
-import processIcon3 from "/images/work-icon3.png";
-import processShape from "/images/work-shape3.png";
-import processShape2 from "/images/work-shape4.png";
-import ProcessCard from "./ProcessCard";
-
-const processData = [
-  {
-    id: 1,
-    processIcon: processIcon,
-    boxNumber: "1",
-    processTitle: "Find Us Online",
-    processDesc: "Repurpose go forward benefits more conveniently e-business",
-  },
-  {
-    id: 2,
-    processIcon: processIcon2,
-    boxNumber: "2",
-    processTitle: "Choose Services",
-    processDesc: "Repurpose go forward benefits more conveniently e-business",
-  },
-  {
-    id: 3,
-    processIcon: processIcon3,
-    boxNumber: "3",
-    processTitle: "Book Appoinment",
-    processDesc: "Repurpose go forward benefits more conveniently e-business",
-  },
-];
+import { Link } from "react-router-dom";
+import processThumb from "/images/process-thumb.png";
+import { PiStarFourFill } from "react-icons/pi";
+import { useState } from "react";
+import FsLightbox from "fslightbox-react";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 const Process = () => {
+      const [toggler, setToggler] = useState(false);
   return (
-    <section className="pt-[90px] pb-10 relative">
-      <div className="processShape">
-        <img
-          src={processShape}
-          className="absolute left-0 top-1/3 -translate-y-1/2 animate-dance3 hidden 2xl:block"
-        />
-      </div>
-      <div className="processShape2">
-        <img
-          src={processShape2}
-          className="absolute right-[5%] top-[20%] -translate-y-1/2 animate-movebtn hidden 2xl:block"
-        />
-      </div>
+    <section className="bg-BodyBg-0 py-28">
       <div className="Container">
-        <div className="text-center">
-          <div>
-            <h5 className="font-Nunito font-medium text-SecondaryColor-0">
-              WORKING PROCESS
-            </h5>
-            <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
-              Easy Steps to Works
-            </h1>
-            <p className="font-Nunito text-TextColor-0 font-light lg:w-3/5 2xl:w-3/4 mx-auto">
-              Competently repurpose go forward benefits without goal-oriented
-              ROI <br className="hidden md:block" /> conveniently target
-              e-business opportunities whereas
-            </p>
+        <div className="grid lg:grid-cols-2 lg:items-center gap-10 xl:gap-20 2xl:gap-[150px]">
+          <div className="relative">
+            <img src={processThumb} draggable="false" />
+            <div className="absolute top-1/2 right-[150px] -translate-y-1/2">
+              <button className="size-[100px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-xl relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-[11px] before:left-[11px] before:size-[78px] before:border before:border-dashed before:border-white before:rounded-full before:animate-rotational">
+                <span onClick={() => setToggler(!toggler)}>Play</span>
+              </button>
+              <FsLightbox
+                toggler={toggler}
+                sources={[
+                  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                ]}
+              />
+            </div>
           </div>
-        </div>
-        <div className="pb-16 mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {processData.map(
-              ({ id, processIcon, processTitle, boxNumber, processDesc }) => {
-                return (
-                  <div key={id}>
-                    <ProcessCard
-                      processIcon={processIcon}
-                      boxNumber={boxNumber}
-                      processTitle={processTitle}
-                      processDesc={processDesc}
-                    />
-                  </div>
-                );
-              }
-            )}
+          <div>
+            <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <PiStarFourFill size={"14"} />
+              WORK PROCESSING
+            </h5>
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[42px] xl:leading-[52px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
+              Expert Consulting for Diverse
+              <br /> Financial Services.
+            </h1>
+            <p className="font-Nunito text-TextColor2-0 text-lg pb-7">
+              Professionaly optimize interdependent intelectual services visuali
+              design infoediaries main issue state icreative planing main best
+              practices.
+            </p>
+            <p className="font-Nunito text-TextColor2-0 text-lg pb-6">
+              Our team of seasoned experts is here to you to unlock your provid
+              business’s potential and achieve remar success.
+            </p>
+            <div className="flex items-center gap-7 mt-5">
+              <Link to={"/about"}>
+                <button className="primary-btn4">{`Read More`}</button>
+              </Link>
+              <Link to={"/home4"}>
+                <button className="font-Nunito font-medium text-TextColor2-0 flex items-center gap-2">
+                  {`CUSTOMER DETAILS`}
+                  <HiOutlineArrowRight size={"20"}/>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

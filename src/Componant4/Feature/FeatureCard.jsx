@@ -1,31 +1,35 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 
 const FeatureCard = ({
-  featureShape,
   featureIcon,
   featureTitle,
+  featureUrl,
   featureDesc,
+  featureBtnIcon,
 }) => {
   return (
-    <div className="group flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center sm:items-center gap-5 overflow-hidden bg-[#f7f7f7] px-[30px] py-8 rounded relative z-10 before:absolute before:bottom-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:w-full">
-      <img
-        src={featureShape}
-        draggable="false"
-        className="absolute bottom-0 right-0 -z-10"
-      />
-      <div className="w-[76px] h-[76px] rounded-full flex justify-center items-center overflow-hidden bg-PrimaryColor-0 relative z-10 before:absolute before:bottom-0 before:right-0 before:w-full before:h-full before:bg-white before:scale-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:scale-100">
-        <img
-          src={featureIcon}
-          className="brightness-0 invert-[1] transition-all duration-500 group-hover:brightness-1 group-hover:invert-[inherit]"
-        />
+    <div className="rounded-md bg-white pl-[80px]  group relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:rounded-md hover:before:w-full hover:before:left-0 mb-6 lg:mb-0">
+      <div className="absolute -left-[43px] top-1/2 -translate-y-1/2">
+        <div className="size-[86px] rounded-full bg-PrimaryColor-0 relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-[12px] before:left-[12px] before:size-[62px] before:border before:border-dashed before:border-white before:rounded-full before:animate-rotational">
+          <img src={featureIcon} draggable="false" />
+        </div>
       </div>
-      <div className="flex-1">
-        <h5 className="font-Nunito font-semibold text-xl md:text-lg lg:text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+      <div className="overflow-hidden relative">
+        <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-9 pb-3">
           {featureTitle}
         </h5>
-        <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white mt-[6px]">
+        <p className="font-Nunito text-TextColor2-0 mb-8 transition-all duration-500 group-hover:text-TextColor-0">
           {featureDesc}
         </p>
+        <Link
+          to={featureUrl}
+          className="absolute -bottom-14 -right-14 transition-all duration-500 group-hover:bottom-0 group-hover:right-0"
+        >
+          <button className="font-Nunito rounded-ss-md font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 size-10 gap-2 overflow-hidden">
+            <span>{featureBtnIcon}</span>
+          </button>
+        </Link>
       </div>
     </div>
   );

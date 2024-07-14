@@ -44,13 +44,17 @@ body {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
 }
 
+.navbar2.is-sticky {
+  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-SecondaryColor-0 backdrop-blur-md animate-headerSlideDown;
+}
+
 @media (min-width: 320px) and (max-width: 991px) {
   .is-sticky {
     @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
   }
 
   .navbar2.is-sticky {
-    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-[#041424] backdrop-blur-md animate-headerSlideDown;
+    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-SecondaryColor-0 backdrop-blur-md animate-headerSlideDown;
   }
 }
 
@@ -424,4 +428,11 @@ opacity: .6;
 .project .swiper-slide.swiper-slide-active .project-btn {
   right: -25px;
   opacity: 1;
+}
+
+
+/* Team Member */
+
+.team-member-box:nth-child(2n+2) {
+  margin-top: 50px;
 }
