@@ -1,50 +1,28 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-const BlogCard = ({
-  blogThumb,
-  thumbContent,
-  blogRelated,
-  blogUrl,
-  blogTitle,
-  blogDesc,
-  blogBtn,
-  blogBtnIcon,
-}) => {
+const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
   return (
-    <div className="group bg-white rounded-md mb-6 lg:mb-0">
-      <div className="relative overflow-hidden rounded-t-md z-10 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 after:transition-all after:duration-500 after:bg-gradient-to-t after:from-PrimaryColor-0 after:to-transparent group-hover:after:h-5/6">
+    <div className="blog-box group rounded-md py-10 lg:mb-0 border-b border-BorderColor2-0 flex items-center gap-[55px]">
+      <div>
+        <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl size-11 rounded-full bg-white border-2 border-BorderColor2-0 flex justify-center items-center">
+          {blogNumber}
+        </h5>
+      </div>
+      <div className="relative flex justify-between items-center w-full">
+        <Link to={"blogUrl"}>
+          <button className="blog-title font-Rajdhani font-semibold text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">{blogTitle}</button>
+        </Link>
+        <Link to={"blogUrl"}>
+          <button className="blog-btn size-[50px] rounded-full flex items-center justify-center transition-all duration-500 text-2xl text-HeadingColor-0 group-hover:border-PrimaryColor-0 group-hover:text-white bg-white border-2 border-BorderColor2-0 relative z-10 before:absolute before:top-0 before:left-0 before:size-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 before:rounded-full group-hover:before:scale-100">
+            {blogBtn}
+          </button>
+        </Link>
         <img
           src={blogThumb}
-          className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
+          draggable="false"
+          className="blog-thumb absolute left-0 opacity-0 -translate-x-1/2 top-0 -translate-y-1/2 transition-all duration-500 group-hover:left-3/4 group-hover:top-1/2 group-hover:opacity-100"
         />
-        <div className="transition-all duration-500 absolute top-0 -left-full group-hover:left-0">
-          <h6 className="font-Nunito uppercase text-[15px] text-center inline-block overflow-hidden rounded-ee-[30px] px-7 py-[10px] text-white group-hover:text-white bg-PrimaryColor-0">
-            {thumbContent}
-          </h6>
-        </div>
-      </div>
-      <div className="px-5 sm:px-7 pb-12 pt-7 relative">
-        <p className="font-Nunito font-light text-PrimaryColor-0 relative">
-          {blogRelated}
-        </p>
-        <Link to={blogUrl}>
-          <button className="font-Nunito text-left font-bold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-[6px] mb-3">
-            {blogTitle}
-          </button>
-        </Link>
-        <p className="font-Nunito text-TextColor-0">{blogDesc}</p>
-        <Link
-          to={blogUrl}
-          className="absolute -bottom-[25px] left-1/2 -translate-x-1/2"
-        >
-          <button className="font-Nunito rounded-full font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 w-[50px] group-hover:w-[176px] h-[50px] gap-2 overflow-hidden">
-            <span className="opacity-0 capitalize transition-all duration-500 group-hover:opacity-100 -ml-[100px] group-hover:ml-0">
-              {blogBtn}
-            </span>
-            <span>{blogBtnIcon}</span>
-          </button>
-        </Link>
       </div>
     </div>
   );

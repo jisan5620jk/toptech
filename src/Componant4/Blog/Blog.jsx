@@ -1,99 +1,94 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import blogThumb from "/images/blog-1.png";
-import blogThumb2 from "/images/blog-2.png";
-import blogThumb3 from "/images/blog-3.png";
+import blogThumb from "/images/projects-img.png";
+import blogThumb2 from "/images/projects-img2.png";
+import blogThumb3 from "/images/projects-img3.png";
+import blogThumb4 from "/images/projects-img4.png";
 import BlogCard from "./BlogCard";
+import { PiStarFourFill } from "react-icons/pi";
+import { RxArrowRight } from "react-icons/rx";
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    thumbContent: "home 2024 march",
-    blogDate: "Mar 15, 2024",
-    blogRelated: "RENEWABOLE / SCIENCE",
+    blogNumber: "01",
     blogUrl: "/blog_details",
-    blogTitle: "Solar-Powered Transportation",
-    blogDesc:
-      "Need place to stored for short goods can arive desig have space your needs brand.",
-    blogBtn: "Explore More",
-    blogBtnIcon: <FaArrowRightLong />,
+    blogTitle: "Visual Design",
+    blogBtn: <RxArrowRight />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    thumbContent: "home 2024 march",
-    blogDate: "Mar 15, 2024",
-    blogRelated: "RENEWABOLE / SCIENCE",
+    blogNumber: "02",
     blogUrl: "/blog_details",
-    blogTitle: "Pioneering the Future of Power",
-    blogDesc:
-      "Need place to stored for short goods can arive desig have space your needs brand.",
-    blogBtn: "Explore More",
-    blogBtnIcon: <FaArrowRightLong />,
+    blogTitle: "Business Agency",
+    blogBtn: <RxArrowRight />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    thumbContent: "home 2024 march",
-    blogDate: "Mar 15, 2024",
-    blogRelated: "RENEWABOLE / SCIENCE",
+    blogNumber: "03",
     blogUrl: "/blog_details",
-    blogTitle: "Solar-Powered Innovations",
-    blogDesc:
-      "Need place to stored for short goods can arive desig have space your needs brand.",
-    blogBtn: "Explore More",
-    blogBtnIcon: <FaArrowRightLong />,
+    blogTitle: "Business Factory",
+    blogBtn: <RxArrowRight />,
+  },
+  {
+    id: 4,
+    blogThumb: blogThumb3,
+    blogNumber: "04",
+    blogUrl: "/blog_details",
+    blogTitle: "Business Consultation",
+    blogBtn: <RxArrowRight />,
   },
 ];
 
 const Blog = () => {
   return (
-    <section className="py-28 bg-[#f3f4f8]">
+    <section className="py-28 bg-BodyBg-0">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
-            <FaStarOfLife />
-            TOUR LATEST BLOG
-            <FaStarOfLife />
-          </h5>
-          <h1 className="font-Nunito font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-            Read the Latest News
-          </h1>
+        <div className="grid grid-cols-2 items-center">
+          <div>
+            <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <PiStarFourFill size={"14"} />
+              LATEST PROJECTS
+            </h5>
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
+              Words Meant For Pages
+              <br /> Not the Screens
+            </h1>
+          </div>
+          <div>
+            <p className="font-Nunito text-TextColor2-0 text-lg">
+              Professionaly optimize interdependent intelectual services visuali
+              design infoediaries main issue state icreative planing main best
+              practices.
+            </p>
+          </div>
         </div>
-        <div className="mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="mt-[30px]">
             {blogData.map(
               ({
                 id,
+                blogNumber,
                 blogThumb,
-                thumbContent,
-                blogDate,
-                blogRelated,
                 blogUrl,
                 blogTitle,
-                blogDesc,
                 blogBtn,
-                blogBtnIcon,
               }) => {
                 return (
                   <div key={id}>
                     <BlogCard
+                      blogNumber={blogNumber}
                       blogThumb={blogThumb}
-                      thumbContent={thumbContent}
-                      blogDate={blogDate}
-                      blogRelated={blogRelated}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogDesc={blogDesc}
                       blogBtn={blogBtn}
-                      blogBtnIcon={blogBtnIcon}
                     />
                   </div>
                 );
               }
             )}
-          </div>
         </div>
       </div>
     </section>
