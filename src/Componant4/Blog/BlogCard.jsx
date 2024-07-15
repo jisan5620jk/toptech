@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
   return (
-    <div className="blog-box group rounded-md py-10 lg:mb-0 border-b border-BorderColor2-0 flex items-center gap-[55px]">
+    <div className="blog-box group rounded-md py-10 lg:mb-0 border-b border-BorderColor2-0 flex items-center gap-6 sm:gap-[55px]">
       <div>
         <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl size-11 rounded-full bg-white border-2 border-BorderColor2-0 flex justify-center items-center">
           {blogNumber}
@@ -11,7 +11,7 @@ const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
       </div>
       <div className="relative flex justify-between items-center w-full">
         <Link to={"blogUrl"}>
-          <button className="blog-title font-Rajdhani font-semibold text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">{blogTitle}</button>
+          <button className="blog-title relative z-10 font-Rajdhani font-semibold text-xl sm:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">{blogTitle}</button>
         </Link>
         <Link to={"blogUrl"}>
           <button className="blog-btn size-[50px] rounded-full flex items-center justify-center transition-all duration-500 text-2xl text-HeadingColor-0 group-hover:border-PrimaryColor-0 group-hover:text-white bg-white border-2 border-BorderColor2-0 relative z-10 before:absolute before:top-0 before:left-0 before:size-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 before:rounded-full group-hover:before:scale-100">

@@ -13,7 +13,7 @@ const Process = () => {
         <div className="grid lg:grid-cols-2 lg:items-center gap-10 xl:gap-20 2xl:gap-[150px]">
           <div className="relative">
             <img src={processThumb} draggable="false" />
-            <div className="absolute top-1/2 right-[150px] -translate-y-1/2">
+            <div className="absolute top-1/2 right-[65px] sm:right-[150px] 2xl:right-[210px] -translate-y-1/2">
               <button className="size-[100px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-xl relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-[11px] before:left-[11px] before:size-[78px] before:border before:border-dashed before:border-white before:rounded-full before:animate-rotational">
                 <span onClick={() => setToggler(!toggler)}>Play</span>
               </button>
@@ -43,14 +43,14 @@ const Process = () => {
               Our team of seasoned experts is here to you to unlock your provid
               business’s potential and achieve remar success.
             </p>
-            <div className="flex items-center gap-7 mt-5">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-7 mt-5">
               <Link to={"/about"}>
                 <button className="primary-btn4">{`Read More`}</button>
               </Link>
               <Link to={"/home4"}>
                 <button className="font-Nunito font-medium text-TextColor2-0 flex items-center gap-2">
                   {`CUSTOMER DETAILS`}
-                  <HiOutlineArrowRight size={"20"}/>
+                  <HiOutlineArrowRight size={"20"} />
                 </button>
               </Link>
             </div>

@@ -26,7 +26,7 @@ const counterData = [
 
 const Counter = () => {
   return (
-    <section className="py-28 bg-SecondaryColor-0">
+    <section className="pt-28 bg-SecondaryColor-0">
       <div className="Container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 items-center justify-center">
           {counterData.map(

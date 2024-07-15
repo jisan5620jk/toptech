@@ -47,7 +47,7 @@ const Blog = () => {
   return (
     <section className="py-28 bg-BodyBg-0">
       <div className="Container">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
               <PiStarFourFill size={"14"} />

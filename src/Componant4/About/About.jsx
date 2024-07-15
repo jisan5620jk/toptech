@@ -22,7 +22,7 @@ const About = () => {
               visuali design infoediaries main issue state icreative planing
               main best practices.
             </p>
-            <div className="grid grid-cols-2 items-center mb-11">
+            <div className="grid gap-3 sm:gap-0 sm:grid-cols-2 sm:items-center mb-11">
               <ul className="space-y-3">
                 <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
                   <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
@@ -50,8 +50,8 @@ const About = () => {
           </div>
           <div className="relative z-10">
             <img src={aboutThumb} draggable="false" />
-            <div className="absolute bottom-11 right-0">
-              <div className="bg-PrimaryColor-0 rounded-ee-lg pb-6 pt-5 pl-[30px] pr-10 flex justify-between overflow-hidden h-[100px] w-[300px] xl:w-[260px] 2xl:w-[300px] items-center text-center relative z-10 before:absolute before:top-0 before:left-0 before:w-[118px] before:-z-10 before:h-full before:bg-SecondaryColor-0">
+            <div className="absolute bottom-0 sm:bottom-11 xl:bottom-11 2xl:bottom-[3.8rem] right-0">
+              <div className="bg-PrimaryColor-0 rounded-ee-lg pb-6 pt-5 pl-4 sm:pl-[30px] pr-5 sm:pr-10 flex justify-between overflow-hidden h-[100px] w-[142px] sm:w-[256px] xl:w-[260px] 2xl:w-[292px] items-center text-center relative z-10 before:absolute before:top-0 before:left-0 before:w-[50px] sm:before:w-[100px] md:before:w-[118px] before:-z-10 before:h-full before:bg-SecondaryColor-0">
                 <CountUp
                   start={-15}
                   end={22}

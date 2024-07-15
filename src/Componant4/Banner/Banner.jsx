@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./banner.css";
 import "swiper/css/pagination";
-import { FaArrowRightLong } from "react-icons/fa6";
 import BannerNavigation from "./BannerNavigation";
 import { PiStarFourFill } from "react-icons/pi";
 
@@ -26,8 +25,8 @@ const Banner = () => {
             <div className="Container">
               <div className="relative banner-content text-center pt-[47px]">
                 <h5 className="font-Rajdhani text-lg flex items-center gap-2 justify-center text-white font-medium mb-6">
-                  <PiStarFourFill size={"14"}/> TOP BUSENESS SOLUTION IN 2024{" "}
-                  <PiStarFourFill size={"14"}/>
+                  <PiStarFourFill size={"14"} /> TOP BUSENESS SOLUTION IN 2024{" "}
+                  <PiStarFourFill size={"14"} />
                 </h5>
                 <h1 className="font-Rajdhani font-bold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[66px] xl:leading-[65px]">
                   Decoding Trends through
@@ -37,9 +36,7 @@ const Banner = () => {
                 </h1>
                 <div className="flex justify-center m-auto mt-14">
                   <Link to={"/about"}>
-                    <button className="primary-btn4">
-                      {`Discover More`}
-                    </button>
+                    <button className="primary-btn4">{`Discover More`}</button>
                   </Link>
                 </div>
               </div>
@@ -47,24 +44,22 @@ const Banner = () => {
           </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section className="bg-[url('/images/slider-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[800px] lg:h-[960px] xl:h-[952px] flex items-center">
+          <section className="bg-[url('/images/banner-slider.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[800px] lg:h-[960px] xl:h-[952px] flex items-center">
             <div className="Container">
               <div className="relative banner-content text-center pt-[47px]">
-                <h5 className="font-AlbertSans text-white font-medium mb-8">
-                  SOLUTIONS FOR ENVIROMENTAL PROTECTION
+                <h5 className="font-Rajdhani text-lg flex items-center gap-2 justify-center text-white font-medium mb-6">
+                  <PiStarFourFill size={"14"} /> TOP BUSENESS SOLUTION IN 2024{" "}
+                  <PiStarFourFill size={"14"} />
                 </h5>
-                <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[76px] xl:leading-[90px]">
-                  YOUR JOURNEY TO SOLAR
+                <h1 className="font-Rajdhani font-bold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[66px] xl:leading-[65px]">
+                  Decoding Trends through
                 </h1>
-                <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[76px] xl:leading-[90px] -mt-0 sm:-mt-3 md:mt-2 lg:mt-2">
-                  EMPOWERMENT
+                <h1 className="font-Rajdhani font-bold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[46px] md:leading-[54px] xl:text-[66px] xl:leading-[65px] -mt-0 sm:-mt-3 md:mt-2 lg:mt-2">
+                  Passion and Peolpe
                 </h1>
-                <div className="flex justify-center m-auto mt-9">
+                <div className="flex justify-center m-auto mt-14">
                   <Link to={"/about"}>
-                    <button className="primary-btn2">
-                      {`Find Out More`}
-                      <FaArrowRightLong />
-                    </button>
+                    <button className="primary-btn4">{`Discover More`}</button>
                   </Link>
                 </div>
               </div>

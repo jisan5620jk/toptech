@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const WorkCard = ({ workThumb, workTitle, workDesc, workUrl, workBtn }) => {
   return (
-    <div className="group relative z-10 inline-block overflow-hidden">
-      <img src={workThumb} draggable="false" />
+    <div className="group relative z-10 overflow-hidden">
+      <img src={workThumb} draggable="false" className="w-full"/>
       <Link
         to={workUrl}
         className="absolute top-[110px] left-0 -translate-x-1/2 opacity-0 transition-all duration-500 group-hover:left-1/2 group-hover:opacity-100"

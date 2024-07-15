@@ -16,7 +16,7 @@ const processBoxCard = ({
       <h5 className="font-Rajdhani font-semibold inline-block text-white text-[22px] mt-6 mb-3">
         {processBoxTitle}
       </h5>
-      <p className="font-Nunito text-white opacity-70 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto mb-5">
+      <p className="font-Nunito text-white opacity-70 sm:w-2/3 md:w-full mb-5">
         {processBoxDesc}
       </p>
       <Link to={"/"}>

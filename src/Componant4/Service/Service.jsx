@@ -61,7 +61,7 @@ const Service = () => {
               <br /> Features Charter.
             </h1>
           </div>
-          <div className="flex justify-end">
+          <div className="flex lg:justify-end">
             <Link to={"/about"}>
               <button className="primary-btn4">{`Make An Appointment`}</button>
             </Link>

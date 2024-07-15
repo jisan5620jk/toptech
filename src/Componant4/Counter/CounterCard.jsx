@@ -8,8 +8,8 @@ const CounterCard = ({
   counterSuffex,
 }) => {
   return (
-    <div className="text-center relative z-10">
-      <div className="flex gap-7 items-center">
+    <div className="sm:text-center relative z-10">
+      <div className="flex flex-col sm:flex-row gap-7 items-start sm:items-center">
         <div className="relative before:absolute before:-bottom-5 before:left-0 before:w-full before:h-[1px] before:bg-PrimaryColor-0 ">
           <CountUp
             start={-15}

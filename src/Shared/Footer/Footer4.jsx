@@ -13,7 +13,7 @@ const Footer4 = () => {
   return (
     <footer className="bg-SecondaryColor-0 relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="flex justify-between items-center gap-8 border-b border-BorderColor-0 py-[105px]">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 border-b border-BorderColor-0 py-[105px]">
           <div>
             <Link to={"/"}>
               <img src={footerLogo} draggable={false} />
