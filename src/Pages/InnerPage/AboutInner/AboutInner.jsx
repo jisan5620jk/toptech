@@ -6,7 +6,6 @@ import Process from "../../../Componant1/Process/Process";
 import Brand from "./Brand/Brand";
 import TeamMember from "../../../Componant1/TeamMember/TeamMember";
 import Testimonial from "../../../Componant1/Testimonial/Testimonial";
-import ContentSlider2 from "../../../Componant2/ContentSlider2/ContentSlider2";
 import Contact from "../../../Componant2/Contact/Contact";
 import WhyChoose from "../../../Componant2/WhyChoose/WhyChoose";
 
