@@ -1,11 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import About from "../../../Componant2/About/About";
-import Counter from "../../../Componant1/Counter/Counter";
-import Process from "../../../Componant1/Process/Process";
-import Brand from "./Brand/Brand";
-import TeamMember from "../../../Componant1/TeamMember/TeamMember";
-import Testimonial from "../../../Componant1/Testimonial/Testimonial";
 import Contact from "../../../Componant2/Contact/Contact";
 import WhyChoose from "../../../Componant2/WhyChoose/WhyChoose";
 
@@ -19,12 +14,7 @@ const AboutInner = () => {
       />
       <About />
       <Contact />
-      <Counter />
       <WhyChoose />
-      <Process />
-      <TeamMember />
-      <Testimonial />
-      <Brand />
     </>
   );
 };
