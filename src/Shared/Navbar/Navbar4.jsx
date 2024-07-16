@@ -342,11 +342,11 @@ const Navbar2 = () => {
                   Contact
                 </NavLink>
               </ul>
-              <div className="hidden lg:flex gap-[80px] items-center">
+              <div className="hidden lg:flex xl:gap-10 2xl:gap-[80px] items-center">
                 <Link to={"/appointment"} className="header-btn">
                   Get A Quote
                 </Link>
-                <div className="flex gap-2 items-center">
+                <div className="flex gap-2 items-center lg:hidden xl:flex">
                   <h5 className="font-Nunito text-HeadingColor-0 text-lg font-medium">Share : </h5>
                   <ul className="flex items-center gap-4">
                     <li>

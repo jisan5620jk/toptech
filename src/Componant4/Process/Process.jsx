@@ -13,7 +13,7 @@ const Process = () => {
         <div className="grid lg:grid-cols-2 lg:items-center gap-10 xl:gap-20 2xl:gap-[150px]">
           <div className="relative">
             <img src={processThumb} draggable="false" />
-            <div className="absolute top-1/2 right-[65px] sm:right-[150px] 2xl:right-[210px] -translate-y-1/2">
+            <div className="absolute top-1/2 right-[65px] sm:right-[150px] md:right-[340px] lg:right-[128px] xl:right-[154px] 2xl:right-[210px] -translate-y-1/2">
               <button className="size-[100px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-xl relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-[11px] before:left-[11px] before:size-[78px] before:border before:border-dashed before:border-white before:rounded-full before:animate-rotational">
                 <span onClick={() => setToggler(!toggler)}>Play</span>
               </button>
