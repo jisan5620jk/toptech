@@ -24,7 +24,6 @@ const AboutInner = () => {
       <WhyChoose />
       <Process />
       <TeamMember />
-      <ContentSlider2 />
       <Testimonial />
       <Brand />
     </>
