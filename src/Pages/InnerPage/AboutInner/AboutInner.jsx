@@ -19,10 +19,10 @@ const AboutInner = () => {
       <About />
       <Counter />
       <Process />
-      <Brand />
       <TeamMember />
       <ContentSlider2 />
       <Testimonial />
+      <Brand />
     </>
   );
 };
