@@ -7,22 +7,20 @@ const BreadCrumb = ({
   breadCrumbIcon,
   url,
   breadCrumbLink,
-  breadCrumbIcon2,
-  breadCrumbContent,
 }) => {
   return (
-    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[530px] pt-20">
+    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
       <div className="Container">
-        <h1 className="font-Nunito font-extrabold text-4xl sm:text-[46px] text-white capitalize">
+        <h1 className="font-Rajdhani font-bold text-4xl sm:text-[55px] text-white capitalize">
           {breadCrumbTitle}
         </h1>
-        <ul className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-start mt-8 sm:mt-5">
-          <div className="flex gap-2 sm:gap-4 items-center justify-center">
+        <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
+          <ul className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-start">
             <li>
               <Link to={"/"}>
-                <button className="font-Nunito text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
+                <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                   <IoHome className="text-PrimaryColor-0" />
-                  Echofy
+                  Home
                 </button>
               </Link>
             </li>
@@ -31,23 +29,13 @@ const BreadCrumb = ({
             </li>
             <li>
               <Link to={url}>
-                <button className="font-Nunito capitalize text-white opacity-70">
+                <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                   {breadCrumbLink}
                 </button>
               </Link>
             </li>
-          </div>
-          <li className="hidden md:block">
-            <div className="text-white hidden sm:block">{breadCrumbIcon2}</div>
-          </li>
-          <li>
-            <Link to={url}>
-              <button className="font-Nunito capitalize text-white opacity-70">
-                {breadCrumbContent}
-              </button>
-            </Link>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   );
