@@ -8,6 +8,7 @@ import Main3 from "../Main/Main3";
 import Home3 from "../Pages/Home3/Home3";
 import Main4 from "../Main/Main4";
 import Home4 from "../Pages/Home4/Home4";
+import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/home3",
         element: <Home3 />,
+      },
+      {
+        path: "/about",
+        element: <AboutInner />,
       },
     ],
   },

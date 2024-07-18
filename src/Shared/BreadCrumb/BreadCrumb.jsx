@@ -11,12 +11,12 @@ const BreadCrumb = ({
   breadCrumbContent,
 }) => {
   return (
-    <div className="bg-[url('/images/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center flex items-center h-[400px] sm:h-[530px] text-center pt-20">
+    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[530px] pt-20">
       <div className="Container">
         <h1 className="font-Nunito font-extrabold text-4xl sm:text-[46px] text-white capitalize">
           {breadCrumbTitle}
         </h1>
-        <ul className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-center mt-8 sm:mt-5">
+        <ul className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-start mt-8 sm:mt-5">
           <div className="flex gap-2 sm:gap-4 items-center justify-center">
             <li>
               <Link to={"/"}>
