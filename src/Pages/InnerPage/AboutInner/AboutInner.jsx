@@ -1,8 +1,9 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import About from "../../../Componant2/About/About";
 import Contact from "../../../Componant2/Contact/Contact";
 import WhyChoose from "../../../Componant2/WhyChoose/WhyChoose";
+import Feature from "./Feature/Feature";
+import About from "./About/About";
 
 const AboutInner = () => {
   return (
@@ -12,6 +13,7 @@ const AboutInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"About Us"}
       />
+      <Feature />
       <About />
       <Contact />
       <WhyChoose />

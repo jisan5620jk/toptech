@@ -16,7 +16,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
 import { GrAlarm } from "react-icons/gr";
 
-const Navbar2 = () => {
+const Navbar3 = () => {
   //sticky
 
   useEffect(() => {
@@ -164,9 +164,30 @@ const Navbar2 = () => {
                       : isActive
                       ? "active"
                       : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  to="/about"
+                  to="#"
                 >
-                  <span>About</span>
+                  <span className="flex items-center">
+                    About
+                    <BiChevronDown className="ml-1" />
+                  </span>
+                  <div className="absolute pt-5 lg:pt-8 z-20">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
+                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/about" className="py-2 block">
+                            About us 01
+                          </Link>
+                        </li>
+                      </div>
+                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/about2" className="py-2 block">
+                            About Us 02
+                          </Link>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
                 </NavLink>
                 <NavLink
                   className={`${({ isActive, isPending }) =>
@@ -363,4 +384,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar3;
