@@ -1,9 +1,11 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Contact from "../../../Componant2/Contact/Contact";
-import WhyChoose from "../../../Componant2/WhyChoose/WhyChoose";
 import Feature from "./Feature/Feature";
 import About from "./About/About";
+import TeamMember from "../../../Componant1/TeamMember/TeamMember";
+import Counter from "../../../Componant1/Counter/Counter";
+import Testimonial from "../../../Componant1/Testimonial/Testimonial";
+import Brand from "../../../Componant1/Brand/Brand";
 
 const AboutInner = () => {
   return (
@@ -15,8 +17,10 @@ const AboutInner = () => {
       />
       <Feature />
       <About />
-      <Contact />
-      <WhyChoose />
+      <TeamMember />
+      <Counter />
+      <Testimonial />
+      <Brand />
     </>
   );
 };

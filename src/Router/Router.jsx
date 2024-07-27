@@ -10,6 +10,8 @@ import Main4 from "../Main/Main4";
 import Home4 from "../Pages/Home4/Home4";
 import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 import AboutInner2 from "../Pages/InnerPage/AboutInner2/AboutInner2";
+import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
+import BlogList from "../Pages/InnerPage/BlogList/BlogList";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
       {
         path: "/about2",
         element: <AboutInner2 />,
+      },
+      {
+        path: "/blog_list",
+        element: <BlogList />,
+      },
+      {
+        path: "/blog_details",
+        element: <BlogDetails />,
       },
     ],
   },

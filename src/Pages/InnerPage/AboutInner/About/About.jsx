@@ -1,12 +1,11 @@
 import aboutThumb from "/images/about-inner-thumb2.png";
 import aboutAward from "/images/about-award-icon.png";
-import aboutShape from "/images/about-shape1.png";
+import aboutShape from "/images/about-inner-shape.png";
 import aboutCounterIcon from "/images/about-counter-icon.png";
 import { Link } from "react-router-dom";
 import { RiCheckFill } from "react-icons/ri";
-import { BiRightTopArrowCircle } from "react-icons/bi";
+import { BiRightTopArrowCircle, BiSolidQuoteLeft } from "react-icons/bi";
 import CountUp from "react-countup";
-import { AiFillRead } from "react-icons/ai";
 
 const About = () => {
   return (
@@ -49,7 +48,7 @@ const About = () => {
             <img
               src={aboutShape}
               draggable="false"
-              className="absolute bottom-10 left-10 -z-10 animate-movebtn hidden sm:block"
+              className="absolute bottom-10 left-24 -z-10 animate-movebtn hidden sm:block"
             />
           </div>
           <div className="relative">
@@ -60,13 +59,13 @@ const About = () => {
               Ensuring Your Success Trusted <br />
               IT Services Source
             </h1>
-            <p className="font-Nunito text-TextColor2-0 pb-7">
+            <p className="font-Nunito text-TextColor2-0 pb-8">
               Monotonectally synergize granular markets and front markets.
               Collaboratively visualize strategic infomediaries after multimedia
               based models. Synergistically task state of the art
               infrastructures for
             </p>
-            <div>
+            <div className="grid grid-cols-2 items-center mb-8">
               <ul>
                 <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
                   <span className="text-PrimaryColor-0">
@@ -81,30 +80,34 @@ const About = () => {
                   Business and research
                 </li>
               </ul>
-            </div>
-            <div>
-              <CountUp
-                start={-9}
-                end={45}
-                suffix="%"
-                className="text-xl sm:text-[22px] font-Rajdhani flex items-center justify-center
+              <div className="flex items-center gap-6">
+                <CountUp
+                  start={-9}
+                  end={45}
+                  suffix="%"
+                  className="text-xl sm:text-[22px] font-Rajdhani flex items-center justify-center
                  font-semibold text-PrimaryColor-0 size-[65px] rounded-full border-2 border-PrimaryColor-0"
-              />
-              <div>
-                <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0">Solution Business</h4>
-                <p className="font-Nunito text-lg text-TextColor2-0">Level is high</p>
+                />
+                <div>
+                  <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0">
+                    Solution Business
+                  </h4>
+                  <p className="font-Nunito text-lg text-TextColor2-0">
+                    Level is high
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="flex gap-5[[#eff6fe rounded-md">
+            <div className="flex gap-5 px-7 py-6 bg-[#eff6fe] rounded-md">
               <div>
-                <AiFillRead size={"28"} className="text-PrimaryColor-0" />
+                <BiSolidQuoteLeft size={"32"} className="text-PrimaryColor-0" />
               </div>
               <p className="italic font-Nunito text-lg text-TextColor2-0">
                 If you are accused of committing a crime, you will the very best
                 criminal defense attorneys.
               </p>
             </div>
-            <Link to={"/about"} className="mt-7 inline-block">
+            <Link to={"/about"} className="mt-9 inline-block">
               <button className="primary-btn">
                 {`More About`}
                 <BiRightTopArrowCircle size={"20"} />

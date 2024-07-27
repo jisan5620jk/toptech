@@ -37,13 +37,13 @@ const About = () => {
               <br />
               Business Solution.
             </h1>
-            <p className="font-Nunito text-TextColor2-0 pb-9">
+            <p className="font-Nunito text-TextColor2-0">
               Monotonectally synergize granular markets and front markets.
               Collaboratively visualize strategic infomediaries after multimedia
               based models. Synergistically task state of the art
               infrastructures for
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-[30px] my-10 border-b-2 border-PrimaryColor-0 relative before:absolute before:bottom-0 before:left-0 before:bg-[#d5d5d5] before:w-full before:h-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-[30px] mt-10 mb-7 border-b-2 border-PrimaryColor-0 relative before:absolute before:bottom-0 before:left-0 before:bg-[#d5d5d5] before:w-full before:h-1 pb-12">
               <div>
                 <div className="flex gap-3 items-center">
                   <div>
@@ -52,6 +52,21 @@ const About = () => {
                   <div className="flex-1">
                     <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
                       IT Management
+                    </h5>
+                  </div>
+                </div>
+                <p className="font-Nunito text-TextColor2-0">
+                  Proved granular markets dream team more based models clean.
+                </p>
+              </div>
+              <div>
+                <div className="flex gap-3 items-center">
+                  <div>
+                    <img src={aboutIcon} draggable="false" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
+                    Award Ceremony
                     </h5>
                   </div>
                 </div>

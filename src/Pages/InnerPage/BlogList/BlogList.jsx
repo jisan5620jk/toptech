@@ -1,19 +1,16 @@
 import { Link } from "react-router-dom";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import blogListImg from "/images/blog-list.png";
-import blogListImg2 from "/images/blog-list2.png";
-import blogListImg3 from "/images/blog-list3.png";
-import blogListImg4 from "/images/blog-list4.jpg";
-import blogListImg5 from "/images/blog-list5.jpg";
-import itemthumb from "/images/post-1.png";
-import itemthumb2 from "/images/post-2.png";
-import itemthumb3 from "/images/post-3.png";
+import blogListImg from "/images/blog-1.png";
+import blogListImg2 from "/images/blog-2.png";
+import blogListImg3 from "/images/blog-3.png";
+import blogListImg4 from "/images/blog-4.png";
+import itemthumb from "/images/recent-post-1.png";
+import itemthumb2 from "/images/recent-post-2.png";
+import itemthumb3 from "/images/recent-post-3.png";
 import { IoSearch } from "react-icons/io5";
-import { FaUserCircle } from "react-icons/fa";
 import {
   FaAngleRight,
   FaArrowRightLong,
-  FaRegCalendarCheck,
   FaRegFolderOpen,
 } from "react-icons/fa6";
 import BlogListCard from "./BlogListCard";
@@ -22,87 +19,46 @@ const blogListData = [
   {
     id: 1,
     blogListImg: blogListImg,
-    thumbContent: "Cleaning",
-    blogListTilte: "Newest Cleaning Equipment for House 2024",
-    postByIcon: <FaUserCircle />,
-    postBy: "By Author",
-    postDateIcon: <FaRegCalendarCheck />,
-    postDate: "03 January, 2024",
-    postFileIcon: <FaRegFolderOpen />,
-    postFile: "Cleaning",
+    thumbContent: "IT Solution",
+    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blog_details",
-    blogListBtn: "Continue Reading",
-    blogListBtnIcon: <FaArrowRightLong />,
+
   },
   {
     id: 2,
     blogListImg: blogListImg2,
-    thumbContent: "Cleaning",
-    blogListTilte: "Newest Cleaning Equipment for House 2024",
-    postByIcon: <FaUserCircle />,
-    postBy: "By Author",
-    postDateIcon: <FaRegCalendarCheck />,
-    postDate: "03 March, 2024",
-    postFileIcon: <FaRegFolderOpen />,
-    postFile: "Cleaning",
+    thumbContent: "IT Solution",
+    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blog_details",
-    blogListBtn: "Continue Reading",
-    blogListBtnIcon: <FaArrowRightLong />,
+
   },
   {
     id: 3,
     blogListImg: blogListImg3,
-    thumbContent: "Cleaning",
-    blogListTilte: "Newest Cleaning Equipment for House 2024",
-    postByIcon: <FaUserCircle />,
-    postBy: "By Author",
-    postDateIcon: <FaRegCalendarCheck />,
-    postDate: "03 May, 2024",
-    postFileIcon: <FaRegFolderOpen />,
-    postFile: "Cleaning",
+    thumbContent: "IT Solution",
+    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blog_details",
-    blogListBtn: "Continue Reading",
-    blogListBtnIcon: <FaArrowRightLong />,
+
   },
   {
     id: 4,
     blogListImg: blogListImg4,
-    thumbContent: "Cleaning",
-    blogListTilte: "Newest Cleaning Equipment for House 2024",
-    postByIcon: <FaUserCircle />,
-    postBy: "By Author",
-    postDateIcon: <FaRegCalendarCheck />,
-    postDate: "03 January, 2024",
-    postFileIcon: <FaRegFolderOpen />,
-    postFile: "Cleaning",
+    thumbContent: "IT Solution",
+    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blog_details",
-    blogListBtn: "Continue Reading",
-    blogListBtnIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 5,
-    blogListImg: blogListImg5,
-    thumbContent: "Cleaning",
-    blogListTilte: "Newest Cleaning Equipment for House 2024",
-    postByIcon: <FaUserCircle />,
-    postBy: "By Author",
-    postDateIcon: <FaRegCalendarCheck />,
-    postDate: "03 June, 2024",
-    postFileIcon: <FaRegFolderOpen />,
-    postFile: "Cleaning",
-    blogListDesc:
-      "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blog_details",
-    blogListBtn: "Continue Reading",
-    blogListBtnIcon: <FaArrowRightLong />,
+
   },
 ];
 
@@ -131,8 +87,8 @@ const BlogList = () => {
                   postBy,
                   postDateIcon,
                   postDate,
-                  postFileIcon,
-                  postFile,
+                  commentsIcon,
+                  comments,
                   blogListDesc,
                   blogListUrl,
                   blogListBtn,
@@ -148,8 +104,8 @@ const BlogList = () => {
                         postBy={postBy}
                         postDateIcon={postDateIcon}
                         postDate={postDate}
-                        postFileIcon={postFileIcon}
-                        postFile={postFile}
+                        commentsIcon={commentsIcon}
+                        comments={comments}
                         blogListDesc={blogListDesc}
                         blogListUrl={blogListUrl}
                         blogListBtn={blogListBtn}
@@ -178,7 +134,7 @@ const BlogList = () => {
                 </button>
               </div>
               <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
-                <h4 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+                <h4 className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
                   Categories
                 </h4>
                 <ul className="mt-8">
@@ -187,7 +143,7 @@ const BlogList = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Ocean Cleaning
+                          Web Development
                         </span>
                         <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
@@ -198,7 +154,7 @@ const BlogList = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Dust Recycling
+                          Digital Marketing
                         </span>
                         <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
@@ -209,7 +165,7 @@ const BlogList = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Plant Seedlings
+                          IT Solution
                         </span>
                         <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
@@ -220,7 +176,7 @@ const BlogList = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Renewable Energy
+                          App Development
                         </span>
                         <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
@@ -231,7 +187,7 @@ const BlogList = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Environmental
+                          Web Design
                         </span>
                         <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
@@ -242,7 +198,7 @@ const BlogList = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Forest Cleaning
+                          UI/UX Design
                         </span>
                         <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
@@ -251,17 +207,17 @@ const BlogList = () => {
                 </ul>
               </div>
               <div className="px-4 sm:px-8 lg:px-6 xl:px-8 bg-[#f3f4f8] rounded-md pt-7 pb-4 mb-7">
-                <h4 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+                <h4 className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
                   Popular Post
                 </h4>
                 <Link to={"/blog-details"}>
                   <button className="group flex gap-4 mb-6">
-                    <div>
+                    <div className="rounded overflow-hidden">
                       <img draggable="false" src={itemthumb} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Nunito font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Dramatically Architect new model before...
+                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                        Digital Marketing Strategy Action P…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
                         01 Jan, 2024
@@ -271,12 +227,12 @@ const BlogList = () => {
                 </Link>
                 <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
-                    <div>
+                    <div className="rounded overflow-hidden">
                       <img draggable="false" src={itemthumb2} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Nunito font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Progressively Syndicate Vista Seamless...
+                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                        6 Things You Must Know Before Hirin…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
                         16 Jan, 2024
@@ -286,12 +242,12 @@ const BlogList = () => {
                 </Link>
                 <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
-                    <div>
+                    <div className="rounded overflow-hidden">
                       <img draggable="false" src={itemthumb3} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Nunito font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Completely Leverage Existing Customer...
+                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                        In eu fringilla, accumsan vel sollicitudin…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
                         27 Jan, 2024
@@ -301,49 +257,49 @@ const BlogList = () => {
                 </Link>
               </div>
               <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-10 mb-7">
-                <h4 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+                <h4 className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
                   Tags
                 </h4>
                 <ul className="inline-block">
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Environment
+                        Cyber Security
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Echology
+                        Learning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Seedlings
+                        Web Drvelopment
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Tree Plantation
+                        IT Solution
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Recycling
+                        Marketing
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Cleaning
+                        Technology
                       </button>
                     </Link>
                   </li>
