@@ -42,7 +42,7 @@ const blogData = [
     blogThumb: blogThumb3,
     thumbContent: "Environment",
     blogUrl: "/blog_details",
-    blogTitle: "Ocean Cleaning Use New Equipment",
+    blogTitle: "Web Development Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",
@@ -97,7 +97,7 @@ const blogData = [
     blogThumb: blogThumb8,
     thumbContent: "Ecology",
     blogUrl: "/blog_details",
-    blogTitle: "Ocean Cleaning Use New Equipment",
+    blogTitle: "Web Development Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",

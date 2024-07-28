@@ -24,17 +24,14 @@ const BlogDetails = () => {
       <BreadCrumb
         breadCrumbTitle={"Blog Details"}
         breadCrumbIcon={<FaArrowRightLong />}
-        url={"/blog_grid"}
-        breadCrumbLink={"Blog"}
-        breadCrumbIcon2={<FaArrowRightLong />}
-        breadCrumbContent={"How Every Individual Can Make a Difference"}
+        breadCrumbLink={"Blog Details"}
       />
       <section className="py-28">
         <div className="Container">
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="col-span-2">
               <div className="border-l border-b border-BorderColor2-0 rounded-md">
-                <div className="relative">
+                <div className="relative overflow-hidden rounded-md">
                   <img
                     draggable="false"
                     src={blog_detailsThumb}

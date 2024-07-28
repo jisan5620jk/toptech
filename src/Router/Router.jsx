@@ -12,6 +12,12 @@ import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 import AboutInner2 from "../Pages/InnerPage/AboutInner2/AboutInner2";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import BlogList from "../Pages/InnerPage/BlogList/BlogList";
+import ServiceDetails from "../Pages/InnerPage/ServiceDetails/ServiceDetails";
+import ServiceDetails2 from "../Pages/InnerPage/ServiceDetails/ServiceDetails2";
+import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
+import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
+import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
+import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +58,30 @@ const router = createBrowserRouter([
       {
         path: "/about2",
         element: <AboutInner2 />,
+      },
+      {
+        path: "/service_details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/service_details2",
+        element: <ServiceDetails2 />,
+      },
+      {
+        path: "/service_details3",
+        element: <ServiceDetails3 />,
+      },
+      {
+        path: "/service_details4",
+        element: <ServiceDetails4 />,
+      },
+      {
+        path: "/service_details5",
+        element: <ServiceDetails5 />,
+      },
+      {
+        path: "/service_details6",
+        element: <ServiceDetails6 />,
       },
       {
         path: "/blog_list",

@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import wedgetIcon from "/images/widget-icon.png";
-import icon from "/images/notice-icon.png";
-import serviceDetailsIcon from "/images/sidebar-icon.png";
-import serviceDetailsIcon2 from "/images/sidebar-icon2.png";
-import serviceDetailsThumb from "/images/service-details-thumb.jpg";
+import serviceDetailsIcon from "/images/services-details-icon-1.png";
+import serviceDetailsIcon2 from "/images/services-details-icon-2.png";
+import serviceDetailsThumb from "/images/service-details.jpg";
 import projectDetialsBoxImg from "/images/services-details-benifis-thumb-1.png";
 import projectDetialsBoxImg2 from "/images/services-details-benifis-thumb-2.png";
 import {
@@ -16,36 +15,35 @@ import { MdEmail } from "react-icons/md";
 import { HiDownload } from "react-icons/hi";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { IoMdCheckmark } from "react-icons/io";
+import { AiOutlineSolution } from "react-icons/ai";
 
 const ServiceDetails = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Ocean Cleaning"}
+        breadCrumbTitle={"Web Development"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Serivces"}
-        breadCrumbIcon2={<FaArrowRightLong />}
-        breadCrumbContent={"Ocean Cleaning"}
+        breadCrumbLink={"Service Details"}
       />
       <section className="py-[120px] bg-white">
         <div className="Container">
-          <div className="grid grid-cols-3 gap-[70px]">
+          <div className="grid grid-cols-3 gap-[50px]">
             <div className="col-span-3 lg:col-span-2">
               <img
                 src={serviceDetailsThumb}
                 draggable="false"
                 className="w-full"
               />
-              <h2 className="font-Nunito font-bold text-[24px] sm:text-4xl text-HeadingColor-0 mt-8">
-                Ocean Cleaning Services
+              <h2 className="font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 mt-8">
+                Web Development Services
               </h2>
-              <p className="font-Nunito text-TextColor-0 mt-6">
+              <p className="font-Nunito text-TextColor2-0 mt-6">
                 Alternative innovation to ethical network environmental
                 whiteboard pursue compelling results premier methods
                 empowerment. Dramatically architect go forward opportunities
                 before user-centric partner Credibly implement exceptional
               </p>
-              <p className="font-Nunito text-TextColor-0 mt-7 mb-11">
+              <p className="font-Nunito text-TextColor2-0 mt-7 mb-11">
                 Continually fashion orthogonal leadership skills whereas
                 wireless metrics. Uniquely syndicate exceptio opportunities with
                 interdependent users. Globally enhance fully tested
@@ -60,10 +58,10 @@ const ServiceDetails = () => {
                     <img src={serviceDetailsIcon} draggable="false" />
                   </div>
                   <div className="flex-1">
-                    <h6 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0">
-                      Proper Washing
+                    <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
+                      Custom Software
                     </h6>
-                    <p className="font-Nunito text-TextColor-0 mt-3">
+                    <p className="font-Nunito text-TextColor2-0 mt-3">
                       Ethical network environmental architect go forward opportu
                       credibly implement
                     </p>
@@ -74,10 +72,10 @@ const ServiceDetails = () => {
                     <img src={serviceDetailsIcon2} draggable="false" />
                   </div>
                   <div className="flex-1">
-                    <h6 className="font-Nunito font-semibold text-[22px] text-HeadingColor-0">
-                      Proper cleeny
+                    <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
+                      Mobile Application
                     </h6>
-                    <p className="font-Nunito text-TextColor-0 mt-3">
+                    <p className="font-Nunito text-TextColor2-0 mt-3">
                       Ethical network environmental architect go forward opportu
                       credibly implement
                     </p>
@@ -85,8 +83,8 @@ const ServiceDetails = () => {
                 </div>
               </div>
               <div className="bg-PrimaryColor-0 px-[42px] rounded-md py-7 flex flex-col sm:flex-row sm:items-center gap-8 mt-[62px]">
-                <div className=" pr-8 sm:border-r-2 border-[#94c933]">
-                  <img src={icon} draggable="false" />
+                <div className=" pr-8 sm:border-r-2">
+                  <AiOutlineSolution size={"50"} className="text-white" />
                 </div>
                 <div className="flex-1">
                   <p className="font-Nunito italic text-lg sm:text-[22px] leading-8 text-white">
@@ -96,10 +94,10 @@ const ServiceDetails = () => {
                   </p>
                 </div>
               </div>
-              <h2 className="font-Nunito font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[54px]">
+              <h2 className="font-Rajdhani font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[54px]">
                 What the Benifits?
               </h2>
-              <p className="font-Nunito text-TextColor-0 mt-6">
+              <p className="font-Nunito text-TextColor2-0 mt-6">
                 Alternative innovation to ethical network environmental
                 whiteboard pursue compelling results for premier methods
                 empowerment. Dramatically architect go forward opportunities
@@ -114,15 +112,15 @@ const ServiceDetails = () => {
                     />
                   </div>
                   <div className="bg-white shadow-cases rounded inline-block pt-7 pl-4 sm:pl-8 pb-7 w-4/5 -mt-5 relative z-10">
-                    <h4 className="font-Nunito text-HeadingColor-0 font-semibold text-[22px] lg:text-xl xl:text-[22px] text-left mb-3">
-                      Green Environment
+                    <h4 className="font-Rajdhani text-HeadingColor-0 font-semibold text-[22px] lg:text-xl xl:text-[22px] text-left mb-3">
+                      Analysis And Planning.
                     </h4>
                     <ul>
-                      <li className="flex items-center gap-2 text-TextColor-0 text-left font-Nunito mb-2 lg:text-sm xl:text-base">
+                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito mb-2 lg:text-sm xl:text-base">
                         <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
                         New Modern Equipments
                       </li>
-                      <li className="flex items-center gap-2 text-TextColor-0 text-left font-Nunito lg:text-sm xl:text-base">
+                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
                         <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
                         Expert’s Volunteers
                       </li>
@@ -138,15 +136,15 @@ const ServiceDetails = () => {
                     />
                   </div>
                   <div className="bg-white shadow-cases rounded inline-block pt-7 pl-4 sm:pl-8 pb-7 w-4/5 -mt-5 relative z-10">
-                    <h4 className="font-Nunito text-HeadingColor-0 font-semibold text-[22px] lg:text-xl xl:text-[22px] text-left mb-3">
-                      Renewable Energy
+                    <h4 className="font-Rajdhani text-HeadingColor-0 font-semibold text-[22px] lg:text-xl xl:text-[22px] text-left mb-3">
+                      Design & Development.
                     </h4>
                     <ul>
-                      <li className="flex items-center gap-2 text-TextColor-0 text-left font-Nunito mb-2 lg:text-sm xl:text-base">
+                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito mb-2 lg:text-sm xl:text-base">
                         <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
                         New Modern Equipments
                       </li>
-                      <li className="flex items-center gap-2 text-TextColor-0 text-left font-Nunito lg:text-sm xl:text-base">
+                      <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
                         <IoMdCheckmark className="text-PrimaryColor-0 text-xl" />
                         Expert’s Volunteers
                       </li>
@@ -157,7 +155,7 @@ const ServiceDetails = () => {
             </div>
             <div className="col-span-3 lg:col-span-1">
               <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
-                <h4 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+                <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
                   Categories
                 </h4>
                 <ul className="mt-8">
@@ -166,7 +164,7 @@ const ServiceDetails = () => {
                       <button className="w-full font-Nunito text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-PrimaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-white transition-all duration-500 group-hover:text-white" />
-                          Ocean Cleaning
+                          Web Development
                         </span>
                         <FaArrowRightLong className="text-white" />
                       </button>
@@ -177,7 +175,7 @@ const ServiceDetails = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Dust Recycling
+                          Digital Marketing
                         </span>
                         <FaArrowRightLong className="text-white" />
                       </button>
@@ -188,7 +186,7 @@ const ServiceDetails = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Plant Seedlings
+                          IT Solution
                         </span>
                         <FaArrowRightLong className="text-white" />
                       </button>
@@ -199,7 +197,7 @@ const ServiceDetails = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Renewable Energy
+                          App Development
                         </span>
                         <FaArrowRightLong className="text-white" />
                       </button>
@@ -210,7 +208,7 @@ const ServiceDetails = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Environmental
+                          Web Design
                         </span>
                         <FaArrowRightLong className="text-white" />
                       </button>
@@ -221,7 +219,7 @@ const ServiceDetails = () => {
                       <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Forest Cleaning
+                          UI/UX Design
                         </span>
                         <FaArrowRightLong className="text-white" />
                       </button>
@@ -230,7 +228,7 @@ const ServiceDetails = () => {
                 </ul>
               </div>
               <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
-                <h4 className="font-Nunito font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+                <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
                   Downloads
                 </h4>
                 <ul className="mt-8">
@@ -256,7 +254,7 @@ const ServiceDetails = () => {
                             size={"20"}
                             className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white"
                           />
-                          Service List
+                          Service Lists
                         </span>
                         <HiDownload size={"24"} className="text-white" />
                       </button>
@@ -264,7 +262,7 @@ const ServiceDetails = () => {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-lg px-9 overflow-hidden bg-[url('/images/sidebar-bg.jpg')] bg-cover bg-no-repeat bg-center py-[50px]">
+              <div className="rounded-lg px-9 overflow-hidden bg-[url('/images/sidber-contact.png')] bg-cover bg-no-repeat bg-center py-[50px]">
                 <img src={wedgetIcon} draggable="false" />
                 <h6 className="font-Nunito font-medium text-lg text-white mt-5 mb-2">
                   Call Us Anytime

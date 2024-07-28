@@ -49,7 +49,7 @@ const ProjectData = [
     id: 4,
     projectThumb: projectThumb4,
     projectSubTitle: "Recycling",
-    projectTitle: "Ocean Cleaning",
+    projectTitle: "Web Development",
     projectUrl: "/project_details",
     buttonTitle: "View Details",
     buttonIcon: <FaArrowRightLong />,
