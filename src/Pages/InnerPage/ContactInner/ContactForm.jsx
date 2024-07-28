@@ -1,6 +1,11 @@
-import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import contactFormImg from "/images/contact-form-img.png"
+import contactFormImg from "/images/contact-form-img.png";
 
 const ContactForm = () => {
   return (
@@ -97,7 +102,10 @@ const ContactForm = () => {
               className="border border-BorderColor2-0 rounded py-2 px-6 outline-none resize-none h-[140px] w-full"
             ></textarea>
             <div className="inline-block mt-3">
-              <button type="submit" className="primary-btn2 !bg-SecondaryColor-0 hover:!border-PrimaryColor-0 !border-SecondaryColor-0 before:!bg-PrimaryColor-0">
+              <button
+                type="submit"
+                className="primary-btn2 !bg-SecondaryColor-0 hover:!border-PrimaryColor-0 !border-SecondaryColor-0 before:!bg-PrimaryColor-0"
+              >
                 Submit Message
               </button>
             </div>
