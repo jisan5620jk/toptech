@@ -1,7 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Appointment from "./Appointment/Appointment";
 import ContactBox from "./ContactBox";
+import Map from "./Map";
 
 const ContactInner = () => {
   return (
@@ -12,7 +12,7 @@ const ContactInner = () => {
         breadCrumbLink={"Contact Us"}
       />
       <ContactBox />
-      <Appointment />
+      <Map />
     </>
   );
 };

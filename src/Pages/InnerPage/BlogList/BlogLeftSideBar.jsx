@@ -25,7 +25,6 @@ const blogListData = [
     comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-
   },
   {
     id: 2,
@@ -36,7 +35,6 @@ const blogListData = [
     comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-
   },
   {
     id: 3,
@@ -47,7 +45,6 @@ const blogListData = [
     comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-
   },
   {
     id: 4,
@@ -58,50 +55,23 @@ const blogListData = [
     comments: "Comments (04)",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-
   },
 ];
 
-const BlogList = () => {
+const BlogLeftSideBar = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Blog With Sidebar"}
+        breadCrumbTitle={"Blog left Sidebar"}
         url={"/blog"}
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbIcon2={<FaArrowRightLong />}
         breadCrumbLink={"Blog"}
-        breadCrumbContent={"Blog With Sidebar"}
+        breadCrumbContent={"Blog left Sidebar"}
       />
       <section className="pt-[120px]">
         <div className="Container">
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
-            <div className="col-span-2">
-              {blogListData.map(
-                ({
-                  id,
-                  blogListImg,
-                  thumbContent,
-                  blogListTilte,
-                  postBy,
-                  comments,
-                  blogListDesc,
-                }) => {
-                  return (
-                    <div key={id} className="mb-7">
-                      <BlogListCard
-                        blogListImg={blogListImg}
-                        thumbContent={thumbContent}
-                        blogListTitle={blogListTilte}
-                        postBy={postBy}
-                        comments={comments}
-                        blogListDesc={blogListDesc}
-                      />
-                    </div>
-                  );
-                }
-              )}
-            </div>
             <div className="col-span-2 lg:col-span-1">
               <div className="relative inline-block w-full mb-7 p-4 sm:p-8 lg:p-6 xl:p-8 rounded-md bg-[#f3f4f8]">
                 <input
@@ -292,6 +262,32 @@ const BlogList = () => {
                 </ul>
               </div>
             </div>
+            <div className="col-span-2">
+              {blogListData.map(
+                ({
+                  id,
+                  blogListImg,
+                  thumbContent,
+                  blogListTilte,
+                  postBy,
+                  comments,
+                  blogListDesc,
+                }) => {
+                  return (
+                    <div key={id} className="mb-7">
+                      <BlogListCard
+                        blogListImg={blogListImg}
+                        thumbContent={thumbContent}
+                        blogListTitle={blogListTilte}
+                        postBy={postBy}
+                        comments={comments}
+                        blogListDesc={blogListDesc}
+                      />
+                    </div>
+                  );
+                }
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -323,4 +319,4 @@ const BlogList = () => {
   );
 };
 
-export default BlogList;
+export default BlogLeftSideBar;

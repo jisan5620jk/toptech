@@ -11,7 +11,6 @@ import Home4 from "../Pages/Home4/Home4";
 import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 import AboutInner2 from "../Pages/InnerPage/AboutInner2/AboutInner2";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
-import BlogList from "../Pages/InnerPage/BlogList/BlogList";
 import ServiceDetails from "../Pages/InnerPage/ServiceDetails/ServiceDetails";
 import ServiceDetails2 from "../Pages/InnerPage/ServiceDetails/ServiceDetails2";
 import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
@@ -19,6 +18,10 @@ import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
 import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
 import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
 import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
+import BlogLeftSideBar from "../Pages/InnerPage/BlogList/BlogLeftSideBar";
+import BlogRightSideBar from "../Pages/InnerPage/BlogList/BlogRightSideBar";
+import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
+import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
 
 const router = createBrowserRouter([
   {
@@ -85,16 +88,28 @@ const router = createBrowserRouter([
         element: <ServiceDetails6 />,
       },
       {
+        path: "/project_details",
+        element: <ProjectDetails />,
+      },
+      {
         path: "/blog_grid",
         element: <BlogGrid />,
       },
       {
-        path: "/blog_list",
-        element: <BlogList />,
+        path: "/blog_left_sidebar",
+        element: <BlogLeftSideBar />,
+      },
+      {
+        path: "/blog_right_sidebar",
+        element: <BlogRightSideBar />,
       },
       {
         path: "/blog_details",
         element: <BlogDetails />,
+      },
+      {
+        path: "/contact",
+        element: <ContactInner />,
       },
     ],
   },

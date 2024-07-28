@@ -16,7 +16,8 @@ const blogData = [
     blogGridImg: blogGridImg,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridTilte: "Solution This Business For is Marketing Blog",
+    blogGridUrl: "/blog_details",
+    blogGridTitle: "Solution This Business For is Marketing Blog",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
@@ -27,7 +28,8 @@ const blogData = [
     blogGridImg: blogGridImg2,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridTilte: "Easy and Most Powerful Server and Platform.",
+    blogGridUrl: "/blog_details",
+    blogGridTitle: "Easy and Most Powerful Server and Platform.",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
@@ -38,7 +40,8 @@ const blogData = [
     blogGridImg: blogGridImg3,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridTilte: "In eu fringilla, accumsan purusvel sollicitudin.",
+    blogGridUrl: "/blog_details",
+    blogGridTitle: "In eu fringilla, accumsan purusvel sollicitudin.",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
@@ -49,7 +52,8 @@ const blogData = [
     blogGridImg: blogGridImg4,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridTilte: "Vivamus vehicula nl purus at eros interdum.",
+    blogGridUrl: "/blog_details",
+    blogGridTitle: "Vivamus vehicula nl purus at eros interdum.",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
@@ -60,7 +64,8 @@ const blogData = [
     blogGridImg: blogGridImg5,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridTilte: "Optimizing IT Infrastructure for Cost Efficiency.",
+    blogGridUrl: "/blog_details",
+    blogGridTitle: "Optimizing IT Infrastructure for Cost Efficiency.",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
@@ -71,7 +76,8 @@ const blogData = [
     blogGridImg: blogGridImg6,
     thumbContent: "IT Solution",
     thumbBtn: <LuArrowUpRight />,
-    blogGridTilte: "Business Rules of Running to Web Solution.",
+    blogGridUrl: "/blog_details",
+    blogGridTitle: "Business Rules of Running to Web Solution.",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogGridDesc:
@@ -96,7 +102,7 @@ const BlogGrid = () => {
                 blogGridImg,
                 thumbContent,
                 thumbBtn,
-                blogGridTilte,
+                blogGridTitle,
                 postBy,
                 comments,
                 blogGridDesc,
@@ -107,7 +113,7 @@ const BlogGrid = () => {
                       blogGridImg={blogGridImg}
                       thumbContent={thumbContent}
                       thumbBtn={thumbBtn}
-                      blogGridTitle={blogGridTilte}
+                      blogGridTitle={blogGridTitle}
                       postBy={postBy}
                       comments={comments}
                       blogGridDesc={blogGridDesc}
