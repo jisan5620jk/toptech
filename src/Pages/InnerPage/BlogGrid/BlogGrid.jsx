@@ -1,118 +1,81 @@
 /* eslint-disable no-unused-vars */
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/images/blog-list.png";
-import blogThumb2 from "/images/blog-list2.png";
-import blogThumb3 from "/images/blog-list3.png";
-import blogThumb4 from "/images/blog-list4.jpg";
-import blogThumb5 from "/images/blog-list5.jpg";
-import blogThumb6 from "/images/blog-list6.jpg";
-import blogThumb7 from "/images/blog-thumb1.jpg";
-import blogThumb8 from "/images/blog-thumb2.jpg";
-import blogThumb9 from "/images/blog-thumb3.jpg";
-import BlogCard from "./BlogCard";
-import { Link } from "react-router-dom";
-import subTitleShape from "/images/sub-title-shape.png";
+import blogGridImg from "/images/blog-1.png";
+import blogGridImg2 from "/images/blog-2.png";
+import blogGridImg3 from "/images/blog-3.png";
+import blogGridImg4 from "/images/blog-4.png";
+import blogGridImg5 from "/images/blog-5.png";
+import blogGridImg6 from "/images/blog-6.png";
+import BlogGridCard from "./BlogGridCard";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import { LuArrowUpRight } from "react-icons/lu";
 
 const blogData = [
   {
     id: 1,
-    blogThumb: blogThumb,
-    thumbContent: "Energy",
-    blogUrl: "/blog_details",
-    blogTitle: "Newest Cleaning Tools for House 2024",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
+    blogGridImg: blogGridImg,
+    thumbContent: "IT Solution",
+    thumbBtn: <LuArrowUpRight />,
+    blogGridTilte: "Solution This Business For is Marketing Blog",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
+    blogGridDesc:
+      "Monotonectaly granular to front markets task data semper maecenas ferform",
   },
   {
     id: 2,
-    blogThumb: blogThumb2,
-    thumbContent: "Ecology",
-    blogUrl: "/blog_details",
-    blogTitle: "10 Most Popular Cleaning Tips for House",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
+    blogGridImg: blogGridImg2,
+    thumbContent: "IT Solution",
+    thumbBtn: <LuArrowUpRight />,
+    blogGridTilte: "Easy and Most Powerful Server and Platform.",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
+    blogGridDesc:
+      "Monotonectaly granular to front markets task data semper maecenas ferform",
   },
   {
     id: 3,
-    blogThumb: blogThumb3,
-    thumbContent: "Environment",
-    blogUrl: "/blog_details",
-    blogTitle: "Web Development Use New Equipment",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
+    blogGridImg: blogGridImg3,
+    thumbContent: "IT Solution",
+    thumbBtn: <LuArrowUpRight />,
+    blogGridTilte: "In eu fringilla, accumsan purusvel sollicitudin.",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
+    blogGridDesc:
+      "Monotonectaly granular to front markets task data semper maecenas ferform",
   },
   {
     id: 4,
-    blogThumb: blogThumb4,
-    thumbContent: "Energy",
-    blogUrl: "/blog_details",
-    blogTitle: "Regular cleaning your dream House",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
+    blogGridImg: blogGridImg4,
+    thumbContent: "IT Solution",
+    thumbBtn: <LuArrowUpRight />,
+    blogGridTilte: "Vivamus vehicula nl purus at eros interdum.",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
+    blogGridDesc:
+      "Monotonectaly granular to front markets task data semper maecenas ferform",
   },
   {
     id: 5,
-    blogThumb: blogThumb5,
-    thumbContent: "Ecology",
-    blogUrl: "/blog_details",
-    blogTitle: "Carpet Cleaning Use New Equipment",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
+    blogGridImg: blogGridImg5,
+    thumbContent: "IT Solution",
+    thumbBtn: <LuArrowUpRight />,
+    blogGridTilte: "Optimizing IT Infrastructure for Cost Efficiency.",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
+    blogGridDesc:
+      "Monotonectaly granular to front markets task data semper maecenas ferform",
   },
   {
     id: 6,
-    blogThumb: blogThumb6,
-    thumbContent: "Environment",
-    blogUrl: "/blog_details",
-    blogTitle: "Proper Cleaning Use New Equipment",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 7,
-    blogThumb: blogThumb7,
-    thumbContent: "Energy",
-    blogUrl: "/blog_details",
-    blogTitle: "Window Cleaning Use New Equipment",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 8,
-    blogThumb: blogThumb8,
-    thumbContent: "Ecology",
-    blogUrl: "/blog_details",
-    blogTitle: "Web Development Use New Equipment",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 9,
-    blogThumb: blogThumb9,
-    thumbContent: "Environment",
-    blogUrl: "/blog_details",
-    blogTitle: "Door Cleaning Use New Equipment",
-    blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
-    btnIcon: <FaArrowRightLong />,
+    blogGridImg: blogGridImg6,
+    thumbContent: "IT Solution",
+    thumbBtn: <LuArrowUpRight />,
+    blogGridTilte: "Business Rules of Running to Web Solution.",
+    postBy: "Admin : Mera",
+    comments: "Comments (04)",
+    blogGridDesc:
+      "Monotonectaly granular to front markets task data semper maecenas ferform",
   },
 ];
 
@@ -122,62 +85,37 @@ const BlogGrid = () => {
       <BreadCrumb
         breadCrumbTitle={"Blog Grid"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog"}
-        breadCrumbIcon2={<FaArrowRightLong />}
-        breadCrumbContent={"Blog Grid"}
+        breadCrumbLink={"Blog Grid"}
       />
       <section className="pt-28">
         <div className="Container">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
-            <div>
-              <div>
-                <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center gap-2">
-                  <img src={subTitleShape} draggable="false" />
-                  LATEST BLOG
-                </h5>
-                <h1 className="font-Nunito font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-                  Learn about our Latest <br /> News from Blog
-                </h1>
-              </div>
-            </div>
-            <div className="flex lg:justify-end">
-              <Link to={"/blog_details"}>
-                <button className="primary-btn">
-                  Veiw All Blog
-                  <FaArrowRightLong size={"20"} />
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div className="mt-[60px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-              {blogData.map(
-                ({
-                  id,
-                  blogThumb,
-                  thumbContent,
-                  blogUrl,
-                  blogTitle,
-                  blogDesc,
-                  btnContent,
-                  btnIcon,
-                }) => {
-                  return (
-                    <div key={id}>
-                      <BlogCard
-                        blogThumb={blogThumb}
-                        thumbContent={thumbContent}
-                        blogUrl={blogUrl}
-                        blogTitle={blogTitle}
-                        blogDesc={blogDesc}
-                        btnContent={btnContent}
-                        btnIcon={btnIcon}
-                      />
-                    </div>
-                  );
-                }
-              )}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            {blogData.map(
+              ({
+                id,
+                blogGridImg,
+                thumbContent,
+                thumbBtn,
+                blogGridTilte,
+                postBy,
+                comments,
+                blogGridDesc,
+              }) => {
+                return (
+                  <div key={id}>
+                    <BlogGridCard
+                      blogGridImg={blogGridImg}
+                      thumbContent={thumbContent}
+                      thumbBtn={thumbBtn}
+                      blogGridTitle={blogGridTilte}
+                      postBy={postBy}
+                      comments={comments}
+                      blogGridDesc={blogGridDesc}
+                    />
+                  </div>
+                );
+              }
+            )}
           </div>
         </div>
       </section>

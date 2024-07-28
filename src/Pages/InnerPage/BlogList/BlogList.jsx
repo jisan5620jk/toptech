@@ -83,16 +83,9 @@ const BlogList = () => {
                   blogListImg,
                   thumbContent,
                   blogListTilte,
-                  postByIcon,
                   postBy,
-                  postDateIcon,
-                  postDate,
-                  commentsIcon,
                   comments,
                   blogListDesc,
-                  blogListUrl,
-                  blogListBtn,
-                  blogListBtnIcon,
                 }) => {
                   return (
                     <div key={id} className="mb-7">
@@ -100,16 +93,9 @@ const BlogList = () => {
                         blogListImg={blogListImg}
                         thumbContent={thumbContent}
                         blogListTitle={blogListTilte}
-                        postByIcon={postByIcon}
                         postBy={postBy}
-                        postDateIcon={postDateIcon}
-                        postDate={postDate}
-                        commentsIcon={commentsIcon}
                         comments={comments}
                         blogListDesc={blogListDesc}
-                        blogListUrl={blogListUrl}
-                        blogListBtn={blogListBtn}
-                        blogListBtnIcon={blogListBtnIcon}
                       />
                     </div>
                   );

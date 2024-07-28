@@ -55,6 +55,10 @@ export default {
           "0%,100%": { transform: "translateX(0px)" },
           "50%": { transform: "translateX(570px)" },
         },
+        dance5: {
+          "0%,100%": { transform: "translateX(0px)" },
+          "50%": { transform: "translateX(330px)" },
+        },
         rotateme: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
@@ -100,6 +104,7 @@ export default {
         dance2: "dance2 3s alternate infinite",
         dance3: "dance3 2s alternate infinite",
         dance4: "dance4 10s alternate infinite",
+        dance5: "dance5 10s alternate infinite",
         dance7: "dance7 4s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",
         headerSlideDown:

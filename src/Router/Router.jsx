@@ -18,6 +18,7 @@ import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
 import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
 import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
 import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
+import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
 
 const router = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
       {
         path: "/service_details6",
         element: <ServiceDetails6 />,
+      },
+      {
+        path: "/blog_grid",
+        element: <BlogGrid />,
       },
       {
         path: "/blog_list",

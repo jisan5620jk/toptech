@@ -24,7 +24,7 @@ const BlogListCard = ({
         </div>
       </div>
       <div className="px-4 sm:px-8 ml-8 bg-white shadow-cases rounded-b-md rounded-ss-md -mt-[50px] relative z-10">
-        <div className="flex items-center justify-between gap-5 pt-9 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-[50px] before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance4">
+        <div className="flex items-center justify-between gap-5 pt-9 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance4">
           <h6 className="flex items-center gap-2 font-Rajdhani text-[17px] text-PrimaryColor-0 font-medium">
             {postBy}
           </h6>
