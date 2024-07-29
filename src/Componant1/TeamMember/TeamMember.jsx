@@ -83,7 +83,7 @@ const TeamMember = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[52px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
           {teamData.map(
             ({
               id,

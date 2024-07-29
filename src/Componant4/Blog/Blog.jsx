@@ -35,7 +35,7 @@ const blogData = [
   },
   {
     id: 4,
-    blogThumb: blogThumb3,
+    blogThumb: blogThumb4,
     blogNumber: "04",
     blogUrl: "/blog_details",
     blogTitle: "Business Consultation",
