@@ -67,28 +67,21 @@ const Blog = () => {
           </div>
         </div>
         <div className="mt-[30px]">
-            {blogData.map(
-              ({
-                id,
-                blogNumber,
-                blogThumb,
-                blogUrl,
-                blogTitle,
-                blogBtn,
-              }) => {
-                return (
-                  <div key={id}>
-                    <BlogCard
-                      blogNumber={blogNumber}
-                      blogThumb={blogThumb}
-                      blogUrl={blogUrl}
-                      blogTitle={blogTitle}
-                      blogBtn={blogBtn}
-                    />
-                  </div>
-                );
-              }
-            )}
+          {blogData.map(
+            ({ id, blogNumber, blogThumb, blogUrl, blogTitle, blogBtn }) => {
+              return (
+                <div key={id}>
+                  <BlogCard
+                    blogNumber={blogNumber}
+                    blogThumb={blogThumb}
+                    blogUrl={blogUrl}
+                    blogTitle={blogTitle}
+                    blogBtn={blogBtn}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
