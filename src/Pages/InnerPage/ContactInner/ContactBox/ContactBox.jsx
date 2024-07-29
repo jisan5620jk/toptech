@@ -8,19 +8,19 @@ const processData = [
     id: 1,
     contactBoxIcon: <FaPhoneAlt />,
     contactBoxSubTitle: "Call Us Anytime",
-    coctactBoxTitle: "+123 (4547) 563",
+    contactBoxTitle: "+123 (4547) 563",
   },
   {
     id: 2,
     contactBoxIcon: <MdOutlineMail />,
     contactBoxSubTitle: "Send E-Mail",
-    coctactBoxTitle: "+123 (4547) 563",
+    contactBoxTitle: "info@gmail.com",
   },
   {
     id: 3,
     contactBoxIcon: <AiOutlineClockCircle />,
-    contactBoxSubTitle: "Call Us Anytime",
-    contactBoxTitle: "+123 (4547) 563",
+    contactBoxSubTitle: "Opening Hours",
+    contactBoxTitle: "Fri - Mon (9.00 - 5.00)",
   },
 ];
 

@@ -22,6 +22,7 @@ import BlogLeftSideBar from "../Pages/InnerPage/BlogList/BlogLeftSideBar";
 import BlogRightSideBar from "../Pages/InnerPage/BlogList/BlogRightSideBar";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
+import LocationInner from "../Pages/InnerPage/LocationInner/LocationInner";
 
 const router = createBrowserRouter([
   {
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
       {
         path: "/blog_details",
         element: <BlogDetails />,
+      },
+      {
+        path: "/location",
+        element: <LocationInner />,
       },
       {
         path: "/contact",

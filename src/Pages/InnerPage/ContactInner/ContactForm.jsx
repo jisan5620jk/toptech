@@ -54,11 +54,11 @@ const ContactForm = () => {
         </div>
         <div className="col-span-2 pl-[120px]">
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-            IT Support For Business
+            Have Any Consultation....?
           </h5>
           <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-12">
-            Ensuring Your Success Trusted <br />
-            IT Services Source
+            Get In Touch Your Nearest Local <br />
+           Business Sales Executive
           </h1>
           <form action="#" method="post" className="flex flex-col gap-7">
             <div className="flex flex-col md:flex-row gap-7">
