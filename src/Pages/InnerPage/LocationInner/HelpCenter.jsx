@@ -1,5 +1,7 @@
 import HelpCenterCard from "./HelpCenterCard";
 import helpCenterImg from "/images/flag-1.png";
+import helpCenterImg2 from "/images/flag-2.png";
+import helpCenterImg3 from "/images/flag-3.png";
 import helpCenterIcon from "/images/location-icon.png";
 
 const processData = [
@@ -10,7 +12,25 @@ const processData = [
     helpCenterDesc: "2307 Road, New Town 126 Paraguay",
     helpCenterIcon: helpCenterIcon,
     helpCenterUrl: "",
-    helpCenterBtn: 'Help Center'
+    helpCenterBtn: "Help Center",
+  },
+  {
+    id: 2,
+    helpCenterImg: helpCenterImg2,
+    helpCenterTitle: "Bangladesh.",
+    helpCenterDesc: "307 Road Dhaka, New Market 326 BD",
+    helpCenterIcon: helpCenterIcon,
+    helpCenterUrl: "",
+    helpCenterBtn: "Help Center",
+  },
+  {
+    id: 3,
+    helpCenterImg: helpCenterImg3,
+    helpCenterTitle: "United States.",
+    helpCenterDesc: "2307 Rd Brooklyn, New York 11226 USA",
+    helpCenterIcon: helpCenterIcon,
+    helpCenterUrl: "",
+    helpCenterBtn: "Help Center",
   },
 ];
 
