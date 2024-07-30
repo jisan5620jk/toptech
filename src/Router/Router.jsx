@@ -24,6 +24,7 @@ import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
 import LocationInner from "../Pages/InnerPage/LocationInner/LocationInner";
 import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
+import TeamDetails from "../Pages/InnerPage/TeamDetails/TeamDetails";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: "/team_inner",
         element: <TeamInner />,
+      },
+      {
+        path: "/team_details",
+        element: <TeamDetails />,
       },
       {
         path: "/service_details",
