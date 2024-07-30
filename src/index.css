@@ -63,20 +63,15 @@ body {
 .progress-bar-rect-wrap-container {
   position: relative;
   z-index: 999;
+  display: flex;
+  gap: 50px;
 }
 
 .rect-progress-bar-percent {
-  @apply !m-0 leading-[10px] absolute !text-[#1b3434] font-Nunito font-medium left-[88%] -top-[28px];
+  @apply !m-0 leading-[10px] !text-HeadingColor-0 font-Rajdhani;
 }
 
-.skill2 .rect-progress-bar-percent {
-  @apply !m-0 leading-[10px] absolute !text-[#1b3434] font-Nunito font-medium left-[78%] -top-[28px];
-}
-
-.rect-progress-bar-percent {
-  margin: 0 !important;
-  line-height: 10px;
-}
+/* React Tab */
 
 .react-tabs__tab--selected::before {
   width: 20px !important;

@@ -3,6 +3,7 @@ import teamDetailsImg from "/images/team-details.jpg"
 import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { TfiLocationPin } from "react-icons/tfi";
+import ProgressBar from "react-animated-progress-bar";
 
 const TeamDetailsMain = () => {
   return (
@@ -13,13 +14,13 @@ const TeamDetailsMain = () => {
             <img src={teamDetailsImg} draggable="false" />
           </div>
           <div>
-            <h2 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0">
+            <h2 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 mb-1">
               Dillur Rahman
             </h2>
             <p className="font-Nunito text-TextColor2-0">
               Dream Land Founder & CEO
             </p>
-            <p className="font-Nunito text-TextColor2-0">
+            <p className="font-Nunito text-TextColor2-0 mt-9 mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor creative labore et dolore magna aliqua ipsum
               suspendisse ultrices gravida commodo viverra accu eiusmod tempor
@@ -53,7 +54,7 @@ const TeamDetailsMain = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 my-[50px]">
               <h5 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0">
                 Social Media :
               </h5>
@@ -92,6 +93,117 @@ const TeamDetailsMain = () => {
                   21 King Street 5th Floor Hamilton, Ontario Canada
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <h1 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 mb-12 mt-28">My Skills</h1>
+        <div className="grid grid-cols-2 gap-[72px]">
+          <div>
+            <div>
+              <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
+               Design Analytics
+              </h6>
+              <ProgressBar
+                rect
+                width="100%"
+                height="7px"
+                fontColor="#001818"
+                fontSize="17px"
+                leading="10px"
+                margin="0px"
+                rectBorderRadius="0"
+                fontWeight="600"
+                percentage="95"
+                defColor={{
+                  excellent: "#0b58d8",
+                  good: "#79b900",
+                  fair: "green",
+                  poor: "red",
+                }}
+                trackPathColor="#dcdcdc"
+                trackBorderColor="transparent"
+                trackPathBorderRadius="10px"
+              />
+            </div>
+            <div className="mt-8">
+              <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
+               Digital Marketing
+              </h6>
+              <ProgressBar
+                rect
+                width="100%"
+                height="7px"
+                fontColor="#001818"
+                fontSize="17px"
+                leading="10px"
+                margin="0px"
+                rectBorderRadius="0"
+                fontWeight="600"
+                percentage="85"
+                defColor={{
+                  excellent: "#0b58d8",
+                  good: "#79b900",
+                  fair: "green",
+                  poor: "red",
+                }}
+                trackPathColor="#dcdcdc"
+                trackBorderColor="transparent"
+                trackPathBorderRadius="10px"
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
+               UI / UX Design & Development
+              </h6>
+              <ProgressBar
+                rect
+                width="100%"
+                height="7px"
+                fontColor="#001818"
+                fontSize="17px"
+                leading="10px"
+                margin="0px"
+                rectBorderRadius="0"
+                fontWeight="600"
+                percentage="75"
+                defColor={{
+                  excellent: "#0b58d8",
+                  good: "#79b900",
+                  fair: "green",
+                  poor: "red",
+                }}
+                trackPathColor="#dcdcdc"
+                trackBorderColor="transparent"
+                trackPathBorderRadius="10px"
+              />
+            </div>
+            <div className="mt-8">
+              <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
+              Content Strategy
+              </h6>
+              <ProgressBar
+                rect
+                width="100%"
+                height="7px"
+                fontColor="#001818"
+                fontSize="17px"
+                leading="10px"
+                margin="0px"
+                rectBorderRadius="0"
+                fontWeight="600"
+                percentage="90"
+                defColor={{
+                  excellent: "#0b58d8",
+                  good: "#79b900",
+                  fair: "green",
+                  poor: "red",
+                }}
+                trackPathColor="#dcdcdc"
+                trackBorderColor="transparent"
+                trackPathBorderRadius="10px"
+              />
             </div>
           </div>
         </div>
