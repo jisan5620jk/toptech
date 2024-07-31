@@ -1,95 +1,96 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceImg from "/images/services-thumb.png";
-import serviceImg2 from "/images/services-thumb2.png";
-import serviceImg3 from "/images/services-thumb3.png";
-import serviceImg4 from "/images/services-thumb4.png";
-import serviceImg5 from "/images/services-thumb5.png";
-import serviceImg6 from "/images/services-thumb6.png";
-import serviceShape from "/images/service-shape.png";
-import serviceIcon from "/images/service2-icon.png";
-import serviceIcon2 from "/images/service2-icon2.png";
-import serviceIcon3 from "/images/service2-icon3.png";
-import serviceIcon4 from "/images/service2-icon4.png";
-import serviceIcon5 from "/images/service2-icon5.png";
-import serviceIcon6 from "/images/service2-icon6.png";
+import serviceIcon from "/images/service-icon1.png";
+import serviceIcon2 from "/images/service-icon2.png";
+import serviceIcon3 from "/images/service-icon3.png";
+import serviceIcon4 from "/images/service-icon4.png";
+import serviceIcon5 from "/images/service-icon5.png";
+import serviceIcon6 from "/images/service-icon6.png";
 import ServiceCard from "./ServiceCard";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import subTitleShape from "/images/sub-title-shape.png";
-import { GoArrowUpRight } from "react-icons/go";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Newsletter from "./Newsletter/Newsletter";
 
 const serviceData = [
   {
     id: 1,
-    serviceImg: serviceImg,
     serviceIcon: serviceIcon,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Ocean Clean",
+    serviceTitle: "Cloud Services",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
   },
   {
     id: 2,
-    serviceImg: serviceImg2,
     serviceIcon: serviceIcon2,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Dust Recycling",
+    serviceTitle: "IT Management",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
   },
   {
     id: 3,
-    serviceImg: serviceImg3,
     serviceIcon: serviceIcon4,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Corbon Emissions",
+    serviceTitle: "Software Renew",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
   },
   {
     id: 4,
-    serviceImg: serviceImg4,
     serviceIcon: serviceIcon3,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Tree Plantation",
+    serviceTitle: "Machine Learning",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
   },
   {
     id: 5,
-    serviceImg: serviceImg5,
     serviceIcon: serviceIcon5,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Sustainble Energy",
+    serviceTitle: "Digital Marketing",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
   },
   {
     id: 6,
-    serviceImg: serviceImg6,
     serviceIcon: serviceIcon6,
-    serviceUrl: "/service_details",
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Plantary Warming",
+    serviceTitle: "Web Development",
     serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
+  },
+  {
+    id: 7,
+    serviceIcon: serviceIcon6,
+    serviceTitle: "Cyber Security",
+    serviceDesc:
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
+  },
+  {
+    id: 8,
+    serviceIcon: serviceIcon6,
+    serviceTitle: "Data Analytic",
+    serviceDesc:
+    "Monotonectal grants to business visualize provid solution services business provid done",
+    serviceUrl: "/service_details",
+    serviceButton2: "Learn More",
+    serviceButton: <HiOutlineArrowNarrowRight />,
   },
 ];
 
@@ -104,17 +105,16 @@ const ServiceInner = () => {
       <section className="pt-28 pb-[120px] p relative z-10 bg-[#f3f3f7]">
         <div className="Container">
           <div className="text-center">
-            <h5 className="font-Nunito font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-              <img src={subTitleShape} draggable="false" />
-              OUR SERVICES
+            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+              IT Support For Business
             </h5>
-            <h1 className="font-Nunito font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5">
-              Echofy Provide Environment <br />
-              Best Leading Services
+            <h1 className="font-Rajdhani font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
+              Ensuring Your Success Trusted <br />
+              IT Services Source
             </h1>
           </div>
           <div className="mt-[60px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[68px]">
               {serviceData.map(
                 ({
                   id,
@@ -149,6 +149,7 @@ const ServiceInner = () => {
           </div>
         </div>
       </section>
+      <Newsletter />
     </>
   );
 };
