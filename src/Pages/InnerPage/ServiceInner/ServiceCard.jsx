@@ -16,7 +16,7 @@ const ServiceCard = ({
           <img src={serviceIcon} draggable="false" />
         </div>
       </div>
-      <Link to={"/"}>
+      <Link to={serviceUrl}>
         <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
           {serviceTitle}
         </button>

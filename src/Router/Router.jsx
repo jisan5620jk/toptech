@@ -26,6 +26,7 @@ import LocationInner from "../Pages/InnerPage/LocationInner/LocationInner";
 import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
 import TeamDetails from "../Pages/InnerPage/TeamDetails/TeamDetails";
 import ServiceInner from "../Pages/InnerPage/ServiceInner/ServiceInner";
+import WhyChoose from "../Pages/InnerPage/WhyChoose/WhyChoose";
 
 const router = createBrowserRouter([
   {
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
       {
         path: "/project_details",
         element: <ProjectDetails />,
+      },
+      {
+        path: "/why_choose",
+        element: <WhyChoose />,
       },
       {
         path: "/blog_grid",
