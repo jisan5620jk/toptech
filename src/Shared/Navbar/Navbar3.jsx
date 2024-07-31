@@ -259,6 +259,13 @@ const Navbar3 = () => {
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
+                          <Link to="/mission_inner" className="py-2 block">
+                            Our Mission
+                          </Link>
+                        </li>
+                      </div>
+                      <div className="px-5 group hover:bg-PrimaryColor-0">
+                        <li className="hover:ml-3 duration-300">
                           <Link to="/why_choose" className="py-2 block">
                             Why Choose Us
                           </Link>
