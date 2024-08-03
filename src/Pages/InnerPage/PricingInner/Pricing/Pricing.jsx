@@ -174,7 +174,7 @@ const Pricing = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[72px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[56px]">
               {pricingData2.map(
                 ({
                   id,
