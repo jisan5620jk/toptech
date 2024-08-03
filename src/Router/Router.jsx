@@ -28,6 +28,7 @@ import TeamDetails from "../Pages/InnerPage/TeamDetails/TeamDetails";
 import ServiceInner from "../Pages/InnerPage/ServiceInner/ServiceInner";
 import WhyChoose from "../Pages/InnerPage/WhyChoose/WhyChoose";
 import MissionInner from "../Pages/InnerPage/MissionInner/MissionInner";
+import PricingInner from "../Pages/InnerPage/PricingInner/PricingInner";
 
 const router = createBrowserRouter([
   {
@@ -112,6 +113,10 @@ const router = createBrowserRouter([
       {
         path: "/why_choose",
         element: <WhyChoose />,
+      },
+      {
+        path: "/pricing_inner",
+        element: <PricingInner />,
       },
       {
         path: "/mission_inner",

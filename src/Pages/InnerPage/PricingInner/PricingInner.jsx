@@ -1,7 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import PricingFaq from "./Accordion/PricingFaq";
-import Pricing from "../../../Componant3/Pricing/Pricing";
+import Video from "../../../Componant1/Video/Video";
+import ContactBox from "../ContactInner/ContactBox/ContactBox";
+import Pricing from "./Pricing/Pricing";
 
 const PricingInner = () => {
   return (
@@ -9,12 +10,11 @@ const PricingInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Affordable Price"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Pricing"}
+        breadCrumbLink={"Pricing Plan"}
       />
       <Pricing />
-      <div>
-        <PricingFaq />
-      </div>
+      <Video />
+      <ContactBox />
     </>
   );
 };
