@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { FaPlus } from "react-icons/fa6";
 import projectThumb from "/images/portfolio2-1.png";
 import projectThumb2 from "/images/portfolio2-2.png";
