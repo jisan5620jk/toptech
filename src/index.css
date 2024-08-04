@@ -293,10 +293,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   padding: 0 20px 0 30px;
 }
 
-.faq-button2[aria-expanded="true"],
-.faq-button2:hover {
-  border-radius: 5px 5px 0 0;
-  border-color: #83a8ff;
+.faq-button2[aria-expanded="true"] {
+  background: #0b59db;
+  border-radius: 6px 6px 0 0;
+}
+
+.faq-button2:hover img,
+.faq-button2[aria-expanded="true"] img {
+  filter: brightness(0) invert(1);
 }
 
 /* Pricing */
