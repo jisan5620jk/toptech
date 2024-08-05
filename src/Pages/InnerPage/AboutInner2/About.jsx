@@ -55,7 +55,7 @@ const About = () => {
                     </h5>
                   </div>
                 </div>
-                <p className="font-Nunito text-TextColor2-0">
+                <p className="font-Nunito text-TextColor2-0 pt-3">
                   Proved granular markets dream team more based models clean.
                 </p>
               </div>
@@ -70,7 +70,7 @@ const About = () => {
                     </h5>
                   </div>
                 </div>
-                <p className="font-Nunito text-TextColor2-0">
+                <p className="font-Nunito text-TextColor2-0 pt-3">
                   Proved granular markets dream team more based models clean.
                 </p>
               </div>

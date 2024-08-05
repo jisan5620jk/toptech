@@ -35,11 +35,11 @@ const processData = [
 
 const Feature = () => {
   return (
-    <section className="bg-[url(/images/about-images-bg.png)] pt-[222px] relative">
+    <section className="bg-[url(/images/about-images-bg.png)] pt-10 lg:pt-[222px] 2xl:pt-[270px] relative">
       <img
         src={featureImage}
         draggable="false"
-        className="absolute right-0 -top-3/4"
+        className="absolute right-0 -top-[50%] xl:-top-[68%] 2xl:-top-[72%] hidden lg:w-[60%] 2xl:w-[inherit] lg:block"
       />
       <div className="relative z-10 -mb-[118px]">
         <div className="Container">

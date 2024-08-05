@@ -55,8 +55,8 @@ const pricingData2 = [
   {
     id: 1,
     currency: "$",
-    offerPrice: 29,
-    mainPrice: "$39",
+    offerPrice: 129,
+    mainPrice: "$139",
     pricingDateLine: "/Yearly",
     pricingTitle: "Basic Plans",
     pricingSubTitle: "Small Team",
@@ -71,8 +71,8 @@ const pricingData2 = [
   {
     id: 2,
     currency: "$",
-    offerPrice: 59,
-    mainPrice: "$69",
+    offerPrice: 159,
+    mainPrice: "$169",
     pricingDateLine: "/Yearly",
     pricingTitle: "Standard Plans",
     pricingSubTitle: "Medium Team",
@@ -87,8 +87,8 @@ const pricingData2 = [
   {
     id: 3,
     currency: "$",
-    offerPrice: 89,
-    mainPrice: "$99",
+    offerPrice: 189,
+    mainPrice: "$199",
     pricingDateLine: "/Yearly",
     pricingTitle: "Premium Plans",
     pricingSubTitle: "Large Team",
@@ -106,27 +106,26 @@ const Pricing = () => {
   return (
     <section className="py-28 bg-BodyBg-0">
       <div className="Container">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
           <div>
-            <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[37px] xl:leading-[47px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0">
+            <h1 className="font-Rajdhani font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[37px] xl:leading-[47px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0">
               Choose Your Best Plan
             </h1>
             <p className="font-Nunito text-TextColor2-0 mt-3">
               Services are professional offerings provided by businesses to meet
-              specific needs or solve <br className="hidden 2xl:block" />{" "}
-              problems for their customers. Services can range from your
-              services.
+              specific needs or solve problems for their customers. Services can
+              range from your services.
             </p>
           </div>
           <div></div>
         </div>
         <Tabs>
-          <div className="flex items-end flex-col">
-            <TabList className="flex items-center justify-end -mt-20 gap-x-2 w-[361px] border border-BorderColor2-0 p-[6px]  rounded-md overflow-hidden">
-              <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 px-9 py-[14px] rounded-md font-Nunito text-white transition-all duration-500 hover:bg-PrimaryColor-0">
+          <div className="flex lg:items-end lg:justify-end">
+            <TabList className="flex items-center justify-end mt-8 lg:-mt-20 gap-x-2 w-[282px] sm:w-[361px] border border-BorderColor2-0 p-[6px] rounded-md overflow-hidden">
+              <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 px-4 sm:px-9 py-[14px] rounded-md font-Nunito text-white transition-all duration-500 hover:bg-PrimaryColor-0">
                 Billed Monthly
               </Tab>
-              <Tab className="cursor-pointer outline-none bg-PrimaryColor-0 px-9 py-[14px] rounded-md font-Nunito text-white transition-all duration-500 hover:bg-SecondaryColor-0">
+              <Tab className="cursor-pointer outline-none bg-PrimaryColor-0 px-4 sm:px-9 py-[14px] rounded-md font-Nunito text-white transition-all duration-500 hover:bg-SecondaryColor-0">
                 Billed Yearly
               </Tab>
             </TabList>

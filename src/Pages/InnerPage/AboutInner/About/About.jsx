@@ -16,9 +16,9 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable="false"
-              className="md:w-full lg:w 2xl:-ml-[38px] 2xl:max-w-[inherit]"
+              className="md:w-full 2xl:-ml-[38px] 2xl:max-w-[inherit]"
             />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden sm:block">
               <div className="bg-PrimaryColor-0 border-[6px] border-white pb-6 pt-5 flex flex-col justify-center overflow-hidden rounded-full h-[117px] sm:h-[214px] lg:h-[180px] xl:h-[214px] w-[92px] sm:w-[214px] lg:w-[180px] xl:w-[214px] items-center text-center relative z-10">
                 <img src={aboutCounterIcon} draggable="false" />
                 <CountUp
@@ -65,7 +65,7 @@ const About = () => {
               based models. Synergistically task state of the art
               infrastructures for
             </p>
-            <div className="grid grid-cols-2 items-center mb-8">
+            <div className="grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 items-center mb-8">
               <ul>
                 <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
                   <span className="text-PrimaryColor-0">
@@ -80,7 +80,7 @@ const About = () => {
                   Business and research
                 </li>
               </ul>
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 lg:gap-2 xl:gap-6">
                 <CountUp
                   start={-9}
                   end={45}
@@ -89,7 +89,7 @@ const About = () => {
                  font-semibold text-PrimaryColor-0 size-[65px] rounded-full border-2 border-PrimaryColor-0"
                 />
                 <div>
-                  <h4 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0">
+                  <h4 className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0">
                     Solution Business
                   </h4>
                   <p className="font-Nunito text-lg text-TextColor2-0">

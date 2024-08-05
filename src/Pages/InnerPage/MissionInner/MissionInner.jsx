@@ -18,15 +18,15 @@ const MissionInner = () => {
       />
       <section className="relative pt-28 pb-[120px] bg-[#f5f8ed] z-10">
         <div className="Container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 2xl:gap-20 bg-BodyBg-0 rounded-md">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0">
             <div>
               <img src={missionImg} draggable="false" />
             </div>
-            <div className="mr-10">
+            <div className="ml-10 2xl:ml-20 mr-10">
               <h2 className="font-Rajdhani font-bold text-HeadingColor-0 text-[42px] mb-8">
                 Our Mission
               </h2>
-              <div className="flex gap-5 items-center">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -35,7 +35,7 @@ const MissionInner = () => {
                   over-the-top marketing. simple wins.
                 </p>
               </div>
-              <div className="flex gap-5 items-center mt-10">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -44,7 +44,7 @@ const MissionInner = () => {
                   term. We are creative professionals.
                 </p>
               </div>
-              <div className="flex gap-5 items-center mt-10 mb-16">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10 mb-16">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -58,12 +58,12 @@ const MissionInner = () => {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 2xl:gap-20 bg-BodyBg-0 rounded-md">
-            <div className="ml-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0">
+            <div className="ml-10 mr-10 2xl:mr-20">
               <h2 className="font-Rajdhani font-bold text-HeadingColor-0 text-[42px] mb-8">
                 Our Vision
               </h2>
-              <div className="flex gap-5 items-center">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -72,7 +72,7 @@ const MissionInner = () => {
                   over-the-top marketing. simple wins.
                 </p>
               </div>
-              <div className="flex gap-5 items-center mt-10">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -81,7 +81,7 @@ const MissionInner = () => {
                   term. We are creative professionals.
                 </p>
               </div>
-              <div className="flex gap-5 items-center mt-10 mb-16">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10 mb-16">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -98,15 +98,15 @@ const MissionInner = () => {
               <img src={missionImg2} draggable="false" />
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 2xl:gap-20 bg-BodyBg-0 rounded-md">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md">
             <div>
               <img src={missionImg} draggable="false" />
             </div>
-            <div className="mr-10">
+            <div className="ml-10 2xl:ml-20 mr-10">
               <h2 className="font-Rajdhani font-bold text-HeadingColor-0 text-[42px] mb-8">
                 Our Goal
               </h2>
-              <div className="flex gap-5 items-center">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -115,7 +115,7 @@ const MissionInner = () => {
                   over-the-top marketing. simple wins.
                 </p>
               </div>
-              <div className="flex gap-5 items-center mt-10">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
@@ -124,7 +124,7 @@ const MissionInner = () => {
                   term. We are creative professionals.
                 </p>
               </div>
-              <div className="flex gap-5 items-center mt-10 mb-16">
+              <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10 mb-16">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>

@@ -95,7 +95,7 @@ const ProjectDetails = () => {
                   </ul>
                 </div>
               </div>
-              <h2 className="font-Rajdhani font-bold text-[28px] text-PrimaryColor-0 mt-[44px]">
+              <h2 className="font-Rajdhani font-bold text-2xl md:text-[28px] text-PrimaryColor-0 mt-[44px]">
                 Competently architect intermandated deliverables client niches
                 continually underwhelm
               </h2>

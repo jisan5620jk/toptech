@@ -9,7 +9,7 @@ const TeamDetailsMain = () => {
   return (
     <section className="bg-[url(/images/team-details-bg.jpg)] bg-no-repeat bg-center bg-cover py-28">
       <div className="Container">
-        <div className="grid grid-cols-2 items-center gap-10 lg:gap-20 2xl:gap-[140px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 2xl:gap-[140px]">
           <div>
             <img src={teamDetailsImg} draggable="false" />
           </div>
@@ -26,8 +26,8 @@ const TeamDetailsMain = () => {
               suspendisse ultrices gravida commodo viverra accu eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="bg-BodyBg-0 py-10 px-5 2xl:px-10 rounded-md grid grid-cols-2 items-center">
-              <div className="flex items-center gap-5">
+            <div className="bg-BodyBg-0 py-10 px-5 2xl:px-10 rounded-md grid grid-cols-1 gap-6 sm:gap-0 sm:grid-cols-2 sm:items-center">
+              <div className="flex lg:flex-col xl:flex-row items-center lg:items-start xl:items-center gap-5">
                 <div className="size-[64px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 text-3xl transition-all duration-500 group-hover:text-white group-hover:border-white">
                   <FaPhoneAlt />
                 </div>
@@ -40,7 +40,7 @@ const TeamDetailsMain = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-5">
+              <div className="flex lg:flex-col xl:flex-row items-center lg:items-start xl:items-center gap-5">
                 <div className="size-[64px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 text-3xl transition-all duration-500 group-hover:text-white group-hover:border-white">
                   <MdOutlineMail />
                 </div>
@@ -54,7 +54,7 @@ const TeamDetailsMain = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-6 my-[50px]">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6 my-[50px]">
               <h5 className="font-Rajdhani font-semibold text-2xl text-HeadingColor-0">
                 Social Media :
               </h5>
@@ -96,12 +96,14 @@ const TeamDetailsMain = () => {
             </div>
           </div>
         </div>
-        <h1 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 mb-12 mt-28">My Skills</h1>
-        <div className="grid grid-cols-2 gap-[72px]">
+        <h1 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 mb-12 mt-28">
+          My Skills
+        </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[72px]">
           <div>
             <div>
               <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
-               Design Analytics
+                Design Analytics
               </h6>
               <ProgressBar
                 rect
@@ -127,7 +129,7 @@ const TeamDetailsMain = () => {
             </div>
             <div className="mt-8">
               <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
-               Digital Marketing
+                Digital Marketing
               </h6>
               <ProgressBar
                 rect
@@ -155,7 +157,7 @@ const TeamDetailsMain = () => {
           <div>
             <div>
               <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
-               UI / UX Design & Development
+                UI / UX Design & Development
               </h6>
               <ProgressBar
                 rect
@@ -181,7 +183,7 @@ const TeamDetailsMain = () => {
             </div>
             <div className="mt-8">
               <h6 className="font-Rajdhani font-medium text-lg text-TextColor2-0 pb-2">
-              Content Strategy
+                Content Strategy
               </h6>
               <ProgressBar
                 rect

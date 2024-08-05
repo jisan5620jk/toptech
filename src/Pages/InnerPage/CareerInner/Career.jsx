@@ -4,7 +4,7 @@ const Career = () => {
   return (
     <section className="bg-BodyBg-0 py-28">
       <div className="Container">
-        <div className="grid grid-cols-3 items-center mb-[120px]">
+        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-3 items-center mb-[120px]">
           <div className="col-span-2">
             <h4 className="font-Rajdhani text-2xl font-semibold">
               Inspire and Get Inspired by{" "}
@@ -19,7 +19,7 @@ const Career = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-12 items-center border-t-2 py-16 relative before:absolute before:-top-[2px] before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0 after:absolute after:-top-[2px] after:left-8 after:w-2 after:h-[2px] after:bg-white">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-0 lg:items-center border-t-2 py-16 relative before:absolute before:-top-[2px] before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0 after:absolute after:-top-[2px] after:left-8 after:w-2 after:h-[2px] after:bg-white">
           <div className="col-span-4">
             <div className="flex items-center gap-5">
               <h6 className="px-[26px] py-1 rounded-full bg-PrimaryColor-0 font-Nunito font-light text-white">
@@ -38,7 +38,7 @@ const Career = () => {
               simply drag, drop and customize.
             </p>
           </div>
-          <div className="col-span-4 flex justify-end">
+          <div className="col-span-4 flex lg:justify-end">
             <Link to={"/contact"}>
               <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
                 Apply Now
@@ -46,7 +46,7 @@ const Career = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-12 items-center border-t-2 py-16 relative before:absolute before:-top-[2px] before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0 after:absolute after:-top-[2px] after:left-8 after:w-2 after:h-[2px] after:bg-white">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-0 lg:items-center border-t-2 py-16 relative before:absolute before:-top-[2px] before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0 after:absolute after:-top-[2px] after:left-8 after:w-2 after:h-[2px] after:bg-white">
           <div className="col-span-4">
             <div className="flex items-center gap-5">
               <h6 className="px-[26px] py-1 rounded-full bg-PrimaryColor-0 font-Nunito font-light text-white">
@@ -65,7 +65,7 @@ const Career = () => {
               simply drag, drop and customize.
             </p>
           </div>
-          <div className="col-span-4 flex justify-end">
+          <div className="col-span-4 flex lg:justify-end">
             <Link to={"/contact"}>
               <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
                 Apply Now
@@ -73,7 +73,7 @@ const Career = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-12 items-center border-y-2 py-16 relative before:absolute before:-top-[2px] before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0 after:absolute after:-top-[2px] after:left-8 after:w-2 after:h-[2px] after:bg-white">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-0 lg:items-center border-y-2 py-16 relative before:absolute before:-top-[2px] before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0 after:absolute after:-top-[2px] after:left-8 after:w-2 after:h-[2px] after:bg-white">
           <div className="col-span-4">
             <div className="flex items-center gap-5">
               <h6 className="px-[26px] py-1 rounded-full bg-PrimaryColor-0 font-Nunito font-light text-white">
@@ -92,7 +92,7 @@ const Career = () => {
               simply drag, drop and customize.
             </p>
           </div>
-          <div className="col-span-4 flex justify-end">
+          <div className="col-span-4 flex lg:justify-end">
             <Link to={"/contact"}>
               <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
                 Apply Now

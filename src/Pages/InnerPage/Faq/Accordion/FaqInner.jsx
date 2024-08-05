@@ -67,17 +67,17 @@ const FaqInner = () => {
                 Business tailored it design, management & support services needs
                 to be business agency elit, sed do eiusmod tempor proved.
               </p>
-              <div className="grid grid-cols-2 items-center gap-3 mb-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-3 mb-10">
                 <div>
-                  <img src={faqImg} />
+                  <img src={faqImg} draggable="false" />
                 </div>
                 <div>
-                  <img src={faqImg2} />
+                  <img src={faqImg2} draggable="false" />
                 </div>
               </div>
               <div className="flex gap-5">
                 <div>
-                  <img src={faqIcon} />
+                  <img src={faqIcon} draggable="false" />
                 </div>
                 <p className="font-Nunito text-TextColor2-0 flex-1">
                   Business tailored it design, management & support services

@@ -27,7 +27,7 @@ const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
             }`}
           >
             <img
-              src={faqIcon}
+              src={faqIcon} draggable="false"
               className="size-[30px] transition-all duration-500"
             />
             <span>

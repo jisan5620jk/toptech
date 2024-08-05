@@ -102,7 +102,7 @@ const ServiceInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"Our Services"}
       />
-      <section className="pt-28 pb-[120px] p relative z-10 bg-[#f3f3f7]">
+      <section className="pt-28 pb-[120px] p relative z-10 bg-BodyBg-0">
         <div className="Container">
           <div className="text-center">
             <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
@@ -113,7 +113,7 @@ const ServiceInner = () => {
               IT Services Source
             </h1>
           </div>
-          <div className="mt-[60px]">
+          <div className="mt-[88px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[68px]">
               {serviceData.map(
                 ({

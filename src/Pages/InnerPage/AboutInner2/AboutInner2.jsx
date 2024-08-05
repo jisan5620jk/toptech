@@ -9,9 +9,9 @@ const AboutInner2 = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"About Us"}
+        breadCrumbTitle={"About Us 02"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"About Us"}
+        breadCrumbLink={"About Us 02"}
       />
       <About />
       <Contact />

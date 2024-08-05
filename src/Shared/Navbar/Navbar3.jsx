@@ -147,13 +147,6 @@ const Navbar3 = () => {
                           </Link>
                         </li>
                       </div>
-                      <div className="px-5 group hover:bg-SecondaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home5" className="py-2 block">
-                            Home Five
-                          </Link>
-                        </li>
-                      </div>
                     </ul>
                   </div>
                 </NavLink>
@@ -238,15 +231,8 @@ const Navbar3 = () => {
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/service" className="py-2 block">
-                            Service
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/service_details" className="py-2 block">
-                            Service Details
+                          <Link to="/why_choose" className="py-2 block">
+                            Why Choose Us
                           </Link>
                         </li>
                       </div>
@@ -254,13 +240,6 @@ const Navbar3 = () => {
                         <li className="hover:ml-3 duration-300">
                           <Link to="/mission_inner" className="py-2 block">
                             Our Mission
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/why_choose" className="py-2 block">
-                            Why Choose Us
                           </Link>
                         </li>
                       </div>
@@ -301,6 +280,13 @@ const Navbar3 = () => {
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
+                          <Link to="/location" className="py-2 block">
+                            Our Location
+                          </Link>
+                        </li>
+                      </div>
+                      <div className="px-5 group hover:bg-PrimaryColor-0">
+                        <li className="hover:ml-3 duration-300">
                           <Link to="/career" className="py-2 block">
                             Careers
                           </Link>
@@ -308,22 +294,8 @@ const Navbar3 = () => {
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/appointment" className="py-2 block">
-                            Appointment
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
                           <Link to="/faq_inner" className="py-2 block">
                             Faq
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/location" className="py-2 block">
-                            Our Location
                           </Link>
                         </li>
                       </div>
@@ -391,7 +363,7 @@ const Navbar3 = () => {
               </ul>
               <div className="hidden lg:flex items-center">
                 <button>
-                  <IoSearch className="text-xl ml-2 mr-10 text-white" />
+                  <IoSearch className="text-xl ml-2 mr-5 xl:mr-10 text-white" />
                 </button>
                 <Link to={"/appointment"} className="header-btn">
                   Get A Quote
