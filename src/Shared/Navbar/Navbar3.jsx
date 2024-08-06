@@ -365,7 +365,7 @@ const Navbar3 = () => {
                 <button>
                   <IoSearch className="text-xl ml-2 mr-5 xl:mr-10 text-white" />
                 </button>
-                <Link to={"/appointment"} className="header-btn">
+                <Link to={"/contact"} className="header-btn">
                   Get A Quote
                 </Link>
               </div>

@@ -14,7 +14,7 @@ const portfolioData = [
     portfolioThumb: portfolioThumb,
     portfolioSubTilte: "Design",
     portfolioTitle: "Mobile UI/UX Design",
-    portfolioUrl: "/portfolio_details",
+    portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
@@ -22,7 +22,7 @@ const portfolioData = [
     portfolioThumb: portfolioThumb2,
     portfolioSubTilte: "Technology",
     portfolioTitle: "Cyber Security & Protect",
-    portfolioUrl: "/portfolio_details",
+    portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
@@ -30,7 +30,7 @@ const portfolioData = [
     portfolioThumb: portfolioThumb3,
     portfolioSubTilte: "IT Solution",
     portfolioTitle: "Website Development",
-    portfolioUrl: "/portfolio_details",
+    portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
@@ -38,7 +38,7 @@ const portfolioData = [
     portfolioThumb: portfolioThumb4,
     portfolioSubTilte: "Technology",
     portfolioTitle: "Cyber Security & Protect",
-    portfolioUrl: "/portfolio_details",
+    portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
@@ -46,7 +46,7 @@ const portfolioData = [
     portfolioThumb: portfolioThumb2,
     portfolioSubTilte: "IT Solution",
     portfolioTitle: "Website Development",
-    portfolioUrl: "/portfolio_details",
+    portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
 ];

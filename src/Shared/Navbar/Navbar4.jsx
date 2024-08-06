@@ -322,8 +322,15 @@ const Navbar2 = () => {
                       </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_list" className="py-2 block">
-                            Blog List
+                          <Link to="/blog_left_sidebar" className="py-2 block">
+                            Blog Left Sidebar
+                          </Link>
+                        </li>
+                      </div>
+                      <div className="px-5 group hover:bg-PrimaryColor-0">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/blog_right_sidebar" className="py-2 block">
+                            Blog Right Sidebar
                           </Link>
                         </li>
                       </div>
@@ -350,7 +357,7 @@ const Navbar2 = () => {
                 </NavLink>
               </ul>
               <div className="hidden lg:flex xl:gap-10 2xl:gap-[80px] items-center">
-                <Link to={"/appointment"} className="header-btn">
+                <Link to={"/contact"} className="header-btn">
                   Get A Quote
                 </Link>
                 <div className="flex gap-2 items-center lg:hidden xl:flex">

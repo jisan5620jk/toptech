@@ -10,11 +10,11 @@ import contactFormImg from "/images/contact-form-img.png";
 const ContactForm = () => {
   return (
     <div className="Container py-28 bg-BodyBg-0 border-t-4 border-PrimaryColor-0">
-      <div className="grid grid-cols-2 lg:grid-cols-3 lg:items-center">
-        <div className="col-span-1 rounded-md overflow-hidden inline-block">
+      <div className="grid grid-cols-2 lg:grid-cols-3 lg:items-center gap-10 lg:gap-0">
+        <div className="col-span-2 lg:col-span-1 rounded-md overflow-hidden inline-block">
           <img src={contactFormImg} className="w-full" draggable="false" />
           <div className="bg-PrimaryColor-0 pl-9 pt-7 pb-9">
-            <h4 className="font-Rajdhani font-semibold text-[28px] leading-[34px] text-white">
+            <h4 className="font-Rajdhani font-semibold text-xl sm:text-[28px] leading-[34px] text-white">
               Feel Free to Contact & Hire Us for Your Solution
             </h4>
             <h6 className="font-Rajdhani font-semibold text-xl text-white mt-6 mb-5">
@@ -52,13 +52,13 @@ const ContactForm = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-2 pl-[120px]">
+        <div className="col-span-2 lg:pl-[120px]">
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
             Have Any Consultation....?
           </h5>
           <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-12">
             Get In Touch Your Nearest Local <br />
-           Business Sales Executive
+            Business Sales Executive
           </h1>
           <form action="#" method="post" className="flex flex-col gap-7">
             <div className="flex flex-col md:flex-row gap-7">

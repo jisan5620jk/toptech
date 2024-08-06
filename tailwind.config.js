@@ -57,7 +57,7 @@ export default {
         },
         dance5: {
           "0%,100%": { transform: "translateX(0px)" },
-          "50%": { transform: "translateX(330px)" },
+          "50%": { transform: "translateX(300px)" },
         },
         rotateme: {
           "0%": { transform: "rotate(0deg)" },

@@ -14,7 +14,7 @@ const WorkData = [
     workThumb: workThumb,
     workTitle: "Market Analysis",
     workDesc: "Tecnology",
-    workUrl: "/servie_details",
+    workUrl: "/service_details",
     workBtn: <HiOutlineArrowRight />,
   },
   {
@@ -22,7 +22,7 @@ const WorkData = [
     workThumb: workThumb2,
     workTitle: "Risk Assesment",
     workDesc: "Tecnology",
-    workUrl: "/servie_details",
+    workUrl: "/service_details",
     workBtn: <HiOutlineArrowRight />,
   },
   {
@@ -30,7 +30,7 @@ const WorkData = [
     workThumb: workThumb3,
     workTitle: "Invest Insights",
     workDesc: "Tecnology",
-    workUrl: "/servie_details",
+    workUrl: "/service_details",
     workBtn: <HiOutlineArrowRight />,
   },
   {
@@ -38,7 +38,7 @@ const WorkData = [
     workThumb: workThumb4,
     workTitle: "Estate planning",
     workDesc: "Tecnology",
-    workUrl: "/servie_details",
+    workUrl: "/service_details",
     workBtn: <HiOutlineArrowRight />,
   },
 ];

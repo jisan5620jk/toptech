@@ -82,7 +82,7 @@ const BlogDetails = () => {
                     </div>
                   </div>
                   <Link to={"/blog_details"}>
-                    <button className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4">
+                    <button className="font-Rajdhani font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4">
                       Our Begin Now To Beingonl
                     </button>
                   </Link>
@@ -138,7 +138,7 @@ const BlogDetails = () => {
                     </div>
                   </div>
                   <Link to={"/blog_details"}>
-                    <button className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
+                    <button className="font-Rajdhani font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
                       Tree Plantation for Human
                     </button>
                   </Link>
@@ -149,10 +149,10 @@ const BlogDetails = () => {
                     incentivize resource.
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 sm:px-8 border-r border-BorderColor2-0">
-                  <div className="font-Nunito text-lg font-medium">
+                <div className="flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 md:px-8 border-r border-BorderColor2-0">
+                  <div className="font-Nunito text-lg font-medium flex flex-col sm:flex-row gap-2">
                     <Link to={"/"}>
-                      <button className="font-Nunito px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white mr-2 ml-1">
+                      <button className="font-Nunito px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white">
                         Digital Marketing
                       </button>
                     </Link>
@@ -297,7 +297,7 @@ const BlogDetails = () => {
                       <img draggable="false" src={itemthumb} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                      <h6 className="font-Rajdhani font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
                         Digital Marketing Strategy Action P…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
@@ -312,7 +312,7 @@ const BlogDetails = () => {
                       <img draggable="false" src={itemthumb2} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                      <h6 className="font-Rajdhani font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
                         6 Things You Must Know Before Hirin…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
@@ -327,8 +327,8 @@ const BlogDetails = () => {
                       <img draggable="false" src={itemthumb3} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        In eu fringilla, accumsan vel sollicitudin…
+                      <h6 className="font-Rajdhani font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                        IT Solution And IT Related Services
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
                         27 Jan, 2024

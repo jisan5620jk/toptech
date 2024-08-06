@@ -24,12 +24,12 @@ const Banner = () => {
               Making Cultivation Business
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              <Link to={"/"}>
+              <Link to={"/about"}>
                 <button className="primary-btn3 !py-4 !px-10 !rounded-none">
                   {`How IT Works`}
                 </button>
               </Link>
-              <Link to={"/"}>
+              <Link to={"/service"}>
                 <button className="primary-btn3 !py-4 !px-10 !rounded-none !border-white hover:!border-PrimaryColor-0 !bg-transparent before:!bg-PrimaryColor-0">{`It Services`}</button>
               </Link>
             </div>

@@ -293,6 +293,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   padding: 0 20px 0 30px;
 }
 
+.faq-button3[aria-expanded="true"],
+.faq-button3:hover {
+  background: #0b59db;
+  border-radius: 6px 6px 0 0;
+}
+
+.faq-button3:hover img,
+.faq-button3[aria-expanded="true"] img {
+  filter: brightness(0) invert(1);
+}
+
 .faq-button2[aria-expanded="true"] {
   background: #0b59db;
   border-radius: 6px 6px 0 0;

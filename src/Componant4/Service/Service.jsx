@@ -14,7 +14,7 @@ const ServiceData = [
     serviceTitle: "Business Planning",
     serviceDesc:
       "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
   },
   {
@@ -23,7 +23,7 @@ const ServiceData = [
     serviceTitle: "Problem-Solving",
     serviceDesc:
       "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
   },
   {
@@ -32,7 +32,7 @@ const ServiceData = [
     serviceTitle: "Project Reporting",
     serviceDesc:
       "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
   },
   {
@@ -41,7 +41,7 @@ const ServiceData = [
     serviceTitle: "Professional Team",
     serviceDesc:
       "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
   },
 ];
@@ -62,7 +62,7 @@ const Service = () => {
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/about"}>
+            <Link to={"/contact"}>
               <button className="primary-btn4">{`Make An Appointment`}</button>
             </Link>
           </div>

@@ -202,7 +202,7 @@ const BlogRightSideBar = () => {
                       <img draggable="false" src={itemthumb} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                      <h6 className="font-Rajdhani font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
                         Digital Marketing Strategy Action P…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
@@ -217,7 +217,7 @@ const BlogRightSideBar = () => {
                       <img draggable="false" src={itemthumb2} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                      <h6 className="font-Rajdhani font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
                         6 Things You Must Know Before Hirin…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
@@ -232,8 +232,8 @@ const BlogRightSideBar = () => {
                       <img draggable="false" src={itemthumb3} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Rajdhani font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        In eu fringilla, accumsan vel sollicitudin…
+                      <h6 className="font-Rajdhani font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+                        IT Solution And IT Related Services
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
                         27 Jan, 2024

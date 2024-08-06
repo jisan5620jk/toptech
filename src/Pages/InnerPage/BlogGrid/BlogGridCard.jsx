@@ -12,7 +12,7 @@ const BlogGridCard = ({
   thumbBtn,
 }) => {
   return (
-    <div className="group bg-BodyBg-0 p-5 rounded-md">
+    <div className="group bg-BodyBg-0 p-5 rounded-md overflow-hidden">
       <div className="relative overflow-hidden rounded-md">
         <img
           src={blogGridImg}
@@ -31,7 +31,7 @@ const BlogGridCard = ({
           </Link>
         </div>
       </div>
-      <div className="sm:px-5 relative z-10">
+      <div className="sm:px-5 lg:px-0 xl:px-5 relative z-10">
         <div className="flex items-center justify-between gap-5 pt-7 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance5">
           <h6 className="flex items-center gap-2 font-Rajdhani text-[17px] text-PrimaryColor-0 font-medium">
             {postBy}
@@ -41,7 +41,7 @@ const BlogGridCard = ({
           </h6>
         </div>
         <Link to={blogGridUrl}>
-          <button className="font-Rajdhani font-semibold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-3">
+          <button className="font-Rajdhani font-semibold text-left text-lg sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-3">
             {blogGridTitle}
           </button>
         </Link>

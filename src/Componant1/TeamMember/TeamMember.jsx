@@ -75,7 +75,7 @@ const TeamMember = () => {
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/about"}>
+            <Link to={"/team_inner"}>
               <button className="primary-btn">
                 {`All Member`}
                 <GoArrowRight size={"22"} />

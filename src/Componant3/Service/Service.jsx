@@ -15,7 +15,7 @@ const ServiceData = [
     serviceTitle: "Web Design",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -25,7 +25,7 @@ const ServiceData = [
     serviceTitle: "Motion Design",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -35,7 +35,7 @@ const ServiceData = [
     serviceTitle: "Digital Marketing",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -45,7 +45,7 @@ const ServiceData = [
     serviceTitle: "Web Development",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -55,7 +55,7 @@ const ServiceData = [
     serviceTitle: "App Development",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -65,7 +65,7 @@ const ServiceData = [
     serviceTitle: "Creative Solution",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/servie_details",
+    serviceUrl: "/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -85,24 +85,32 @@ const Service = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[54px]">
-          {ServiceData.map(({ id, serviceIcon, serviceTitle, serviceDesc, serviceUrl,
-            serviceBtn,serviceBtnIcon
-           }) => {
-            return (
-              <>
-                <div key={id}>
-                  <ServiceCard
-                    serviceIcon={serviceIcon}
-                    serviceTitle={serviceTitle}
-                    serviceDesc={serviceDesc}
-                    serviceUrl={serviceUrl}
-                    serviceBtn={serviceBtn}
-                    serviceBtnIcon={serviceBtnIcon}
-                  />
-                </div>
-              </>
-            );
-          })}
+          {ServiceData.map(
+            ({
+              id,
+              serviceIcon,
+              serviceTitle,
+              serviceDesc,
+              serviceUrl,
+              serviceBtn,
+              serviceBtnIcon,
+            }) => {
+              return (
+                <>
+                  <div key={id}>
+                    <ServiceCard
+                      serviceIcon={serviceIcon}
+                      serviceTitle={serviceTitle}
+                      serviceDesc={serviceDesc}
+                      serviceUrl={serviceUrl}
+                      serviceBtn={serviceBtn}
+                      serviceBtnIcon={serviceBtnIcon}
+                    />
+                  </div>
+                </>
+              );
+            }
+          )}
         </div>
       </div>
     </section>

@@ -421,7 +421,7 @@ const Navbar = () => {
                 <button>
                   <IoSearch className="text-2xl ml-2 mr-10 text-HeadingColor-0" />
                 </button>
-                <Link to={"/appointment"} className="header-btn">
+                <Link to={"/contact"} className="header-btn">
                   Get A Quote
                 </Link>
               </div>
