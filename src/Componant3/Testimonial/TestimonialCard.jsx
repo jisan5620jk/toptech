@@ -7,7 +7,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className="relative text-center">
-      <p className="font-Nunito sm:text-xl sm:leading-9 text-HeadingColor-0 lg:w-[75%] m-auto">
+      <p className="font-Nunito sm:text-xl sm:leading-9 text-HeadingColor-0 lg:w-[80%] xl:w-[78%] 2xl:w-[68%] m-auto">
         {testiDesc}
       </p>
       <ul className="flex gap-[6px] items-center justify-center mb-7 mt-6">

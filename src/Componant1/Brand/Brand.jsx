@@ -31,7 +31,7 @@ const Brand = () => {
     },
   };
   return (
-    <div className="bg-[url('/images/brand-bg.jpg')] pt-[120px] pb-28">
+    <div className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-[120px] pb-28">
       <div className="Container relative z-10">
         <Swiper {...settings}>
           <SwiperSlide>

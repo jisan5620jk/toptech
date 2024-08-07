@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         PrimaryColor: ["#0c59db"],
-        SecondaryColor: ["#00004a"],
+        SecondaryColor: ["#021533"],
         HeadingColor: ["#041424"],
         TextColor: ["#b6b9c0"],
         TextColor2: ["#686868"],

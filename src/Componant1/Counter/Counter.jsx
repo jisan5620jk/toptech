@@ -5,13 +5,13 @@ const counterData = [
     id: 1,
     counterNumber: 10,
     counterDesc: "HAPPY CUSTOMERS",
-    counterSuffex: "+",
+    counterSuffex: "K+",
   },
   {
     id: 2,
     counterNumber: 20,
     counterDesc: "WORKS COMPLETED",
-    counterSuffex: "+",
+    counterSuffex: "K+",
   },
   {
     id: 3,

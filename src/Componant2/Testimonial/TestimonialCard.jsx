@@ -9,7 +9,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className="text-center relative group z-10 overflow-hidden">
-      <div className="rounded overflow-hidden px-5 sm:px-10 lg:px-4 xl:px-10 pt-10 pb-[70px] bg-white relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0">
+      <div className="rounded overflow-hidden px-5 sm:px-8 lg:px-4 xl:px-8 pt-10 pb-[70px] bg-white relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0">
         <div className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]">
           <img src={testiQuote} draggable="false" className="m-auto"/>
         </div>

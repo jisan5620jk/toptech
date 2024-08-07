@@ -33,7 +33,7 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className="py-[90px] pb-[76px] rounded relative bg-[url('/images/process-bg.jpg')] bg-cover bg-center bg-no-repeat z-10 mt-[74px]">
+    <section className="py-[90px] pb-[76px] rounded relative  bg-white z-10 shadow-inner mt-[74px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
         {processData.map(
           ({

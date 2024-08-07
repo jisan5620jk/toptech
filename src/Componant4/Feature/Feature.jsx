@@ -15,7 +15,7 @@ const FeatureData = [
     featureIcon: featureIcon,
     featureTitle: `Strategic marketing`,
     featureDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
+      "Profesionaly optimize team developer infomediaries main issue don.",
     featureUrl: "/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
@@ -24,7 +24,7 @@ const FeatureData = [
     featureIcon: featureIcon2,
     featureTitle: `Investment Planning`,
     featureDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
+      "Profesionaly optimize team developer infomediaries main issue don.",
     featureUrl: "/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
@@ -33,7 +33,7 @@ const FeatureData = [
     featureIcon: featureIcon3,
     featureTitle: `Insights & analytics`,
     featureDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
+      "Profesionaly optimize team developer infomediaries main issue don.",
     featureUrl: "/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
@@ -42,7 +42,7 @@ const FeatureData = [
     featureIcon: featureIcon4,
     featureTitle: `Business consulting`,
     featureDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
+      "Profesionaly optimize team developer infomediaries main issue don.",
     featureUrl: "/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
@@ -51,7 +51,7 @@ const FeatureData = [
     featureIcon: featureIcon5,
     featureTitle: `Finance & Restructuring`,
     featureDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
+      "Profesionaly optimize team developer infomediaries main issue don.",
     featureUrl: "/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
@@ -60,7 +60,7 @@ const FeatureData = [
     featureIcon: featureIcon6,
     featureTitle: `Audit and Evaluation`,
     featureDesc:
-      "Profesionaly optimize developer team infomediaries main issue don.",
+      "Profesionaly optimize team developer infomediaries main issue don.",
     featureUrl: "/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },

@@ -15,8 +15,7 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Founder & CEO",
     testiDesignation: "Web Developer",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
+    testiDesc: `Their relentless of attention to detail gave me peace
     of mind. I highly recommend their legal
     services; they are true advocates for clients.`,
   },
@@ -26,8 +25,7 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
     testiDesignation: "UI/UX Designer",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
+    testiDesc: `Their relentless of attention to detail gave me peace
     of mind. I highly recommend their legal
     services; they are true advocates for clients.`,
   },
@@ -37,8 +35,7 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Al-Amin Islam",
     testiDesignation: "IT Specialist",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
+    testiDesc: `Their relentless of attention to detail gave me peace
     of mind. I highly recommend their legal
     services; they are true advocates for clients.`,
   },
@@ -48,8 +45,7 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
+    testiDesc: `Their relentless of attention to detail gave me peace
     of mind. I highly recommend their legal
     services; they are true advocates for clients.`,
   },

@@ -3,6 +3,7 @@ import aboutIcon from "/images/about-icon.png";
 import { IoMdPlay } from "react-icons/io";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [toggler, setToggler] = useState(false);
@@ -66,7 +67,7 @@ const About = () => {
                   </div>
                   <div className="flex-1">
                     <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
-                    Award Ceremony
+                      Award Ceremony
                     </h5>
                   </div>
                 </div>
@@ -76,12 +77,15 @@ const About = () => {
               </div>
             </div>
             <div className="flex items-center gap-5">
-              <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito">
-                Mission
-              </button>
+              <Link to={"/mission_inner"}>
+                <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito">
+                  Mission
+                </button>
+              </Link>
+              <Link to={"/mission_inner"}>
               <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito">
                 Vission
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
