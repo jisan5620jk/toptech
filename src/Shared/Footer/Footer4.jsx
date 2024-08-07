@@ -131,7 +131,7 @@ const Footer4 = () => {
                 id="email"
                 placeholder="Enter Your E-Mail*"
                 required
-                className="w-full h-[58px] font-Nunito rounded-full bg-[#031b75] px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
+                className="w-full h-[58px] outline-none focus:outline-none font-Nunito rounded-full bg-[#031b75] px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
               />
               <button
                 type="submit"

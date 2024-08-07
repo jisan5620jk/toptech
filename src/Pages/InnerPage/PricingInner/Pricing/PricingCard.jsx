@@ -66,7 +66,7 @@ const PricingCard = ({
           {pricingContent5}
         </li>
       </ul>
-      <div className="pb-12 pt-3 flex justify-center">
+      <div className="pb-12 pt-3">
         <Link to={pricingUrl}>
           <button className="primary-btn2 !py-4 mt-9">
             {pricingBtn}

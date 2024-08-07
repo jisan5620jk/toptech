@@ -144,7 +144,7 @@ const Footer = () => {
                   id="email"
                   placeholder="Enter Your E-Mail*"
                   required
-                  className="w-full h-[56px] font-Nunito border border-BorderColor-0 bg-transparent px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
+                  className="w-full h-[56px] font-Nunito outline-none focus:outline-none border border-BorderColor-0 bg-transparent px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
                 />
                 <HiOutlineMail className="absolute top-1/2 -translate-y-1/2 right-6 text-white opacity-50 text-xl" />
               </label>
