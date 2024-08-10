@@ -51,6 +51,7 @@ const pricingData = [
     pricingBtn: "Get Started",
   },
 ];
+
 const pricingData2 = [
   {
     id: 1,

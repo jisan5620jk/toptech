@@ -6,7 +6,7 @@ import contactShape from "/images/contact-shape.png";
 
 const Contact = () => {
   return (
-    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1250px] lg:h-[732px] flex items-center relative">
+    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1100px] sm:h-[1250px] lg:h-[732px] flex items-center relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0">
           <div className="pt-[130px]">

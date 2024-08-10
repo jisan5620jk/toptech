@@ -17,11 +17,11 @@ const Banner = () => {
               <br />
               IN THE WORLD
             </h1>
-            <p className="font-Nunito sm:text-[17px] text-white mb-[50px] mt-6">
-              Play In Order To Make A Business, Brand Advertising And Marketing
-              Plays An
-              <br className="hidden md:block" /> Important Role. Similarly, In
-              Making Cultivation Business
+            <p className="font-Nunito sm:text-[17px] text-white mb-[50px] mt-6 w-full">
+              Play In Order To Make A Business, Brand
+              <br className="sm:hidden" /> Advertising And Marketing Plays An
+              <br className="block sm:hidden md:block" /> Important Role. Similarly, In Making{" "}
+              <br className="sm:hidden" /> Cultivation Business
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Link to={"/about"}>

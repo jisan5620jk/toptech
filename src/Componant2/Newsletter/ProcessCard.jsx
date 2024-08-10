@@ -10,7 +10,7 @@ const ProcessCard = ({ processImg, processTitle, processDesc }) => {
       <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">
         {processTitle}
       </h5>
-      <p className="font-Nunito text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
+      <p className="font-Nunito text-TextColor2-0 w-11/12 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
         {processDesc}
       </p>
     </div>

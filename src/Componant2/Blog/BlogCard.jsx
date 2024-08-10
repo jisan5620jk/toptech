@@ -23,11 +23,11 @@ const BlogCard = ({
       <div className="rounded-md relative z-20 flex justify-center bg-white transition-all duration-500 sm:px-3 lg:px-3 2xl:px-3 pt-7">
         <div>
           <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
-            <p className="font-Nunito text-TextColor2-0 flex gap-2 items-center leading-[15px]">
+            <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
               <span className="text-PrimaryColor-0">{blogDateIcon}</span>
               {blogDate}
             </p>
-            <p className="font-Nunito text-TextColor2-0 flex gap-2 items-center leading-[15px]">
+            <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
               <span className="text-PrimaryColor-0 text-xl">{blogTagIcon}</span>
               {blogTag}
             </p>

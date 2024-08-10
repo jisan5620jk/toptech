@@ -99,20 +99,20 @@ const Footer4 = () => {
               </p>
             </div>
             <p className="font-Nunito text-TextColor-0">
-              2589 Dorland Street Luke INUA Berlin, Germany
+              2589 Dorland Street Luke <br className="hidden lg:block xl:hidden"/> INUA Berlin, Germany
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-Nunito text-2xl text-white font-semibold mb-11">
               Working Time
             </h4>
-            <p className="font-Nunito text-TextColor-0">
+            <p className="font-Nunito text-base lg:text-sm xl:text-base text-TextColor-0">
               Mon - Fri: 9:00 AM - 5:00 PM
             </p>
-            <p className="font-Nunito text-TextColor-0 my-7">
+            <p className="font-Nunito text-base lg:text-sm xl:text-base text-TextColor-0 my-7">
               Saturday: 10:00 AM - 6:00 PM
             </p>
-            <p className="font-Nunito text-TextColor-0">
+            <p className="font-Nunito text-base lg:text-sm xl:text-base text-TextColor-0">
               Sunday & Friday Closed
             </p>
           </div>
