@@ -2,6 +2,7 @@
 import { Link, NavLink } from "react-router-dom";
 import {
   FaBars,
+  FaRegCircle,
 } from "react-icons/fa6";
 import { BiChevronDown, BiSearch } from "react-icons/bi";
 import Logo from "/images/logo-2.png";
@@ -89,7 +90,7 @@ const Navbar5 = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
               >
                 <NavLink
@@ -99,9 +100,15 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative`}
+                      : ""} text-HeadingColor-0 text-lg font-medium lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative`}
                 >
-                  <span className="flex items-center">Home</span>
+                  <span className="flex items-center relative z-10 transition-all duration-300 hover:pl-3">
+                    <FaRegCircle
+                      size={"7"}
+                      className="text-PrimaryColor-0 scale-0 transition-all duration-300 hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                    />
+                    Home
+                  </span>
                   <div
                     className="absolute pt-5 lg:pt-8 z-[1]"
                     data-aos="zoom-in-left"
@@ -145,10 +152,13 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
-                  <span className="flex items-center">About</span>
+                  <span className="flex items-center">
+                    <FaRegCircle />
+                    About
+                  </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
@@ -174,10 +184,13 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">Service</span>
+                  <span className="flex items-center">
+                    <FaRegCircle />
+                    Service
+                  </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
@@ -203,10 +216,13 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">Pages</span>
+                  <span className="flex items-center">
+                    <FaRegCircle />
+                    Pages
+                  </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
@@ -289,10 +305,13 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">Blog</span>
+                  <span className="flex items-center">
+                    <FaRegCircle />
+                    Blog
+                  </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
@@ -332,10 +351,10 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300`}
+                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300`}
                   to="/contact"
                 >
-                  Contact
+                  <FaRegCircle /> Contact
                 </NavLink>
               </ul>
             </div>
