@@ -5,7 +5,7 @@ import { BiRightTopArrowCircle } from "react-icons/bi";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="bg-[url(/images/banner5-bg.jpg)]">
       <section className="bg-transparent h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
         <div className="Container">
           <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
