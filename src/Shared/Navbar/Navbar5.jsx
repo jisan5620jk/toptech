@@ -2,21 +2,13 @@
 import { Link, NavLink } from "react-router-dom";
 import {
   FaBars,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
-  FaXTwitter,
 } from "react-icons/fa6";
-import { BiChevronDown } from "react-icons/bi";
+import { BiChevronDown, BiSearch } from "react-icons/bi";
 import Logo from "/images/logo-2.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { CiLocationOn } from "react-icons/ci";
-import { GrAlarm } from "react-icons/gr";
 
-const Navbar2 = () => {
+const Navbar5 = () => {
   //sticky
 
   useEffect(() => {
@@ -48,69 +40,6 @@ const Navbar2 = () => {
     <nav
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
-      {/* top Navbar */}
-      <header className="bg-PrimaryColor-0 relative z-10 overflow-hidden md:block">
-        <div className="Container flex items-center justify-between h-[50px]">
-          <div className="flex items-center gap-10">
-            <p className="font-Nunito text-white sm:flex hidden items-center gap-1">
-              <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
-              New market Sandigo - California
-            </p>
-            <Link
-              to={"/"}
-              className="font-Nunito text-white md:flex items-center gap-2 hidden"
-            >
-              <HiOutlineMailOpen size={"16"} className="text-white" />
-              example@hotmail.com
-            </Link>
-          </div>
-          <div className="flex items-center gap-16">
-            <div className="lg:flex items-center gap-2 hidden">
-              <span className="flex items-center gap-3 text-white">
-                <GrAlarm />
-              </span>
-              <p className="font-Nunito font-medium text-white">
-                9.10 am - 5.30 pm
-              </p>
-            </div>
-            <ul className="flex gap-3 items-center">
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaFacebookF />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaXTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaPinterestP />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      {/* top Navbar */}
       <header
         className="header-section navbar2 bg-transparent absolute w-full z-10"
         data-aos="zoom-in"
@@ -156,7 +85,7 @@ const Navbar2 = () => {
               </button>
             </div>
             {/* All navLink are hear with active */}
-            <div className="flex gap-14 items-center">
+            <div className="bg-white bg-opacity-40 py-3 px-2 rounded-full border border-BorderColor-0">
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
@@ -170,12 +99,9 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative`}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative`}
                 >
-                  <span className="flex items-center">
-                    Home
-                    <BiChevronDown className="ml-1" />
-                  </span>
+                  <span className="flex items-center">Home</span>
                   <div
                     className="absolute pt-5 lg:pt-8 z-[1]"
                     data-aos="zoom-in-left"
@@ -219,13 +145,10 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
-                  <span className="flex items-center">
-                    About
-                    <BiChevronDown className="ml-1" />
-                  </span>
+                  <span className="flex items-center">About</span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
@@ -251,13 +174,10 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">
-                    Service
-                    <BiChevronDown className="ml-1" />
-                  </span>
+                  <span className="flex items-center">Service</span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
@@ -283,13 +203,10 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">
-                    Pages
-                    <BiChevronDown className="ml-1" />
-                  </span>
+                  <span className="flex items-center">Pages</span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
@@ -372,13 +289,10 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">
-                    Blog
-                    <BiChevronDown className="ml-1" />
-                  </span>
+                  <span className="flex items-center">Blog</span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
@@ -418,17 +332,20 @@ const Navbar2 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300`}
+                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
                 </NavLink>
               </ul>
-              <div className="hidden lg:flex items-center">
-                <Link to={"/contact"} className="header-btn">
-                  Get A Quote
-                </Link>
-              </div>
+            </div>
+            <div className="hidden lg:flex items-center">
+              <button>
+                <BiSearch />
+              </button>
+              <Link to={"/contact"} className="header-btn">
+                Get A Quote
+              </Link>
             </div>
           </div>
         </div>
@@ -437,4 +354,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar5;
