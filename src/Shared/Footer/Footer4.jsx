@@ -68,7 +68,7 @@ const Footer4 = () => {
                     Privacy Policy
                   </button>
                 </Link>
-              </li>{" "}
+              </li>
               <li>
                 <Link to={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-TextColor-0 transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
@@ -99,7 +99,8 @@ const Footer4 = () => {
               </p>
             </div>
             <p className="font-Nunito text-TextColor-0">
-              2589 Dorland Street Luke <br className="hidden lg:block xl:hidden"/> INUA Berlin, Germany
+              2589 Dorland Street Luke{" "}
+              <br className="hidden lg:block xl:hidden" /> INUA Berlin, Germany
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
@@ -146,7 +147,7 @@ const Footer4 = () => {
       <div className="text-left py-6 bg-[#0d0d53] mt-24">
         <div className="Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between">
           <p className="font-Nunito text-white">
-           TopTech © Copyright 2024 All Rights Reserved.
+            TopTech © Copyright 2024 All Rights Reserved.
           </p>
           <div>
             <ul className="flex gap-7">
