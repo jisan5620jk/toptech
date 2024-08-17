@@ -5,7 +5,7 @@ import faqImg from "/images/faqs-1.jpg";
 import faqImg2 from "/images/faqs-2.jpg";
 import BreadCrumb from "../../../../Shared/BreadCrumb/BreadCrumb";
 import { FaArrowRightLong } from "react-icons/fa6";
-import Newsletter from "../../../../Componant2/Newsletter/Newsletter";
+import Newsletter from "../../../../Component2/Newsletter/Newsletter";
 import Brand from "../Brand";
 
 const FaqInner = () => {
@@ -50,9 +50,7 @@ const FaqInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"FAQ"}
       />
-      <section
-        className="relative overflow-hidden py-28 bg-BodyBg-0"
-      >
+      <section className="relative overflow-hidden py-28 bg-BodyBg-0">
         <div className="Container">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
             <div className="relative">

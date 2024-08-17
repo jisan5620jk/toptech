@@ -424,13 +424,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 }
 
 .portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-content {
-bottom: 20px;
+  bottom: 20px;
 }
 
 .portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-thumb::before {
-left: 0;
-width: 100%;
-opacity: .6;
+  left: 0;
+  width: 100%;
+  opacity: 0.6;
 }
 
 /* Project */
@@ -440,9 +440,8 @@ opacity: .6;
   opacity: 1;
 }
 
-
 /* Team Member */
 
-.team-member-box:nth-child(2n+2) {
+.team-member-box:nth-child(2n + 2) {
   margin-top: 50px;
 }

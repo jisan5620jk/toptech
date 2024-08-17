@@ -50,7 +50,7 @@ const Pricing = () => {
       element.addEventListener("mouseenter", handleMouseEnter);
     });
 
-    // Clean up event listeners when component unmounts
+    // Clean up event listeners when Component unmounts
     return () => {
       elements.forEach((element) => {
         element.removeEventListener("mouseenter", handleMouseEnter);

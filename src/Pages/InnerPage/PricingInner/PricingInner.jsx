@@ -1,6 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Video from "../../../Componant1/Video/Video";
+import Video from "../../../Component1/Video/Video";
 import ContactBox from "../ContactInner/ContactBox/ContactBox";
 import Pricing from "./Pricing/Pricing";
 
