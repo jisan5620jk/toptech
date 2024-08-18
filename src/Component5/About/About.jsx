@@ -2,6 +2,7 @@ import aboutThumb from "/images/about5-thumb.png";
 import aboutShape from "/images/about5-shape.png";
 import aboutShape2 from "/images/about5-shape2.png";
 import aboutCounter from "/images/about-counter.jpg";
+import aboutMainShape from "/images/about-main-shape.png";
 import { Link } from "react-router-dom";
 import { LuCheck } from "react-icons/lu";
 import { HiOutlineArrowRight } from "react-icons/hi";
@@ -9,7 +10,12 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 const About = () => {
   return (
     <section className="pt-[80px] pb-[120px] bg-no-repeat bg-center bg-cover relative">
-      <div className="Container">
+      <div className="Container relative">
+        <img
+          src={aboutMainShape}
+          draggable="false"
+          className="animate-rotational absolute top-0 -right-20"
+        />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
           <div className="relative z-10 flex justify-between">
             <img

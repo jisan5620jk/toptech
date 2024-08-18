@@ -18,6 +18,7 @@ export default {
         BorderColor2: ["#dce1e5"],
         BorderColor3: ["#83A8FF"],
         BorderColor4: ["#ffffff1a"],
+        BorderColor5: ["#041424"],
       },
       screens: {
         sm: "576px",

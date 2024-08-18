@@ -8,8 +8,12 @@ import analyticsShape from "/images/analytics-shape.png";
 
 const Analytics = () => {
   return (
-      <section className="relative z-10 pt-8">
-          <img src={analyticsShape} draggable="false" className="absolute -top-20 right-0 -z-10" />
+    <section className="relative z-10 pt-8">
+      <img
+        src={analyticsShape}
+        draggable="false"
+        className="absolute -top-14 right-0 -z-10 animate-wiggle"
+      />
       <div className="Container">
         <div className="grid grid-cols-2">
           <div>
@@ -29,7 +33,7 @@ const Analytics = () => {
                   Super Fast Speed
                 </h5>
                 <p className="font-Nunito text-TextColor2-0 pt-2">
-                  Conveniently provide access to leading-edge <br/> interfaces.
+                  Conveniently provide access to leading-edge <br /> interfaces.
                   Uniquely network
                 </p>
               </div>
@@ -43,12 +47,12 @@ const Analytics = () => {
                   Admin Dashboard
                 </h5>
                 <p className="font-Nunito text-TextColor2-0 pt-2">
-                  Conveniently provide access to leading-edge <br/> interfaces.
+                  Conveniently provide access to leading-edge <br /> interfaces.
                   Uniquely network
                 </p>
               </div>
             </div>
-            <div className="pt-8 border-t flex items-center gap-5">
+            <div className="pt-8 border-t flex items-center gap-5 w-8/12">
               <div className="border-r pr-5">
                 <CountUp
                   start={-9}
@@ -58,7 +62,9 @@ const Analytics = () => {
                 />
               </div>
               <div>
-                <p className="font-Nunito text-TextColor2-0">Conveniently provide access <br/> interfaces network</p>
+                <p className="font-Nunito text-TextColor2-0 -mt-1">
+                  Conveniently provide access <br /> interfaces network
+                </p>
               </div>
             </div>
           </div>

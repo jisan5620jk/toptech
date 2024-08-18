@@ -8,6 +8,7 @@ import { BiSearch } from "react-icons/bi";
 import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar5 = () => {
   //sticky
@@ -380,9 +381,10 @@ const Navbar5 = () => {
               <button className="text-[#7f93ab]">
                 <BiSearch size={"22"} />
               </button>
-              <Link to={"/contact"} className="header-btn">
-                Get A Quote
-              </Link>
+              <button className="primary-btn5">
+                {`Try For Free`}
+                <MdOutlineFileDownload size={"20"} />
+              </button>
             </div>
           </div>
         </div>
