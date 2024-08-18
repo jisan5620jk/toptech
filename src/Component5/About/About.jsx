@@ -1,68 +1,71 @@
-import aboutThumb from "/images/about1.png";
+import aboutThumb from "/images/about5-thumb.png";
+import aboutShape from "/images/about5-shape.png";
+import aboutShape2 from "/images/about5-shape2.png";
+import aboutCounter from "/images/about-counter.jpg";
 import { Link } from "react-router-dom";
-import CountUp from "react-countup";
-import { PiStarFourFill } from "react-icons/pi";
+import { LuCheck } from "react-icons/lu";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 const About = () => {
   return (
-    <section className="py-[120px] bg-no-repeat bg-center bg-cover relative">
+    <section className="pt-[80px] pb-[120px] bg-no-repeat bg-center bg-cover relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
+          <div className="relative z-10 flex justify-between">
+            <img
+              src={aboutThumb}
+              draggable="false"
+              className="2xl:max-w-[inherit] 2xl:-ml-36"
+            />
+            <div className="absolute top-20 left-24 animate-rotational">
+              <img src={aboutShape} draggable="false" />
+            </div>
+            <div className="absolute -z-10 top-0 left-10 animate-wiggle">
+              <img src={aboutShape2} draggable="false" />
+            </div>
+            <div className="absolute -z-10 bottom-16 right-10 animate-dance3">
+              <img src={aboutCounter} draggable="false" />
+            </div>
+          </div>
           <div className="relative">
-            <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <PiStarFourFill size={"14"} />
-              ABOUT COMPANY
+            <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
+              About Saas
             </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
-              Expert Consulting for Diverse
-              <br /> Financial Services.
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+              Get Realtime Visibility Digital
+              <br /> Saas Software{`'`}s
             </h1>
             <p className="font-Nunito text-TextColor2-0 text-lg pb-6">
-              Professionally optimize interdependent intellectual interoperable
+              Conviently optimize interdependent intellectual interoperable
               visuali design infoediaries main issue state icreative planing
               main best practices.
             </p>
-            <div className="grid gap-3 sm:gap-0 sm:grid-cols-2 sm:items-center mb-11">
-              <ul className="space-y-3">
-                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
-                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
-                  Defining IT Solutions
-                </li>
-                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
-                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
-                  Evaluating Sources
-                </li>
-              </ul>
-              <ul className="space-y-3">
-                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
-                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
-                  Audience Analysis
-                </li>
-                <li className="font-Rajdhani text-lg text-HeadingColor-0 font-semibold flex items-center gap-2">
-                  <PiStarFourFill size={"14"} className="text-PrimaryColor-0" />
-                  Testing the Solution
-                </li>
-              </ul>
-            </div>
+            <ul className="space-y-[15px] mb-12">
+              <li className="font-Nunito text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
+                <span className="size-[32px] rounded-3xl bg-[#ebf1fc] flex justify-center items-center">
+                  <LuCheck size={"18"} className="text-PrimaryColor-0" />
+                </span>
+                Credibly leverage other{`'`}s future
+              </li>
+              <li className="font-Nunito text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
+                <span className="size-[32px] rounded-3xl bg-[#ebf1fc] flex justify-center items-center">
+                  <LuCheck size={"18"} className="text-PrimaryColor-0" />
+                </span>
+                Dynamically seize cross functional web
+              </li>
+              <li className="font-Nunito text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
+                <span className="size-[32px] rounded-3xl bg-[#ebf1fc] flex justify-center items-center">
+                  <LuCheck size={"18"} className="text-PrimaryColor-0" />
+                </span>
+                Quickly engineer client-centric metric
+              </li>
+            </ul>
             <Link to={"/about"}>
-              <button className="primary-btn4">{`Get Started Now`}</button>
+              <button className="primary-btn5 !bg-[#ecf2fe] border-none !text-HeadingColor-0 hover:!text-white hover:!bg-PrimaryColor-0">
+                {`Learn More`}
+                <HiOutlineArrowRight size={"20"} />
+              </button>
             </Link>
-          </div>
-          <div className="relative z-10">
-            <img src={aboutThumb} draggable="false" />
-            <div className="absolute bottom-0 sm:bottom-11 md:bottom-[65px] lg:bottom-5 xl:bottom-11 2xl:bottom-[3.8rem] right-0 md:right-[84px] lg:right-0">
-              <div className="bg-PrimaryColor-0 rounded-ee-lg pb-6 pt-5 pl-4 sm:pl-[30px] lg:pl-4 pr-5 sm:pr-10 lg:pr-5 xl:pr-10 flex justify-between overflow-hidden h-[100px] w-[142px] sm:w-[256px] md:w-[300px] lg:w-[218px] xl:w-[260px] 2xl:w-[292px] items-center text-center relative z-10 before:absolute before:top-0 before:left-0 before:w-[50px] sm:before:w-[100px] md:before:w-[118px] lg:before:w-[86px] 2xl:before:w-[115px] before:-z-10 before:h-full before:bg-SecondaryColor-0">
-                <CountUp
-                  start={-15}
-                  end={22}
-                  suffix=""
-                  className="text-3xl sm:text-[56px] font-Rajdhani font-bold text-white"
-                />
-                <h6 className="font-Rajdhani text-left text-sm leading-4 sm:text-xl sm:leading-6 font-semibold text-white">
-                  Years Of <br /> Experiences
-                </h6>
-              </div>
-            </div>
           </div>
         </div>
       </div>
