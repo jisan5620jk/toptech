@@ -1,6 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import PricingCard from "./PricingCard";
 import pricingIcon from "/images/pricing-icon.png"
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const pricingData = [
   {
@@ -8,19 +9,17 @@ const pricingData = [
     pricingMark: "Best Sales",
     pricingIcon: pricingIcon,
     pricingFeature: "Features",
-    currency: "$",
     offerPrice: 29,
-    mainPrice: "$39",
-    pricingDateLine: "/Monthly",
+    pricingDateLine: "/ Per month",
     pricingTitle: "Basic Plans",
     pricingSubTitle: "Small Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
+    pricingCheck:<IoIosCheckmarkCircleOutline />,
+    pricingContent1: "Easy to Downloads",
+    pricingContent2: "Simple signup system",
+    pricingContent3: "Customizations all information",
+    pricingContent4: "Widget Generator",
     pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
+    pricingBtn: "30 dAYS FREE TRIAL",
   },
 ];
 
@@ -61,17 +60,15 @@ const Pricing = () => {
                   pricingMark,
                   pricingIcon,
                   pricingFeature,
-                  currency,
                   offerPrice,
-                  mainPrice,
                   pricingDateLine,
                   pricingTitle,
                   pricingSubTitle,
+                  pricingCheck,
                   pricingContent1,
                   pricingContent2,
                   pricingContent3,
                   pricingContent4,
-                  pricingContent5,
                   pricingUrl,
                   pricingBtn,
                 }) => {
@@ -81,17 +78,15 @@ const Pricing = () => {
                         pricingIcon={pricingIcon}
                         pricingFeature={pricingFeature}
                         pricingMark={pricingMark}
-                        currency={currency}
                         offerPrice={offerPrice}
-                        mainPrice={mainPrice}
                         pricingDateLine={pricingDateLine}
                         pricingTitle={pricingTitle}
+                        pricingCheck={pricingCheck}
                         pricingSubTitle={pricingSubTitle}
                         pricingContent1={pricingContent1}
                         pricingContent2={pricingContent2}
                         pricingContent3={pricingContent3}
                         pricingContent4={pricingContent4}
-                        pricingContent5={pricingContent5}
                         pricingUrl={pricingUrl}
                         pricingBtn={pricingBtn}
                       />
