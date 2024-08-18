@@ -4,8 +4,8 @@ import {
   FaBars,
   FaRegCircle,
 } from "react-icons/fa6";
-import { BiChevronDown, BiSearch } from "react-icons/bi";
-import Logo from "/images/logo-2.png";
+import { BiSearch } from "react-icons/bi";
+import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 
@@ -42,7 +42,7 @@ const Navbar5 = () => {
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
       <header
-        className="header-section navbar2 bg-transparent absolute w-full z-10"
+        className="header-section bg-transparent absolute w-full z-10"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
@@ -86,7 +86,7 @@ const Navbar5 = () => {
               </button>
             </div>
             {/* All navLink are hear with active */}
-            <div className="bg-white bg-opacity-40 py-3 px-2 rounded-full border border-BorderColor-0">
+            <div className="bg-white bg-opacity-40 py-3 px-2 rounded-full border">
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
@@ -102,10 +102,10 @@ const Navbar5 = () => {
                       ? "active"
                       : ""} text-HeadingColor-0 text-lg font-medium lg:border-b-0 px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative`}
                 >
-                  <span className="flex items-center relative z-10 transition-all duration-300 hover:pl-3">
+                  <span className="flex items-center relative z-10 transition-all duration-300 pl-3">
                     <FaRegCircle
                       size={"7"}
-                      className="text-PrimaryColor-0 scale-0 transition-all duration-300 hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                      className="text-PrimaryColor-0 transition-all duration-300  group-hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
                     />
                     Home
                   </span>
@@ -155,8 +155,11 @@ const Navbar5 = () => {
                       : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
-                  <span className="flex items-center">
-                    <FaRegCircle />
+                  <span className="flex items-center relative z-10 transition-all duration-300 group-hover:pl-3">
+                    <FaRegCircle
+                      size={"7"}
+                      className="text-PrimaryColor-0 scale-0 transition-all duration-300  group-hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                    />
                     About
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
@@ -187,8 +190,11 @@ const Navbar5 = () => {
                       : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">
-                    <FaRegCircle />
+                  <span className="flex items-center relative z-10 transition-all duration-300 group-hover:pl-3">
+                    <FaRegCircle
+                      size={"7"}
+                      className="text-PrimaryColor-0 scale-0 transition-all duration-300  group-hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                    />
                     Service
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
@@ -219,8 +225,11 @@ const Navbar5 = () => {
                       : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">
-                    <FaRegCircle />
+                  <span className="flex items-center relative z-10 transition-all duration-300 group-hover:pl-3">
+                    <FaRegCircle
+                      size={"7"}
+                      className="text-PrimaryColor-0 scale-0 transition-all duration-300  group-hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                    />
                     Pages
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
@@ -308,8 +317,11 @@ const Navbar5 = () => {
                       : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
-                  <span className="flex items-center">
-                    <FaRegCircle />
+                  <span className="flex items-center relative z-10 transition-all duration-300 group-hover:pl-3">
+                    <FaRegCircle
+                      size={"7"}
+                      className="text-PrimaryColor-0 scale-0 transition-all duration-300  group-hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                    />
                     Blog
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
@@ -351,16 +363,22 @@ const Navbar5 = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300`}
+                      : ""} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group`}
                   to="/contact"
                 >
-                  <FaRegCircle /> Contact
+                  <span className="flex items-center relative z-10 transition-all duration-300 group-hover:pl-3">
+                    <FaRegCircle
+                      size={"7"}
+                      className="text-PrimaryColor-0 scale-0 transition-all duration-300  group-hover:scale-100 absolute left-0 top-1/2 -translate-y-1/2"
+                    />{" "}
+                    Contact
+                  </span>
                 </NavLink>
               </ul>
             </div>
-            <div className="hidden lg:flex items-center">
-              <button>
-                <BiSearch />
+            <div className="hidden lg:flex gap-8 items-center">
+              <button className="text-[#7f93ab]">
+                <BiSearch size={"22"} />
               </button>
               <Link to={"/contact"} className="header-btn">
                 Get A Quote
