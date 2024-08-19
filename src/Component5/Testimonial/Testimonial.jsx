@@ -7,17 +7,20 @@ import "swiper/css";
 import TestimonialCard from "./TestimonialCard";
 import { IoStar } from "react-icons/io5";
 import { PiStarFourFill } from "react-icons/pi";
+import { TfiQuoteLeft } from "react-icons/tfi";
 
 const testiData = [
   {
     id: 1,
+    testiIcon: <TfiQuoteLeft />,
+    testiTitle: 'Amazing Works',
     testiImg: testiImg,
     testiRatingIcon: <IoStar />,
     testiName: "Founder & CEO",
     testiDesignation: "Web Developer",
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiDesc: `Conveniently provide access to leading-edge 
+    interfaces. Uniquely network cutting edges
+    assertively disseminate`,
   },
   {
     id: 2,
@@ -25,9 +28,9 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
     testiDesignation: "UI/UX Designer",
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiDesc: `Conveniently provide access to leading-edge 
+    interfaces. Uniquely network cutting edges
+    assertively disseminate`,
   },
   {
     id: 3,
@@ -35,9 +38,9 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Al-Amin Islam",
     testiDesignation: "IT Specialist",
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiDesc: `Conveniently provide access to leading-edge 
+    interfaces. Uniquely network cutting edges
+    assertively disseminate`,
   },
   {
     id: 4,
@@ -45,9 +48,9 @@ const testiData = [
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiDesc: `Conveniently provide access to leading-edge 
+    interfaces. Uniquely network cutting edges
+    assertively disseminate`,
   },
 ];
 
@@ -91,6 +94,8 @@ const Testimonial = () => {
               {testiData.map(
                 ({
                   id,
+                  testiIcon,
+                  testiTitle,
                   testiImg,
                   testiRatingIcon,
                   testiName,
@@ -101,6 +106,8 @@ const Testimonial = () => {
                     <SwiperSlide key={id}>
                       <div className="pt-3">
                         <TestimonialCard
+                          testiIcon={testiIcon}
+                          testiTitle={testiTitle}
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}
                           testiName={testiName}
