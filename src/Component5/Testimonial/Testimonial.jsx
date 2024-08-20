@@ -2,18 +2,20 @@
 import testiImg from "/images/testi1.png";
 import testiImg2 from "/images/testi2.png";
 import testiImg3 from "/images/testi3.png";
+import testimonialLogo from "/images/testimonial-logo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import TestimonialCard from "./TestimonialCard";
 import { IoStar } from "react-icons/io5";
-import { PiStarFourFill } from "react-icons/pi";
 import { TfiQuoteLeft } from "react-icons/tfi";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const testiData = [
   {
     id: 1,
     testiIcon: <TfiQuoteLeft />,
-    testiTitle: 'Amazing Works',
+    testiTitle: "Amazing Works!",
     testiImg: testiImg,
     testiRatingIcon: <IoStar />,
     testiName: "Founder & CEO",
@@ -24,6 +26,8 @@ const testiData = [
   },
   {
     id: 2,
+    testiIcon: <TfiQuoteLeft />,
+    testiTitle: "Great Chatbot!",
     testiImg: testiImg2,
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
@@ -34,6 +38,8 @@ const testiData = [
   },
   {
     id: 3,
+    testiIcon: <TfiQuoteLeft />,
+    testiTitle: "Very Impressive!",
     testiImg: testiImg3,
     testiRatingIcon: <IoStar />,
     testiName: "Al-Amin Islam",
@@ -44,6 +50,8 @@ const testiData = [
   },
   {
     id: 4,
+    testiIcon: <TfiQuoteLeft />,
+    testiTitle: "Amazing Works!",
     testiImg: testiImg2,
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
@@ -75,21 +83,29 @@ const Testimonial = () => {
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="pt-28 pb-[120px] bg-white relative z-10">
+    <section className="pt-28 pb-[120px] bg-white relative z-10 testimonial5">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-            <PiStarFourFill size={"14"} />
-            TESTIMONIAL
-            <PiStarFourFill size={"14"} />
-          </h5>
-          <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4 pb-1">
-            What Our Loving Clients Saying
-          </h1>
+        <div className="grid lg:grid-cols-2 items-center">
+          <div>
+            <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
+              About Saas
+            </h5>
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+              Get Realtime Visibility Digital
+              <br /> Saas Software{`'`}s
+            </h1>
+          </div>
+          <div className="flex justify-end"><img src={testimonialLogo} draggable="false" /></div>
         </div>
-        <div className="mt-[30px]">
-          <Swiper {...settings}>
+        <div className="mt-[26px]">
+          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {testiData.map(
                 ({
@@ -104,7 +120,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pt-3">
+                      <div className="pb-[106px]">
                         <TestimonialCard
                           testiIcon={testiIcon}
                           testiTitle={testiTitle}

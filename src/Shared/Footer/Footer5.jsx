@@ -3,174 +3,177 @@ import footerLogo from "/images/logo-2.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
-  FaPhoneVolume,
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
+import { GoArrowRight } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
 
-const Footer4 = () => {
+const Footer5 = () => {
   return (
-    <footer className="bg-SecondaryColor-0 relative z-10 overflow-hidden">
+    <footer className="bg-HeadingColor-0 relative z-10 pt-28 overflow-hidden">
       <div className="Container">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 border-b border-BorderColor-0 py-[105px]">
-          <div>
+        <div className="grid gap-y-7 grid-cols-12">
+          <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <Link to={"/"}>
               <img src={footerLogo} draggable={false} />
             </Link>
+            <p className="font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12">
+              Monotonectally synergize granular top{" "}
+              <br className="hidden xl:block" /> visualize strategic
+              infomediaries afters <br className="hidden xl:block" /> task state
+              of the art infrastructures <br className="hidden xl:block" />{" "}
+              digital agency in north
+            </p>
+            <div>
+              <Link to={"/about"}>
+                <button className="primary-btn">
+                  {`Discover More`}
+                  <GoArrowRight size={"22"} />
+                </button>
+              </Link>
+            </div>
           </div>
-          <ul className="flex gap-3">
-            <li>
-              <button className="size-9 rounded-full bg-[#051b71] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                <FaFacebookF />
-              </button>
-            </li>
-            <li>
-              <button className="size-9 rounded-full bg-[#051b71] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                <FaXTwitter />
-              </button>
-            </li>
-            <li>
-              <button className="size-9 rounded-full bg-[#051b71] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                <FaLinkedinIn />
-              </button>
-            </li>
-            <li>
-              <button className="size-9 rounded-full bg-[#051b71] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                <FaPinterestP />
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div className="grid grid-cols-12 gap-5 lg:gap-0 mt-24">
           <div className="col-span-12 md:col-span-6 lg:col-span-2">
-            <h4 className="font-Nunito text-2xl text-white font-semibold mb-[38px]">
+            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[33px]">
               Company
             </h4>
             <ul>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-TextColor-0 transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
-                    Help Center
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    About Us
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-TextColor-0 transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
-                    Terms & Conditions
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    Our Team
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-TextColor-0 transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
-                    Privacy Policy
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    Pricing Plan
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-Nunito text-TextColor-0 transition-all duration-500 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-PrimaryColor-0 mb-[18px]">
-                    Contact Us
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    Latest Blog
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
+                    Careers
                   </button>
                 </Link>
               </li>
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-Nunito text-2xl text-white font-semibold mb-[38px]">
-              Get In Touch
+            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[33px]">
+              Our Services
             </h4>
-            <div className="flex items-center gap-3">
-              <div>
-                <FaPhoneVolume className="text-xl text-white" />
-              </div>
-              <p className="font-Nunito text-TextColor-0">
-                +258 (549) 2158 3215
-              </p>
-            </div>
-            <div className="flex items-center gap-3 my-7">
-              <div>
-                <HiOutlineMail className="text-2xl text-white" />
-              </div>
-              <p className="font-Nunito text-TextColor-0">
-                support@example.com
-              </p>
-            </div>
-            <p className="font-Nunito text-TextColor-0">
-              2589 Dorland Street Luke{" "}
-              <br className="hidden lg:block xl:hidden" /> INUA Berlin, Germany
-            </p>
+            <ul>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    IT Solutions
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    Cyber Security
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    Digital Marketing
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
+                    Brand Identity
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
+                    SEO Marketing
+                  </button>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-Nunito text-2xl text-white font-semibold mb-11">
-              Working Time
-            </h4>
-            <p className="font-Nunito text-base lg:text-sm xl:text-base text-TextColor-0">
-              Mon - Fri: 9:00 AM - 5:00 PM
-            </p>
-            <p className="font-Nunito text-base lg:text-sm xl:text-base text-TextColor-0 my-7">
-              Saturday: 10:00 AM - 6:00 PM
-            </p>
-            <p className="font-Nunito text-base lg:text-sm xl:text-base text-TextColor-0">
-              Sunday & Friday Closed
-            </p>
-          </div>
-          <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:mr-10 2xl:mr-16">
-            <h4 className="font-Nunito text-2xl text-white font-semibold pb-5">
+            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[30px]">
               Newsletter
             </h4>
-            <p className="font-Nunito text-white opacity-70 mt-10 mb-9">
-              I’m okay with getting emails and having that tracked to improve my
-              experience
+            <p className="font-Nunito text-white opacity-80 font-medium mb-[26px]">
+              Subscribe Our Latest Newsletter
             </p>
-            <form action="#" method="post" className="relative">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Your E-Mail*"
-                required
-                className="w-full h-[58px] outline-none focus:outline-none font-Nunito rounded-full bg-[#031b75] px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
-              />
+            <form action="#" method="post">
+              <label htmlFor="email" className="relative">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Your E-Mail*"
+                  required
+                  className="w-full h-[56px] font-Nunito outline-none focus:outline-none border border-BorderColor-0 bg-transparent px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4"
+                />
+                <HiOutlineMail className="absolute top-1/2 -translate-y-1/2 right-6 text-white opacity-50 text-xl" />
+              </label>
               <button
                 type="submit"
-                className="absolute right-0 top-0 h-[58px] rounded-full border border-PrimaryColor-0 uppercase bg-PrimaryColor-0 gap-2 px-8 py-2 text-white font-Nunito flex items-center justify-cente"
+                className="h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
               >
-                Sign Up
+                Subscribe
               </button>
             </form>
           </div>
         </div>
-      </div>
-      <div className="text-left py-6 bg-[#0d0d53] mt-24">
-        <div className="Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between">
-          <p className="font-Nunito text-white">
-            TopTech © Copyright 2024 All Rights Reserved.
-          </p>
+        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
-            <ul className="flex gap-7">
+            <p className="font-Nunito text-white">
+              © 2024 Toptech. Designed By Dream IT Solution
+              <span className="text-PrimaryColor-0"> Dream IT</span>
+            </p>
+          </div>
+          <div>
+            <ul className="flex gap-3">
               <li>
-                <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:opacity-100">
-                    Privacy & Terms.
-                  </button>
-                </Link>
+                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaFacebookF />
+                </button>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:opacity-100">
-                    FAQ
-                  </button>
-                </Link>
+                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaXTwitter />
+                </button>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:opacity-100">
-                    Contact Us
-                  </button>
-                </Link>
+                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaLinkedinIn />
+                </button>
+              </li>
+              <li>
+                <button className="size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaPinterestP />
+                </button>
               </li>
             </ul>
           </div>
@@ -180,4 +183,4 @@ const Footer4 = () => {
   );
 };
 
-export default Footer4;
+export default Footer5;
