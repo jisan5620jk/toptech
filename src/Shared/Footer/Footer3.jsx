@@ -202,7 +202,7 @@ const Footer3 = () => {
       <div className="text-left py-6 bg-[#78b9003b] mt-24">
         <div className="Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between">
           <p className="font-Nunito text-white opacity-60">
-            Echofy © 2024 All rights reserved.
+            Toptech © 2024 All rights reserved.
           </p>
           <div>
             <ul className="flex gap-7">

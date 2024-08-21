@@ -161,7 +161,6 @@ const Footer = () => {
           <div>
             <p className="font-Nunito text-white">
               © 2024 Toptech. Designed By Dream IT Solution
-              <span className="text-PrimaryColor-0"> Dream IT</span>
             </p>
           </div>
           <div>
