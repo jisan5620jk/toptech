@@ -123,7 +123,7 @@ const Pricing = () => {
       <img
         src={pricingShape}
         draggable="false"
-        className="animate-wiggle absolute top-80 -right-32"
+        className="animate-wiggle absolute top-80 -right-32 2xl:right-20"
       />
       <div className="Container relative z-10">
         <img
@@ -134,7 +134,7 @@ const Pricing = () => {
         <img
           src={pricingShape2}
           draggable="false"
-          className="absolute top-40 -right-20 animate-dance3"
+          className="absolute top-40 -right-20 2xl:-right-10 animate-dance3"
         />
         <div className="text-center">
           <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">

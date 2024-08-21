@@ -23,13 +23,13 @@ const About = () => {
               draggable="false"
               className="2xl:max-w-[inherit] 2xl:-ml-36"
             />
-            <div className="absolute top-20 left-24 animate-rotational">
+            <div className="absolute top-20 2xl:top-28 left-24 animate-rotational">
               <img src={aboutShape} draggable="false" />
             </div>
-            <div className="absolute -z-10 top-0 left-10 animate-wiggle">
+            <div className="absolute -z-10 top-0 2xl:top-20 left-10 animate-wiggle">
               <img src={aboutShape2} draggable="false" />
             </div>
-            <div className="absolute -z-10 bottom-16 right-10 animate-dance3">
+            <div className="absolute -z-10 bottom-16 right-10 2xl:bottom-44 2xl:right-0 animate-dance3">
               <img src={aboutCounter} draggable="false" />
             </div>
           </div>

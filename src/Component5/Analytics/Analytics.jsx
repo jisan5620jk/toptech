@@ -12,7 +12,7 @@ const Analytics = () => {
       <img
         src={analyticsShape}
         draggable="false"
-        className="absolute -top-14 right-0 -z-10 animate-wiggle"
+        className="absolute -top-14 right-0 2xl:right-44 -z-10 animate-wiggle"
       />
       <div className="Container">
         <div className="grid grid-cols-2">

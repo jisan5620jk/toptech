@@ -21,7 +21,7 @@ const Service = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-[66px]">
-          <div className="flex flex-col sm:flex-row gap-[30px] group border-r border-BorderColor5-0 pt-8 pl-10 pb-6">
+          <div className="flex flex-col sm:flex-row gap-[30px] group border-r border-BorderColor5-0 pt-8 pb-6">
             <div className="size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]">
               <img src={serviceImg} draggable="false" />
             </div>

@@ -165,7 +165,10 @@ const Footer5 = () => {
               >
                 <VscArrowRight />
               </button>
-              <label htmlFor="checkbox" className="relative font-Nunito text-TextColor-0 flex gap-2 cursor-pointer">
+              <label
+                htmlFor="checkbox"
+                className="relative font-Nunito text-TextColor-0 flex gap-2 cursor-pointer"
+              >
                 <input type="checkbox" name="checkbox" id="checkbox" required />
                 Protecting your privacy
               </label>

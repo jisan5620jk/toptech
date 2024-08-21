@@ -6,7 +6,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 const Integration = () => {
   return (
-    <section className="pt-20 pb-[70px] bg-[url(/images/integration-bg.jpg)] bg-cover bg-no-repeat bg-center">
+    <section className="pt-20 pb-[70px] 2xl:pb-6 bg-[url(/images/integration-bg.jpg)] bg-cover bg-no-repeat bg-center">
       <div className="Container">
         <div className="grid grid-cols-2">
           <div>
@@ -42,8 +42,8 @@ const Integration = () => {
             </Link>
           </div>
           <div className="relative z-10">
-            <img src={integrationThumb} draggable="false" className="ml-14" />
-            <img src={integrationShape} draggable="false" className="absolute top-0 left-0 -z-10" />
+            <img src={integrationThumb} draggable="false" className="ml-14 2xl:max-w-[inherit] 2xl:-ml-8" />
+            <img src={integrationShape} draggable="false" className="absolute top-0 left-0 -z-10 2xl:-left-20" />
           </div>
         </div>
       </div>
