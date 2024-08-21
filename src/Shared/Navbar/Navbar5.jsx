@@ -1,9 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
-import {
-  FaBars,
-  FaRegCircle,
-} from "react-icons/fa6";
+import { FaBars, FaRegCircle } from "react-icons/fa6";
 import { BiSearch } from "react-icons/bi";
 import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
@@ -117,28 +114,45 @@ const Navbar5 = () => {
                           Home Page 01
                         </Link>
                       </li>
-                    </div><div className="px-5 group hover:bg-PrimaryColor-0 ">
+                    </div>
+                    <div className="px-5 group hover:bg-PrimaryColor-0 ">
                       <li className="hover:ml-3 duration-300">
                         <Link to="/home2" className="py-2 block">
                           Home Page 02
                         </Link>
                       </li>
-                    </div><div className="px-5 group hover:bg-PrimaryColor-0 ">
+                    </div>
+                    <div className="px-5 group hover:bg-PrimaryColor-0 ">
                       <li className="hover:ml-3 duration-300">
                         <Link to="/home3" className="py-2 block">
                           Home Page 03
                         </Link>
                       </li>
-                    </div><div className="px-5 group hover:bg-PrimaryColor-0 ">
+                    </div>
+                    <div className="px-5 group hover:bg-PrimaryColor-0 ">
                       <li className="hover:ml-3 duration-300">
                         <Link to="/home4" className="py-2 block">
                           Home Page 04
                         </Link>
                       </li>
-                    </div><div className="px-5 group hover:bg-PrimaryColor-0 ">
+                    </div>
+                    <div className="px-5 group hover:bg-PrimaryColor-0 group2">
                       <li className="hover:ml-3 duration-300">
-                        <Link to="/home5" className="py-2 block">
-                          Home Page 05
+                        <Link to="/home5" className="py-2 block relative">
+                          Home Page 05{" "}
+                          <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
+                            NEW
+                          </span>
+                        </Link>
+                      </li>
+                    </div>
+                    <div className="px-5 group hover:bg-PrimaryColor-0 group2">
+                      <li className="hover:ml-3 duration-300">
+                        <Link to="/home6" className="py-2 block relative">
+                          Home Page 06{" "}
+                          <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
+                            NEW
+                          </span>
                         </Link>
                       </li>
                     </div>
