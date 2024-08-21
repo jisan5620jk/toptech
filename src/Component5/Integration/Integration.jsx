@@ -19,9 +19,9 @@ const Integration = () => {
             </h1>
             <p className="font-Nunito text-TextColor2-0">
               Conveniently provide access to leading-edge imperatives whereas{" "}
-              <br className="hidden xl:block" />
+              <br className="hidden md:block lg:hidden xl:block" />
               interfaces. Uniquely network cutting-edge niche markets whereas{" "}
-              <br className="hidden xl:block" />
+              <br className="hidden md:block lg:hidden xl:block" />
               Assertively disseminate market
             </p>
             <ul className="flex flex-col sm:flex-row sm:items-center gap-[50px] mt-[30px] mb-11">
@@ -42,8 +42,8 @@ const Integration = () => {
             </Link>
           </div>
           <div className="relative z-10">
-            <img src={integrationThumb} draggable="false" className="lg:ml-14 2xl:max-w-[inherit] 2xl:-ml-8" />
-            <img src={integrationShape} draggable="false" className="absolute top-0 left-0 -z-10 2xl:-left-20 hidden md:block" />
+            <img src={integrationThumb} draggable="false" className="2xl:max-w-[inherit] 2xl:-ml-8" />
+            <img src={integrationShape} draggable="false" className="absolute top-0 left-0 lg:-left-10 -z-10 2xl:-left-20 hidden md:block" />
           </div>
         </div>
       </div>

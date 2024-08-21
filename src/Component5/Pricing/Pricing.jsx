@@ -140,13 +140,13 @@ const Pricing = () => {
           <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
             Pricing Plan
           </h5>
-          <h1 className="font-Rajdhani font-bold text-xl sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+          <h1 className="font-Rajdhani font-bold text-xl sm:text-[34px] sm:leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
             Flexible Pricing Plans Designed To
             <br /> Fit Businesses of Sizes
           </h1>
           <p className="font-Nunito text-TextColor2-0">
             Conveniently provide access to leading-edge imperatives whereas
-            interfaces. <br /> Uniquely network cutting-edge niche markets
+            interfaces. <br className="hidden md:block"/> Uniquely network cutting-edge niche markets
             whereas
           </p>
         </div>

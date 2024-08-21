@@ -26,7 +26,7 @@ const Footer5 = () => {
               infomediaries afters <br className="hidden xl:block" /> task state
               of the art infrastruc
             </p>
-            <div className="bg-[#0f1f2f] pl-9 py-6 flex gap-7 items-center md:w-10/12">
+            <div className="bg-[#0f1f2f] pl-9 py-6 flex gap-7 items-center sm:w-10/12 lg:w-11/12 xl:w-10/12 2xl:w-9/12">
               <div className="border-r border-TextColor2-0 pr-7">
                 <h3 className="font-Rajdhani font-bold text-[42px] leading-[40px] text-white">
                   4.9

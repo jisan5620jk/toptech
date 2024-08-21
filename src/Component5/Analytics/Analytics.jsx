@@ -12,7 +12,7 @@ const Analytics = () => {
       <img
         src={analyticsShape}
         draggable="false"
-        className="absolute -top-14 right-0 2xl:right-44 -z-10 animate-wiggle hidden md:block"
+        className="absolute -top-14 right-0 2xl:right-44 -z-10 animate-wiggle hidden lg:block"
       />
       <div className="Container">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-0">
@@ -52,7 +52,7 @@ const Analytics = () => {
                 </p>
               </div>
             </div>
-            <div className="pt-8 border-t flex items-center gap-5 md:w-8/12">
+            <div className="pt-8 border-t flex items-center gap-5 md:w-8/12 lg:w-10/12 xl:w-8/12">
               <div className="border-r pr-5">
                 <CountUp
                   start={-9}
@@ -69,22 +69,22 @@ const Analytics = () => {
             </div>
           </div>
           <div>
-            <div className="grid lg:grid-cols-2 gap-8">
-              <div className="lg:col-span-2">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="md:col-span-2">
                 <img
                   src={analyticsThumb}
                   draggable="false"
                   className="rounded-3xl shadow-shade"
                 />
               </div>
-              <div className="lg:col-span-1">
+              <div className="md:col-span-1">
                 <img
                   src={analyticsThumb2}
                   draggable="false"
                   className="rounded-3xl"
                 />
               </div>
-              <div className="lg:col-span-1">
+              <div className="md:col-span-1">
                 <img
                   src={analyticsThumb3}
                   draggable="false"
