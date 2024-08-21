@@ -26,7 +26,7 @@ const Footer5 = () => {
               infomediaries afters <br className="hidden xl:block" /> task state
               of the art infrastruc
             </p>
-            <div className="bg-[#0f1f2f] pl-9 py-6 flex gap-7 items-center w-10/12">
+            <div className="bg-[#0f1f2f] pl-9 py-6 flex gap-7 items-center md:w-10/12">
               <div className="border-r border-TextColor2-0 pr-7">
                 <h3 className="font-Rajdhani font-bold text-[42px] leading-[40px] text-white">
                   4.9
@@ -146,7 +146,7 @@ const Footer5 = () => {
             </h4>
             <p className="font-Nunito text-TextColor-0 font-medium mb-5">
               Subscribe Our Newsletter for Get{" "}
-              <br className="hidden 2xl:block" /> Any Latest Update
+              <br className="hidden xl:block" /> Any Latest Update
             </p>
             <form action="#" method="post" className="relative">
               <label htmlFor="email" className="relative">

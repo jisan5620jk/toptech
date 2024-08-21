@@ -17,7 +17,7 @@ const About = () => {
           className="animate-rotational absolute top-0 -right-20"
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
-          <div className="relative z-10 flex justify-between">
+          <div className="relative z-10 sm:flex justify-between hidden">
             <img
               src={aboutThumb}
               draggable="false"
@@ -47,19 +47,19 @@ const About = () => {
               main best practices.
             </p>
             <ul className="space-y-[15px] mb-12">
-              <li className="font-Nunito text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
+              <li className="font-Nunito text-base sm:text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
                 <span className="size-[32px] rounded-3xl bg-[#ebf1fc] flex justify-center items-center">
                   <LuCheck size={"18"} className="text-PrimaryColor-0" />
                 </span>
                 Credibly leverage other{`'`}s future
               </li>
-              <li className="font-Nunito text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
+              <li className="font-Nunito text-base sm:text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
                 <span className="size-[32px] rounded-3xl bg-[#ebf1fc] flex justify-center items-center">
                   <LuCheck size={"18"} className="text-PrimaryColor-0" />
                 </span>
                 Dynamically seize cross functional web
               </li>
-              <li className="font-Nunito text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
+              <li className="font-Nunito text-base sm:text-lg text-HeadingColor-0 font-medium flex items-center gap-3">
                 <span className="size-[32px] rounded-3xl bg-[#ebf1fc] flex justify-center items-center">
                   <LuCheck size={"18"} className="text-PrimaryColor-0" />
                 </span>

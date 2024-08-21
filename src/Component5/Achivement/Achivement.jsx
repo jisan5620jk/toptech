@@ -9,7 +9,7 @@ const Achivement = () => {
         <img
           src={achivementShape}
           draggable="false"
-          className="animate-swing absolute top-20 -left-5"
+          className="animate-swing absolute top-20 -left-5 hidden lg:block"
         />
         <img
           src={achivementShape2}

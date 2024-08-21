@@ -20,7 +20,7 @@ const PricingCard = ({
   pricingSubTitle,
 }) => {
   return (
-    <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg px-10 py-9 relative z-10 overflow-hidden group border border-BorderColor5-0 rounded-2xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[#edf3ff] before:transition-all before:duration-500 before:-z-10 hover:before:top-0 hover:before:h-full">
+    <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg px-5 sm:px-10 py-9 relative z-10 overflow-hidden group border border-BorderColor5-0 rounded-2xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[#edf3ff] before:transition-all before:duration-500 before:-z-10 hover:before:top-0 hover:before:h-full">
       <h6 className="px-[22px] py-1 rounded-full bg-white border absolute font-Nunito text-sm text-HeadingColor-0 top-8 -right-32 transition-all duration-500 group-hover:right-8">
         {pricingMark}
       </h6>

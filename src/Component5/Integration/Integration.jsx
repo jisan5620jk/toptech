@@ -8,7 +8,7 @@ const Integration = () => {
   return (
     <section className="pt-20 pb-[70px] 2xl:pb-6 bg-[url(/images/integration-bg.jpg)] bg-cover bg-no-repeat bg-center">
       <div className="Container">
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-0">
           <div>
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
               Integrations
@@ -24,14 +24,14 @@ const Integration = () => {
               <br className="hidden xl:block" />
               Assertively disseminate market
             </p>
-            <ul className="flex items-center gap-[50px] mt-[30px] mb-11">
+            <ul className="flex flex-col sm:flex-row sm:items-center gap-[50px] mt-[30px] mb-11">
               <li className="flex items-center gap-2 font-Nunito text-HeadingColor-0 text-lg">
                 <GiCheckMark size={"20"} className="text-[#42c090]" />
                 Easy & Fast Download
               </li>
               <li className="flex items-center gap-2 font-Nunito text-HeadingColor-0 text-lg">
                 <GiCheckMark size={"20"} className="text-[#42c090]" />
-                Easy & Fast Download
+                Unlimited Users
               </li>
             </ul>
             <Link to={"/about"}>
@@ -42,8 +42,8 @@ const Integration = () => {
             </Link>
           </div>
           <div className="relative z-10">
-            <img src={integrationThumb} draggable="false" className="ml-14 2xl:max-w-[inherit] 2xl:-ml-8" />
-            <img src={integrationShape} draggable="false" className="absolute top-0 left-0 -z-10 2xl:-left-20" />
+            <img src={integrationThumb} draggable="false" className="lg:ml-14 2xl:max-w-[inherit] 2xl:-ml-8" />
+            <img src={integrationShape} draggable="false" className="absolute top-0 left-0 -z-10 2xl:-left-20 hidden md:block" />
           </div>
         </div>
       </div>

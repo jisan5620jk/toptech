@@ -19,19 +19,19 @@ const Banner = () => {
           <img
             src={bannerShape2}
             draggable="false"
-            className="absolute -left-10 top-28 animate-dance3"
+            className="absolute -left-10 top-28 animate-dance3 hidden md:block"
           />
           <img
             src={bannerShape}
             draggable="false"
-            className="absolute right-10 top-28 animate-swing"
+            className="absolute right-10 top-28 animate-swing hidden md:block"
           />
           <div className="text-center">
             <div className="relative">
               <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
                 IT SOLUTION AGENCY IN USA
               </h5>
-              <h1 className="font-Rajdhani font-extrabold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[70px] xl:leading-[77px] 2xl:text-[76px] 2xl:leading-[83px]">
+              <h1 className="font-Rajdhani font-extrabold text-HeadingColor-0 text-2xl sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[70px] xl:leading-[77px] 2xl:text-[76px] 2xl:leading-[83px]">
                 Unlock Growth Potential
                 <br />
                 Innovative Saas
@@ -75,24 +75,24 @@ const Banner = () => {
           <img
             src={bannerShape3}
             draggable="false"
-            className="absolute -left-24 -top-20 animate-wiggle -z-10"
+            className="absolute -left-24 -top-20 animate-wiggle -z-10 hidden md:block"
           />
-          <div className="grid grid-cols-3 gap-8">
-            <div className="col-span-2 row-span-2">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 lg:row-span-2">
               <img
                 src={portfolioThumb}
                 draggable="false"
                 className="rounded-3xl"
               />
             </div>
-            <div className="col-span-1 row-span-1">
+            <div className="lg:col-span-1 lg:row-span-1">
               <img
                 src={portfolioThumb2}
                 draggable="false"
                 className="rounded-3xl"
               />
             </div>
-            <div className="col-span-1 row-span-1">
+            <div className="lg:col-span-1 lg:row-span-1">
               <img
                 src={portfolioThumb3}
                 draggable="false"

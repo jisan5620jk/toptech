@@ -92,17 +92,17 @@ const Testimonial = () => {
   return (
     <section className="pt-28 pb-[120px] bg-white relative z-10 testimonial5">
       <div className="Container">
-        <div className="grid lg:grid-cols-2 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-0 lg:items-center">
           <div>
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-              About Saas
+              Testimonial
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
-              Get Realtime Visibility Digital
-              <br /> Saas Software{`'`}s
+              Trusted by Industry Leaders
+              <br /> Customer Tesmonials
             </h1>
           </div>
-          <div className="flex justify-end"><img src={testimonialLogo} draggable="false" /></div>
+          <div className="flex lg:justify-end"><img src={testimonialLogo} draggable="false" /></div>
         </div>
         <div className="mt-[26px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>

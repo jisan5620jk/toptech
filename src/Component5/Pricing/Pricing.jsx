@@ -123,26 +123,26 @@ const Pricing = () => {
       <img
         src={pricingShape}
         draggable="false"
-        className="animate-wiggle absolute top-80 -right-32 2xl:right-20"
+        className="animate-wiggle absolute top-80 -right-32 2xl:right-20 hidden lg:block"
       />
       <div className="Container relative z-10">
         <img
           src={pricingShape1}
           draggable="false"
-          className="absolute top-20 -left-20 animate-rotational"
+          className="absolute top-20 -left-20 animate-rotational hidden lg:block"
         />
         <img
           src={pricingShape2}
           draggable="false"
-          className="absolute top-40 -right-20 2xl:-right-10 animate-dance3"
+          className="absolute top-40 -right-20 2xl:-right-10 animate-dance3 hidden lg:block"
         />
         <div className="text-center">
           <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-            Achivements
+            Pricing Plan
           </h5>
-          <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
-            Explore the Powerful Features
-            <br /> Our Software Stand Out
+          <h1 className="font-Rajdhani font-bold text-xl sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+            Flexible Pricing Plans Designed To
+            <br /> Fit Businesses of Sizes
           </h1>
           <p className="font-Nunito text-TextColor2-0">
             Conveniently provide access to leading-edge imperatives whereas
@@ -153,10 +153,10 @@ const Pricing = () => {
         <Tabs>
           <div className="flex justify-center">
             <TabList className="flex items-center justify-center bg-BodyBg-0 mt-8 w-[270px] rounded-full overflow-hidden">
-              <Tab className="cursor-pointer outline-none font-Rajdhani font-semibold text-lg uppercase bg-PrimaryColor-0 px-4 sm:px-10 py-[15px] text-white hover:text-HeadingColor-0 transition-all duration-500 hover:bg-transparent rounded-[40px] hover:rounded-none">
+              <Tab className="cursor-pointer outline-none font-Rajdhani font-semibold text-lg uppercase bg-PrimaryColor-0 px-10 py-[15px] text-white hover:text-HeadingColor-0 transition-all duration-500 hover:bg-transparent rounded-[40px] hover:rounded-none">
                 Monthly
               </Tab>
-              <Tab className="cursor-pointer outline-none font-Rajdhani font-semibold text-lg uppercase bg-transparent px-4 sm:px-10 py-[15px] text-HeadingColor-0 hover:text-white transition-all duration-500 hover:bg-PrimaryColor-0 hover:rounded-[40px]">
+              <Tab className="cursor-pointer outline-none font-Rajdhani font-semibold text-lg uppercase bg-transparent px-10 py-[15px] text-HeadingColor-0 hover:text-white transition-all duration-500 hover:bg-PrimaryColor-0 hover:rounded-[40px]">
                 Yearly
               </Tab>
             </TabList>
