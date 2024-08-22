@@ -180,7 +180,7 @@ const Navbar2 = () => {
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/home1" className="py-2 block">
+                          <Link to="/" className="py-2 block">
                             Home Page 01
                           </Link>
                         </li>

@@ -1,107 +1,88 @@
 import { Link } from "react-router-dom";
-import portfolioThumb from "/images/portfolio-thumb.png";
-import portfolioThumb2 from "/images/portfolio-thumb2.png";
-import portfolioThumb3 from "/images/portfolio-thumb3.png";
-import bannerShape2 from "/images/banner-shape.png";
-import bannerShape from "/images/banner-shape2.png";
-import bannerShape3 from "/images/banner-shape3.png";
-import { HiOutlineArrowRight } from "react-icons/hi";
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
-import { PiPlay } from "react-icons/pi";
+import bannerImg from "/images/hero6-thumb.png";
+import bannerShape from "/images/ban-shape1.png";
+import bannerShape2 from "/images/ban-shape2.png";
+import bannerShape3 from "/images/ban-shape4.png";
+import bannerShape4 from "/images/ban-star.png";
+import bannerShape5 from "/images/ban-client.png";
+import bannerShape6 from "/images/ban-skill.png";
+import bannerShape7 from "/images/ban-shape3.png";
+import { FaSquareFull } from "react-icons/fa6";
+import Brand from "../Brand/Brand";
+import Feature from "../Feature/Feature";
 
 const Banner = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <div className="bg-[url(/images/banner5-bg.jpg)] bg-no-repeat bg-cover bg-center">
-      <section className="bg-transparent pt-[190px] pb-[82px] relative z-10 overflow-hidden">
-        <div className="Container relative">
-          <img
-            src={bannerShape2}
-            draggable="false"
-            className="absolute -left-10 top-28 animate-dance3 hidden lg:block"
-          />
-          <img
-            src={bannerShape}
-            draggable="false"
-            className="absolute right-10 top-28 animate-swing hidden lg:block"
-          />
-          <div className="text-center">
+    <div className="bg-[url('/images/banner-bg.png')] bg-cover bg-center bg-no-repeat">
+      <section className="h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
+        <div className="Container">
+          <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
             <div className="relative">
-              <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-                IT SOLUTION AGENCY IN USA
+              <img
+                src={bannerShape}
+                draggable={false}
+                className="absolute bottom-0 right-10 animate-rotational hidden sm:block"
+              />
+              <img
+                src={bannerShape2}
+                draggable={false}
+                className="absolute top-0 -left-24 animate-dance2 hidden sm:block"
+              />
+
+              <h5 className="font-Rajdhani text-PrimaryColor-0 text-xl font-semibold flex items-center gap-3 mb-4">
+                <FaSquareFull size={"10"} />
+                Bespoke Smart Solutions
               </h5>
-              <h1 className="font-Rajdhani font-extrabold text-HeadingColor-0 text-2xl sm:text-[46px] sm:leading-[54px] md:text-[68x] lg:text-[50px] xl:text-[70px] xl:leading-[77px] 2xl:text-[76px] 2xl:leading-[83px]">
-                Unlock Growth Potential
+              <h1 className="font-Rajdhani font-extrabold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[72px] 2xl:text-[60px] 2xl:leading-[74px]">
+                Embrace Development
                 <br />
-                Innovative Saas
+                <span className="relative before:absolute before:left-2 before:-bottom-3 before:w-full before:h-8 before:bg-[#1dda7d] before:bg-opacity-30 before:[clip-path:polygon(0_-2%,_0%_100%,_100%_2%)]">
+                  Tools Without
+                </span>
+                <br />a Single Line of Code
               </h1>
-              <p className="font-Nunito sm:text-xl text-HeadingColor-0 mb-9 mt-4">
-                Continually formulate B2C partnerships orthogonal saas tools
-                using <br className="hidden md:block" /> maintainable quality
-                through low business
+              <p className="font-Nunito sm:text-[17px] text-TextColor2-0 mb-10 mt-[14px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                <br className="hidden 2xl:block" />
+                has been single line of code industry’s standard dummy text.
               </p>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
-                <Link to={"/contact"}>
-                  <button className="primary-btn5">
-                    {`Try It Now`}
-                    <HiOutlineArrowRight size={"20"} />
-                  </button>
-                </Link>
-                <div>
-                  <button className="flex items-center gap-4 font-Rajdhani text-lg text-HeadingColor-0 font-semibold uppercase">
-                    <span className="size-[56px] rounded-full bg-transparent border border-HeadingColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
-                      <PiPlay
-                        size={"24"}
-                        onClick={() => setToggler(!toggler)}
-                      />
-                    </span>
-                    How it works
-                  </button>
-                  <FsLightbox
-                    toggler={toggler}
-                    sources={[
-                      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                    ]}
-                  />
-                </div>
-              </div>
+              <Link to={"/contact"}>
+                <button className="primary-btn6">{`Start A Project`}</button>
+              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="pb-[120px]">
-        <div className="Container relative z-10">
-          <img
-            src={bannerShape3}
-            draggable="false"
-            className="absolute -left-24 -top-20 animate-wiggle -z-10 hidden md:block"
-          />
-          <div className="grid md:col-span-2 lg:grid-cols-3 gap-8">
-            <div className="md:col-span-2 lg:row-span-2">
+            <div className="sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden">
+              <img src={bannerImg} draggable="false" className="" />
               <img
-                src={portfolioThumb}
-                draggable="false"
-                className="rounded-3xl"
+                src={bannerShape7}
+                draggable={false}
+                className="absolute top-20 left-10 animate-swing hidden sm:block"
               />
-            </div>
-            <div className="md:col-span-1 md:row-span-1">
               <img
-                src={portfolioThumb2}
-                draggable="false"
-                className="rounded-3xl"
+                src={bannerShape3}
+                draggable={false}
+                className="absolute top-0 -right-20 animate-swing hidden sm:block"
               />
-            </div>
-            <div className="lg:col-span-1 lg:row-span-1">
               <img
-                src={portfolioThumb3}
-                draggable="false"
-                className="rounded-3xl"
+                src={bannerShape4}
+                draggable={false}
+                className="absolute bottom-0 -right-20 animate-rotational hidden sm:block"
+              />
+              <img
+                src={bannerShape5}
+                draggable={false}
+                className="absolute bottom-20 left-20 animate-dance3 hidden sm:block"
+              />
+              <img
+                src={bannerShape6}
+                draggable={false}
+                className="absolute top-1/2 -translate-y-1/2 -right-24 animate-wiggle hidden sm:block"
               />
             </div>
           </div>
         </div>
       </section>
+      <Brand />
+      <Feature />
     </div>
   );
 };

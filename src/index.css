@@ -44,6 +44,10 @@ body {
   @apply flex items-center gap-2 overflow-hidden border uppercase border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[13px] relative rounded-full text-lg text-white font-semibold font-Rajdhani before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
 }
 
+.primary-btn6 {
+  @apply flex items-center gap-2 overflow-hidden capitalize bg-[linear-gradient(90deg,_rgba(12,89,219,1)_41%,_rgba(46,34,206,1)_88%)] transition-all z-10 hover:text-white duration-500 px-10 py-[14px] relative rounded-full text-white font-medium font-Nunito before:bg-[linear-gradient(-90deg,_rgba(12,89,219,1)_41%,_rgba(46,34,206,1)_88%)] before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
+}
+
 .is-sticky {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
 }
@@ -483,4 +487,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .team-member-box:nth-child(2n + 2) {
   margin-top: 50px;
+}
+
+/* Team Member */
+
+.feature-box:nth-child(2n + 2) {
+  margin-top: 30px;
 }
