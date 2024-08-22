@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const Navbar5 = () => {
+const Navbar6 = () => {
   //sticky
 
   useEffect(() => {
@@ -404,4 +404,4 @@ const Navbar5 = () => {
   );
 };
 
-export default Navbar5;
+export default Navbar6;
