@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import footerLogo from "/images/logo-2.png";
 import {
   FaBehance,
   FaFacebookF,
