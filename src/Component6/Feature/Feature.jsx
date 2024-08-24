@@ -51,16 +51,16 @@ const processData = [
 
 const Feature = () => {
   return (
-    <section className="pb-28 relative z-10">
+    <section className="pt-24 relative z-10">
       <div className="Container">
         <div className="text-center">
-          <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+          <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-4">
             Exploring Advanced App Features
           </h1>
           <p className="font-Nunito text-TextColor2-0 pb-1">
             Conviently optimize interdependent intellectual interoperable
-            visuali design infoediaries <br className="hidden md:block"/> main issue state icreative planing main
-            best practices.
+            visuali design infoediaries <br className="hidden md:block" /> main
+            issue state icreative planing main best practices.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 relative z-10 mt-14">

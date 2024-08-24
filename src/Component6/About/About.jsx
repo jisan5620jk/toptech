@@ -4,34 +4,49 @@ import { FaSquareFull } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <section className="pt-[80px] pb-[120px] bg-no-repeat bg-center bg-cover relative">
+    <section className="py-28 relative">
       <div className="Container relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
           <div className="relative">
-            <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-              About Saas
+            <h5 className="font-Rajdhani font-semibold text-PrimaryColor-0 uppercase flex items-center gap-3 text-lg mb-5">
+              <FaSquareFull size={"10"} /> About TOP-TECH
             </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-4">
-              Get Realtime Visibility Digital
-              <br /> Saas Software{`'`}s
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
+              A Guide to Quick Business
+              <br /> Expansion through Applications
             </h1>
-            <p className="font-Nunito text-TextColor2-0 text-lg pb-6">
-              Conviently optimize interdependent intellectual interoperable
-              visuali design infoediaries main issue state icreative planing
-              main best practices.
+            <p className="font-Nunito text-TextColor2-0 pb-5">
+              Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus
+              branding <br className="hidden 2xl:block" /> metus futures
+              phasellus magna consectetur nec faucibus
             </p>
-            <div className="flex gap-5 mt-7 mb-6">
+            <div className="flex gap-4 mt-7 mb-10">
               <div className="text-[#fdb900]">
-                <FaSquareFull />
+                <FaSquareFull size={"10"} />
               </div>
-              <div className="flex-1">
-                <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl">
-                  Super Fast Speed
+              <div className="flex-1 -mt-2">
+                <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl">
+                  Software Engineering
                 </h5>
-                <p className="font-Nunito text-TextColor2-0 pt-2">
-                  Conveniently provide access to leading-edge{" "}
-                  <br className="hidden md:block" /> interfaces. Uniquely
-                  network
+                <p className="font-Nunito text-TextColor2-0 pt-[10px]">
+                  Nulla eleifend, lectus eu gravida facilisis, ipsum metus
+                  faucibus <br className="hidden md:block" /> metus futures
+                  phasellus magna consectetur nec faucibus
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4 mt-7 mb-[42px]">
+              <div className="text-[#fb5a3e]">
+                <FaSquareFull size={"10"} />
+              </div>
+              <div className="flex-1 -mt-2">
+                <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl">
+                  Engaging Group Discussion
+                </h5>
+                <p className="font-Nunito text-TextColor2-0 pt-[10px]">
+                  Nulla eleifend, lectus eu gravida facilisis, ipsum metus
+                  faucibus <br className="hidden md:block" /> metus futures
+                  phasellus magna consectetur nec faucibus
                 </p>
               </div>
             </div>
@@ -43,7 +58,7 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable="false"
-              className="2xl:max-w-[inherit] animate-wiggle"
+              className="2xl:max-w-[inherit]"
             />
           </div>
         </div>

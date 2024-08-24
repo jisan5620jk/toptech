@@ -36,32 +36,32 @@ const Brand = () => {
     <div>
       <div className="Container">
         <Swiper {...settings}>
-          <SwiperSlide className="pt-[94px] pb-[40px]">
+          <SwiperSlide className="pb-[40px]">
             <div className="flex justify-center items-center">
               <img src={brandThumb} draggable="false" className="h-[inheirit] w-[Inherit}"/>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="pt-[94px] pb-[40px]">
+          <SwiperSlide className="pb-[40px]">
             <div className="flex justify-center items-center">
               <img src={brandThumb2} draggable="false" className="h-[inheirit] w-[Inherit}"/>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="pt-[94px] pb-[40px]">
+          <SwiperSlide className="pb-[40px]">
             <div className="flex justify-center items-center">
               <img src={brandThumb3} draggable="false" className="h-[inheirit] w-[Inherit}"/>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="pt-[94px] pb-[40px]">
+          <SwiperSlide className="pb-[40px]">
             <div className="flex justify-center items-center">
               <img src={brandThumb4} draggable="false" className="h-[inheirit] w-[Inherit}"/>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="pt-[94px] pb-[40px]">
+          <SwiperSlide className="pb-[40px]">
             <div className="flex justify-center items-center">
               <img src={brandThumb5} draggable="false" className="h-[inheirit] w-[Inherit}"/>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="pt-[94px] pb-[40px]">
+          <SwiperSlide className="pb-[40px]">
             <div className="flex justify-center items-center">
               <img src={brandThumb3} draggable="false" className="h-[inheirit] w-[Inherit}"/>
             </div>

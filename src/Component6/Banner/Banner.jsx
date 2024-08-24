@@ -10,11 +10,12 @@ import bannerShape7 from "/images/ban-shape3.png";
 import { FaSquareFull } from "react-icons/fa6";
 import Brand from "../Brand/Brand";
 import Feature from "../Feature/Feature";
+import About from "../About/About";
 
 const Banner = () => {
   return (
     <div className="bg-[url('/images/banner-bg.png')] bg-cover bg-center bg-no-repeat">
-      <section className="h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
+      <section className="h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[865px] flex items-center relative z-10 overflow-hidden">
         <div className="Container">
           <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
             <div className="relative">
@@ -83,6 +84,7 @@ const Banner = () => {
       </section>
       <Brand />
       <Feature />
+      <About />
     </div>
   );
 };

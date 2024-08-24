@@ -1,133 +1,44 @@
-/* eslint-disable no-unused-vars */
-import serviceImg from "/images/service5-icon.png";
-import serviceImg2 from "/images/service5-icon2.png";
-import serviceImg3 from "/images/service5-icon3.png";
-import serviceImg4 from "/images/service5-icon4.png";
+import { FaPlus } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { HiOutlineArrowRight } from "react-icons/hi";
-import { RxDotsHorizontal } from "react-icons/rx";
+import serviceBoxShape from "/images/feat-icon1.png";
 
 const Service = () => {
   return (
-    <section className="py-[120px] bg-[url(/images/service5-bg.jpg)] bg-cover bg-center bg-no-repeat relative z-10">
+    <section className="relative pt-28 pb-[120px] bg-BodyBg-0">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-            Services
-          </h5>
-          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
-            Advanced Security and Compliance
-            <br /> to Protect Your Data
+          <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-4">
+            Navigating Our Future Course
           </h1>
+          <p className="font-Nunito text-TextColor2-0 pb-1">
+            Conviently optimize interdependent intellectual interoperable
+            visuali design infoediaries <br className="hidden md:block" /> main
+            issue state icreative planing main best practices.
+          </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 mt-[66px]">
-          <div className="flex flex-col sm:flex-row gap-[30px] group border-r border-BorderColor5-0 pt-8 pb-6">
-            <div className="size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]">
-              <img src={serviceImg} draggable="false" />
-            </div>
-            <div className="flex-1">
-              <h5 className="font-Rajdhani font-semibold text-2xl sm:text-[28px] text-HeadingColor-0 -mt-1">
-                User & Customer Support
-              </h5>
-              <p className="font-Nunito text-TextColor2-0 mt-2 md:w-9/12 lg:w-full mb-4 2xl:w-10/12">
-                Conveniently provide access leading-edge impossibles interfaces.
-                Uniquely network cutting-edge niche target assertively
-                disseminate
-              </p>
-              <Link to={"/service_details"} className="inline-block">
-                <button className="flex items-center overflow-hidden relative">
-                  <RxDotsHorizontal
-                    size={"45"}
-                    className="text-TextColor-0 transition-all duration-500 group-hover:-ml-11"
-                  />
-                  <span className="flex items-center gap-2 font-Rajdhani text-lg font-semibold -mr-[120px] transition-all duration-500 group-hover:mr-0">
-                    LEARN MORE
-                    <HiOutlineArrowRight size={"20"} />
-                  </span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[54px]">
+          <div className="px-10 lg:px-7 xl:px-10 pt-9 pb-[34px] rounded-lg bg-white group relative z-10 overflow-hidden before:bg-[] before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
+            <div className="inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#5020d9] before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] ">
+              <Link to={"/service_details"}>
+                <button className="size-[46px] rounded-full text-xl text-white bg-[#5020d9] flex items-center justify-center transition-all duration-500 group-hover:text-[#5020d9] relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100">
+                  <FaPlus />
                 </button>
               </Link>
             </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-[30px] group pt-8 lg:pl-10 pb-6">
-            <div className="size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]">
-              <img src={serviceImg2} draggable="false" />
-            </div>
-            <div className="flex-1">
-              <h5 className="font-Rajdhani font-semibold text-2xl sm:text-[28px] text-HeadingColor-0 -mt-1">
-                Targeted Data Analytics
+            <div className="relative z-10">
+              <h5 className="font-Rajdhani font-semibold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
+                Business Collaboration
               </h5>
-              <p className="font-Nunito text-TextColor2-0 mt-2 md:w-9/12 lg:w-full mb-4 2xl:w-10/12">
-                Conveniently provide access leading-edge impossibles interfaces.
-                Uniquely network cutting-edge niche target assertively
-                disseminate
+              <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-2">
+                Future name metus faucibus eros metus clean magna erat design
+                pro course.
               </p>
-              <Link to={"/service_details"} className="inline-block">
-                <button className="flex items-center overflow-hidden relative">
-                  <RxDotsHorizontal
-                    size={"45"}
-                    className="text-TextColor-0 transition-all duration-500 group-hover:-ml-11"
-                  />
-                  <span className="flex items-center gap-2 font-Rajdhani text-lg font-semibold -mr-[120px] transition-all duration-500 group-hover:mr-0">
-                    LEARN MORE
-                    <HiOutlineArrowRight size={"20"} />
-                  </span>
-                </button>
-              </Link>
             </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-[30px] group border-t border-r border-BorderColor5-0 pt-12">
-            <div className="size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]">
-              <img src={serviceImg3} draggable="false" />
-            </div>
-            <div className="flex-1">
-              <h5 className="font-Rajdhani font-semibold text-2xl sm:text-[28px] text-HeadingColor-0 -mt-1">
-                Get any Notifications
-              </h5>
-              <p className="font-Nunito text-TextColor2-0 mt-2 md:w-9/12 lg:w-full mb-4 2xl:w-10/12">
-                Conveniently provide access leading-edge impossibles interfaces.
-                Uniquely network cutting-edge niche target assertively
-                disseminate
-              </p>
-              <Link to={"/service_details"} className="inline-block">
-                <button className="flex items-center overflow-hidden relative">
-                  <RxDotsHorizontal
-                    size={"45"}
-                    className="text-TextColor-0 transition-all duration-500 group-hover:-ml-11"
-                  />
-                  <span className="flex items-center gap-2 font-Rajdhani text-lg font-semibold -mr-[120px] transition-all duration-500 group-hover:mr-0">
-                    LEARN MORE
-                    <HiOutlineArrowRight size={"20"} />
-                  </span>
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-[30px] group border-t border-BorderColor5-0 pt-12 lg:pl-10">
-            <div className="size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]">
-              <img src={serviceImg4} draggable="false" />
-            </div>
-            <div className="flex-1">
-              <h5 className="font-Rajdhani font-semibold text-2xl sm:text-[28px] text-HeadingColor-0 -mt-1">
-                Cyber Security Protected
-              </h5>
-              <p className="font-Nunito text-TextColor2-0 mt-2 md:w-9/12 lg:w-full mb-4 2xl:w-10/12">
-                Conveniently provide access leading-edge impossibles interfaces.
-                Uniquely network cutting-edge niche target assertively
-                disseminate
-              </p>
-              <Link to={"/service_details"} className="inline-block">
-                <button className="flex items-center overflow-hidden relative">
-                  <RxDotsHorizontal
-                    size={"45"}
-                    className="text-TextColor-0 transition-all duration-500 group-hover:-ml-11"
-                  />
-                  <span className="flex items-center gap-2 font-Rajdhani text-lg font-semibold -mr-[120px] transition-all duration-500 group-hover:mr-0">
-                    LEARN MORE
-                    <HiOutlineArrowRight size={"20"} />
-                  </span>
-                </button>
-              </Link>
-            </div>
+              <img
+                src={serviceBoxShape}
+                draggable="false"
+                className="absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
+              />
           </div>
         </div>
       </div>
