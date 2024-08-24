@@ -76,7 +76,7 @@ const Banner = () => {
               <img
                 src={bannerShape6}
                 draggable={false}
-                className="absolute top-1/2 -translate-y-1/2 -right-24 animate-wiggle hidden sm:block"
+                className="absolute top-1/2 -translate-y-1/2 -right-24 2xl:-right-36 animate-wiggle hidden sm:block"
               />
             </div>
           </div>

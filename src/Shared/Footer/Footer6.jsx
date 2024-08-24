@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import {
   FaApple,
-  FaBehance,
   FaFacebookF,
   FaGooglePlay,
   FaLinkedinIn,
-  FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
@@ -27,34 +25,34 @@ const Footer6 = () => {
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-2">
-            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-6">
-              Company
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-9">
+              Links
             </h4>
             <ul>
               <li>
                 <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-5">
+                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-4">
                     About Us
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-5">
+                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-4">
                     Our Team
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-5">
+                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-4">
                     Pricing Plan
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-5">
+                  <button className="font-Nunito text-white transition-all duration-500 hover:text-white">
                     Latest Blog
                   </button>
                 </Link>
@@ -62,76 +60,85 @@ const Footer6 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-6">
-              Our Services
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-9">
+              Get In Touch
             </h4>
             <div className="flex items-center gap-3">
               <div>
                 <LiaPhoneVolumeSolid className="text-xl text-white" />
               </div>
-              <p className="font-Nunito text-white">
-                +258 (549) 2158 3215
-              </p>
+              <p className="font-Nunito text-white">+258 (549) 2158 3215</p>
             </div>
-            <div className="flex items-center gap-3 my-7">
+            <div className="flex items-center gap-3 mt-5">
               <div>
                 <HiOutlineMail className="text-2xl text-white" />
               </div>
-              <p className="font-Nunito text-white">
-                support@example.com
-              </p>
+              <p className="font-Nunito text-white">support@example.com</p>
             </div>
-          </div>
-          <div className="col-span-12 md:col-span-6 lg:col-span-2">
-            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[26px]">
-              Newsletter
-            </h4>
-            <div className="flex flex-col gap-6"><Link to={"/"}>
-              <button className="primary-btn6 !px-7 !py-4">
-                <FaGooglePlay size={"28"} />
-                {`Google Play`}
-              </button>
-            </Link>
-            <Link to={"/"}>
-              <button className="primary-btn6 !px-7 !py-4">
-                <FaApple size={"28"} />
-                {`App Store`}
-              </button>
-            </Link></div>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
-          <div>
-            <p className="font-Nunito text-TextColor-0">
-              Copyright © 2024. Designed By Dream IT Solution
-            </p>
-          </div>
-          <div>
-            <ul className="flex gap-5">
+            <ul className="flex gap-3 mt-10">
               <li>
-                <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
+                <button className="size-9 rounded-full text-sm bg-transparent border border-dashed border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 hover:border-solid relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   <FaFacebookF />
                 </button>
               </li>
               <li>
-                <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
+                <button className="size-9 rounded-full text-sm bg-transparent border border-dashed border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 hover:border-solid relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   <FaXTwitter />
                 </button>
               </li>
               <li>
-                <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
+                <button className="size-9 rounded-full text-sm bg-transparent border border-dashed border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 hover:border-solid relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   <FaLinkedinIn />
                 </button>
               </li>
-              <li>
-                <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
-                  <FaPinterestP />
+            </ul>
+          </div>
+          <div className="col-span-12 md:col-span-6 lg:col-span-2">
+            <h4 className="font-Nunito text-2xl text-white font-semibold mb-10">
+              Download
+            </h4>
+            <div className="flex flex-col gap-6">
+              <Link to={"/"}>
+                <button className="primary-btn6 lg:px-3 lg:py-2 xl:px-7 xl:py-3 2xl:px-10 2xl:py-[14px] border border-white">
+                  <FaGooglePlay size={"28"} />
+                  {`Google Play`}
                 </button>
+              </Link>
+              <Link to={"/"}>
+                <button className="primary-btn6 lg:px-3 lg:py-2 xl:px-7 xl:py-3 2xl:px-10 2xl:py-[14px] border border-white">
+                  <FaApple size={"28"} />
+                  {`App Store`}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white bg-opacity-5 py-6 mt-28 mb-10">
+        <div className="Container flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center">
+          <div>
+            <p className="font-Nunito text-white">
+              TopTech © 2024 All Rights Reserved.
+            </p>
+          </div>
+          <div>
+            <ul className="flex gap-6">
+              <li>
+                <Link to={"/home6"}>
+                  <button className="font-Nunito text-white">
+                    Privacy & Terms
+                  </button>
+                </Link>
               </li>
               <li>
-                <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
-                  <FaBehance size={"18"} />
-                </button>
+                <Link to={"/home6"}>
+                  <button className="font-Nunito text-white">FAQ</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/home6"}>
+                  <button className="font-Nunito text-white">Contact Us</button>
+                </Link>
               </li>
             </ul>
           </div>

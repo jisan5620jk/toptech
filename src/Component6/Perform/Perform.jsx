@@ -20,30 +20,34 @@ const Perform = () => {
               branding <br className="hidden 2xl:block" /> metus futures
               phasellus magna consectetur nec faucibus
             </p>
-            <div className="grid grid-cols-2 gap-7 items-center mt-9">
-              <div className="flex items-center gap-3 bg-[#ffe1d9] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] py-[14px]">
-                <div className="size-[10px] bg-[#fb5a3e] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fb5a3e] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
-                <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
-                  Fast Downloading
-                </h5>
+            <div className="flex gap-7 items-center mt-9">
+              <div className="space-y-7">
+                <div className="flex items-center gap-3 bg-[#ffe1d9] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] lg:px-4 xl:px-5 2xl:pl-[34px] py-[14px]">
+                  <div className="size-[10px] bg-[#fb5a3e] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fb5a3e] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
+                  <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                    Fast Downloading
+                  </h5>
+                </div>
+                <div className="flex items-center gap-3 bg-[#e6d8f1] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] lg:px-4 xl:px-5 2xl:pl-[34px] py-[14px]">
+                  <div className="size-[10px] bg-[#5020d8] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#5020d8] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
+                  <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                    On-Time Delivery
+                  </h5>
+                </div>
               </div>
-              <div className="flex items-center gap-3 bg-[#e6d8f1] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] py-[14px]">
-                <div className="size-[10px] bg-[#5020d8] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#5020d8] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
-                <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
-                  On-Time Delivery
-                </h5>
-              </div>
-              <div className="flex items-center gap-3 bg-[#ddf4e2] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] py-[14px]">
-                <div className="size-[10px] bg-[#1dda7c] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#1dda7c] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
-                <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
-                  Security Certified
-                </h5>
-              </div>
-              <div className="flex items-center gap-3 bg-[#ffeed0] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] py-[14px]">
-                <div className="size-[10px] bg-[#fdb900] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fdb900] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
-                <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
-                  Cloud Compatibility
-                </h5>
+              <div className="space-y-7">
+                <div className="flex items-center gap-3 bg-[#ddf4e2] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] lg:px-4 xl:px-5 2xl:pl-[34px] py-[14px]">
+                  <div className="size-[10px] bg-[#1dda7c] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#1dda7c] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
+                  <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                    Security Certified
+                  </h5>
+                </div>
+                <div className="flex items-center gap-3 bg-[#ffeed0] rounded-lg 2xl:w-[270px] overflow-hidden group pl-[34px] lg:px-4 xl:px-5 2xl:pl-[34px] py-[14px]">
+                  <div className="size-[10px] bg-[#fdb900] flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fdb900] before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[10] sm:group-hover:before:scale-[15] md:group-hover:before:scale-[60] 2xl:group-hover:before:scale-[20} after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100"></div>
+                  <h5 className="relative z-10 font-Rajdhani text-xl font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                    Cloud Compatibility
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
@@ -51,12 +55,12 @@ const Perform = () => {
             <img
               src={liveThumb}
               draggable="false"
-              className="w-11/12 2xl:w-[inherit]"
+              className="w-11/12 2xl:w-[inherit] relative 2xl:left-12"
             />
             <img
               src={liveShape}
               draggable="false"
-              className="w-11/12 2xl:w-[inherit] animate-wiggle absolute -z-10 -top-10 right-0"
+              className="w-11/12 2xl:w-[inherit] animate-wiggle absolute -z-10 -top-10 right-0 2xl:-right-6"
             />
           </div>
         </div>
