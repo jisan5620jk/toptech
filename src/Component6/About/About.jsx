@@ -8,7 +8,7 @@ const About = () => {
       <div className="Container relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
           <div className="relative">
-            <h5 className="font-Rajdhani font-semibold text-PrimaryColor-0 uppercase flex items-center gap-3 text-lg mb-5">
+            <h5 className="font-Rajdhani font-semibold text-PrimaryColor-0 capitalize flex items-center gap-3 text-lg mb-5">
               <FaSquareFull size={"10"} /> About TOP-TECH
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">

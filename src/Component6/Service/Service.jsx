@@ -4,7 +4,7 @@ import serviceBoxShape from "/images/feat-icon1.png";
 
 const Service = () => {
   return (
-    <section className="relative pt-28 pb-[120px] bg-BodyBg-0">
+    <section className="relative pt-28 pb-[120px] bg-[#fff8f5]">
       <div className="Container">
         <div className="text-center">
           <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-4">
