@@ -4,7 +4,7 @@ import { FaSquareFull } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <section className="py-28 relative">
+    <section className="py-[140px] relative">
       <div className="Container relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
           <div className="relative">

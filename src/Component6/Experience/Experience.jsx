@@ -9,7 +9,7 @@ import experienceShape4 from "/images/call-shape2.png";
 
 const Experience = () => {
   return (
-    <section className="py-28">
+    <section className="py-[140px]">
       <div className="Container">
         <div className="grid grid-cols-12">
           <div className="col-span-3">
