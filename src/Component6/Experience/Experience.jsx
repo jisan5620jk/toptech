@@ -17,7 +17,7 @@ const Experience = () => {
               <img
                 src={experienceThumb}
                 draggable="false"
-                className="animate-wiggle relative top-8 -left-24 max-w-[inherit]"
+                className="animate-wiggle relative top-8 left-0 2xl:-left-24 max-w-full 2xl:max-w-[inherit]"
               />
               <img
                 src={experienceShape}
@@ -74,7 +74,7 @@ const Experience = () => {
               <img
                 src={experienceThumb2}
                 draggable="false"
-                className="animate-wiggle relative top-8 2xl:left-8 2xl:max-w-[inherit]"
+                className="animate-wiggle relative top-8 left-0 max-w-full 2xl:left-8 2xl:max-w-[inherit]"
               />
               <img
                 src={experienceShape2}

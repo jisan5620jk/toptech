@@ -11,7 +11,7 @@ const About = () => {
             <h5 className="font-Rajdhani font-semibold text-PrimaryColor-0 capitalize flex items-center gap-3 text-lg mb-5">
               <FaSquareFull size={"10"} /> About TOP-TECH
             </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[32px] lg:leading-[39px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
               A Guide to Quick Business
               <br /> Expansion through Applications
             </h1>
@@ -30,7 +30,7 @@ const About = () => {
                 </h5>
                 <p className="font-Nunito text-TextColor2-0 pt-[10px]">
                   Nulla eleifend, lectus eu gravida facilisis, ipsum metus
-                  faucibus <br className="hidden md:block" /> metus futures
+                  faucibus <br className="hidden md:block lg:hidden xl:block" /> metus futures
                   phasellus magna consectetur nec faucibus
                 </p>
               </div>
@@ -45,7 +45,7 @@ const About = () => {
                 </h5>
                 <p className="font-Nunito text-TextColor2-0 pt-[10px]">
                   Nulla eleifend, lectus eu gravida facilisis, ipsum metus
-                  faucibus <br className="hidden md:block" /> metus futures
+                  faucibus <br className="hidden md:block lg:hidden xl:block" /> metus futures
                   phasellus magna consectetur nec faucibus
                 </p>
               </div>

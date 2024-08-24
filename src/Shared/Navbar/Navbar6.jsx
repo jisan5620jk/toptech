@@ -2,16 +2,11 @@
 import { Link, NavLink } from "react-router-dom";
 import {
   FaBars,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
-  FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
 import Logo from "/images/logo6.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar6 = () => {
@@ -91,7 +86,7 @@ const Navbar6 = () => {
               </button>
             </div>
             {/* All navLink are hear with active */}
-            <div className="flex gap-2 xl:gap-3 2xl:gap-12 items-center">
+            <div className="flex gap-2 lg:gap-10 xl:gap-3 2xl:gap-12 items-center">
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
@@ -376,7 +371,7 @@ const Navbar6 = () => {
                 </NavLink>
               </ul>
               <div className="hidden lg:flex items-center xl:gap-3 2xl:gap-11">
-                <div>
+                <div className="hidden xl:block">
                   <h6 className="font-Nunito text-PrimaryColor-0 text-[17px]">
                     For Support
                   </h6>
