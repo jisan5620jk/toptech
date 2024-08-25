@@ -24,7 +24,7 @@ const WhyChoose = () => {
             <h5 className="font-Rajdhani font-semibold text-PrimaryColor-0 uppercase flex items-center gap-3 text-lg mb-5">
               <FaSquareFull size={"10"} /> WHY CHOOSE US
             </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[32px] lg:leading-[39px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
+            <h1 className="font-Rajdhani font-bold text-xl leading-6 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[32px] lg:leading-[39px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
               Smart and Clean UI Solutions for
               <br /> Our Engaged Clients
             </h1>

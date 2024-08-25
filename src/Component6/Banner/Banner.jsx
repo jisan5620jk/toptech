@@ -15,7 +15,7 @@ import About from "../About/About";
 const Banner = () => {
   return (
     <div className="bg-[url('/images/banner-bg.png')] bg-cover bg-center bg-no-repeat">
-      <section className="h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[865px] flex items-center relative z-10 overflow-hidden">
+      <section className="h-[600px] sm:h-[1400px] lg:h-[660px] xl:h-[865px] flex items-center relative z-10 overflow-hidden">
         <div className="Container">
           <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
             <div className="relative">
@@ -34,10 +34,10 @@ const Banner = () => {
                 <FaSquareFull size={"10"} />
                 Bespoke Smart Solutions
               </h5>
-              <h1 className="font-Rajdhani font-extrabold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[72px] 2xl:text-[60px] 2xl:leading-[74px]">
+              <h1 className="font-Rajdhani font-extrabold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[52px] sm:leading-[56px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[72px] 2xl:text-[60px] 2xl:leading-[74px]">
                 Embrace Development
                 <br />
-                <span className="relative before:absolute before:left-2 before:-bottom-3 before:w-full before:h-8 before:bg-[#1dda7d] before:bg-opacity-30 before:[clip-path:polygon(0_-2%,_0%_100%,_100%_2%)]">
+                <span className="relative before:absolute before:left-2 before:-bottom-3 before:w-full before:h-8 before:bg-[#1dda7d] before:bg-opacity-30 before:[clip-path:polygon(0_-2%,_0%_100%,_100%_2%)] before:hidden md:before:block">
                   Tools Without
                 </span>
                 <br />a Single Line of Code

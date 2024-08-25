@@ -11,8 +11,8 @@ const Experience = () => {
   return (
     <section className="py-[140px]">
       <div className="Container">
-        <div className="grid grid-cols-12">
-          <div className="col-span-3">
+        <div className="grid gap-10 lg:gap-0 grid-cols-1 lg:grid-cols-12">
+          <div className="lg:col-span-3">
             <div className="relative">
               <img
                 src={experienceThumb}
@@ -32,7 +32,7 @@ const Experience = () => {
               <img
                 src={experienceShape3}
                 draggable="false"
-                className="animate-dance3 absolute bottom-8 left-0 2xl:-left-20 w-4/12 2xl:w-[inherit]"
+                className="animate-dance3 absolute bottom-8 left-0 2xl:-left-20 w-4/12 2xl:w-[inherit] hidden sm:block"
               />
               <img
                 src={experienceShape4}
@@ -41,7 +41,7 @@ const Experience = () => {
               />
             </div>
           </div>
-          <div className="col-span-6 text-center">
+          <div className="lg:col-span-6 text-center">
             <h5 className="font-Rajdhani font-semibold text-PrimaryColor-0 capitalize text-lg mb-5">
               Experience On Top-Tech
             </h5>
@@ -54,7 +54,7 @@ const Experience = () => {
               branding metus <br className="hidden 2xl:block" />
               futures phasellus magna consectetur nec faucibus
             </p>
-            <div className="flex items-center gap-5 justify-center">
+            <div className="flex flex-col sm:flex-row items-center gap-5 justify-center">
               <Link to={"/"}>
                 <button className="primary-btn6">
                   <FaGooglePlay size={"28"} />
@@ -69,7 +69,7 @@ const Experience = () => {
               </Link>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="lg:col-span-3">
             <div className="relative">
               <img
                 src={experienceThumb2}
