@@ -32,12 +32,12 @@ const Experience = () => {
               <img
                 src={experienceShape3}
                 draggable="false"
-                className="animate-dance3 absolute bottom-8 left-0 2xl:-left-20 w-4/12 2xl:w-[inherit] hidden sm:block"
+                className="animate-dance3 absolute bottom-8 left-0 2xl:-left-20 w-4/12 md:w-2/12 2xl:w-[inherit] hidden sm:block"
               />
               <img
                 src={experienceShape4}
                 draggable="false"
-                className="animate-rotational absolute top-8 right-0"
+                className="animate-rotational absolute top-8 right-0 md:right-40 lg:right-0"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ const Experience = () => {
             </h1>
             <p className="font-Nunito text-TextColor2-0 pb-5">
               Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus
-              branding metus <br className="hidden 2xl:block" />
+              branding metus <br className="hidden md:block lg:hidden 2xl:block" />
               futures phasellus magna consectetur nec faucibus
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-5 justify-center">
@@ -81,7 +81,7 @@ const Experience = () => {
                 draggable="false"
                 className="animate-bounce absolute top-20 right-20"
               />
-              <div className="absolute top-8 -right-20 size-[100px] rounded-full bg-BodyBg-0 flex justify-center items-center">
+              <div className="absolute top-8 -right-20 md:right-20 lg:right-0 xl:-right-20 size-[100px] rounded-full bg-BodyBg-0 flex justify-center items-center">
                 <img
                   src={experienceShape4}
                   draggable="false"

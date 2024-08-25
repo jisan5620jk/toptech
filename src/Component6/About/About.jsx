@@ -17,7 +17,7 @@ const About = () => {
             </h1>
             <p className="font-Nunito text-TextColor2-0 pb-5">
               Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus
-              branding <br className="hidden 2xl:block" /> metus futures
+              branding <br className="hidden md:block lg:hidden 2xl:block" /> metus futures
               phasellus magna consectetur nec faucibus
             </p>
             <div className="flex gap-4 mt-7 mb-10">
