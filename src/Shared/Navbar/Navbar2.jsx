@@ -226,6 +226,26 @@ const Navbar2 = () => {
                           </Link>
                         </li>
                       </div>
+                      <div className="px-5 group hover:bg-PrimaryColor-0 group2">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/home7" className="py-2 block relative">
+                            Home Page 07
+                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
+                              NEW
+                            </span>
+                          </Link>
+                        </li>
+                      </div>
+                      <div className="px-5 group hover:bg-PrimaryColor-0 group2">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/home8" className="py-2 block relative">
+                            Home Page 08
+                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
+                              NEW
+                            </span>
+                          </Link>
+                        </li>
+                      </div>
                       <div className="px-5 group hover:bg-PrimaryColor-0 group2 cursor-not-allowed">
                         <li className="py-2 block relative">
                           {`Other's Home`}
