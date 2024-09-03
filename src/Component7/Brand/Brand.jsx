@@ -33,7 +33,7 @@ const Brand = () => {
     },
   };
   return (
-    <section>
+    <section className="mb-28">
       <div className="Container">
         <div className="flex items-center gap-5">
           <h5 className="font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase">
