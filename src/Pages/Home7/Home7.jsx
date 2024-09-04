@@ -5,6 +5,7 @@ import Brand from "../../Component7/Brand/Brand";
 import Collaboration from "../../Component7/Collaboration/Collaboration";
 import ContentSlider from "../../Component7/ContentSlider/ContentSlider";
 import Feature from "../../Component7/Feature/Feature";
+import Pricing from "../../Component7/Pricing/Pricing";
 import Process from "../../Component7/Process/Process";
 
 const Home7 = () => {
@@ -18,6 +19,7 @@ const Home7 = () => {
       <Process />
       <ContentSlider />
       <AppScreen />
+      <Pricing />
     </>
   );
 };
