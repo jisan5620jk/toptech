@@ -1,64 +1,58 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/images/testi1.png";
-import testiImg2 from "/images/testi2.png";
-import testiImg3 from "/images/testi3.png";
+import testiImg from "/images/mobile-app-testi-img1.png";
+import testiImg2 from "/images/mobile-app-testi-img2.png";
+import testiImg3 from "/images/mobile-app-testi-img3.png";
 import testimonialLogo from "/images/testimonial-logo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import TestimonialCard from "./TestimonialCard";
 import { IoStar } from "react-icons/io5";
 import { TfiQuoteLeft } from "react-icons/tfi";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 
 const testiData = [
   {
     id: 1,
     testiIcon: <TfiQuoteLeft />,
-    testiTitle: "Amazing Works!",
     testiImg: testiImg,
     testiRatingIcon: <IoStar />,
     testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
-    testiDesc: `Conveniently provide access to leading-edge 
-    interfaces. Uniquely network cutting edges
-    assertively disseminate`,
+    testiDesignation: "App Developer",
+    testiDesc: `“Competently enable equity invested 
+matrix alternative catalysts for change
+vertical web fully test"`,
   },
   {
     id: 2,
     testiIcon: <TfiQuoteLeft />,
-    testiTitle: "Great Chatbot!",
     testiImg: testiImg2,
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
-    testiDesignation: "UI/UX Designer",
-    testiDesc: `Conveniently provide access to leading-edge 
-    interfaces. Uniquely network cutting edges
-    assertively disseminate`,
+    testiDesignation: "UI Designer",
+    testiDesc: `“Competently enable equity invested 
+matrix alternative catalysts for change
+vertical web fully test"`,
   },
   {
     id: 3,
     testiIcon: <TfiQuoteLeft />,
-    testiTitle: "Very Impressive!",
     testiImg: testiImg3,
     testiRatingIcon: <IoStar />,
-    testiName: "Al-Amin Islam",
-    testiDesignation: "IT Specialist",
-    testiDesc: `Conveniently provide access to leading-edge 
-    interfaces. Uniquely network cutting edges
-    assertively disseminate`,
+    testiName: "Noor Islam",
+    testiDesignation: "Team Leader",
+    testiDesc: `“Competently enable equity invested 
+matrix alternative catalysts for change
+vertical web fully test"`,
   },
   {
     id: 4,
     testiIcon: <TfiQuoteLeft />,
-    testiTitle: "Amazing Works!",
     testiImg: testiImg2,
     testiRatingIcon: <IoStar />,
     testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-    testiDesc: `Conveniently provide access to leading-edge 
-    interfaces. Uniquely network cutting edges
-    assertively disseminate`,
+    testiDesignation: "UI Designer",
+    testiDesc: `“Competently enable equity invested 
+matrix alternative catalysts for change
+vertical web fully test"`,
   },
 ];
 
@@ -83,29 +77,20 @@ const Testimonial = () => {
       },
     },
   };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
-  };
   return (
-    <section className="pt-28 pb-[120px] bg-white relative z-10 testimonial5">
+    <section className="pt-28 pb-[120px] bg-[url(/images/mobile-app-testimonial-bg.png)] bg-cover bg-no-repeat bg-center relative z-10 testimonial5">
       <div className="Container">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-0 lg:items-center">
-          <div>
-            <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-              Testimonial
-            </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0">
-              Trusted by Industry Leaders
-              <br /> Customer Tesmonials
-            </h1>
-          </div>
-          <div className="flex lg:justify-end"><img src={testimonialLogo} draggable="false" /></div>
+        <div className="text-center">
+          <h5 className="font-Rajdhani font-semibold inline-block px-7 py-[6px] rounded-full border border-BorderColor4-0 text-white text-lg mb-5">
+            Testimonial
+          </h5>
+          <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-white">
+            Important customer’s feedback
+            <br /> 3k+ trusted app users
+          </h1>
         </div>
-        <div className="mt-[26px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+        <div className="mt-2">
+          <Swiper {...settings}>
             <div>
               {testiData.map(
                 ({
@@ -120,7 +105,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-[106px]">
+                      <div>
                         <TestimonialCard
                           testiIcon={testiIcon}
                           testiTitle={testiTitle}

@@ -34,19 +34,19 @@ const Footer5 = () => {
               </div>
               <div>
                 <ul className="flex items-center gap-2">
-                  <li className="text-orange-400">
+                  <li className="text-[#ffb50a]">
                     <FaStar />
                   </li>
-                  <li className="text-orange-400">
+                  <li className="text-[#ffb50a]">
                     <FaStar />
                   </li>
-                  <li className="text-orange-400">
+                  <li className="text-[#ffb50a]">
                     <FaStar />
                   </li>
-                  <li className="text-orange-400">
+                  <li className="text-[#ffb50a]">
                     <FaStar />
                   </li>
-                  <li className="text-orange-400">
+                  <li className="text-[#ffb50a]">
                     <TiStarHalfOutline size={"19"} />
                   </li>
                 </ul>
