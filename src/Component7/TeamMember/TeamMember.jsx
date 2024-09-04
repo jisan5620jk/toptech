@@ -62,7 +62,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-BodyBg-0 py-28 relative">
+    <section className="bg-BodyBg-0 pt-28 pb-[190px] relative">
       <div className="Container">
         <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
@@ -81,7 +81,7 @@ const TeamMember = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[36px]">
           {teamData.map(
             ({
               id,

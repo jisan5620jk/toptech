@@ -402,6 +402,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   filter: brightness(0) invert(1);
 }
 
+.faq-button7[aria-expanded="true"],
+.faq-button7:hover {
+  border-radius: 8px 8px 0 0;
+  background: #f2f7fd;
+  border-bottom: transparent;
+}
+
+
 /* Pricing */
 
 .pricing-box.active::before,
