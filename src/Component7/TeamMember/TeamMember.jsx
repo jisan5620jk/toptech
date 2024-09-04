@@ -1,7 +1,8 @@
-import teamThumb from "/images/team-1.png";
-import teamThumb2 from "/images/team-2.png";
-import teamThumb3 from "/images/team-4.png";
-import teamThumb4 from "/images/team-3.png";
+import teamThumb from "/images/mobile-app-team1.png";
+import teamThumb2 from "/images/mobile-app-team2.png";
+import teamThumb3 from "/images/mobile-app-team3.png";
+import teamThumb4 from "/images/mobile-app-team4.png";
+import allTeamThumb from "/images/mobile-app-team-members.png";
 import TeamCard from "./TeamCard";
 import {
   FaFacebookF,
@@ -11,13 +12,12 @@ import {
 } from "react-icons/fa6";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { GoArrowRight } from "react-icons/go";
 
 const teamData = [
   {
     id: 1,
     teamThumb: teamThumb,
-    teamTitle: "Connie Diaz",
+    teamTitle: "Jone D. Alexon",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -28,7 +28,7 @@ const teamData = [
   {
     id: 2,
     teamThumb: teamThumb2,
-    teamTitle: "James E. Huey",
+    teamTitle: "Noor Islam",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -38,8 +38,8 @@ const teamData = [
   },
   {
     id: 3,
-    teamThumb: teamThumb4,
-    teamTitle: "Jone D. Alexon",
+    teamThumb: teamThumb3,
+    teamTitle: "Anjelina Jelly",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -49,8 +49,8 @@ const teamData = [
   },
   {
     id: 4,
-    teamThumb: teamThumb3,
-    teamTitle: "June D. Vargas",
+    teamThumb: teamThumb4,
+    teamTitle: "Merina Alisa",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -62,24 +62,22 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
+    <section className="bg-BodyBg-0 py-28 relative">
       <div className="Container">
         <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
-            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-              Dedicated Team
+            <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
+              App Screen
             </h5>
-            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
-              Meet Our Dedicated Member <br />
-              For Any Enquery
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+              Amazing design style and simple
+              <br /> layout for comfort any user
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/team_inner"}>
-              <button className="primary-btn">
-                {`All Member`}
-                <GoArrowRight size={"22"} />
-              </button>
+            <Link to={'/'} className="text-center">
+              <img src={allTeamThumb} draggable="false" />
+              <h6 className="font-Nunito text-lg text-HeadingColor-0 pt-3">Expert Members</h6>
             </Link>
           </div>
         </div>

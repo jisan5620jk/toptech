@@ -7,6 +7,7 @@ import ContentSlider from "../../Component7/ContentSlider/ContentSlider";
 import Feature from "../../Component7/Feature/Feature";
 import Pricing from "../../Component7/Pricing/Pricing";
 import Process from "../../Component7/Process/Process";
+import TeamMember from "../../Component7/TeamMember/TeamMember";
 import Testimonial from "../../Component7/Testimonial/Testimonial";
 
 const Home7 = () => {
@@ -22,6 +23,7 @@ const Home7 = () => {
       <AppScreen />
       <Pricing />
       <Testimonial />
+      <TeamMember />
     </>
   );
 };
