@@ -4,6 +4,7 @@ import Benifits from "../../Component7/Benifits/Benifits";
 import Brand from "../../Component7/Brand/Brand";
 import Collaboration from "../../Component7/Collaboration/Collaboration";
 import ContentSlider from "../../Component7/ContentSlider/ContentSlider";
+import Download from "../../Component7/Download/Download";
 import Faqs from "../../Component7/Faqs/Faqs";
 import Feature from "../../Component7/Feature/Feature";
 import Pricing from "../../Component7/Pricing/Pricing";
@@ -26,6 +27,7 @@ const Home7 = () => {
       <Testimonial />
       <TeamMember />
       <Faqs />
+      <Download />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import FaqAccordion from "./Accordion/FaqAccordion";
 import shape1 from "/images/mobile-app-faq-shape.png";
 import shape2 from "/images/mobile-app-faq-shape2.png";
+import shape3 from "/images/mobile-app-faq-img.png";
 
 const Faqs = () => {
   //  All Faqs and  answers.
@@ -28,9 +29,10 @@ const Faqs = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-28">
+    <section className="relative z-10 overflow-hidden py-28">
       <img src={shape1} draggable="false" className="animate-swing absolute top-28 left-[10%]"/>
       <img src={shape2} draggable="false" className="animate-dance2 absolute top-3/4 left-[5%]"/>
+      <img src={shape3} draggable="false" className="animate-wiggle -z-10 absolute top-40 right-0 2xl:right-[5%]"/>
       <div className="text-center">
         <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
           App Screen
