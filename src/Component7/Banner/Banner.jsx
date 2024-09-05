@@ -41,7 +41,7 @@ const Banner = () => {
               draggable="false"
               className=":w-[inherit] top-[132px] relative lg:top-32 2xl:top-16"
             />
-            <div className="absolute top-[30rem] 2xl:top-[22rem] -left-4 flex items-center gap-3 pl-3 pr-9 py-3 rounded-l-full rounded-tr-full rounded-br bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-wiggle">
+            <div className="absolute top-[30rem] 2xl:top-[28rem] -left-4 flex items-center gap-3 pl-3 pr-9 py-3 rounded-l-full rounded-tr-full rounded-br bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-wiggle">
               <div>
                 <img src={profileImg} draggable={false} />
               </div>
@@ -51,7 +51,7 @@ const Banner = () => {
                 </h5>
               </div>
             </div>
-            <div className="absolute bottom-5 -right-20 flex items-center gap-3 pl-3 pr-9 py-3 rounded-r-full rounded-bl-full rounded-tl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-movebtn">
+            <div className="absolute bottom-5 -right-20 2xl:bottom-[5.25rem] flex items-center gap-3 pl-3 pr-9 py-3 rounded-r-full rounded-bl-full rounded-tl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-movebtn">
               <div>
                 <img src={profileImg2} draggable={false} />
               </div>
@@ -61,7 +61,7 @@ const Banner = () => {
                 </h5>
               </div>
             </div>
-            <div className="absolute top-[10rem] -right-[9rem] flex flex-col items-center gap-3 px-11 py-8 rounded-2xl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-dance3">
+            <div className="absolute top-[15rem] -right-[9rem] 2xl:top-[14rem] 2xl:-right-[10rem] flex flex-col items-center gap-3 px-11 py-8 rounded-2xl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-dance3">
               <div>
                 <img src={profileImg3} draggable={false} />
               </div>

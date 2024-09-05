@@ -8,13 +8,13 @@ const Collaboration = () => {
     <section className="py-[120px] relative">
       <div className="Container relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
-          <div className="relative z-10">
+          <div className="relative z-10 -ml-[92px]">
             <img
               src={collaborationThumb}
               draggable="false"
               className="2xl:max-w-[inherit]"
             />
-            <div className="absolute top-0 right-0 shadow-cases flex gap-4 bg-white rounded-3xl border px-9 pt-10 pb-7">
+            <div className="absolute top-0 right-0 shadow-cases flex gap-4 2xl:w-[294px] 2xl:right-2 bg-white rounded-3xl border px-9 pt-10 pb-7">
               <div>
                 <img src={icon} draggable="false" />
               </div>

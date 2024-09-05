@@ -30,16 +30,28 @@ const Faqs = () => {
 
   return (
     <section className="relative z-10 overflow-hidden py-28">
-      <img src={shape1} draggable="false" className="animate-swing absolute top-28 left-[10%]"/>
-      <img src={shape2} draggable="false" className="animate-dance2 absolute top-3/4 left-[5%]"/>
-      <img src={shape3} draggable="false" className="animate-wiggle -z-10 absolute top-40 right-0 2xl:right-[5%]"/>
+      <img
+        src={shape1}
+        draggable="false"
+        className="animate-swing absolute top-28 left-[10%]"
+      />
+      <img
+        src={shape2}
+        draggable="false"
+        className="animate-dance2 absolute top-3/4 left-[5%]"
+      />
+      <img
+        src={shape3}
+        draggable="false"
+        className="animate-wiggle -z-10 absolute top-40 right-0 2xl:right-[5%]"
+      />
       <div className="text-center">
         <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-          App Screen
+          {`Faq's`}
         </h5>
         <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
-          Amazing design style and simple
-          <br /> layout for comfort any user
+          {`Pre answered some question's`}
+          <br /> what you want
         </h1>
       </div>
       <div className="flex justify-center items-center m-auto w-[90%] lg:w-[850px] mt-14">

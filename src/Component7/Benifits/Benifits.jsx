@@ -93,7 +93,7 @@ const Benifits = () => {
               draggable="false"
               className="2xl:max-w-[inherit]"
             />
-            <div className="absolute bottom-14 -right-5 rotate-90 shadow-cases flex gap-4 bg-PrimaryColor-0 border px-6 py-4 rounded-xl">
+            <div className="absolute bottom-14 -right-5 2xl:bottom-[5.5rem] 2xl:-right-[4.25rem] rotate-90 shadow-cases flex gap-4 bg-PrimaryColor-0 border px-6 py-4 rounded-xl">
               <div className="text-white">
                 <FaCheck size={"18"} />
               </div>

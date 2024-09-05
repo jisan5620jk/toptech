@@ -67,17 +67,19 @@ const TeamMember = () => {
         <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-              App Screen
+             Our Team
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
-              Amazing design style and simple
-              <br /> layout for comfort any user
+              Get ready for quick supports
+              <br /> expert team member
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={'/'} className="text-center">
+            <Link to={"/"} className="text-center">
               <img src={allTeamThumb} draggable="false" />
-              <h6 className="font-Nunito text-lg text-HeadingColor-0 pt-3">Expert Members</h6>
+              <h6 className="font-Nunito text-lg text-HeadingColor-0 pt-3">
+                Expert Members
+              </h6>
             </Link>
           </div>
         </div>
