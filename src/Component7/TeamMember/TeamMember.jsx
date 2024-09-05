@@ -62,7 +62,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-BodyBg-0 pt-28 pb-[190px] relative">
+    <section className="bg-BodyBg-0 pt-28 pb-[176px] relative">
       <div className="Container">
         <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
