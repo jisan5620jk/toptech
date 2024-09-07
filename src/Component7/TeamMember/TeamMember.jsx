@@ -64,7 +64,7 @@ const TeamMember = () => {
   return (
     <section className="bg-BodyBg-0 pt-28 pb-[176px] relative">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
+        <div className="grid grid-cols-1 gap-y-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
              Our Team
@@ -83,7 +83,7 @@ const TeamMember = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[36px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[100px] mt-[36px]">
           {teamData.map(
             ({
               id,

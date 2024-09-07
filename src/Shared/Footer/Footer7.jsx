@@ -7,7 +7,7 @@ const Footer7 = () => {
     <footer className="bg-[url(/images/footer7-bg.jpg)] bg-cover bg-center bg-no-repeat relative z-10 pt-28 overflow-hidden">
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
-          <div className="col-span-12 md:col-span-6 lg:col-span-5 mr-28">
+          <div className="col-span-12 md:col-span-6 lg:col-span-5 sm:mr-14 md:mr-28">
             <Link to={"/"}>
               <img src={logo} draggable="false" />
             </Link>
@@ -170,7 +170,7 @@ const Footer7 = () => {
         </div>
       </div>
       <div className="Container">
-        <div className="bg-white border px-7 py-4 mt-[102px] mb-10 flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center">
+        <div className="bg-white border px-4 sm:px-7 py-4 mt-[102px] mb-10 flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center">
           <div>
             <p className="font-Nunito text-HeadingColor-0">
               TopTech © 2024 All Rights Reserved.

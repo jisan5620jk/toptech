@@ -41,16 +41,16 @@ const Process = () => {
       <div className="Container">
         <div className="relative">
           <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
-            Collaborations
+            Work Process
           </h5>
-          <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0">
-            Quickly drive interoperable apps
-            <br /> amazing Components
+          <h1 className="font-Rajdhani font-bold text-[21px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+            Start conversation just finished
+            <br /> 3 simple easy steps
           </h1>
           <img
             src={processShape}
             draggable="false"
-            className="absolute top-10  right-0 animate-swing"
+            className="absolute top-10  right-0 animate-swing hidden md:block"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[54px]">
@@ -79,7 +79,11 @@ const Process = () => {
             )}
           </div>
           <div>
-            <img src={processThumb} draggable="false" className="h-full w-full"/>
+            <img
+              src={processThumb}
+              draggable="false"
+              className="h-full w-full"
+            />
           </div>
         </div>
       </div>

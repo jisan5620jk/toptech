@@ -83,7 +83,7 @@ const Navbar5 = () => {
             </button>
           </div>
           {/* All navLink are hear with active */}
-          <div className="col-span-1 lg:col-span-6 m-auto">
+          <div className="col-span-1 lg:col-span-6 lg:m-auto">
             <ul
               className={`${
                 isOpen ? "block" : "hidden"

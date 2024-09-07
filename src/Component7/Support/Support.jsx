@@ -1,7 +1,7 @@
 import { FaRegUser } from "react-icons/fa6";
 import { HiOutlineArrowRight, HiOutlineMailOpen } from "react-icons/hi";
-import supportThumb from "/images/support-screen.png"
-import supportShape from "/images/support-shape.png"
+import supportThumb from "/images/support-screen.png";
+import supportShape from "/images/support-shape.png";
 
 const Support = () => {
   return (
@@ -10,7 +10,11 @@ const Support = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[92px] items-center relative z-10">
           <div className="relative z-10 flex justify-end">
             <img src={supportThumb} draggable="false" />
-            <img src={supportShape} draggable="false"  className="absolute -z-10 left-0 top-28 animate-wiggle"/>
+            <img
+              src={supportShape}
+              draggable="false"
+              className="absolute -z-10 left-0 top-28 animate-wiggle hidden sm:block"
+            />
           </div>
           <div>
             <h5 className="font-Rajdhani font-semibold inline-block px-7 py-[6px] rounded-full border border-white border-opacity-25 text-white text-lg mb-5">

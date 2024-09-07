@@ -48,7 +48,7 @@ const Pricing = () => {
   return (
     <section className="pb-28 bg-BodyBg-0 relative z-10">
       <div className="Container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-9 lg:gap-x-7">
           <div>
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
               Pricing Plan
@@ -60,13 +60,13 @@ const Pricing = () => {
               <br />
               Pricing Plans
             </h1>
-            <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 pt-8 mb-11">
-              <div className="border-r border-BorderColor2-0 pr-5">
+            <div className="relative flex items-center gap-2 sm:gap-5 border-t border-BorderColor2-0 pt-8 mb-11">
+              <div className="border-r border-BorderColor2-0 pr-2 sm:pr-5">
                 <CountUp
                   start={-11}
                   end={98}
                   suffix={"%"}
-                  className="font-Rajdhani text-4xl leading-[26px] md:text-[60px] md:leading-[40px] text-PrimaryColor-0 font-semibold"
+                  className="font-Rajdhani text-3xl sm:text-5xl leading-[26px] md:text-[60px] md:leading-[40px] text-PrimaryColor-0 font-semibold"
                 />
               </div>
               <div>

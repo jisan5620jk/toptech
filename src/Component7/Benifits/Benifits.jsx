@@ -18,7 +18,7 @@ const Benifits = () => {
               <br /> our mobile Apps
             </h1>
             <Tabs>
-              <TabList className="flex gap-3 items-center mb-8">
+              <TabList className="flex flex-col sm:flex-row gap-3 items-center mb-8">
                 <Tab className="cursor-pointer outline-none border font-Rajdhani font-semibold text-lg uppercase bg-BodyBg-0 px-7 py-[7px] rounded-full text-PrimaryColor-0 transition-all duration-500">
                   Consumer
                 </Tab>
@@ -93,7 +93,7 @@ const Benifits = () => {
               draggable="false"
               className="2xl:max-w-[inherit]"
             />
-            <div className="absolute bottom-14 -right-5 2xl:bottom-[5.5rem] 2xl:-right-[4.25rem] rotate-90 shadow-cases flex gap-4 bg-PrimaryColor-0 border px-6 py-4 rounded-xl">
+            <div className="hidden absolute bottom-14 -right-5 2xl:bottom-[5.5rem] 2xl:-right-[4.25rem] rotate-90 shadow-cases sm:flex gap-4 bg-PrimaryColor-0 border px-6 py-4 rounded-xl">
               <div className="text-white">
                 <FaCheck size={"18"} />
               </div>

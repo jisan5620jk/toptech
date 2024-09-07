@@ -8,14 +8,14 @@ import { FaCheck } from "react-icons/fa6";
 
 const Download = () => {
   return (
-    <section className="pt-[60px] bg-[url(/images/mobile-app-app-bg.png)] bg-no-repeat bg-center bg-cover">
+    <section className="pt-[60px] pb-[60px] lg:pb-0 bg-[url(/images/mobile-app-app-bg.png)] bg-no-repeat bg-center bg-cover">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-end">
-          <div className="pb-[160px]">
-            <h1 className="font-Rajdhani font-bold text-[60px] text-HeadingColor-0">
+          <div className="lg:pb-[160px]">
+            <h1 className="font-Rajdhani font-bold text-3xl sm:text-5xl md:text-[60px] text-HeadingColor-0">
               Download Apps
             </h1>
-            <h2 className="font-Rajdhani font-semibold text-[42px] text-HeadingColor-0 -mt-2">
+            <h2 className="font-Rajdhani font-semibold text-[26px] leading-[32px] sm:text-[42px] text-HeadingColor-0 mt-2 md:-mt-2">
               Easy super fast applications
             </h2>
             <div className="flex items-center gap-2 mt-5">
@@ -23,7 +23,7 @@ const Download = () => {
                 <FaCheck size={"18"} />
               </div>
               <div className="flex-1">
-                <h5 className="font-Nunito font-medium text-HeadingColor-0 text-lg">
+                <h5 className="font-Nunito font-medium text-HeadingColor-0 text-base sm:text-lg">
                   {`Credibly leverage other's future`}
                 </h5>
               </div>
@@ -33,7 +33,7 @@ const Download = () => {
                 <FaCheck size={"18"} />
               </div>
               <div className="flex-1">
-                <h5 className="font-Nunito font-medium text-HeadingColor-0 text-lg">
+                <h5 className="font-Nunito font-medium text-HeadingColor-0 text-base sm:text-lg">
                   {`Monotonectally fashion world-class`}
                 </h5>
               </div>
@@ -47,7 +47,7 @@ const Download = () => {
               </Link>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative hidden">
             <img
               src={downloadThumb}
               draggable="false"
