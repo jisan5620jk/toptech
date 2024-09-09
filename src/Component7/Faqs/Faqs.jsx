@@ -33,17 +33,17 @@ const Faqs = () => {
       <img
         src={shape1}
         draggable="false"
-        className="animate-swing absolute top-28 left-[10%] hidden md:block"
+        className="animate-swing absolute top-28 left-[10%] hidden xl:block"
       />
       <img
         src={shape2}
         draggable="false"
-        className="animate-dance2 absolute top-3/4 left-[5%] hidden md:block"
+        className="animate-dance2 absolute top-3/4 left-[5%] hidden xl:block"
       />
       <img
         src={shape3}
         draggable="false"
-        className="animate-wiggle -z-10 absolute top-40 right-0 2xl:right-[5%] hidden md:block"
+        className="animate-wiggle -z-10 absolute top-40 right-0 2xl:right-[5%] hidden xl:block"
       />
       <div className="text-center">
         <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">

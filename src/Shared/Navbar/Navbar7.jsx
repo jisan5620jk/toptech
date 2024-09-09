@@ -418,7 +418,7 @@ const Navbar5 = () => {
             </ul>
           </div>
           <div className="col-span-1 lg:col-span-3 hidden lg:flex gap-8 items-center lg:justify-end">
-            <button className="text-[#7f93ab] size-10 flex items-center justify-center rounded-full border border-BorderColor5-0">
+            <button className="text-[#7f93ab] size-10 xl:flex items-center justify-center rounded-full border border-BorderColor5-0 hidden">
               <BiSearch size={"18"} />
             </button>
             <button className="primary-btn5">

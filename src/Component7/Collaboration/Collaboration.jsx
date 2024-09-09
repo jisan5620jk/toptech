@@ -32,7 +32,7 @@ const Collaboration = () => {
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
               Collaborations
             </h5>
-            <h1 className="font-Rajdhani font-bold text-[21px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
+            <h1 className="font-Rajdhani font-bold text-[21px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[32px] lg:leading-[38px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
               Quickly drive interoperable apps
               <br /> amazing Components
             </h1>
@@ -47,7 +47,7 @@ const Collaboration = () => {
                   <HiBadgeCheck size={"24"} />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl 2xl:text-[22px]">
+                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:text-[17px] xl:text-xl 2xl:text-[22px]">
                     Safe and Secure Browsing
                   </h5>
                 </div>
@@ -57,7 +57,7 @@ const Collaboration = () => {
                   <HiBadgeCheck size={"24"} />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl 2xl:text-[22px]">
+                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:text-[17px] xl:text-xl 2xl:text-[22px]">
                     100% Best Visibility
                   </h5>
                 </div>
@@ -67,7 +67,7 @@ const Collaboration = () => {
                   <HiBadgeCheck size={"24"} />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl 2xl:text-[22px]">
+                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:text-[17px] xl:text-xl 2xl:text-[22px]">
                     Secure Browsing System
                   </h5>
                 </div>
@@ -77,7 +77,7 @@ const Collaboration = () => {
                   <HiBadgeCheck size={"24"} />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl 2xl:text-[22px]">
+                  <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:text-[17px] xl:text-xl 2xl:text-[22px]">
                     Super Fast Conversation
                   </h5>
                 </div>

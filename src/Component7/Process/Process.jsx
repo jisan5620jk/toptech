@@ -54,7 +54,7 @@ const Process = () => {
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[54px]">
-          <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-7">
             {processData.map(
               ({
                 id,
@@ -78,7 +78,7 @@ const Process = () => {
               }
             )}
           </div>
-          <div>
+          <div className="md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1">
             <img
               src={processThumb}
               draggable="false"

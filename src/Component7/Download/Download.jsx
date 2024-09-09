@@ -15,7 +15,7 @@ const Download = () => {
             <h1 className="font-Rajdhani font-bold text-3xl sm:text-5xl md:text-[60px] text-HeadingColor-0">
               Download Apps
             </h1>
-            <h2 className="font-Rajdhani font-semibold text-[26px] leading-[32px] sm:text-[42px] text-HeadingColor-0 mt-2 md:-mt-2">
+            <h2 className="font-Rajdhani font-semibold text-[26px] leading-[32px] sm:text-[42px] lg:text-[40px] lg:leading-10 xl:text-[42px] text-HeadingColor-0 mt-2 xl:-mt-2">
               Easy super fast applications
             </h2>
             <div className="flex items-center gap-2 mt-5">
@@ -47,7 +47,7 @@ const Download = () => {
               </Link>
             </div>
           </div>
-          <div className="relative hidden">
+          <div className="relative hidden lg:block">
             <img
               src={downloadThumb}
               draggable="false"
@@ -63,7 +63,7 @@ const Download = () => {
               draggable="false"
               className="absolute top-20 -right-20 animate-wiggle"
             />
-            <div className="absolute top-[18rem] -right-28 flex items-center gap-3 px-7 py-5 rounded-2xl bg-white bg-opacity-45 backdrop-filter backdrop-blur-lg border-2 border-white animate-dance3">
+            <div className="absolute top-[18rem] -right-28 lg:hidden xl:flex items-center gap-3 px-7 py-5 rounded-2xl bg-white bg-opacity-45 backdrop-filter backdrop-blur-lg border-2 border-white animate-dance3">
               <div>
                 <h6 className="size-[60px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white font-Rajdhani font-semibold text-2xl">6k</h6>
               </div>

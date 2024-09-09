@@ -53,20 +53,20 @@ const Pricing = () => {
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
               Pricing Plan
             </h5>
-            <h1 className="font-Rajdhani font-bold text-xl sm:text-[34px] sm:leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-6">
+            <h1 className="font-Rajdhani font-bold text-xl sm:text-[34px] sm:leading-[42px] md:text-[39px] md:leading-[47px] lg:text-[32px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-6">
               Quickly interoperable
               <br />
               Colaborating Cheaf
               <br />
               Pricing Plans
             </h1>
-            <div className="relative flex items-center gap-2 sm:gap-5 border-t border-BorderColor2-0 pt-8 mb-11">
-              <div className="border-r border-BorderColor2-0 pr-2 sm:pr-5">
+            <div className="relative flex items-center gap-2 sm:gap-5 lg:gap-3 xl:gap-5 border-t border-BorderColor2-0 pt-8 mb-11">
+              <div className="border-r border-BorderColor2-0 pr-2 sm:pr-5 lg:pr-3 xl:pr-5">
                 <CountUp
                   start={-11}
                   end={98}
                   suffix={"%"}
-                  className="font-Rajdhani text-3xl sm:text-5xl leading-[26px] md:text-[60px] md:leading-[40px] text-PrimaryColor-0 font-semibold"
+                  className="font-Rajdhani text-3xl sm:text-5xl leading-[26px] md:text-[60px] md:leading-10 lg:text-4xl lg:leading-8 text-PrimaryColor-0 font-semibold"
                 />
               </div>
               <div>

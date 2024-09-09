@@ -52,19 +52,19 @@ const PricingCard = ({
         </h6>
       </div>
       <ul className="mt-6">
-        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg text-HeadingColor-0 mb-3">
+        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg lg:text-base xl:text-lg text-HeadingColor-0 mb-3">
           <span className="text-PrimaryColor-0">{pricingCheck}</span>
           {pricingContent1}
         </li>
-        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg text-HeadingColor-0 mb-3">
+        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg lg:text-base xl:text-lg text-HeadingColor-0 mb-3">
           <span className="text-PrimaryColor-0">{pricingCheck}</span>
           {pricingContent2}
         </li>
-        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg text-HeadingColor-0 mb-3">
+        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg lg:text-base xl:text-lg text-HeadingColor-0 mb-3">
           <span className="text-PrimaryColor-0">{pricingCheck}</span>
           {pricingContent3}
         </li>
-        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg text-HeadingColor-0">
+        <li className="flex gap-2 items-center font-Nunito text-base sm:text-lg lg:text-base xl:text-lg text-HeadingColor-0">
           <span className="text-PrimaryColor-0">{pricingCheck}</span>
           {pricingContent4}
         </li>
