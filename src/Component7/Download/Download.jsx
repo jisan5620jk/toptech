@@ -15,7 +15,7 @@ const Download = () => {
             <h1 className="font-Rajdhani font-bold text-3xl sm:text-5xl md:text-[60px] text-HeadingColor-0">
               Download Apps
             </h1>
-            <h2 className="font-Rajdhani font-semibold text-[26px] leading-[32px] sm:text-[42px] lg:text-[40px] lg:leading-10 xl:text-[42px] text-HeadingColor-0 mt-2 xl:-mt-2">
+            <h2 className="font-Rajdhani font-semibold text-[26px] leading-[32px] sm:text-[42px] lg:text-[40px] lg:leading-10 xl:text-[42px] text-HeadingColor-0 mt-2">
               Easy super fast applications
             </h2>
             <div className="flex items-center gap-2 mt-5">

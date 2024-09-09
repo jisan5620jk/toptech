@@ -51,7 +51,7 @@ const Banner = () => {
                 </h5>
               </div>
             </div>
-            <div className="absolute bottom-5 -right-20 md:right-0 lg:right-10 2xl:bottom-[5.25rem] sm:flex xl:flex items-center gap-3 pl-3 pr-9 py-3 rounded-r-full rounded-bl-full rounded-tl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-movebtn hidden lg:hidden">
+            <div className="absolute bottom-5 -right-20 md:right-0 lg:right-10 2xl:-bottom-[4.5rem] sm:flex xl:flex items-center gap-3 pl-3 pr-9 py-3 rounded-r-full rounded-bl-full rounded-tl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-movebtn hidden lg:hidden">
               <div>
                 <img src={profileImg2} draggable={false} />
               </div>
