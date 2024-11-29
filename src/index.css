@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -127,7 +127,7 @@ span.swiper-pagination-bullet {
 
 span.swiper-pagination-bullet::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -10px;
   left: -10px;
   width: 26px;
@@ -289,7 +289,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"],
+.faq-button[aria-expanded='true'],
 .faq-button:hover {
   border-radius: 5px;
   background: #0c59db;
@@ -297,24 +297,24 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   padding: 0 20px 0 30px;
 }
 
-.faq-button3[aria-expanded="true"],
+.faq-button3[aria-expanded='true'],
 .faq-button3:hover {
   background: #0b59db;
   border-radius: 6px 6px 0 0;
 }
 
 .faq-button3:hover img,
-.faq-button3[aria-expanded="true"] img {
+.faq-button3[aria-expanded='true'] img {
   filter: brightness(0) invert(1);
 }
 
-.faq-button2[aria-expanded="true"] {
+.faq-button2[aria-expanded='true'] {
   background: #0b59db;
   border-radius: 6px 6px 0 0;
 }
 
 .faq-button2:hover img,
-.faq-button2[aria-expanded="true"] img {
+.faq-button2[aria-expanded='true'] img {
   filter: brightness(0) invert(1);
 }
 
